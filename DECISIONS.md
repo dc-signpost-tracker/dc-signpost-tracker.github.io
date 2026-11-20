@@ -69,6 +69,12 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Rating boxes are labelled:** "2026–30" sits above the first box and "Beyond 2030"
   above the second. No caption underneath.
 
+- **Removed "Where the constraints bind":** the eight-region table and its section are
+  gone from the page. `data/heatmap.json` stays in the repository as a record but is
+  not shown. Do not add the section back.
+- **Calendar per tab:** each tab has its own catalyst calendar, listing only the events
+  tied to that tab's signposts. There is no page-wide calendar.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
