@@ -16,7 +16,8 @@
    "sp": [
     "D1",
     "D3"
-   ]
+   ],
+   "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
   {
    "d": "2026-11-27",
@@ -162,6 +163,16 @@
    "text": "Test of commercial water supply in India's main hubs",
    "sp": [
     "F1"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-09-30",
+   "label": "Sep 2027, latest",
+   "text": "Loudoun County's pause on new data centre applications ends",
+   "sp": [
+    "D1",
+    "D3"
    ],
    "fuzzy": true
   },

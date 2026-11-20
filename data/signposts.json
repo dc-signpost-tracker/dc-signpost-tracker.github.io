@@ -366,7 +366,8 @@
       "vText": "over 50%",
       "tText": "trigger 25%"
      },
-     "history": []
+     "history": [],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "D2",
@@ -392,13 +393,15 @@
      "track": "Whether states or the federal government curb local vetoes, or tighten permitting instead.",
      "trigger": "Positive if a state or federal measure limits local vetoes.",
      "status": "none",
-     "latest": "State permit pauses in New York, Oregon and Texas",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Loudoun County, Virginia, voted 7 to 1 on 17 Nov 2026 to pause new data centre and substation applications until as late as September 2027. This is a county tightening its own rules, not a state or federal override.",
+     "latestDate": "17 Nov 2026",
+     "source_url": "https://pub-loudoun.escribemeetings.com/FileStream.ashx?DocumentId=2532",
+     "retrieved_on": "2026-11-20",
      "next": "New Congress sits Jan 2027; Oregon pause ends Jul 2027",
      "sources": "Congress.gov; state bill trackers; Virginia legislative system; Federal Register",
-     "history": []
+     "history": [],
+     "verify": "The linked county document is the proposal put to the vote. The result is confirmed by press reports only (Bisnow, Fox 5). The state permit pauses in New York, Oregon and Texas are not yet verified.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   },
