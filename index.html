@@ -481,7 +481,9 @@ async function load(){
   return {signposts, calendar};
 }
 load().then(d => {
-  CALLS = d.signposts.calls; EVENTS = d.calendar.events;
+  const ORDER = ["A", "D", "C", "E", "B", "F"]; /* tab order chosen by the owner: grouped by region */
+  const rank = c => { const i = ORDER.indexOf(c.id); return i < 0 ? 99 : i; };
+  CALLS = d.signposts.calls.slice().sort((x, y) => rank(x) - rank(y)); EVENTS = d.calendar.events;
   el("asof").innerHTML = d.signposts.last_refreshed
     ? `Last refreshed <b>${esc(fmt(d.signposts.last_refreshed))}</b>`
     : `<b>Not yet refreshed</b> from primary sources`;

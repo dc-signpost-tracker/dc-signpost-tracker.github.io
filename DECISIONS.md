@@ -122,6 +122,11 @@ commit and push. Signpost statuses are not logged here; they live in
   direction colour, day, year) to the right of the countdown and the event text. Built on the
   recommended option because the owner left that card unanswered; he may still change it.
 
+- **Tab order** is grouped by region: North America Power, North America Land, Europe
+  Power, Europe Water, North Asia ex-China Power, South & Southeast Asia Water. Signpost
+  labels (A1, D1 and so on) are unchanged, so the letters no longer run in order across tabs.
+- **Calendar notes** sit on their own "Note:" line, not after "Relevant for".
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
