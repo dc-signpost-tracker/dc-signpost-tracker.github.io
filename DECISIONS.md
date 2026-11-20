@@ -85,6 +85,10 @@ commit and push. Signpost statuses are not logged here; they live in
   header band and a headline figure in large type; the full reading, trigger and
   sources sit behind a tap. The catalyst calendar is a navy rail down the right side.
 
+- **Tab names:** the tabs read "North Asia ex-China" and "South & Southeast Asia".
+  Region names sit on one line across all six tabs, with the constraint and direction
+  on one line beneath.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.

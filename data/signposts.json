@@ -4,6 +4,7 @@
   {
    "id": "A",
    "region": "North America",
+   "tab": "North America",
    "constraint": "Power",
    "from": "Severe",
    "to": "Moderate",
@@ -223,6 +224,7 @@
   {
    "id": "B",
    "region": "North Asia excluding China",
+   "tab": "North Asia ex-China",
    "constraint": "Power",
    "from": "Severe",
    "to": "Moderate",
@@ -353,6 +355,7 @@
   {
    "id": "C",
    "region": "Europe",
+   "tab": "Europe",
    "constraint": "Power",
    "from": "Severe",
    "to": "Severe",
@@ -428,6 +431,7 @@
   {
    "id": "D",
    "region": "North America",
+   "tab": "North America",
    "constraint": "Land",
    "from": "Severe",
    "to": "Severe",
@@ -512,6 +516,7 @@
   {
    "id": "E",
    "region": "Europe",
+   "tab": "Europe",
    "constraint": "Water",
    "from": "Minor",
    "to": "Moderate",
@@ -636,6 +641,7 @@
   {
    "id": "F",
    "region": "South and Southeast Asia",
+   "tab": "South & Southeast Asia",
    "constraint": "Water",
    "from": "Moderate",
    "to": "Severe",
