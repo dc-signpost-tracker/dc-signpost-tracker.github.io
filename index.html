@@ -170,7 +170,9 @@ section{margin-top:30px}
 .b-next p{font-size:15px;font-weight:600;margin-top:5px;line-height:1.35}
 .why{background:var(--surface);border:1px solid var(--rule);border-top:0;border-radius:0 0 14px 14px;padding:18px 30px;display:grid;gap:14px 36px;font-size:14.5px;color:var(--muted);grid-template-columns:1fr}
 @media (min-width:900px){.why{grid-template-columns:1fr 1.4fr}}
-.why b{display:block;color:var(--ink);font-size:13px;margin-bottom:3px}
+.why b{display:block;color:var(--ink);font-size:13px;margin-bottom:7px}
+.pts{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.pts li{padding-left:11px;border-left:3px solid var(--rule);line-height:1.4}
 .cols{display:grid;gap:22px;margin-top:24px;align-items:start;grid-template-columns:1fr}
 @media (min-width:1100px){.cols{grid-template-columns:1fr 340px}}
 
@@ -403,6 +405,13 @@ function tileHTML(e){
     ? `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d yr">${y}</div></div>`
     : `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d">${d}</div><div class="y">${y}</div></div>`;
 }
+/* one point per line, each behind a vertical bar, so separate statements do not run together */
+function points(text, sep){
+  const parts = String(text || "").split(sep).map(x => x.trim().replace(/\.$/, "")).filter(Boolean);
+  /* a fragment of one or two words ("Local consent") is a lead-in, not a point: join it to the next */
+  for (let i = 0; i < parts.length - 1; i++) if (parts[i].split(/\s+/).length < 3) { const n = parts[i + 1]; parts.splice(i, 2, parts[i] + ": " + n.charAt(0).toLowerCase() + n.slice(1)); }
+  return `<ul class="pts">${parts.map(x => `<li>${esc(x.charAt(0).toUpperCase() + x.slice(1))}</li>`).join("")}</ul>`;
+}
 function renderBoard(){
   if (!current) current = (CALLS.find(c => slug(c) === location.hash.slice(1)) || CALLS[0]).id;
   const c = CALLS.find(x => x.id === current) || CALLS[0];
@@ -425,7 +434,7 @@ function renderBoard(){
           <div class="key"><span><i class="supports"></i>supports the call</span><span><i class="challenges"></i>challenges the call</span><span><i></i>no signal yet</span></div></div>
         <div class="b-next">${nx ? `${tileHTML(nx)}<div><small>Next catalyst${plainDate(nx) ? "" : " · " + esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p></div>` : `<small>No dated catalyst</small>`}</div>
       </div>
-      <div class="why"><div><b>${esc(c.key.label)}</b>${esc(c.key.text)}</div><div><b>What the call depends on</b>${esc(c.depends)}</div></div>
+      <div class="why"><div><b>${esc(c.key.label)}</b>${points(c.key.text, /;\s+/)}</div><div><b>What the call depends on</b>${points(c.depends, /(?<=\.)\s+(?=[A-Z])/)}</div></div>
       <div class="cols">
         <div class="sps ${esc(c.dir)}">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
         ${calendarFor(c)}

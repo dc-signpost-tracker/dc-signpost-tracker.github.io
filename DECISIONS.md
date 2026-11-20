@@ -127,6 +127,9 @@ commit and push. Signpost statuses are not logged here; they live in
   labels (A1, D1 and so on) are unchanged, so the letters no longer run in order across tabs.
 - **Calendar notes** sit on their own "Note:" line, not after "Relevant for".
 
+- **Banner key** is 10px. **"Watch for" and "What the call depends on":** each statement
+  sits on its own line behind a vertical bar; the owner found the run-on text hard to read.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
