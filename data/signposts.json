@@ -64,13 +64,43 @@
      "track": "GE Vernova gas turbine backlog plus slot reservations against quarterly shipments, and the earliest delivery year on sale.",
      "trigger": "Positive if quarterly additions fall below shipments, so the backlog stops rising, and pre-2030 delivery slots reappear.",
      "status": "none",
-     "latest": "Baseline to be loaded with seed data",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Gas equipment backlog plus slot reservations 122 gigawatts, up from 116 a quarter earlier. In the quarter: 11 gigawatts signed, 5 shipped.",
+     "latestDate": "30 Sep 2026",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm",
+     "retrieved_on": "2026-11-20",
      "next": "Next quarterly results",
      "sources": "US Securities and Exchange Commission filings; GE Vernova, Siemens Energy and Mitsubishi Heavy Industries results; US Energy Information Administration monthly generator file",
-     "history": []
+     "history": [
+      {
+       "date": "2025-12-31",
+       "value": 83,
+       "unit": "gigawatts",
+       "measure": "Gas equipment backlog plus slot reservations",
+       "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000063/gevpressrelease1q26.htm"
+      },
+      {
+       "date": "2026-03-31",
+       "value": 100,
+       "unit": "gigawatts",
+       "measure": "Gas equipment backlog plus slot reservations",
+       "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000063/gevpressrelease1q26.htm"
+      },
+      {
+       "date": "2026-06-30",
+       "value": 116,
+       "unit": "gigawatts",
+       "measure": "Gas equipment backlog plus slot reservations",
+       "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gev2q2026form8-k.pdf"
+      },
+      {
+       "date": "2026-09-30",
+       "value": 122,
+       "unit": "gigawatts",
+       "measure": "Gas equipment backlog plus slot reservations",
+       "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm"
+      }
+     ],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "A4",
