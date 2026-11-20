@@ -452,7 +452,7 @@ function calendarFor(c){
     const mine = e.sp.filter(x => ids.includes(x)).map(x => { const sp = c.sps.find(q => q.id === x); return esc(x + " " + sp.name); });
     const rel = `Relevant for: Signpost${mine.length > 1 ? "s" : ""} ${mine.join("; ")}`;
     return `<div class="rev ${kind === "past" ? "past" : ""}"><b>${esc(e.label)}${sub}</b>${esc(e.text)}
-      ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}<small class="rel">${rel}${e.note ? ". " + esc(e.note) : ""}</small></div>`;
+      ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}${e.note ? `<small>Note: ${esc(e.note)}</small>` : ""}<small class="rel">${rel}</small></div>`;
   };
   const part = (title, list, kind) => list.length ? `<h3>${title}</h3>${list.map(e => row(e, kind)).join("")}` : "";
   const body = part("Next six weeks", groups.soon, "soon") + part("Further out", groups.later, "later") + part("Passed", groups.past, "past");
