@@ -130,6 +130,10 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Banner key** is 10px. **"Watch for" and "What the call depends on":** each statement
   sits on its own line behind a vertical bar; the owner found the run-on text hard to read.
 
+- **A3 Turbine supply** must say on the card that the figure is GE Vernova only, one
+  maker tracked as an illustration of the wider market. Keep this wording when the
+  reading is updated.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
