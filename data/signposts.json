@@ -127,13 +127,15 @@
      "track": "FERC orders on grid operators' responses to its June 2026 large-load orders, including data centres sited at power plants.",
      "trigger": "Positive if FERC approves workable rules.",
      "status": "none",
-     "latest": "Grid operators' responses were due",
+     "latest": "Five of the six grid operators filed their large-load proposals by the 16 Nov deadline; Southwest Power Pool's deadline is 20 Nov. The Federal Energy Regulatory Commission (FERC) has not yet ruled.",
      "latestDate": "16 Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Monthly FERC meetings",
+     "source_url": "https://www.pjm.com/-/media/DotCom/documents/ferc/orders/2026/20260921-el26-67-001.pdf",
+     "retrieved_on": "2026-11-20",
+     "next": "Replies to the filings due 16 Dec 2026; then a FERC ruling",
      "sources": "FERC eLibrary and open-meeting agendas; Federal Register",
-     "history": []
+     "history": [],
+     "verify": "The linked order sets the schedule. That the filings were made is confirmed by press reports only (Utility Dive, POWER); the docket has not been checked directly.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "A6",
