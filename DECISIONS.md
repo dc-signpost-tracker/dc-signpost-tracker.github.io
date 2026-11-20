@@ -104,8 +104,8 @@ commit and push. Signpost statuses are not logged here; they live in
   colour and sit directly on the tint; thin vertical lines divide the banner into its
   four parts. The owner found the white insets jarring.
 
-- **Signpost cards:** all white, lifted off the grey page by a soft shadow, with a navy
-  rule under the title. No grey header band (it blurred into the page background).
+- **Signpost cards:** all white, lifted off the grey page by a soft shadow, with a rule
+  under the title in the banner's tint (not navy). No grey header band (it blurred into the page background).
 
 ## Open
 

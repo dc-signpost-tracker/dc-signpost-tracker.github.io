@@ -167,7 +167,8 @@ section{margin-top:44px}
 .sps{display:grid;gap:16px;align-items:stretch;grid-template-columns:1fr}
 @media (min-width:760px){.sps{grid-template-columns:1fr 1fr}}
 .sp{background:var(--surface);border:1px solid transparent;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(17,28,43,.06),0 6px 18px rgba(17,28,43,.08)}
-.sp-head{display:flex;align-items:center;gap:11px;padding:13px 16px;background:var(--surface);border-bottom:2px solid var(--head)}
+.sp-head{display:flex;align-items:center;gap:11px;padding:13px 16px;background:var(--surface);border-bottom:4px solid var(--rule)}
+.sps.Easing .sp-head{border-bottom-color:var(--ease-bg)}.sps.Persisting .sp-head{border-bottom-color:var(--pers-bg)}.sps.Intensifying .sp-head{border-bottom-color:var(--int-bg)}
 .sp-head h3{font-size:15.5px;font-weight:700;flex:1;line-height:1.25;min-width:0}
 .sp-id{width:34px;height:34px;border-radius:50%;background:var(--head);color:#fff;font-weight:700;font-size:13.5px;display:grid;place-items:center;flex:none}
 .pill{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;border-radius:999px;padding:4px 10px 4px 8px;white-space:nowrap;background:var(--none-bg);color:var(--muted);border:1px solid transparent}
@@ -408,7 +409,7 @@ function renderBoard(){
       </div>
       <div class="why"><div><b>${esc(c.key.label)}</b>${esc(c.key.text)}</div><div><b>What the call depends on</b>${esc(c.depends)}</div></div>
       <div class="cols">
-        <div class="sps">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
+        <div class="sps ${esc(c.dir)}">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
         ${calendarFor(c)}
       </div>
     </div>`;
