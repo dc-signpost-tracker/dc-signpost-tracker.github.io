@@ -12,8 +12,9 @@
    "new": 0
   },
   "sec_edgar_ge_vernova": {
-   "state": "skipped",
-   "detail": "CONTACT_EMAIL is not set; the filing system requires a contact address"
+   "state": "ok",
+   "found": 4,
+   "new": 4
   },
   "boe_daily_summary": {
    "state": "ok",
