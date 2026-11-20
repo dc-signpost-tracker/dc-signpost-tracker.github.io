@@ -93,6 +93,13 @@ commit and push. Signpost statuses are not logged here; they live in
   fill and the red "challenges" fill both show against the navy banner and match the
   legend. The "2026–30" and "Beyond 2030" labels are centred over their rating boxes.
 
+- **Banner colour (supersedes the navy banner):** each banner is tinted in its call's
+  direction colour: pale green for Easing, pale grey for Persisting, pale red for
+  Intensifying. The open tab takes the same tint. The owner found navy too heavy and
+  the same on every tab. The rating boxes and signpost squares sit on white insets.
+  The calendar rail stays navy.
+- **Banner subtitle:** one line, "Power | Easing after 2030". No separate direction box.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
