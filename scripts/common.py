@@ -38,7 +38,7 @@ def get_text(url, timeout=30):
         return response.read().decode("utf-8", errors="replace")
 
 
-def passages(text, terms, limit=10, span=1500):
+def passages(text, terms, limit=10, span=4000):
     """The parts of a document's plain text that mention any of the terms, word for word.
 
     A regulator's combined notice lists many unrelated filings, each starting with
