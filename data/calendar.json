@@ -1,0 +1,179 @@
+{
+ "events": [
+  {
+   "d": "2026-11-16",
+   "label": "16 Nov 2026",
+   "text": "Grid operators' responses to the federal large-load orders were due",
+   "sp": [
+    "A5"
+   ]
+  },
+  {
+   "d": "2026-11-17",
+   "label": "17 Nov 2026",
+   "text": "Loudoun County vote on a 12-month pause on new applications",
+   "sp": [
+    "D1",
+    "D3"
+   ]
+  },
+  {
+   "d": "2026-11-27",
+   "label": "27 Nov 2026",
+   "text": "Thailand draft requiring 80% reuse of cooling-tower discharge goes to the national data centre board",
+   "sp": [
+    "F1",
+    "F2"
+   ],
+   "note": "Date to be confirmed"
+  },
+  {
+   "d": "2026-11-29",
+   "label": "By 29 Nov 2026",
+   "text": "Spain: Cabinet approval of the data centre decree targeted before the general election",
+   "sp": [
+    "C2",
+    "E2"
+   ]
+  },
+  {
+   "d": "2026-12-09",
+   "label": "9 Dec 2026",
+   "text": "PJM 2029/30 capacity auction opens",
+   "sp": [
+    "A1"
+   ]
+  },
+  {
+   "d": "2026-12-10",
+   "label": "10 Dec 2026",
+   "text": "Texas statewide audit report on the large-load pause",
+   "sp": [
+    "A4"
+   ]
+  },
+  {
+   "d": "2026-12-22",
+   "label": "22 Dec 2026",
+   "text": "PJM 2029/30 auction results published",
+   "sp": [
+    "A1"
+   ]
+  },
+  {
+   "d": "2026-12-31",
+   "label": "Dec 2026 to Jan 2027",
+   "text": "2026 Long-Term Reliability Assessment published",
+   "sp": [
+    "A6"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-01-19",
+   "label": "19 Jan 2027",
+   "text": "New Texas governor takes office; new Congress sits in January",
+   "sp": [
+    "A4",
+    "D3"
+   ]
+  },
+  {
+   "d": "2027-02-28",
+   "label": "28 Feb 2027",
+   "text": "Federal suspension of the PJM backstop auction ends",
+   "sp": [
+    "A2"
+   ]
+  },
+  {
+   "d": "2027-03-01",
+   "label": "1 Mar 2027",
+   "text": "Proposed bid opening for the PJM backstop auction",
+   "sp": [
+    "A2"
+   ]
+  },
+  {
+   "d": "2027-03-10",
+   "label": "10 Mar 2027",
+   "text": "Korea's AI Data Centre Act enters into force",
+   "sp": [
+    "B1"
+   ]
+  },
+  {
+   "d": "2027-04-28",
+   "label": "28 Apr 2027",
+   "text": "PJM backstop target of about 6.8 gigawatts is reset",
+   "sp": [
+    "A2"
+   ]
+  },
+  {
+   "d": "2027-06-30",
+   "label": "Second quarter 2027",
+   "text": "European Union proposal on minimum performance standards",
+   "sp": [
+    "E1"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-07-01",
+   "label": "Mid-2027, earliest",
+   "text": "Johor's reported freeze on water-cooled builds ends",
+   "sp": [
+    "F2"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-07-31",
+   "label": "Jul 2027",
+   "text": "Oregon's data centre permit pause ends",
+   "sp": [
+    "D3"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-08-31",
+   "label": "Aug 2027",
+   "text": "European Union public water-efficiency labels start for sites of 500 kilowatts or more",
+   "sp": [
+    "E1",
+    "E4"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-09-30",
+   "label": "2027 dry season",
+   "text": "Test of commercial water supply in India's main hubs",
+   "sp": [
+    "F1"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2028-12-31",
+   "label": "2028",
+   "text": "Korea regional connections checkpoint; first Texas 765 kilovolt lines late in the year",
+   "sp": [
+    "B2"
+   ],
+   "fuzzy": true,
+   "note": "The Texas lines are a driver for the North America power call"
+  },
+  {
+   "d": "2029-08-31",
+   "label": "Aug 2029, earliest",
+   "text": "Kashiwazaki-Kariwa Unit 7 restart",
+   "sp": [
+    "B5"
+   ],
+   "fuzzy": true
+  }
+ ]
+}

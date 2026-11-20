@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Centre Signpost Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Layout: designed for a computer screen. A board of six call rows is the page;
+   each row opens in place to show its signposts. Calendar and method follow. */
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --ink:#111C2B; --muted:#5A6777; --rule:#DCE2E8;
+  --accent:#0A7F86;
+  --sev-3:#F2CECD; --sev-3-ink:#A32328;
+  --sev-2:#F6E3C1; --sev-2-ink:#7A4D10;
+  --sev-1:#D2E5E2; --sev-1-ink:#1F5E63;
+  --ease:#3D7A3A; --ease-bg:#DDEBD5; --pers:#3A4252; --pers-bg:#E3E6EC; --int:#A32B2B; --int-bg:#F6D7D7;
+  --head:#151B3D; --gfill:#9AA5B8;
+  --good:#1B2A5C; --good-bg:#E4E8F3;
+  --bad:#C0342F;  --bad-bg:#FBE9E7;
+  --none-bg:#EEF1F4;
+  --font:"Schibsted Grotesk",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E141B; --surface:#161E28; --ink:#E9EEF3; --muted:#9BA8B6; --rule:#2A3643;
+    --accent:#4FC3C9;
+    --sev-3:#5A2326; --sev-3-ink:#F8CFCD;
+    --sev-2:#5A431C; --sev-2-ink:#F5DFB4;
+    --sev-1:#1F4447; --sev-1-ink:#C3E3E0;
+    --ease:#9FD49A; --ease-bg:#1F3320; --pers:#C3CAD6; --pers-bg:#252E3A; --int:#F2A3A3; --int-bg:#3D2020;
+    --head:#232B5C; --gfill:#6C7A90;
+    --good:#AEBBF2; --good-bg:#232C4A;
+    --bad:#F0736C;  --bad-bg:#3A1B1A;
+    --none-bg:#1F2935;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E141B; --surface:#161E28; --ink:#E9EEF3; --muted:#9BA8B6; --rule:#2A3643;
+  --accent:#4FC3C9;
+  --sev-3:#5A2326; --sev-3-ink:#F8CFCD;
+  --sev-2:#5A431C; --sev-2-ink:#F5DFB4;
+  --sev-1:#1F4447; --sev-1-ink:#C3E3E0;
+  --ease:#9FD49A; --ease-bg:#1F3320; --pers:#C3CAD6; --pers-bg:#252E3A; --int:#F2A3A3; --int-bg:#3D2020;
+  --head:#232B5C; --gfill:#6C7A90;
+  --good:#AEBBF2; --good-bg:#232C4A;
+  --bad:#F0736C;  --bad-bg:#3A1B1A;
+  --none-bg:#1F2935;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:1320px;margin:0 auto;padding:40px 40px 72px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(28px,5.2vw,44px);line-height:1.08;font-weight:800;letter-spacing:-0.02em;text-wrap:balance;max-width:18ch}
+h2{font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-0.01em}
+.lede{color:var(--muted);max-width:62ch;margin-top:14px;font-size:17px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:18px;color:var(--muted);font-size:14px}
+.meta b{color:var(--ink);font-weight:600}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{margin-top:44px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:14px;max-width:60ch}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin-bottom:12px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+/* severity chips: one hue, darker means more severe */
+.chip{display:inline-block;font-size:13px;font-weight:600;line-height:1;padding:7px 12px;border-radius:4px;white-space:nowrap;min-width:82px;text-align:center}
+.sev-Severe{background:var(--sev-3);color:var(--sev-3-ink)}
+.sev-Moderate{background:var(--sev-2);color:var(--sev-2-ink)}
+.sev-Minor{background:var(--sev-1);color:var(--sev-1-ink)}
+
+/* board */
+.board{background:var(--surface);border:1px solid var(--rule);border-radius:14px;overflow:hidden}
+.board>*+*{border-top:1px solid var(--rule)}
+.board-head{background:var(--head);color:#fff;font-size:13.5px;font-weight:700;padding:10px 18px}
+.band{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 18px}
+.band.Easing{background:var(--ease-bg);color:var(--ease)}
+.band.Persisting{background:var(--pers-bg);color:var(--pers)}
+.band.Intensifying{background:var(--int-bg);color:var(--int)}
+.hm{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:6px 18px 16px}
+.hm table{min-width:680px}
+.hm th.c{text-align:center;color:var(--ink);font-size:14px;border-bottom:3px solid var(--head)}
+.hm th.c small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.hm td{vertical-align:middle;padding:6px 6px 6px 0}
+.hm td.c{text-align:center}
+.hm td small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.hm td.pct{color:var(--ink);font-weight:600}
+.pair{display:inline-flex;align-items:center;gap:5px;padding:4px;border:2px dashed transparent;border-radius:6px;color:var(--muted)}
+.pair .chip{min-width:76px;padding:7px 8px}
+.pair.Easing{border-color:var(--ease)}.pair.Persisting{border-color:var(--pers)}.pair.Intensifying{border-color:var(--int)}
+.hm-key{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:13px;color:var(--muted)}
+.hm-key span{display:inline-flex;align-items:center;gap:6px}
+.hm-key i{font-style:normal;font-weight:600;color:var(--ink);border:2px dashed;border-radius:5px;padding:1px 7px}
+.call-head{all:unset;box-sizing:border-box;display:grid;width:100%;cursor:pointer;padding:18px 18px;gap:14px 20px;
+  grid-template-columns:1fr 24px;grid-template-areas:"name chev" "shift shift" "tally tally" "next next"}
+.call-head:hover{background:var(--none-bg)}
+.c-name{grid-area:name}.c-shift{grid-area:shift}.c-tally{grid-area:tally}.c-next{grid-area:next}.c-chev{grid-area:chev;justify-self:end}
+.c-name strong{display:block;font-size:19px;font-weight:700;letter-spacing:-0.01em;line-height:1.2}
+.c-name em{font-style:normal;color:var(--muted);font-size:15px}
+.flag{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;font-weight:700;color:var(--bad);background:var(--bad-bg);border-radius:6px;padding:4px 8px}
+.shift{display:flex;align-items:center;gap:8px}
+.shift svg{flex:none;color:var(--muted)}
+.small{display:block;font-size:12.5px;color:var(--muted);margin-top:6px}
+.tally{display:flex;gap:4px;align-items:center}
+.sq{width:14px;height:14px;border-radius:3px;border:1.5px solid var(--muted);background:transparent}
+.sq.supports{background:var(--good);border-color:var(--good)}
+.sq.challenges{background:var(--bad);border-color:var(--bad)}
+.c-next b{display:block;font-size:14px;font-weight:600;line-height:1.3}
+.chev{transition:transform .15s;color:var(--muted)}
+.call-head[aria-expanded="true"] .chev{transform:rotate(180deg)}
+@media (min-width:860px){
+  .call-head{grid-template-columns:1.35fr 1.25fr .9fr 1.2fr 24px;grid-template-areas:"name shift tally next chev";align-items:center;padding:20px 22px}
+}
+@media (prefers-reduced-motion:reduce){.chev{transition:none}}
+
+/* signposts */
+.call-body{border-top:1px solid var(--rule);background:var(--bg);padding:18px 22px 22px}
+.call-body[hidden]{display:none}
+.depends{font-size:14.5px;color:var(--muted);max-width:110ch;margin:0 4px 14px}
+.depends b{color:var(--ink);font-weight:600}
+.sps{display:grid;gap:12px;align-items:start}
+@media (min-width:1100px){.sps{grid-template-columns:1fr 1fr}}
+.sp{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px}
+.sp-top{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:flex-start;justify-content:space-between}
+.sp-title{display:flex;gap:10px;align-items:baseline;min-width:0}
+.sp-id{font-weight:700;color:var(--muted);font-size:14px;flex:none}
+.sp-title h3{font-size:16.5px;font-weight:650;line-height:1.3}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;border-radius:999px;padding:4px 10px 4px 8px;white-space:nowrap;background:var(--none-bg);color:var(--muted)}
+.pill.supports{background:var(--good-bg);color:var(--good)}
+.pill.challenges{background:var(--bad-bg);color:var(--bad)}
+.pill i{font-style:normal;font-weight:800}
+.facts{display:grid;gap:10px 24px;margin-top:12px;grid-template-columns:1fr}
+@media (min-width:700px){.facts{grid-template-columns:1.4fr 1fr}}
+.fact span{display:block;font-size:12.5px;color:var(--muted)}
+.fact p{font-size:14.5px;line-height:1.4}
+.verify{color:var(--bad);font-weight:600;font-size:12.5px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:12px;color:var(--muted);border:1px solid var(--rule);border-radius:5px;padding:2px 7px}
+details.more{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px}
+details.more summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--accent);list-style:none}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:" +"}
+details.more[open] summary::after{content:" \2212"}
+details.more dl{margin:10px 0 0;display:grid;gap:10px}
+details.more dt{font-size:12.5px;color:var(--muted)}
+details.more dd{margin:0;font-size:14.5px;line-height:1.45;max-width:75ch}
+
+/* gauge: latest reading against the trigger */
+.gauge{margin-top:14px;max-width:440px}
+.g-label{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--muted)}
+.g-label b{color:var(--ink);font-weight:600}
+.g-svg{display:block;width:100%;height:auto;margin-top:4px;overflow:visible}
+.g-track{stroke:var(--rule);stroke-width:6;stroke-linecap:round}
+.g-fill{stroke:var(--gfill);stroke-width:6;stroke-linecap:round}
+.g-dot{fill:var(--ink);stroke:var(--surface);stroke-width:2}
+.g-trig{stroke:var(--accent);stroke-width:2}
+.g-ref{stroke:var(--accent);stroke-width:6;stroke-linecap:round;opacity:.45}
+.g-axis{font-size:11px;fill:var(--muted);font-family:var(--font)}
+
+/* calendar */
+.cal{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:6px 18px}
+.cal h3{font-size:13.5px;font-weight:700;color:var(--muted);padding:16px 0 4px}
+.ev{display:grid;grid-template-columns:104px 1fr;gap:4px 16px;padding:12px 0;border-top:1px solid var(--rule)}
+.cal h3+.ev{border-top:0}
+.ev-date b{display:block;font-size:14.5px;font-weight:700;line-height:1.3}
+.ev-date span{font-size:12.5px;color:var(--muted)}
+.ev-date span.due{color:var(--bad);font-weight:600}
+.ev p{font-size:15px;line-height:1.4}
+.ev .refs{font-size:12.5px;color:var(--muted);margin-top:3px}
+@media (min-width:700px){.ev{grid-template-columns:200px 1fr}}
+.src{font-size:12.5px;color:var(--muted)}
+.src a{color:var(--accent);font-weight:600}
+.load-err{border:1px solid var(--bad);color:var(--bad);border-radius:10px;padding:12px 14px;margin-top:20px;font-size:14px}
+
+/* method */
+.method{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:800px){.method{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:18px}
+.card h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.card p,.card li{font-size:14.5px;color:var(--muted);line-height:1.5}
+.card ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.card b{color:var(--ink);font-weight:600}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12.5px;color:var(--muted);font-weight:600}
+td{color:var(--muted)} td:first-child{color:var(--ink);font-weight:600}
+footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Where power, water and land redirect the data centre build-out</h1>
+    <p class="lede">Six calls on how physical constraints shape artificial intelligence (AI) data centre growth, and the 24 signposts that would confirm or overturn them.</p>
+    <div class="meta">
+      <span id="asof"></span>
+      <span><b>24</b> signposts across <b>6</b> calls</span>
+    </div>
+    <div id="loaderr"></div>
+  </header>
+
+  <section aria-labelledby="h-calls">
+    <div class="sec-head">
+      <h2 id="h-calls">The six calls</h2>
+      <p>Select a call to see its signposts.</p>
+    </div>
+    <div class="legend">
+      <span><span class="chip sev-Severe">Severe</span><span class="chip sev-Moderate">Moderate</span><span class="chip sev-Minor">Minor</span> severity rating</span>
+      <span><span class="sq supports"></span> supports the call</span>
+      <span><span class="sq challenges"></span> challenges the call</span>
+      <span><span class="sq"></span> no signal yet</span>
+    </div>
+    <div class="board" id="board"></div>
+  </section>
+
+  <section aria-labelledby="h-heat">
+    <div class="sec-head">
+      <h2 id="h-heat">Where the constraints bind</h2>
+      <p>All eight regions, weighted by 2025 installed data centre capacity. Dashed boxes mark the six calls.</p>
+    </div>
+    <div class="hm"><div class="tbl-wrap" id="heat"></div>
+      <div class="hm-key">
+        <span><i style="border-color:var(--ease)">Eases</i> rating falls after 2030</span>
+        <span><i style="border-color:var(--pers)">Persists</i> stays Severe after 2030</span>
+        <span><i style="border-color:var(--int)">Intensifies</i> rating rises after 2030</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-cal">
+    <div class="sec-head">
+      <h2 id="h-cal">Catalyst calendar</h2>
+      <p>Dated events that will move a signpost. Dates are confirmed against primary sources as each signpost is verified.</p>
+    </div>
+    <div class="cal" id="cal"></div>
+  </section>
+
+  <section aria-labelledby="h-method">
+    <div class="sec-head"><h2 id="h-method">How to read this</h2></div>
+    <div class="method">
+      <div class="card">
+        <h3>Ratings</h3>
+        <div class="tbl-wrap"><table>
+          <tr><th>Rating</th><th>Meaning</th></tr>
+          <tr><td>Severe</td><td>Likely to delay or re-route deployment at scale</td></tr>
+          <tr><td>Moderate</td><td>Adds cost or time, but manageable with mitigation</td></tr>
+          <tr><td>Minor</td><td>Not a differentiating constraint</td></tr>
+        </table></div>
+        <p style="margin-top:10px">Up to 2030, ratings are capped by what is built, under construction or firmly planned. Beyond 2030, they depend on whether mitigation is delivered.</p>
+      </div>
+      <div class="card">
+        <h3>Signpost status</h3>
+        <div class="tbl-wrap"><table>
+          <tr><th>Call type</th><th>Supports the call when</th><th>Challenges the call when</th></tr>
+          <tr><td>Easing</td><td>The easing is confirmed</td><td>The rating risks reverting to Severe</td></tr>
+          <tr><td>Persisting</td><td>The constraint holds</td><td>There is a case for lowering severity</td></tr>
+          <tr><td>Intensifying</td><td>The intensification is confirmed</td><td>The intensification is contained</td></tr>
+        </table></div>
+        <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one of its signposts challenges it. Ratings change only after a manual review.</p>
+      </div>
+      <div class="card">
+        <h3>How the data refreshes</h3>
+        <ul>
+          <li><b>Time series (5):</b> refreshed from published data on a schedule.</li>
+          <li><b>Events (19):</b> logged when a decision, ruling or filing lands.</li>
+          <li>Every verified reading links to its primary source and retrieval date. Readings without a link are marked as not yet verified.</li>
+          <li>New readings publish automatically. A change of status waits for a manual review.</li>
+          <li>Paid sources are listed but switched off in this version.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Open data issues</h3>
+        <ul>
+          <li><b>Johor reserve margin:</b> about 12.8% and 14.4% are both cited, on different bases. One basis must be chosen.</li>
+          <li><b>Texas "approved to energise":</b> two definitions give different figures. The definition must be fixed before the series is built.</li>
+          <li><b>History charts</b> for the five time series arrive with the seed data.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* Data lives in data/*.json. preview.html carries the same data inline (window.__DATA__)
+   so it opens by double-click; it is generated by scripts/build_preview.py. */
+const el = (id) => document.getElementById(id);
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const day = (s) => new Date(s + "T00:00:00Z");
+const fmt = (s) => day(s).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
+const now = new Date();
+const TODAY = now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
+let CALLS = [], EVENTS = [], HEAT = [];
+
+function stance(dir, status){
+  if (status === "none" || !status) return "none";
+  if (dir === "Easing") return status === "pos" ? "supports" : "challenges";
+  return status === "pos" ? "challenges" : "supports";
+}
+const STANCE_TEXT = {supports:"Supports call", challenges:"Challenges call", none:"No signal yet"};
+const STANCE_ICON = {supports:"✓", challenges:"!", none:"–"};
+const TRIGGER_TERM = {pos:"Turned positive", neg:"Turned negative", none:"Not yet"};
+const statusOf = (sp) => sp.status || "none";
+const safeUrl = (u) => /^https:\/\//.test(u || "") ? u : null;
+
+function nextFor(call){
+  const ids = call.sps.map(s => s.id);
+  return EVENTS.find(e => e.d >= TODAY && e.sp.some(x => ids.includes(x)));
+}
+
+function gauge(g){
+  const W = 300, x = v => 6 + (W - 12) * (v - g.min) / (g.max - g.min);
+  let marks = `<line class="g-track" x1="6" y1="10" x2="${W-6}" y2="10"/>`;
+  if (g.ref) marks += `<line class="g-ref" x1="${x(g.ref[0])}" y1="10" x2="${x(g.ref[1])}" y2="10"/>`;
+  if (g.range) marks += `<line class="g-fill" x1="${x(g.range[0])}" y1="10" x2="${x(g.range[1])}" y2="10"/><circle class="g-dot" cx="${x((g.range[0]+g.range[1])/2)}" cy="10" r="5"/>`;
+  else marks += `<line class="g-fill" x1="6" y1="10" x2="${x(g.value)}" y2="10"/><circle class="g-dot" cx="${x(g.value)}" cy="10" r="5"/>`;
+  if (g.trig != null) marks += `<line class="g-trig" x1="${x(g.trig)}" y1="1" x2="${x(g.trig)}" y2="19"/>`;
+  marks += `<text class="g-axis" x="6" y="32">${g.min}${esc(g.unit)}</text><text class="g-axis" x="${W-6}" y="32" text-anchor="end">${g.max}${esc(g.unit)}</text>`;
+  return `<div class="gauge" role="img" aria-label="${esc(g.label)}: ${esc(g.vText)}, ${esc(g.tText)}">
+    <div class="g-label"><span>${esc(g.label)} <b>${esc(g.vText)}</b></span><span style="color:var(--accent);font-weight:600">${esc(g.tText)}</span></div>
+    <svg class="g-svg" viewBox="0 0 ${W} 34">${marks}</svg></div>`;
+}
+
+function signpost(sp, call){
+  const st = statusOf(sp), s = stance(call.dir, st), url = safeUrl(sp.source_url);
+  const src = url
+    ? `<span class="src"><a href="${esc(url)}" target="_blank" rel="noopener">Primary source</a>${sp.retrieved_on ? " · retrieved " + esc(fmt(sp.retrieved_on)) : ""}</span>`
+    : `<span class="verify">Not yet verified against a primary source</span>`;
+  return `<article class="sp">
+    <div class="sp-top">
+      <div class="sp-title"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3></div>
+      <span class="pill ${s}"><i>${STANCE_ICON[s]}</i>${STANCE_TEXT[s]}</span>
+    </div>
+    <div class="facts">
+      <div class="fact"><span>Latest reading${sp.latestDate ? " · " + esc(sp.latestDate) : ""}</span><p>${esc(sp.latest)}</p>${src}${sp.verify ? `<br><span class="verify">To verify: ${esc(sp.verify)}</span>` : ""}</div>
+      <div class="fact"><span>Next date</span><p>${esc(sp.next)}</p></div>
+    </div>
+    ${sp.gauge ? gauge(sp.gauge) : ""}
+    <details class="more"><summary>Trigger and sources</summary>
+      <dl>
+        <div><dt>What we track</dt><dd>${esc(sp.track)}</dd></div>
+        <div><dt>Trigger</dt><dd>${esc(sp.trigger)}</dd></div>
+        <div><dt>Status against the trigger</dt><dd>${TRIGGER_TERM[st]}</dd></div>
+        <div><dt>Sources</dt><dd>${esc(sp.sources)}</dd></div>
+      </dl>
+      <div class="tags"><span class="tag">${esc(sp.type)}</span><span class="tag">${esc(sp.feed)}</span></div>
+    </details>
+  </article>`;
+}
+
+const ARROW = `<svg width="9" height="12" viewBox="0 0 9 12" aria-hidden="true"><path d="M2.5 2 6.5 6 2.5 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const BANDS = {Easing:"Easing after 2030", Persisting:"Persisting beyond 2030", Intensifying:"Intensifying after 2030"};
+const S = "Severe";
+function renderHeat(){
+  const rank = {Minor:1, Moderate:2, Severe:3};
+  const cell = ([a,b]) => {
+    const d = rank[b] < rank[a] ? "Easing" : rank[b] > rank[a] ? "Intensifying" : a === S ? "Persisting" : "";
+    return `<td class="c"><span class="pair ${d}"><span class="chip sev-${esc(a)}">${esc(a)}</span>${a !== b ? ARROW : `<span style="width:9px"></span>`}<span class="chip sev-${esc(b)}">${esc(b)}</span></span></td>`;
+  };
+  const th = n => `<th class="c">${n}<small>2026–30, then beyond 2030</small></th>`;
+  el("heat").innerHTML = `<table><tr><th>Key region</th><th>Share of capacity</th>${th("Power")}${th("Water")}${th("Land")}</tr>` +
+    HEAT.map(r => `<tr><td>${esc(r.name)}${r.sub ? `<small>${esc(r.sub)}</small>` : ""}</td><td class="pct">${esc(r.share)}%</td>${cell(r.power)}${cell(r.water)}${cell(r.land)}</tr>`).join("") + `</table>`;
+}
+const CHEV = `<svg class="chev" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5 10 12.5 15 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+
+const open = new Set(["A"]);
+function renderBoard(){
+  let lastDir = "";
+  el("board").innerHTML = `<div class="board-head">Region and constraint, rating shift, signposts and next catalyst</div>` + CALLS.map(c => {
+    const band = c.dir !== lastDir ? `<div class="band ${esc(c.dir)}">${BANDS[c.dir]}</div>` : ""; lastDir = c.dir;
+    const stances = c.sps.map(sp => stance(c.dir, statusOf(sp)));
+    const ch = stances.filter(s => s === "challenges").length, su = stances.filter(s => s === "supports").length;
+    const review = ch >= 1; /* owner's rule: any one challenging signpost flags the call */
+    const tallyText = (ch || su) ? `${su} support, ${ch} challenge, ${c.sps.length - su - ch} no signal` : `${c.sps.length} signposts, no signal yet`;
+    const nx = nextFor(c), isOpen = open.has(c.id);
+    return band + `<div class="call">
+      <button class="call-head" aria-expanded="${isOpen}" aria-controls="body-${esc(c.id)}" data-id="${esc(c.id)}">
+        <span class="c-name"><strong>${esc(c.region)}</strong><em>${esc(c.constraint)}</em>
+          ${review ? `<br><span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</span>
+        <span class="c-shift"><span class="shift"><span class="chip sev-${esc(c.from)}">${esc(c.from)}</span>${ARROW}<span class="chip sev-${esc(c.to)}">${esc(c.to)}</span></span>
+          <span class="small">2026–30 to beyond 2030</span></span>
+        <span class="c-tally"><span class="tally" role="img" aria-label="${tallyText}">${stances.map(s => `<span class="sq ${s === "none" ? "" : s}"></span>`).join("")}</span>
+          <span class="small">${tallyText}</span></span>
+        <span class="c-next">${nx ? `<b>${esc(nx.text)}</b><span class="small">Next catalyst · ${esc(nx.label)}</span>` : `<span class="small">No dated catalyst</span>`}</span>
+        <span class="c-chev">${CHEV}</span>
+      </button>
+      <div class="call-body" id="body-${esc(c.id)}" ${isOpen ? "" : "hidden"}>
+        <p class="depends"><b>${esc(c.key.label)}:</b> ${esc(c.key.text)}</p>
+        <p class="depends"><b>What the call depends on.</b> ${esc(c.depends)}</p>
+        <div class="sps">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderCal(){
+  const today = day(TODAY), groups = {past:[], soon:[], later:[]};
+  EVENTS.forEach(e => {
+    const diff = Math.round((day(e.d) - today) / 864e5);
+    (diff < 0 ? groups.past : diff <= 45 ? groups.soon : groups.later).push({...e, diff});
+  });
+  const row = (e, kind) => {
+    let sub = "";
+    if (kind === "past") sub = e.outcome ? "" : `<span class="due">Outcome to log</span>`;
+    else if (kind === "soon" && !e.fuzzy) sub = `<span>${e.diff === 0 ? "Today" : "In " + e.diff + (e.diff === 1 ? " day" : " days")}</span>`;
+    return `<div class="ev"><div class="ev-date"><b>${esc(e.label)}</b>${sub}</div>
+      <div><p>${esc(e.text)}</p>${e.outcome ? `<p class="refs"><b>Outcome:</b> ${esc(e.outcome)}</p>` : ""}<div class="refs">Signposts ${esc(e.sp.join(", "))}${e.note ? " · " + esc(e.note) : ""}</div></div></div>`;
+  };
+  el("cal").innerHTML =
+    `<h3>Passed</h3>${groups.past.map(e => row(e,"past")).join("")}` +
+    `<h3>Next six weeks</h3>${groups.soon.map(e => row(e,"soon")).join("")}` +
+    `<h3>Further out</h3>${groups.later.map(e => row(e,"later")).join("")}`;
+}
+
+el("board").addEventListener("click", ev => {
+  const b = ev.target.closest(".call-head"); if (!b) return;
+  const id = b.dataset.id; open.has(id) ? open.delete(id) : open.add(id);
+  renderBoard();
+  const again = document.querySelector(`.call-head[data-id="${id}"]`); if (again) again.focus();
+});
+
+async function load(){
+  if (window.__DATA__) return window.__DATA__;
+  const get = (f) => fetch("data/" + f, {cache:"no-cache"}).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
+  const [signposts, calendar, heatmap] = await Promise.all([get("signposts.json"), get("calendar.json"), get("heatmap.json")]);
+  return {signposts, calendar, heatmap};
+}
+load().then(d => {
+  CALLS = d.signposts.calls; EVENTS = d.calendar.events; HEAT = d.heatmap.regions;
+  el("asof").innerHTML = d.signposts.last_refreshed
+    ? `Last refreshed <b>${esc(fmt(d.signposts.last_refreshed))}</b>`
+    : `<b>Not yet refreshed</b> from primary sources`;
+  renderBoard(); renderHeat(); renderCal();
+}).catch(() => {
+  el("loaderr").innerHTML = `<p class="load-err">The data files could not be loaded. If you opened this file directly from a folder, open preview.html instead.</p>`;
+});
+</script>
+</body>
+</html>

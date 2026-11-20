@@ -1,0 +1,140 @@
+{
+ "regions": [
+  {
+   "name": "North America",
+   "sub": "US and Canada",
+   "share": 45,
+   "power": [
+    "Severe",
+    "Moderate"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Severe",
+    "Severe"
+   ]
+  },
+  {
+   "name": "China",
+   "sub": "",
+   "share": 27,
+   "power": [
+    "Minor",
+    "Minor"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Minor",
+    "Minor"
+   ]
+  },
+  {
+   "name": "Europe",
+   "sub": "For example Frankfurt, London, Amsterdam, Paris, Dublin",
+   "share": 13,
+   "power": [
+    "Severe",
+    "Severe"
+   ],
+   "water": [
+    "Minor",
+    "Moderate"
+   ],
+   "land": [
+    "Moderate",
+    "Moderate"
+   ]
+  },
+  {
+   "name": "South and Southeast Asia",
+   "sub": "India and Southeast Asia",
+   "share": 5,
+   "power": [
+    "Moderate",
+    "Moderate"
+   ],
+   "water": [
+    "Moderate",
+    "Severe"
+   ],
+   "land": [
+    "Moderate",
+    "Moderate"
+   ]
+  },
+  {
+   "name": "North Asia excluding China",
+   "sub": "Japan, Korea",
+   "share": 4,
+   "power": [
+    "Severe",
+    "Moderate"
+   ],
+   "water": [
+    "Minor",
+    "Minor"
+   ],
+   "land": [
+    "Moderate",
+    "Moderate"
+   ]
+  },
+  {
+   "name": "Latin America",
+   "sub": "For example Brazil, Mexico, Chile",
+   "share": 2,
+   "power": [
+    "Moderate",
+    "Moderate"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Moderate",
+    "Moderate"
+   ]
+  },
+  {
+   "name": "Australia",
+   "sub": "",
+   "share": 1,
+   "power": [
+    "Moderate",
+    "Moderate"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Moderate",
+    "Moderate"
+   ]
+  },
+  {
+   "name": "Middle East",
+   "sub": "",
+   "share": 1,
+   "power": [
+    "Moderate",
+    "Moderate"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Minor",
+    "Minor"
+   ]
+  }
+ ]
+}

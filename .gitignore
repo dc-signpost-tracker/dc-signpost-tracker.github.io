@@ -1,0 +1,7 @@
+# Private working notes and generated files stay out of the repository
+docs/
+HANDOVER.md
+CLAUDE.md
+preview.html
+__pycache__/
+.env
