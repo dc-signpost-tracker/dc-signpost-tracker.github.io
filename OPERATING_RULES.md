@@ -25,6 +25,11 @@ Each signpost in `data/signposts.json` has `latest` (plain-language reading),
 
 - `source_url` is set **only** when the linked document was opened and read directly.
   A fact known only from press reports gets no `source_url`; say so in `verify`.
+- A US Federal Register document counts as read directly when the refresh script has
+  saved its passages with the inbox item (`excerpt`). They are the official text, word
+  for word, taken through the site's own programme interface because its web pages
+  refuse automated readers. Use the item's `url` as the `source_url`, and claim only
+  what the saved passages say.
 - Write readings in plain English. Spell out every acronym at first use.
 
 ## How the owner's rule on review flags works

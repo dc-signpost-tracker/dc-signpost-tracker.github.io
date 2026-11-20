@@ -152,14 +152,20 @@
      "track": "FERC orders on grid operators' responses to its June 2026 large-load orders, including data centres sited at power plants.",
      "trigger": "Positive if FERC approves workable rules.",
      "status": "none",
-     "latest": "Five of the six grid operators filed their large-load proposals by the 16 Nov deadline; Southwest Power Pool's deadline is 20 Nov. The Federal Energy Regulatory Commission (FERC) has not yet ruled.",
-     "latestDate": "16 Nov 2026",
-     "source_url": "https://www.pjm.com/-/media/DotCom/documents/ferc/orders/2026/20260921-el26-67-001.pdf",
+     "latest": "Grid operators have filed their large-load proposals. The Federal Register notice of 19 Nov 2026 lists filings made on 16 Nov by the California and New York grid operators and by PJM Interconnection's transmission owners, with comments due 7 Dec. Southwest Power Pool's deadline is 20 Nov. The Federal Energy Regulatory Commission (FERC) has not yet ruled.",
+     "latestDate": "19 Nov 2026 notice",
+     "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
      "retrieved_on": "2026-11-20",
-     "next": "Replies to the filings due 16 Dec 2026; then a FERC ruling",
+     "next": "Comments on the 16 Nov filings due 7 Dec 2026; replies under the June orders due 16 Dec 2026; then a FERC ruling",
      "sources": "FERC eLibrary and open-meeting agendas; Federal Register",
-     "history": [],
-     "verify": "The linked order sets the schedule. That the filings were made is confirmed by press reports only (Utility Dive, POWER); the docket has not been checked directly.",
+     "history": [
+      {
+       "date": "2026-11-16",
+       "note": "Large-load filings by the California and New York grid operators and PJM's transmission owners, listed in the Federal Register notice of 19 Nov 2026",
+       "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1"
+      }
+     ],
+     "verify": "The linked notice confirms the 16 Nov filings it lists and the 7 Dec comment date. The filings by the New England and Midwest grid operators and by PJM itself, and the absence of a ruling, are from press reports (POWER, 19 Nov). Whether Southwest Power Pool filed on 20 Nov is not yet confirmed.",
      "status_reviewed_on": "2026-11-20"
     },
     {

@@ -37,6 +37,11 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Morning digest:** a scheduled task sweeps all 24 signposts every morning. Unattended,
   it may update a reading only when the status is unchanged and it read the primary
   document itself. Phone notification only.
+- **Federal Register passages:** the refresh script saves the passages of each Federal
+  Register document that mention the subject with its inbox item. A passage saved this
+  way counts as reading the primary document directly.
+- **Decision cards:** put each decision as a card with several options, the
+  recommended option first, and room for a free-text answer.
 - **Paid sources:** listed, switched off.
 - **Johor reserve margin:** lead with the official statewide 14.4%; mention the 12.8%
   brokerage estimate.
