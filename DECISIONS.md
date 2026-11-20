@@ -142,8 +142,15 @@ commit and push. Signpost statuses are not logged here; they live in
 - **"How to read this"** keeps two boxes only: Ratings and Signpost status. "How the data
   refreshes" and "Open data issues" were removed at the owner's request.
 
+## Go-live (20 Nov 2026, evening)
+
+- The owner said "go live". The repository moved to the organisation
+  `dc-signpost-tracker` and was renamed `dc-signpost-tracker.github.io`. It is public and
+  served by GitHub Pages from branch `main` at https://dc-signpost-tracker.github.io/
+- Every push to `main` now publishes to the public site within a minute or two.
+- The morning digest task points at the new repository name.
+
 ## Open
 
-- The owner has design comments to give on making the site more intuitive.
 - Seven readings still need checking at their primary source (`data/followups.json`).
 - History charts, the rules file and feeds for most signposts are not built.
