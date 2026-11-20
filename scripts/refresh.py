@@ -4,6 +4,9 @@ What this does
 - Runs each source that is enabled and has a fetcher.
 - Adds any document not seen before to data/inbox.json, marked "new", with its link,
   publication date and retrieval date.
+- Where a feed supplies the document's plain text (the US Federal Register does), saves
+  the passages that mention the subject with the inbox item, as "excerpt", word for
+  word, so the item can be reviewed without opening the web page.
 - Records how each feed went in data/refresh_status.json.
 - Stamps data/signposts.json with the date of the run ("Last refreshed" on the site).
 
@@ -15,10 +18,20 @@ Run from the repository root:  python scripts/refresh.py
 """
 import sys
 
-from common import Skip, load, save, today
+from common import Skip, get_text, load, passages, save, today
 from feeds import boe, federal_register, sec_edgar
 
 FETCHERS = {"federal_register": federal_register.fetch, "sec_edgar": sec_edgar.fetch, "boe": boe.fetch}
+
+
+def add_excerpt(item, text_url, terms):
+    """Save the passages of the official text that mention the subject. Never fatal."""
+    try:
+        item["excerpt"] = passages(get_text(text_url), terms)
+        item["excerpt_from"] = text_url
+        item.pop("excerpt_error", None)
+    except Exception as error:
+        item["excerpt_error"] = f"{type(error).__name__}: {str(error)[:200]}"
 
 
 def main():
@@ -26,6 +39,7 @@ def main():
     sources = load("sources.json")["sources"]
     inbox = load("inbox.json", {"items": []})
     seen = {item["url"] for item in inbox["items"]}
+    by_url = {item["url"]: item for item in inbox["items"]}
     feeds, any_ok, any_failed = {}, False, False
 
     for source in sources:
@@ -42,11 +56,19 @@ def main():
             continue
         new = 0
         for item in found:
+            text_url, terms = item.pop("text_url", None), item.pop("terms", None)
             if item["url"] in seen:
+                waiting = by_url.get(item["url"])  # filed earlier, not yet reviewed, no passages saved
+                if text_url and waiting and waiting["state"] == "new" and "excerpt" not in waiting:
+                    add_excerpt(waiting, text_url, terms)
                 continue
             seen.add(item["url"])
-            inbox["items"].append({**item, "source": source["id"], "signposts": source["signposts"],
-                                   "retrieved_on": run_on, "state": "new"})
+            entry = {**item, "source": source["id"], "signposts": source["signposts"],
+                     "retrieved_on": run_on, "state": "new"}
+            if text_url:
+                add_excerpt(entry, text_url, terms)
+            inbox["items"].append(entry)
+            by_url[entry["url"]] = entry
             new += 1
         feeds[source["id"]] = {"state": "ok", "found": len(found), "new": new}
         any_ok = True
