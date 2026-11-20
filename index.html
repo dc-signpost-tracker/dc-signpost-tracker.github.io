@@ -172,7 +172,9 @@ section{margin-top:30px}
 @media (min-width:900px){.why{grid-template-columns:1fr 1.4fr}}
 .why b{display:block;color:var(--ink);font-size:13px;margin-bottom:7px}
 .pts{list-style:none;margin:0;padding:0;display:grid;gap:7px}
-.pts li{padding-left:11px;border-left:3px solid var(--rule);line-height:1.4}
+.pts li{position:relative;padding-left:17px;line-height:1.4}
+.pts li::before{content:"";position:absolute;left:1px;top:.5em;width:7px;height:7px;border-radius:50%;background:var(--muted)}
+.why.Easing .pts li::before{background:var(--ease)}.why.Persisting .pts li::before{background:var(--pers)}.why.Intensifying .pts li::before{background:var(--int)}
 .cols{display:grid;gap:22px;margin-top:24px;align-items:start;grid-template-columns:1fr}
 @media (min-width:1100px){.cols{grid-template-columns:1fr 340px}}
 
@@ -408,7 +410,7 @@ function tileHTML(e){
     ? `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d yr">${y}</div></div>`
     : `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d">${d}</div><div class="y">${y}</div></div>`;
 }
-/* one point per line, each behind a vertical bar, so separate statements do not run together */
+/* one point per line, each with a round bullet in the call's direction colour, so separate statements do not run together */
 function points(text, sep){
   const parts = String(text || "").split(sep).map(x => x.trim().replace(/\.$/, "")).filter(Boolean);
   /* a fragment of one or two words ("Local consent") is a lead-in, not a point: join it to the next */
@@ -437,7 +439,7 @@ function renderBoard(){
           <div class="key"><span><i class="supports"></i>supports the call</span><span><i class="challenges"></i>challenges the call</span><span><i></i>no signal yet</span></div></div>
         <div class="b-next">${nx ? `${tileHTML(nx)}<div><small>Next catalyst${plainDate(nx) ? "" : " · " + esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p></div>` : `<small>No dated catalyst</small>`}</div>
       </div>
-      <div class="why"><div><b>${esc(c.key.label)}</b>${points(c.key.text, /;\s+/)}</div><div><b>What the call depends on</b>${points(c.depends, /(?<=\.)\s+(?=[A-Z])/)}</div></div>
+      <div class="why ${esc(c.dir)}"><div><b>${esc(c.key.label)}</b>${points(c.key.text, /;\s+/)}</div><div><b>What the call depends on</b>${points(c.depends, /(?<=\.)\s+(?=[A-Z])/)}</div></div>
       <div class="cols">
         <div class="sps ${esc(c.dir)}">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
         ${calendarFor(c)}

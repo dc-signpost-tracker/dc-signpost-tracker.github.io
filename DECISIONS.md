@@ -128,7 +128,8 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Calendar notes** sit on their own "Note:" line, not after "Relevant for".
 
 - **Banner key** is 10px. **"Watch for" and "What the call depends on":** each statement
-  sits on its own line behind a vertical bar; the owner found the run-on text hard to read.
+  sits on its own line with a round bullet in the call's direction colour (vertical bars
+  were tried and the owner found them confusing).
 
 - **A3 Turbine supply** must say on the card that the figure is GE Vernova only, one
   maker tracked as an illustration of the wider market. Keep this wording when the
