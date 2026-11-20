@@ -116,9 +116,11 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Calendar rail:** the countdown ("in 19 days") is italic and not bold, to separate it
   from the date. Each event ends with an italic line "Relevant for: Signpost A1 Capacity
   auctions" (several signposts are listed with semicolons) in place of a bare label.
-- **Pending the owner's choice:** a tagline under the title, and a calendar-style
-  treatment for the banner's next catalyst.
-
+- **Tagline** under the title, in the owner's own wording: "The outlook for physical
+  constraint severity in select regions till 2030 and beyond, tested against 24 signposts".
+- **Next catalyst in the banner:** a tear-off calendar tile (month band in the call's
+  direction colour, day, year) beside the countdown and the event text. Built on the
+  recommended option because the owner left that card unanswered; he may still change it.
 
 ## Open
 

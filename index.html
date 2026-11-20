@@ -61,6 +61,7 @@ h2{font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-0.01em}
 .lede{color:var(--muted);max-width:62ch;margin-top:14px;font-size:17px}
 .meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px;color:var(--muted);font-size:12.5px;font-style:italic}
 .meta b{font-weight:500}
+.tagline{margin-top:8px;font-size:16.5px;line-height:1.4;color:var(--ink);opacity:.82}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 section{margin-top:30px}
 .sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:14px}
@@ -156,6 +157,13 @@ section{margin-top:30px}
 .banner .sq{width:34px;height:27px;border:1.5px solid var(--muted);border-radius:5px;font-size:11.5px;font-weight:700;display:grid;place-items:center;color:var(--ink);background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .banner .sq.supports{background:var(--good);border-color:var(--good);color:var(--surface)}
 .banner .sq.challenges{background:var(--bad);border-color:var(--bad);color:var(--surface)}
+.b-next{display:flex;gap:16px;align-items:center}
+.tile{width:74px;flex:none;border-radius:10px;overflow:hidden;background:var(--surface);box-shadow:0 1px 2px rgba(17,28,43,.1),0 4px 12px rgba(17,28,43,.1);text-align:center}
+.tile .m{color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;padding:4px 0}
+.banner.Easing .tile .m{background:#3D7A3A}.banner.Persisting .tile .m{background:#3A4252}.banner.Intensifying .tile .m{background:#A32B2B}
+.tile .d{font-size:30px;font-weight:800;line-height:1.1;padding:4px 0 0}
+.tile .d.yr{font-size:21px;padding:9px 0 9px}
+.tile .y{font-size:11px;color:var(--muted);padding-bottom:6px}
 .b-next small{color:var(--muted);font-size:12.5px;font-weight:600}
 .b-next .when{font-size:26px;font-weight:800;letter-spacing:-0.01em;line-height:1.15;margin-top:2px}
 .b-next p{font-size:15px;font-weight:600;margin-top:5px;line-height:1.35}
@@ -243,6 +251,7 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 <div class="wrap">
   <header>
     <h1>Where power, water and land redirect the data centre build-out</h1>
+    <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 24 signposts</p>
     <div class="meta">
       <span id="asof"></span>
     </div>
@@ -385,6 +394,14 @@ function tally(c){
   const text = (ch || su) ? `${su} support, ${ch} challenge, ${c.sps.length - su - ch} no signal` : `${c.sps.length} signposts, no signal yet`;
   return {stances, review: ch >= 1 /* owner's rule: any one challenging signpost flags the call */, text};
 }
+const MON = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+function plainDate(e){ return !e.fuzzy && /^\d{1,2} [A-Z][a-z]{2} \d{4}$/.test(e.label); }
+function tileHTML(e){
+  const [y, m, d] = e.d.split("-").map(Number);
+  return e.fuzzy
+    ? `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d yr">${y}</div></div>`
+    : `<div class="tile" aria-hidden="true"><div class="m">${MON[m - 1]}</div><div class="d">${d}</div><div class="y">${y}</div></div>`;
+}
 function renderBoard(){
   if (!current) current = (CALLS.find(c => slug(c) === location.hash.slice(1)) || CALLS[0]).id;
   const c = CALLS.find(x => x.id === current) || CALLS[0];
@@ -405,7 +422,7 @@ function renderBoard(){
         <div>${shiftHTML(c)}</div>
         <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div>
           <div class="key"><span><i class="supports"></i>supports the call</span><span><i class="challenges"></i>challenges the call</span><span><i></i>no signal yet</span></div></div>
-        <div class="b-next">${nx ? `<small>Next catalyst · ${esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p>` : `<small>No dated catalyst</small>`}</div>
+        <div class="b-next">${nx ? `${tileHTML(nx)}<div><small>Next catalyst${plainDate(nx) ? "" : " · " + esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p></div>` : `<small>No dated catalyst</small>`}</div>
       </div>
       <div class="why"><div><b>${esc(c.key.label)}</b>${esc(c.key.text)}</div><div><b>What the call depends on</b>${esc(c.depends)}</div></div>
       <div class="cols">
