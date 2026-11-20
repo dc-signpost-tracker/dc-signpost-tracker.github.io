@@ -26,8 +26,7 @@
    "sp": [
     "F1",
     "F2"
-   ],
-   "note": "Date to be confirmed"
+   ]
   },
   {
    "d": "2026-11-29",
@@ -52,6 +51,14 @@
    "text": "Texas statewide audit report on the large-load pause",
    "sp": [
     "A4"
+   ]
+  },
+  {
+   "d": "2026-12-14",
+   "label": "14 Dec 2026",
+   "text": "European Union consultation on minimum performance standards for data centres closes",
+   "sp": [
+    "E1"
    ]
   },
   {

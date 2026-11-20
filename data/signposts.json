@@ -247,7 +247,8 @@
      "retrieved_on": null,
      "next": "2028 checkpoint",
      "sources": "Korea Electric Power Corporation disclosures; Korea Power Exchange statistics; ministry designations",
-     "history": []
+     "history": [],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "B3",
@@ -342,13 +343,15 @@
      "track": "Share of new European capacity landing in France and the Nordics instead of the five core hubs; take-up of grid-ready sites; Nordic power-price spread.",
      "trigger": "Positive if overflow capacity lands at scale outside the core hubs.",
      "status": "none",
-     "latest": "Up to 2 gigawatts of grid-ready sites in France; 3.5 gigawatts reserved in Norway",
-     "latestDate": "",
+     "latest": "About 2 gigawatts of grid-ready sites offered in France; 3.4 gigawatts reserved for data centres in Norway. One report puts the five core hubs' share of new European capacity at 37% in the second quarter of 2026.",
+     "latestDate": "Reports to Sep 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Next quarterly market reports",
      "sources": "Broker market reports; French, Norwegian, Swedish and Finnish grid operators; European day-ahead price data",
-     "history": []
+     "history": [],
+     "verify": "From press and industry reports (The Next Web, TechTimes, BloombergNEF). No primary document has been checked. Norway is reviewing its data centre rules.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "C2",
@@ -376,13 +379,15 @@
      "track": "Whether dated grid fixes for Noord-Holland, Frankfurt and West London are brought forward or slip.",
      "trigger": "Positive if any core-hub fix is brought forward to before 2030.",
      "status": "none",
-     "latest": "Noord-Holland 2033 to 2038; Frankfurt mid-2030s; West London 2037",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "No core-hub fix has been brought forward. Noord-Holland's grid is due to be expanded between 2034 and 2036; Frankfurt remains mid-2030s.",
+     "latestDate": "TenneT schedule",
+     "source_url": "https://www.tennet.eu/nl-en/news/measures-prevent-electricity-grid-north-holland",
+     "retrieved_on": "2026-11-20",
      "next": "Next quarterly check",
      "sources": "TenneT investment plans; German grid development plan; National Grid and the UK system operator",
-     "history": []
+     "history": [],
+     "verify": "The linked page covers Noord-Holland. Frankfurt is from press reports; no current date for West London has been found.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   },
@@ -434,13 +439,15 @@
      "track": "Number and value of host-community deals, and whether they turn opposition into approvals.",
      "trigger": "Positive if deals convert opposed projects into approvals.",
      "status": "none",
-     "latest": "New York's framework recommends at least US$1 million per megawatt invested locally",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "New York published a voluntary framework on 15 Sep 2026 recommending at least US$1 million per megawatt in local investment. No evidence yet of deals turning opposition into approvals.",
+     "latestDate": "15 Sep 2026",
+     "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-strongest-community-investment-framework-nation-protect-communities",
+     "retrieved_on": "2026-11-20",
      "next": "Monthly check",
      "sources": "New York Department of Public Service; Virginia Governor's office; Loudoun and Prince William board minutes",
-     "history": []
+     "history": [],
+     "verify": "Virginia's toolkit has not been checked.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "D3",
@@ -483,11 +490,11 @@
      "track": "Whether the proposal includes water-use limits, and at what level.",
      "trigger": "Watch for limits near the 0.4 litres per kilowatt-hour benchmark, and tighter limits in water-stressed areas.",
      "status": "none",
-     "latest": "2024 European Union average 0.58 litres per kilowatt-hour",
-     "latestDate": "Commission annual report",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Proposal due second quarter 2027",
+     "latest": "2024 European Union average 0.58 litres per kilowatt-hour. A consultation on minimum standards is open until 14 Dec 2026.",
+     "latestDate": "Commission report, 21 Sep 2026",
+     "source_url": "https://energy.ec.europa.eu/document/download/8a87a5fe-0260-462a-b165-09f1496d1aa0_en?filename=COM_2026_500_1_EN_ACT_part1_v4.pdf",
+     "retrieved_on": "2026-11-20",
+     "next": "Consultation closes 14 Dec 2026; proposal due second quarter 2027",
      "sources": "European Commission energy directorate; EUR-Lex; public consultations",
      "gauge": {
       "label": "Average water use per kilowatt-hour",
@@ -499,7 +506,8 @@
       "vText": "0.58 L",
       "tText": "benchmark 0.4 L"
      },
-     "history": []
+     "history": [],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "E2",
@@ -527,13 +535,15 @@
      "track": "Building permits refused for structural water stress under the law of 26 May 2026.",
      "trigger": "Each refusal confirms water as a condition for building.",
      "status": "none",
-     "latest": "No refusals logged yet",
-     "latestDate": "",
+     "latest": "The law allows a permit to be refused where water is under structural stress. No refusal on those grounds has been found.",
+     "latestDate": "20 Nov 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Ongoing",
      "sources": "Légifrance; prefectural acts; Ministry of Ecological Transition; France Datacenter",
-     "history": []
+     "history": [],
+     "verify": "From legal commentary on the law of 26 May 2026. The text of the law has not been checked directly.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "E4",
@@ -543,13 +553,15 @@
      "track": "Share of new European Union data centre capacity sited in basins under high water stress.",
      "trigger": "A rising share confirms the shift south.",
      "status": "none",
-     "latest": "Baseline to be calculated",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "No pipeline figure is available. A study of operating sites found 64% of Spain's data centres in areas with water gaps, against none in Germany.",
+     "latestDate": "Study published Sep 2026",
+     "source_url": "https://pubs.acs.org/esthag/article/60/39/27780/5437283/One-Quarter-of-Global-Data-Centers-are-Located-in",
+     "retrieved_on": "2026-11-20",
      "next": "Improves once public labels start in Aug 2027",
      "sources": "Commission data centre database; World Resources Institute Aqueduct; European Environment Agency water index",
-     "history": []
+     "history": [],
+     "verify": "The study covers operating sites, not the pipeline this signpost tracks.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "E5",
@@ -559,13 +571,15 @@
      "track": "Share of the European Union and United Kingdom under drought warning or alert, especially Italy, Spain and Portugal.",
      "trigger": "Wider or longer droughts confirm the intensification.",
      "status": "none",
-     "latest": "Baseline to be loaded with seed data",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "At the end of July 2026, half of the European Union and United Kingdom was under some level of drought and 9% was at alert level. Hotspots were France, Germany, Hungary, Romania and the United Kingdom.",
+     "latestDate": "21 to 31 Jul 2026",
+     "source_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
+     "retrieved_on": "2026-11-20",
      "next": "Summer 2027 season",
      "sources": "Copernicus European Drought Observatory; national hydrological bulletins",
-     "history": []
+     "history": [],
+     "verify": "No earlier year has been loaded for comparison.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   },
@@ -590,14 +604,15 @@
      "track": "Johor's treated-water reserve margin against its pipeline of about 8.5 gigawatts; Thailand's siting standards; whether India's hubs avoid commercial water cuts in the 2027 dry season.",
      "trigger": "Positive if supply and rules keep up with the pipeline.",
      "status": "none",
-     "latest": "Johor reserve margin about 12.8%",
-     "latestDate": "Estimate",
+     "latest": "Johor reserve margin about 14.4% statewide, as stated in Parliament on 24 Jun 2026. A brokerage estimate puts it at about 12.8%.",
+     "latestDate": "24 Jun 2026",
      "source_url": null,
      "retrieved_on": null,
-     "next": "Thailand draft to the national board 27 Nov 2026",
+     "next": "Thailand's board considers an 80% water-reuse rule on 27 Nov 2026",
      "sources": "Malaysia's water regulator fact book; Ranhill SAJ filings; Thai reservoir data; Mumbai lake levels; India's reservoir bulletin",
-     "verify": "14.4% also cited on a different basis",
-     "history": []
+     "verify": "From press reports of the parliamentary statement (The Star). Thailand and India have not been checked.",
+     "history": [],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "F2",
@@ -607,13 +622,15 @@
      "track": "Share of new capacity using air-cooled or closed-loop systems; what Johor approves after its freeze; whether Thailand bars water-cooled sites from stressed areas.",
      "trigger": "Positive if new approvals move to designs that use little water.",
      "status": "none",
-     "latest": "Johor freeze on water-cooled builds reported",
-     "latestDate": "",
+     "latest": "Johor has asked operators to hold water-cooled expansions until mid-2027 and is reported to approve only air-cooled Tier 3 and Tier 4 data centres.",
+     "latestDate": "Reports to Oct 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Freeze ends mid-2027 at the earliest",
      "sources": "Johor state government; Malaysian Investment Development Authority; Thailand Board of Investment; Uptime Institute survey",
-     "history": []
+     "history": [],
+     "verify": "From press reports. The Johor statement has not been confirmed at its original source.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   }
