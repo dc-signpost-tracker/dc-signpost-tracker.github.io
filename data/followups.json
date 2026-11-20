@@ -1,0 +1,12 @@
+{
+ "about": "Readings that rest on press reports and still need checking at the primary source. Work through at most two per morning; remove an item once done.",
+ "items": [
+  {"signpost": "B4", "priority": 1, "task": "Find the Osaka Prefecture document (reported as dated 9 Oct 2026) on grid capacity along the Osaka Bay coast and the time needed to expand it. If regional connection times are no longer well below Tokyo's, this could change the status: treat as group A."},
+  {"signpost": "F2", "priority": 1, "task": "Confirm at source (Bernama or the Johor state government) the March 2026 statement that Johor approves only Tier 3 and Tier 4 data centres using air cooling. If confirmed, this could change the status: treat as group A."},
+  {"signpost": "C2", "priority": 2, "task": "Check the official record of Spain's Council of Ministers meeting of 17 Nov 2026 for a royal decree on data centres. Applies to E2 as well."},
+  {"signpost": "B1", "priority": 2, "task": "Open the Korean ministry's legislative notice of 20 Nov 2026 and confirm the 50 megawatt exemption threshold."},
+  {"signpost": "A4", "priority": 2, "task": "Open the Texas grid operator's July 2026 update to the Texas Senate and confirm the queue size and whether 'approved to energise' is 3.2 gigawatts approved plus 5.9 energised."},
+  {"signpost": "A5", "priority": 3, "task": "Confirm the 16 Nov 2026 filings in the federal regulator's dockets EL26-67 to EL26-72, and whether Southwest Power Pool filed on 20 Nov."},
+  {"signpost": "B5", "priority": 3, "task": "Verify or replace the cumulative restarted nuclear capacity figure of 13,946 megawatts."}
+ ]
+}
