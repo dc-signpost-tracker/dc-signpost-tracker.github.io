@@ -303,13 +303,15 @@
      "track": "Whether the data centre decree is approved before the general election, and its final terms.",
      "trigger": "Watch the 80% hourly renewables match, the 10 megawatt threshold and the five-year phase-in.",
      "status": "none",
-     "latest": "Decree awaiting Cabinet approval",
-     "latestDate": "",
+     "latest": "Endorsed by the Council of State in early November. Cabinet approval was expected on 17 Nov 2026 but is not confirmed, and the decree had not appeared in the official gazette by 20 Nov.",
+     "latestDate": "20 Nov 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Before the election on 29 Nov 2026",
      "sources": "Spain's official gazette; Council of Ministers references; energy ministry; Council of State",
-     "history": []
+     "history": [],
+     "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "C3",
@@ -452,13 +454,15 @@
      "track": "Whether the final decree keeps the top water-efficiency class for new data centres above 10 megawatts.",
      "trigger": "The draft requires 0.1 litres per kilowatt-hour or less.",
      "status": "none",
-     "latest": "Decree awaiting Cabinet approval",
-     "latestDate": "",
+     "latest": "Endorsed by the Council of State in early November. Cabinet approval was expected on 17 Nov 2026 but is not confirmed, and the decree had not appeared in the official gazette by 20 Nov.",
+     "latestDate": "20 Nov 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Before the election on 29 Nov 2026",
      "sources": "Spain's official gazette; energy ministry; river-basin authorities",
-     "history": []
+     "history": [],
+     "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "E3",
