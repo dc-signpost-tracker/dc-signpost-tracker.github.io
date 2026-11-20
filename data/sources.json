@@ -1,0 +1,1107 @@
+{
+ "about": "Every source behind the 24 signposts. 'enabled' with a 'fetcher' means the daily refresh runs it. link_check records only that the address responded on that date.",
+ "sources": [
+  {
+   "id": "federal_register_ferc_large_load",
+   "name": "US Federal Register: Federal Energy Regulatory Commission documents on large loads",
+   "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+   "signposts": [
+    "A5"
+   ],
+   "feed": "api",
+   "access": "open",
+   "paid": false,
+   "enabled": true,
+   "fetcher": "federal_register",
+   "params": {
+    "term": "\"large load\"",
+    "agencies": [
+     "federal-energy-regulatory-commission"
+    ],
+    "since": "2026-06-01"
+   },
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "federal_register_data_centre_rules",
+   "name": "US Federal Register: rules, proposed rules and presidential documents on data centres",
+   "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+   "signposts": [
+    "D3"
+   ],
+   "feed": "api",
+   "access": "open",
+   "paid": false,
+   "enabled": true,
+   "fetcher": "federal_register",
+   "params": {
+    "term": "\"data center\"",
+    "must_mention": [
+     "data center",
+     "data centers"
+    ],
+    "types": [
+     "RULE",
+     "PRORULE",
+     "PRESDOCU"
+    ],
+    "since": "2026-06-01"
+   },
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "sec_edgar_ge_vernova",
+   "name": "US Securities and Exchange Commission filings: GE Vernova results and quarterly reports",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001996810",
+   "signposts": [
+    "A3"
+   ],
+   "feed": "api",
+   "access": "open",
+   "paid": false,
+   "enabled": true,
+   "fetcher": "sec_edgar",
+   "params": {
+    "cik": "0001996810",
+    "forms": [
+     "8-K",
+     "10-Q",
+     "10-K"
+    ],
+    "items_include": [
+     "2.02"
+    ],
+    "since": "2026-07-01"
+   },
+   "note": "Needs the CONTACT_EMAIL setting. Detects new filings; backlog and shipment figures are then read from the filing.",
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "boe_daily_summary",
+   "name": "Spain's official gazette (Boletín Oficial del Estado): daily summary",
+   "url": "https://www.boe.es/datosabiertos/",
+   "signposts": [
+    "C2",
+    "E2"
+   ],
+   "feed": "api",
+   "access": "open",
+   "paid": false,
+   "enabled": true,
+   "fetcher": "boe",
+   "params": {
+    "keywords": [
+     "centros de datos",
+     "centro de datos",
+     "centros de proceso de datos"
+    ],
+    "days_back": 10
+   },
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "pjm_capacity_market",
+   "name": "PJM Interconnection: capacity market auction results and planning parameters",
+   "url": "https://www.pjm.com/markets-and-operations/rpm",
+   "signposts": [
+    "A1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "monitoring_analytics",
+   "name": "Monitoring Analytics: independent market monitor for PJM",
+   "url": "https://www.monitoringanalytics.com/",
+   "signposts": [
+    "A1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "ferc_elibrary",
+   "name": "Federal Energy Regulatory Commission eLibrary (dockets)",
+   "url": "https://elibrary.ferc.gov/",
+   "signposts": [
+    "A2",
+    "A5"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "pjm_newsroom",
+   "name": "PJM Interconnection newsroom",
+   "url": "https://www.pjm.com/about-pjm/newsroom",
+   "signposts": [
+    "A2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "eia_860m",
+   "name": "US Energy Information Administration: monthly generator inventory (EIA-860M)",
+   "url": "https://www.eia.gov/electricity/data/eia860m/",
+   "signposts": [
+    "A3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "siemens_energy_ir",
+   "name": "Siemens Energy investor relations",
+   "url": "https://www.siemens-energy.com/global/en/home/investor-relations.html",
+   "signposts": [
+    "A3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "mhi_ir",
+   "name": "Mitsubishi Heavy Industries investor relations",
+   "url": "https://www.mhi.com/finance",
+   "signposts": [
+    "A3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "ercot_large_load",
+   "name": "Electric Reliability Council of Texas: large-load integration",
+   "url": "https://www.ercot.com/services/rq/large-load-integration",
+   "signposts": [
+    "A4"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "puct_interchange",
+   "name": "Public Utility Commission of Texas filings (Interchange)",
+   "url": "https://interchange.puc.texas.gov/",
+   "signposts": [
+    "A4"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "nerc_assessments",
+   "name": "North American Electric Reliability Corporation: reliability assessments",
+   "url": "https://www.nerc.com/",
+   "signposts": [
+    "A6"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "korea_law",
+   "name": "Korea National Law Information Center",
+   "url": "https://www.law.go.kr/",
+   "signposts": [
+    "B1"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "korea_msit",
+   "name": "Korea Ministry of Science and ICT",
+   "url": "https://www.msit.go.kr/eng/",
+   "signposts": [
+    "B1",
+    "B2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "kepco",
+   "name": "Korea Electric Power Corporation",
+   "url": "https://home.kepco.co.kr/",
+   "signposts": [
+    "B2",
+    "B3"
+   ],
+   "feed": "manual",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "kpx_epsis",
+   "name": "Korea Power Exchange electricity statistics",
+   "url": "https://epsis.kpx.or.kr/",
+   "signposts": [
+    "B2"
+   ],
+   "feed": "manual",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "occto",
+   "name": "Japan's grid coordination body (OCCTO)",
+   "url": "https://www.occto.or.jp/en/",
+   "signposts": [
+    "B4"
+   ],
+   "feed": "manual",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "japan_nra",
+   "name": "Japan Nuclear Regulation Authority",
+   "url": "https://www.nra.go.jp/english/",
+   "signposts": [
+    "B5"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "jaif",
+   "name": "Japan Atomic Industrial Forum: reactor status",
+   "url": "https://www.jaif.or.jp/en/",
+   "signposts": [
+    "B5"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "iaea_pris",
+   "name": "International Atomic Energy Agency reactor database: Japan",
+   "url": "https://pris.iaea.org/PRIS/CountryStatistics/CountryDetails.aspx?current=JP",
+   "signposts": [
+    "B5"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "rte_france",
+   "name": "RTE, the French grid operator",
+   "url": "https://www.rte-france.com/en",
+   "signposts": [
+    "C1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "statnett",
+   "name": "Statnett, the Norwegian grid operator",
+   "url": "https://www.statnett.no/en/",
+   "signposts": [
+    "C1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "svenska_kraftnat",
+   "name": "Svenska kraftnät, the Swedish grid operator",
+   "url": "https://www.svk.se/en/",
+   "signposts": [
+    "C1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "fingrid",
+   "name": "Fingrid, the Finnish grid operator",
+   "url": "https://www.fingrid.fi/en/",
+   "signposts": [
+    "C1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "la_moncloa",
+   "name": "Spain: Council of Ministers references",
+   "url": "https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/index.aspx",
+   "signposts": [
+    "C2",
+    "E2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 0,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "miteco",
+   "name": "Spain: Ministry for the Ecological Transition",
+   "url": "https://www.miteco.gob.es/",
+   "signposts": [
+    "C2",
+    "E2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "tennet",
+   "name": "TenneT grid investment plans",
+   "url": "https://www.tennet.eu/",
+   "signposts": [
+    "C3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "netbeheer_map",
+   "name": "Netbeheer Nederland grid capacity map",
+   "url": "https://capaciteitskaart.netbeheernederland.nl/",
+   "signposts": [
+    "C3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "nep_strom",
+   "name": "Germany's grid development plan",
+   "url": "https://www.netzentwicklungsplan.de/",
+   "signposts": [
+    "C3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "neso",
+   "name": "National Energy System Operator (United Kingdom)",
+   "url": "https://www.neso.energy/",
+   "signposts": [
+    "C3"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "data_center_watch",
+   "name": "Data Center Watch quarterly reports",
+   "url": "https://www.datacenterwatch.org/",
+   "signposts": [
+    "D1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "ballotpedia",
+   "name": "Ballotpedia: local ballot measures",
+   "url": "https://ballotpedia.org/",
+   "signposts": [
+    "D1"
+   ],
+   "feed": "manual",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "ny_dps",
+   "name": "New York Department of Public Service",
+   "url": "https://dps.ny.gov/",
+   "signposts": [
+    "D2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "loudoun_county",
+   "name": "Loudoun County, Virginia: board agendas and minutes",
+   "url": "https://www.loudoun.gov/",
+   "signposts": [
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "virginia_lis",
+   "name": "Virginia Legislative Information System",
+   "url": "https://lis.virginia.gov/",
+   "signposts": [
+    "D3"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "ec_energy",
+   "name": "European Commission energy directorate",
+   "url": "https://energy.ec.europa.eu/",
+   "signposts": [
+    "E1"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "eur_lex",
+   "name": "EUR-Lex: European Union law",
+   "url": "https://eur-lex.europa.eu/",
+   "signposts": [
+    "E1"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "france_ecologie",
+   "name": "France: Ministry of Ecological Transition",
+   "url": "https://www.ecologie.gouv.fr/",
+   "signposts": [
+    "E3"
+   ],
+   "feed": "manual",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "wri_aqueduct",
+   "name": "World Resources Institute Aqueduct water-stress data",
+   "url": "https://www.wri.org/aqueduct",
+   "signposts": [
+    "E4"
+   ],
+   "feed": "calculated",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "eea",
+   "name": "European Environment Agency",
+   "url": "https://www.eea.europa.eu/",
+   "signposts": [
+    "E4",
+    "E5"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "copernicus_drought",
+   "name": "Copernicus European Drought Observatory",
+   "url": "https://drought.emergency.copernicus.eu/",
+   "signposts": [
+    "E5"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "span_malaysia",
+   "name": "Malaysia's National Water Services Commission (SPAN)",
+   "url": "https://www.span.gov.my/",
+   "signposts": [
+    "F1",
+    "F2"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 0,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "bursa_malaysia",
+   "name": "Bursa Malaysia company announcements (Ranhill)",
+   "url": "https://www.bursamalaysia.com/",
+   "signposts": [
+    "F1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "thaiwater",
+   "name": "Thailand national water data (Thaiwater)",
+   "url": "https://www.thaiwater.net/",
+   "signposts": [
+    "F1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "india_cwc",
+   "name": "India Central Water Commission reservoir bulletin",
+   "url": "https://cwc.gov.in/",
+   "signposts": [
+    "F1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 401,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "india_imd",
+   "name": "India Meteorological Department",
+   "url": "https://mausam.imd.gov.in/",
+   "signposts": [
+    "F1"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "mida",
+   "name": "Malaysian Investment Development Authority",
+   "url": "https://www.mida.gov.my/",
+   "signposts": [
+    "F2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "thailand_boi",
+   "name": "Thailand Board of Investment",
+   "url": "https://www.boi.go.th/",
+   "signposts": [
+    "F1",
+    "F2"
+   ],
+   "feed": "event",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "uptime_institute",
+   "name": "Uptime Institute annual survey",
+   "url": "https://uptimeinstitute.com/",
+   "signposts": [
+    "F2"
+   ],
+   "feed": "document",
+   "access": "open",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "eia_api",
+   "name": "US Energy Information Administration open data",
+   "url": "https://www.eia.gov/opendata/",
+   "signposts": [
+    "A3"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free key; switched off until the owner registers.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "entsoe",
+   "name": "European power transparency platform (ENTSO-E)",
+   "url": "https://transparency.entsoe.eu/",
+   "signposts": [
+    "C1"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free registration and token; switched off until the owner registers.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "congress_gov",
+   "name": "Congress.gov",
+   "url": "https://api.congress.gov/",
+   "signposts": [
+    "D3"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free key; switched off until the owner registers.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "legiscan",
+   "name": "LegiScan state bill tracker",
+   "url": "https://legiscan.com/legiscan",
+   "signposts": [
+    "D3"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free key; switched off until the owner registers.",
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "korea_law_api",
+   "name": "Korea National Law Information Center open data",
+   "url": "https://open.law.go.kr/",
+   "signposts": [
+    "B1"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free registration; switched off until the owner registers.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "legifrance",
+   "name": "France's Légifrance, through the PISTE portal",
+   "url": "https://piste.gouv.fr/",
+   "signposts": [
+    "E3"
+   ],
+   "feed": "api",
+   "access": "free_key",
+   "paid": false,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Free registration; switched off until the owner registers.",
+   "link_check": {
+    "status": 503,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "dc_byte",
+   "name": "DC Byte",
+   "url": "https://www.dcbyte.com/",
+   "signposts": [
+    "B2",
+    "C1",
+    "E4",
+    "F1"
+   ],
+   "feed": "paid",
+   "access": "paid",
+   "paid": true,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Data centre pipeline by location and market share by hub. Switched off unless the owner says otherwise.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "structure_research",
+   "name": "Structure Research",
+   "url": "https://www.structureresearch.net/",
+   "signposts": [
+    "B2"
+   ],
+   "feed": "paid",
+   "access": "paid",
+   "paid": true,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Regional capacity and connection data. Switched off unless the owner says otherwise.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "rto_insider",
+   "name": "RTO Insider",
+   "url": "https://www.rtoinsider.com/",
+   "signposts": [
+    "A1"
+   ],
+   "feed": "paid",
+   "access": "paid",
+   "paid": true,
+   "enabled": false,
+   "fetcher": null,
+   "note": "Detailed coverage of grid operator auctions and dockets. Switched off unless the owner says otherwise.",
+   "link_check": {
+    "status": 200,
+    "checked_on": "2026-11-20"
+   }
+  },
+  {
+   "id": "sp_451",
+   "name": "S&P Global 451 Research",
+   "url": "https://www.spglobal.com/marketintelligence/",
+   "signposts": [
+    "D1"
+   ],
+   "feed": "paid",
+   "access": "paid",
+   "paid": true,
+   "enabled": false,
+   "fetcher": null,
+   "note": "A cross-check on projects blocked or delayed. Switched off unless the owner says otherwise.",
+   "link_check": {
+    "status": 403,
+    "checked_on": "2026-11-20"
+   }
+  }
+ ]
+}

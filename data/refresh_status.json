@@ -1,0 +1,24 @@
+{
+ "run_on": "2026-11-20",
+ "feeds": {
+  "federal_register_ferc_large_load": {
+   "state": "ok",
+   "found": 6,
+   "new": 6
+  },
+  "federal_register_data_centre_rules": {
+   "state": "ok",
+   "found": 1,
+   "new": 1
+  },
+  "sec_edgar_ge_vernova": {
+   "state": "skipped",
+   "detail": "CONTACT_EMAIL is not set; the filing system requires a contact address"
+  },
+  "boe_daily_summary": {
+   "state": "ok",
+   "found": 0,
+   "new": 0
+  }
+ }
+}

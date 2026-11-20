@@ -1,0 +1,88 @@
+{
+ "items": [
+  {
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
+   "published": "2026-11-19",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Addressing Remote Access to Advanced Semiconductors",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+   "published": "2026-11-19",
+   "kind": "Rule",
+   "source": "federal_register_data_centre_rules",
+   "signposts": [
+    "D3"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23282/combined-notice-of-filings-1",
+   "published": "2026-11-16",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/09/08/2026-18229/combined-notice-of-filings-1",
+   "published": "2026-09-08",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16927/combined-notice-of-filings-1",
+   "published": "2026-08-19",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #2",
+   "url": "https://www.federalregister.gov/documents/2026/08/18/2026-16808/combined-notice-of-filings-2",
+   "published": "2026-08-18",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #3",
+   "url": "https://www.federalregister.gov/documents/2026/07/09/2026-13883/combined-notice-of-filings-3",
+   "published": "2026-07-09",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-20",
+   "state": "new"
+  }
+ ]
+}
