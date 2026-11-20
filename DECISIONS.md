@@ -119,7 +119,7 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Tagline** under the title, in the owner's own wording: "The outlook for physical
   constraint severity in select regions till 2030 and beyond, tested against 24 signposts".
 - **Next catalyst in the banner:** a tear-off calendar tile (month band in the call's
-  direction colour, day, year) beside the countdown and the event text. Built on the
+  direction colour, day, year) to the right of the countdown and the event text. Built on the
   recommended option because the owner left that card unanswered; he may still change it.
 
 ## Open
