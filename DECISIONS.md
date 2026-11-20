@@ -100,6 +100,10 @@ commit and push. Signpost statuses are not logged here; they live in
   The calendar rail stays navy.
 - **Banner subtitle:** one line, "Power | Easing after 2030". No separate direction box.
 
+- **No white boxes in the banner:** the rating boxes carry a fine outline in their own
+  colour and sit directly on the tint; thin vertical lines divide the banner into its
+  four parts. The owner found the white insets jarring.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.

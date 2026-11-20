@@ -145,13 +145,13 @@ section{margin-top:44px}
 .banner.Easing .con{color:var(--ease)}.banner.Persisting .con{color:var(--pers)}.banner.Intensifying .con{color:var(--int)}
 .banner .flag{margin-top:12px;background:var(--surface);color:var(--bad)}
 .b-lab{font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:7px}
-.inset{display:inline-block;background:var(--surface);border-radius:12px;padding:14px 18px}
 .shift.labelled{display:flex;align-items:flex-end;gap:10px}
 .shift.labelled svg{margin-bottom:10px;color:var(--muted);flex:none}
 .hz{display:inline-flex;flex-direction:column;align-items:center}
-.banner .chip{min-width:92px;padding:8px 14px;font-size:13.5px;font-weight:700}
-.banner .tally{display:inline-flex;gap:6px;flex-wrap:nowrap;background:var(--surface);border-radius:12px;padding:10px 12px}
-.banner .sq{width:34px;height:27px;border:1.5px solid var(--muted);border-radius:5px;font-size:11.5px;font-weight:700;display:grid;place-items:center;color:var(--ink);background:transparent}
+.banner .chip{min-width:92px;padding:8px 14px;font-size:13.5px;font-weight:700;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,currentColor 55%,transparent)}
+@media (min-width:1000px){.banner > div + div{border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding-left:32px}}
+.banner .tally{display:inline-flex;gap:6px;flex-wrap:nowrap}
+.banner .sq{width:34px;height:27px;border:1.5px solid var(--muted);border-radius:5px;font-size:11.5px;font-weight:700;display:grid;place-items:center;color:var(--ink);background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .banner .sq.supports{background:var(--good);border-color:var(--good);color:var(--surface)}
 .banner .sq.challenges{background:var(--bad);border-color:var(--bad);color:var(--surface)}
 .b-next small{color:var(--muted);font-size:12.5px;font-weight:600}
@@ -402,7 +402,7 @@ function renderBoard(){
       <div class="banner ${esc(c.dir)}">
         <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${BANDS[c.dir]}</div>
           ${t.review ? `<span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
-        <div><div class="inset">${shiftHTML(c)}</div></div>
+        <div>${shiftHTML(c)}</div>
         <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div></div>
         <div class="b-next">${nx ? `<small>Next catalyst · ${esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p>` : `<small>No dated catalyst</small>`}</div>
       </div>
