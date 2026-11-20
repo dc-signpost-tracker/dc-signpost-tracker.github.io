@@ -628,14 +628,20 @@
      "track": "Share of new capacity using air-cooled or closed-loop systems; what Johor approves after its freeze; whether Thailand bars water-cooled sites from stressed areas.",
      "trigger": "Positive if new approvals move to designs that use little water.",
      "status": "none",
-     "latest": "Johor has asked operators to hold water-cooled expansions until mid-2027 and is reported to approve only air-cooled Tier 3 and Tier 4 data centres.",
-     "latestDate": "Reports to Oct 2026",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Johor's chief minister said on 10 Mar 2026 that the state's data centre committee will only approve Tier 3 and Tier 4 developments that use air cooling, and will refuse projects needing a high water intake. Johor is also reported to have asked operators to hold water-cooled expansions until mid-2027.",
+     "latestDate": "10 Mar 2026 statement",
+     "source_url": "https://www.bernama.com/tv/news.php?id=2532596",
+     "retrieved_on": "2026-11-20",
      "next": "Freeze ends mid-2027 at the earliest",
      "sources": "Johor state government; Malaysian Investment Development Authority; Thailand Board of Investment; Uptime Institute survey",
-     "history": [],
-     "verify": "From press reports. The Johor statement has not been confirmed at its original source.",
+     "history": [
+      {
+       "date": "2026-03-10",
+       "note": "Johor's chief minister: only air-cooled Tier 3 and Tier 4 data centres will be approved",
+       "source_url": "https://www.bernama.com/tv/news.php?id=2532596"
+      }
+     ],
+     "verify": "The air-cooling statement is confirmed at the linked Bernama interview. It is a stated policy; what has actually been approved since is not verified. The hold on water-cooled expansions until mid-2027 is from press reports only.",
      "status_reviewed_on": "2026-11-20"
     }
    ]
