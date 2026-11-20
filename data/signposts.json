@@ -223,13 +223,15 @@
      "track": "Largest data centre outside the capital region that can skip the grid impact assessment under the Act's decree.",
      "trigger": "The higher the threshold, the wider the route out of Seoul. A range of 50 to 100 megawatts is under discussion.",
      "status": "none",
-     "latest": "Decree not yet issued",
-     "latestDate": "",
+     "latest": "A draft decree published for comment on 20 Nov 2026 sets the exemption at 50 megawatts of contracted power, the bottom of the 50 to 100 megawatt range that was under discussion. Data centres in designated special zones would skip the non-technical review regardless of size.",
+     "latestDate": "Draft, 20 Nov 2026",
      "source_url": null,
      "retrieved_on": null,
-     "next": "Around the Act's entry into force, 10 Mar 2027",
+     "next": "Final decree around the Act's entry into force, 10 Mar 2027",
      "sources": "Korea National Law Information Center; Ministry of Science and ICT releases; Yonhap, Korea Herald",
-     "history": []
+     "history": [],
+     "verify": "From press reports (Seoul Economic Daily, Aju Press). The ministry's notice has not been checked. The decree is not final.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "B2",
@@ -255,13 +257,15 @@
      "track": "On-time delivery of 345 kilovolt lines and slippage between editions of the national electricity plan.",
      "trigger": "Positive if build times shorten and fewer projects slip.",
      "status": "none",
-     "latest": "About nine years to build; more than half of projects delayed",
-     "latestDate": "",
+     "latest": "68 of 104 transmission and substation projects (65%) missed their target dates. Lines of 345 kilovolts took just over 10 years to build on average.",
+     "latestDate": "Reported 19 Oct 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Next plan edition",
      "sources": "Korea Electric Power Corporation transmission plan; Basic Plans for Electricity Supply and Demand; National Assembly audit materials",
-     "history": []
+     "history": [],
+     "verify": "From a press report (Seoul Economic Daily) citing the national utility's data. No primary document has been checked.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "B4",
@@ -271,10 +275,10 @@
      "track": "Quoted grid connection times for new data centres in Hokkaido, Kyushu and Osaka against Tokyo.",
      "trigger": "Positive if regional times stay well below Tokyo's.",
      "status": "none",
-     "latest": "Osaka 3 to 5 years; Tokyo 8 to 10 years",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Tokyo 8 to 10 years; Osaka 3 to 5 years",
+     "latestDate": "Industry research, Sep 2025",
+     "source_url": "https://www.jll.com/en-in/insights/japan-s-data-centre-market-expands-beyond-tokyo-and-osaka",
+     "retrieved_on": "2026-11-20",
      "next": "Next half-yearly check",
      "sources": "Japan's grid coordination body (OCCTO); regional grid operators' capacity maps; ministry Watt-Bit materials",
      "gauge": {
@@ -293,7 +297,9 @@
       "vText": "3 to 5 years",
       "tText": "Tokyo 8 to 10"
      },
-     "history": []
+     "history": [],
+     "verify": "The Tokyo figure is confirmed at the linked source; the Osaka figure is attributed to the same research by market reports. A claim that Osaka's coastal grid now needs about eight years to expand is being checked.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "B5",
@@ -303,13 +309,15 @@
      "track": "Cumulative restarted nuclear capacity, and timing for Kashiwazaki-Kariwa Unit 7.",
      "trigger": "Positive if units keep being added and Unit 7 stays on schedule.",
      "status": "none",
-     "latest": "13,946 megawatts restarted, after Kashiwazaki-Kariwa Unit 6",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "15 reactors operating after Kashiwazaki-Kariwa Unit 6 restarted on 9 Feb 2026. Unit 7 is delayed to 2029 or 2030.",
+     "latestDate": "2 Mar 2026",
+     "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+     "retrieved_on": "2026-11-20",
      "next": "Unit 7 not before Aug 2029",
      "sources": "Nuclear Regulation Authority; Japan Atomic Industrial Forum status sheets; International Atomic Energy Agency reactor database",
-     "history": []
+     "history": [],
+     "verify": "The cumulative restarted capacity of 13,946 megawatts has not been verified.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   },
