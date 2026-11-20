@@ -21,7 +21,7 @@ repository is the only person who decides statuses and ratings.
 
 Each signpost in `data/signposts.json` has `latest` (plain-language reading),
 `latestDate`, `source_url`, `retrieved_on`, `verify` (a visible caveat), `next`,
-`status`, `status_reviewed_on` and `history`.
+`status`, `status_reviewed_on`, `last_checked_on` and `history`.
 
 - `source_url` is set **only** when the linked document was opened and read directly.
   A fact known only from press reports gets no `source_url`; say so in `verify`.
@@ -37,21 +37,29 @@ status challenges. The site computes this; do not set it by hand.
 
 1. `.github/workflows/refresh.yml` runs `scripts/refresh.py` every day. It files new
    documents in `data/inbox.json` with `"state": "new"`. It changes no reading.
-2. The morning digest (an AI task) then:
-   - reads every inbox item with `"state": "new"`, and checks the dated catalysts in
-     `data/calendar.json` that have passed without an `outcome`;
-   - opens the primary document for each where it can;
+2. The morning digest (an AI task) then, every day:
+   - **Feeds:** reads every inbox item with `"state": "new"`;
+   - **Catalysts:** checks the dated events in `data/calendar.json` that have passed
+     without an `outcome`;
+   - **Sweep of all 24 signposts:** runs at least one web search for every signpost,
+     A1 to F2, for developments since its `last_checked_on` date, and reads further
+     only where something is new relative to its current `latest` reading. No signpost
+     is skipped because it has no feed. `last_checked_on` is set to the day's date on
+     every signpost searched, whether or not anything was found;
+   - **Follow-ups:** works through at most two items in `data/followups.json`;
+   - opens the primary document for each finding where it can;
    - sorts each finding into one of three groups (below);
-   - works through at most two items in `data/followups.json`;
    - marks each inbox item it handled `"state": "reviewed"` with `"reviewed_on"`.
+     Routine notices that say nothing about a signpost are marked reviewed too; an
+     item is left `"new"` only if it could not be opened, and the digest says so.
 
 ### The three groups
 
 | Group | When | What the task may do unattended |
 |---|---|---|
-| A. Needs the owner's decision | The finding could change a status, or it is a close call | Nothing on the site. Present the evidence, the source links and a recommendation. Wait. |
+| A. Needs the owner's decision | The finding could change a status, or it is a close call | Nothing on the site except `last_checked_on`. Present the evidence, the source links and a recommendation. Wait. |
 | B. For information, verified | Status unchanged, and the primary document was read directly | Update `latest`, `latestDate`, `source_url`, `retrieved_on`, `verify`, `next`, `history`, and calendar `outcome`. Never `status`. |
-| C. For information, press-only | Status unchanged, but only press reports were found | Nothing on the site. List it in the digest. |
+| C. For information, press-only | Status unchanged, but only press reports were found | Nothing on the site except `last_checked_on`. List it in the digest. |
 
 If in doubt between A and B, choose A.
 
@@ -59,8 +67,8 @@ If in doubt between A and B, choose A.
 
 One message to the owner, in this order: (1) "Needs your decision", each item with what
 happened, sources, what the trigger says and a recommendation; (2) "For information",
-listing what was updated on the site and what is press-only; (3) "Nothing new" if that
-is the case, in one line. Use plain English, spell out acronyms at first use, and keep
+listing what was updated on the site and what is press-only; (3) one closing line saying how many of the 24 signposts were
+searched and how many had nothing new, naming any that could not be searched. Use plain English, spell out acronyms at first use, and keep
 it short. When the owner replies with decisions, apply them, commit and push.
 
 ## Committing
