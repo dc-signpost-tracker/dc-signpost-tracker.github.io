@@ -22,10 +22,10 @@
      "track": "PJM Interconnection's main capacity auction: shortfall against the reliability requirement, procured against target reserve margin, new generation cleared, and clearing price against the cap.",
      "trigger": "Positive if the 2029/30 shortfall is below 6,831 megawatts, the margin rises from 14.7% towards 20%, more new generation clears, and uncapped prices come back towards the cap.",
      "status": "none",
-     "latest": "Shortfall 6,831 megawatts; reserve margin 14.7%",
-     "latestDate": "Last auction",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Shortfall 6,831 megawatts against the reliability requirement; total reserve margin 14.7% against a 20.0% target. 525 megawatts of new generation and uprates cleared. Price at the cap of $325 per megawatt-day; $555 simulated without the cap.",
+     "latestDate": "2028/29 auction, 14 Jul 2026",
+     "source_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf",
+     "retrieved_on": "2026-11-20",
      "next": "Auction opens 9 Dec; results 22 Dec 2026",
      "sources": "PJM auction results and planning parameters; Monitoring Analytics (independent market monitor); Utility Dive",
      "gauge": {
@@ -38,7 +38,29 @@
       "vText": "14.7%",
       "tText": "target 20%"
      },
-     "history": []
+     "history": [
+      {
+       "date": "2025-12-17",
+       "auction": "2027/28",
+       "shortfall_mw": 6516,
+       "total_reserve_margin_pct": 14.9,
+       "new_generation_mw": 774.3,
+       "price_usd_mw_day": 333.44,
+       "uncapped_price_usd_mw_day": 529.8,
+       "source_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf"
+      },
+      {
+       "date": "2026-07-14",
+       "auction": "2028/29",
+       "shortfall_mw": 6831.3,
+       "total_reserve_margin_pct": 14.7,
+       "new_generation_mw": 524.7,
+       "price_usd_mw_day": 325.0,
+       "uncapped_price_usd_mw_day": 554.72,
+       "source_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf"
+      }
+     ],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "A2",
@@ -109,15 +131,16 @@
      "feed": "Documents, irregular",
      "track": "Electric Reliability Council of Texas (ERCOT) queue of large loads of 75 megawatts or more, capacity approved to energise, and the status of the pause.",
      "trigger": "Positive if approvals grow faster than about 2 gigawatts a year, the approved share rises and the queue stops growing.",
-     "status": "none",
-     "latest": "About 2% of the queue approved; connections paused",
-     "latestDate": "",
-     "source_url": null,
-     "retrieved_on": null,
+     "status": "neg",
+     "latest": "Approvals to energise data centres of 75 megawatts or more have been paused since 3 Aug 2026, pending an audit. The queue stood at about 475 gigawatts in June 2026, of which about 9 (roughly 2%) had approval to energise.",
+     "latestDate": "11 Sep 2026 update",
+     "source_url": "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+     "retrieved_on": "2026-11-20",
      "next": "Statewide audit report 10 Dec 2026; new governor 19 Jan 2027",
      "sources": "ERCOT large-load status updates and monthly operational overview; Public Utility Commission of Texas filings",
-     "verify": "Definition of \"approved to energise\" to be fixed",
-     "history": []
+     "verify": "The linked update confirms the pause and the audit date. The queue size and the approved figure (3.2 gigawatts approved but not operating, plus 5.9 energised) come from press reports of the operator's July update.",
+     "history": [],
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "A5",
