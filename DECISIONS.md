@@ -75,6 +75,10 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Calendar per tab:** each tab has its own catalyst calendar, listing only the events
   tied to that tab's signposts. There is no page-wide calendar.
 
+- **Signpost labels:** each label (A1, A2…) is a solid navy circle on its card, a
+  neutral colour that carries no status meaning. The squares in each tab's summary
+  carry the same labels.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
