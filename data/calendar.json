@@ -70,6 +70,15 @@
    ]
   },
   {
+   "d": "2026-12-17",
+   "label": "17 Dec 2026",
+   "text": "Texas utility regulator expected to meet on the audit reports",
+   "sp": [
+    "A4"
+   ],
+   "note": "Expected date"
+  },
+  {
    "d": "2026-12-22",
    "label": "22 Dec 2026",
    "text": "PJM 2029/30 auction results published",
@@ -85,6 +94,14 @@
     "A6"
    ],
    "fuzzy": true
+  },
+  {
+   "d": "2027-01-12",
+   "label": "12 Jan 2027",
+   "text": "Texas Legislature convenes, with data centre bills already filed",
+   "sp": [
+    "A4"
+   ]
   },
   {
    "d": "2027-01-19",
@@ -120,11 +137,35 @@
    ]
   },
   {
+   "d": "2027-03-12",
+   "label": "12 Mar 2027",
+   "text": "Last day to file bills in the Texas Legislature",
+   "sp": [
+    "A4"
+   ]
+  },
+  {
+   "d": "2027-04-09",
+   "label": "9 Apr 2027",
+   "text": "Deadline for Texas's study of large-load connections; the grid operator has said it will miss it",
+   "sp": [
+    "A4"
+   ]
+  },
+  {
    "d": "2027-04-28",
    "label": "28 Apr 2027",
    "text": "PJM backstop target of about 6.8 gigawatts is reset",
    "sp": [
     "A2"
+   ]
+  },
+  {
+   "d": "2027-05-31",
+   "label": "31 May 2027",
+   "text": "Texas legislative session ends; a special session is possible afterwards",
+   "sp": [
+    "A4"
    ]
   },
   {

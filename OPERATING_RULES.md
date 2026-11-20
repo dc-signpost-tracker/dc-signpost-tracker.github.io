@@ -17,6 +17,19 @@ repository is the only person who decides statuses and ratings.
    secret store.
 6. **Paid sources stay switched off** in `data/sources.json` unless the owner says otherwise.
 
+## The baseline date: 12 Nov 2026
+
+The ratings were set on 12 Nov 2026 with everything known up to that date already
+taken into account. **A signpost's status changes only on a development after
+12 Nov 2026.** A fact that was known on or before that date is baseline: show it as
+context in the reading, but never recommend a status change because of it, however
+adverse it looks. When recommending a change, state the date of the development.
+
+Some signposts turn mainly on politics. For A4 (Texas connections) the developments
+that matter most are statements and measures from the Governor-elect, other incoming
+Democratic office-holders and the Texas Legislature that would extend, widen or lift
+the pause on data centre approvals. Search for those by name every time.
+
 ## What a reading is
 
 Each signpost in `data/signposts.json` has `latest` (plain-language reading),

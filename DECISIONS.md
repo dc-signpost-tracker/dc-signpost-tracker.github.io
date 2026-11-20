@@ -49,6 +49,13 @@ commit and push. Signpost statuses are not logged here; they live in
   `dc-signpost-tracker`, at `dc-signpost-tracker.github.io`. Move pending.
 - **Go-live:** on hold until the owner's design changes are made and he says so.
 
+- **Baseline date:** a signpost's status changes only on developments after
+  12 Nov 2026. Anything known on or before that date is baseline context.
+- **A4 (Texas connections):** reverted to "Not yet" on 20 Nov; the earlier "Turned
+  negative" rested on a pause that predates the baseline. The card leads with the
+  political track: the Governor-elect's pledged moratorium, her powers from
+  19 Jan 2027 and the new Legislature.
+
 ## Design changes (20 Nov 2026, afternoon)
 
 - Removed from the top of the page: the introductory sentence under the headline, the
