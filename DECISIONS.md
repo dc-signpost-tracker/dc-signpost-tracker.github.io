@@ -55,6 +55,13 @@ commit and push. Signpost statuses are not logged here; they live in
   "24 signposts across 6 calls" line, the "The six calls" heading, and the severity
   rating legend. Do not add them back.
 
+- Removed the line "Select a call to see its signposts."
+- **Tabs, not one long page:** the six region and constraint pairs are six tabs across
+  the top. Selecting a tab shows that pair's ratings, signposts and next catalyst.
+  Each tab has its own address (for example `#europe-power`).
+- **Rating boxes are labelled:** "2026–30" sits above the first box and "Beyond 2030"
+  above the second. No caption underneath.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
