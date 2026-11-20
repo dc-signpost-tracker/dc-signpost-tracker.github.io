@@ -4,12 +4,12 @@
   "federal_register_ferc_large_load": {
    "state": "ok",
    "found": 6,
-   "new": 6
+   "new": 0
   },
   "federal_register_data_centre_rules": {
    "state": "ok",
    "found": 1,
-   "new": 1
+   "new": 0
   },
   "sec_edgar_ge_vernova": {
    "state": "skipped",
