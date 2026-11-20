@@ -14,8 +14,8 @@
    "label": "17 Nov 2026",
    "text": "Loudoun County vote on a 12-month pause on new applications",
    "sp": [
-    "D1",
-    "D3"
+    "B1",
+    "B3"
    ],
    "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
@@ -34,7 +34,7 @@
    "text": "Spain: Cabinet approval of the data centre decree targeted before the general election",
    "sp": [
     "C2",
-    "E2"
+    "D2"
    ]
   },
   {
@@ -58,7 +58,7 @@
    "label": "14 Dec 2026",
    "text": "European Union consultation on minimum performance standards for data centres closes",
    "sp": [
-    "E1"
+    "D1"
    ]
   },
   {
@@ -109,7 +109,7 @@
    "text": "New Texas governor takes office; new Congress sits in January",
    "sp": [
     "A4",
-    "D3"
+    "B3"
    ]
   },
   {
@@ -133,7 +133,7 @@
    "label": "10 Mar 2027",
    "text": "Korea's AI Data Centre Act enters into force",
    "sp": [
-    "B1"
+    "E1"
    ]
   },
   {
@@ -173,7 +173,7 @@
    "label": "Second quarter 2027",
    "text": "European Union proposal on minimum performance standards",
    "sp": [
-    "E1"
+    "D1"
    ],
    "fuzzy": true
   },
@@ -191,7 +191,7 @@
    "label": "Jul 2027",
    "text": "Oregon's data centre permit pause ends",
    "sp": [
-    "D3"
+    "B3"
    ],
    "fuzzy": true
   },
@@ -200,8 +200,8 @@
    "label": "Aug 2027",
    "text": "European Union public water-efficiency labels start for sites of 500 kilowatts or more",
    "sp": [
-    "E1",
-    "E4"
+    "D1",
+    "D4"
    ],
    "fuzzy": true
   },
@@ -219,8 +219,8 @@
    "label": "Sep 2027, latest",
    "text": "Loudoun County's pause on new data centre applications ends",
    "sp": [
-    "D1",
-    "D3"
+    "B1",
+    "B3"
    ],
    "fuzzy": true
   },
@@ -229,7 +229,7 @@
    "label": "2028",
    "text": "Korea regional connections checkpoint; first Texas 765 kilovolt lines late in the year",
    "sp": [
-    "B2"
+    "E2"
    ],
    "fuzzy": true,
    "note": "The Texas lines are a driver for the North America power call"
@@ -239,7 +239,7 @@
    "label": "Aug 2029, earliest",
    "text": "Kashiwazaki-Kariwa Unit 7 restart",
    "sp": [
-    "B5"
+    "E5"
    ],
    "fuzzy": true
   }

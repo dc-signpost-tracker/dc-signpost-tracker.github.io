@@ -123,8 +123,11 @@ commit and push. Signpost statuses are not logged here; they live in
   recommended option because the owner left that card unanswered; he may still change it.
 
 - **Tab order** is grouped by region: North America Power, North America Land, Europe
-  Power, Europe Water, North Asia ex-China Power, South & Southeast Asia Water. Signpost
-  labels (A1, D1 and so on) are unchanged, so the letters no longer run in order across tabs.
+  Power, Europe Water, North Asia ex-China Power, South & Southeast Asia Water.
+- **Signposts relettered on 20 Nov 2026 (evening)** so the letters follow the tab order.
+  Old to new: D (North America Land) became B; E (Europe Water) became D; B (North Asia
+  ex-China Power) became E. A, C and F are unchanged. Numbers are unchanged (old D3 is
+  B3). Entries in this file written before that time use the old letters.
 - **Calendar notes** sit on their own "Note:" line, not after "Relevant for".
 
 - **Banner key** is 10px. **"Watch for" and "What the call depends on":** each statement

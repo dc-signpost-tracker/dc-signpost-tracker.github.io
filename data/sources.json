@@ -30,7 +30,7 @@
    "name": "US Federal Register: rules, proposed rules and presidential documents on data centres",
    "url": "https://www.federalregister.gov/developers/documentation/api/v1",
    "signposts": [
-    "D3"
+    "B3"
    ],
    "feed": "api",
    "access": "open",
@@ -91,7 +91,7 @@
    "url": "https://www.boe.es/datosabiertos/",
    "signposts": [
     "C2",
-    "E2"
+    "D2"
    ],
    "feed": "api",
    "access": "open",
@@ -287,7 +287,7 @@
    "name": "Korea National Law Information Center",
    "url": "https://www.law.go.kr/",
    "signposts": [
-    "B1"
+    "E1"
    ],
    "feed": "event",
    "access": "open",
@@ -304,8 +304,8 @@
    "name": "Korea Ministry of Science and ICT",
    "url": "https://www.msit.go.kr/eng/",
    "signposts": [
-    "B1",
-    "B2"
+    "E1",
+    "E2"
    ],
    "feed": "event",
    "access": "open",
@@ -322,8 +322,8 @@
    "name": "Korea Electric Power Corporation",
    "url": "https://home.kepco.co.kr/",
    "signposts": [
-    "B2",
-    "B3"
+    "E2",
+    "E3"
    ],
    "feed": "manual",
    "access": "open",
@@ -340,7 +340,7 @@
    "name": "Korea Power Exchange electricity statistics",
    "url": "https://epsis.kpx.or.kr/",
    "signposts": [
-    "B2"
+    "E2"
    ],
    "feed": "manual",
    "access": "open",
@@ -357,7 +357,7 @@
    "name": "Japan's grid coordination body (OCCTO)",
    "url": "https://www.occto.or.jp/en/",
    "signposts": [
-    "B4"
+    "E4"
    ],
    "feed": "manual",
    "access": "open",
@@ -374,7 +374,7 @@
    "name": "Japan Nuclear Regulation Authority",
    "url": "https://www.nra.go.jp/english/",
    "signposts": [
-    "B5"
+    "E5"
    ],
    "feed": "document",
    "access": "open",
@@ -391,7 +391,7 @@
    "name": "Japan Atomic Industrial Forum: reactor status",
    "url": "https://www.jaif.or.jp/en/",
    "signposts": [
-    "B5"
+    "E5"
    ],
    "feed": "document",
    "access": "open",
@@ -408,7 +408,7 @@
    "name": "International Atomic Energy Agency reactor database: Japan",
    "url": "https://pris.iaea.org/PRIS/CountryStatistics/CountryDetails.aspx?current=JP",
    "signposts": [
-    "B5"
+    "E5"
    ],
    "feed": "document",
    "access": "open",
@@ -494,7 +494,7 @@
    "url": "https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/index.aspx",
    "signposts": [
     "C2",
-    "E2"
+    "D2"
    ],
    "feed": "event",
    "access": "open",
@@ -512,7 +512,7 @@
    "url": "https://www.miteco.gob.es/",
    "signposts": [
     "C2",
-    "E2"
+    "D2"
    ],
    "feed": "event",
    "access": "open",
@@ -597,7 +597,7 @@
    "name": "Data Center Watch quarterly reports",
    "url": "https://www.datacenterwatch.org/",
    "signposts": [
-    "D1"
+    "B1"
    ],
    "feed": "document",
    "access": "open",
@@ -614,7 +614,7 @@
    "name": "Ballotpedia: local ballot measures",
    "url": "https://ballotpedia.org/",
    "signposts": [
-    "D1"
+    "B1"
    ],
    "feed": "manual",
    "access": "open",
@@ -631,7 +631,7 @@
    "name": "New York Department of Public Service",
    "url": "https://dps.ny.gov/",
    "signposts": [
-    "D2"
+    "B2"
    ],
    "feed": "event",
    "access": "open",
@@ -648,9 +648,9 @@
    "name": "Loudoun County, Virginia: board agendas and minutes",
    "url": "https://www.loudoun.gov/",
    "signposts": [
-    "D1",
-    "D2",
-    "D3"
+    "B1",
+    "B2",
+    "B3"
    ],
    "feed": "event",
    "access": "open",
@@ -667,7 +667,7 @@
    "name": "Virginia Legislative Information System",
    "url": "https://lis.virginia.gov/",
    "signposts": [
-    "D3"
+    "B3"
    ],
    "feed": "event",
    "access": "open",
@@ -684,7 +684,7 @@
    "name": "European Commission energy directorate",
    "url": "https://energy.ec.europa.eu/",
    "signposts": [
-    "E1"
+    "D1"
    ],
    "feed": "event",
    "access": "open",
@@ -701,7 +701,7 @@
    "name": "EUR-Lex: European Union law",
    "url": "https://eur-lex.europa.eu/",
    "signposts": [
-    "E1"
+    "D1"
    ],
    "feed": "event",
    "access": "open",
@@ -718,7 +718,7 @@
    "name": "France: Ministry of Ecological Transition",
    "url": "https://www.ecologie.gouv.fr/",
    "signposts": [
-    "E3"
+    "D3"
    ],
    "feed": "manual",
    "access": "open",
@@ -735,7 +735,7 @@
    "name": "World Resources Institute Aqueduct water-stress data",
    "url": "https://www.wri.org/aqueduct",
    "signposts": [
-    "E4"
+    "D4"
    ],
    "feed": "calculated",
    "access": "open",
@@ -752,8 +752,8 @@
    "name": "European Environment Agency",
    "url": "https://www.eea.europa.eu/",
    "signposts": [
-    "E4",
-    "E5"
+    "D4",
+    "D5"
    ],
    "feed": "document",
    "access": "open",
@@ -770,7 +770,7 @@
    "name": "Copernicus European Drought Observatory",
    "url": "https://drought.emergency.copernicus.eu/",
    "signposts": [
-    "E5"
+    "D5"
    ],
    "feed": "document",
    "access": "open",
@@ -961,7 +961,7 @@
    "name": "Congress.gov",
    "url": "https://api.congress.gov/",
    "signposts": [
-    "D3"
+    "B3"
    ],
    "feed": "api",
    "access": "free_key",
@@ -979,7 +979,7 @@
    "name": "LegiScan state bill tracker",
    "url": "https://legiscan.com/legiscan",
    "signposts": [
-    "D3"
+    "B3"
    ],
    "feed": "api",
    "access": "free_key",
@@ -997,7 +997,7 @@
    "name": "Korea National Law Information Center open data",
    "url": "https://open.law.go.kr/",
    "signposts": [
-    "B1"
+    "E1"
    ],
    "feed": "api",
    "access": "free_key",
@@ -1015,7 +1015,7 @@
    "name": "France's Légifrance, through the PISTE portal",
    "url": "https://piste.gouv.fr/",
    "signposts": [
-    "E3"
+    "D3"
    ],
    "feed": "api",
    "access": "free_key",
@@ -1033,9 +1033,9 @@
    "name": "DC Byte",
    "url": "https://www.dcbyte.com/",
    "signposts": [
-    "B2",
+    "E2",
     "C1",
-    "E4",
+    "D4",
     "F1"
    ],
    "feed": "paid",
@@ -1054,7 +1054,7 @@
    "name": "Structure Research",
    "url": "https://www.structureresearch.net/",
    "signposts": [
-    "B2"
+    "E2"
    ],
    "feed": "paid",
    "access": "paid",
@@ -1090,7 +1090,7 @@
    "name": "S&P Global 451 Research",
    "url": "https://www.spglobal.com/marketintelligence/",
    "signposts": [
-    "D1"
+    "B1"
    ],
    "feed": "paid",
    "access": "paid",
