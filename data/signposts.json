@@ -70,13 +70,15 @@
      "track": "New generation PJM contracts in its one-off backstop auction, against a target of about 6.8 gigawatts.",
      "trigger": "Positive if contracted capacity approaches the target on schedule.",
      "status": "none",
-     "latest": "Auction suspended by the Federal Energy Regulatory Commission (FERC)",
-     "latestDate": "Until 28 Feb 2027",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "The Federal Energy Regulatory Commission (FERC) accepted the backstop procurement on 29 Sep 2026 but suspended it for five months, to 28 Feb 2027. The auction due to open on 30 Sep did not open; nothing has been contracted.",
+     "latestDate": "29 Sep 2026",
+     "source_url": "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
+     "retrieved_on": "2026-11-20",
      "next": "Bid opening proposed 1 Mar; target reset 28 Apr 2027",
      "sources": "FERC eLibrary docket alerts; PJM news releases and board materials",
-     "history": []
+     "history": [],
+     "verify": "The amended plan of 29 Oct and the proposed 1 Mar 2027 bid opening are from press reports.",
+     "status_reviewed_on": "2026-11-20"
     },
     {
      "id": "A3",
@@ -168,13 +170,35 @@
      "track": "Risk ratings for PJM and ERCOT in the North American Electric Reliability Corporation (NERC) Long-Term Reliability Assessment.",
      "trigger": "Positive if the 2026 assessment rates 2027 to 2030 lower than the 2025 one did, and credits new supply instead of lower demand forecasts.",
      "status": "none",
-     "latest": "High risk from 2029",
-     "latestDate": "2025 assessment",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "The 2025 assessment rates both PJM and Texas at Elevated risk for 2026 to 2028 and High risk for 2029 and 2030.",
+     "latestDate": "2025 assessment, published Jan 2026",
+     "source_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+     "retrieved_on": "2026-11-20",
      "next": "2026 assessment due Dec 2026 or Jan 2027",
      "sources": "NERC annual and seasonal assessments; ERCOT capacity, demand and reserves report; PJM load forecast",
-     "history": []
+     "history": [
+      {
+       "date": "2026-01-29",
+       "edition": "2025",
+       "pjm": {
+        "2026": "Elevated",
+        "2027": "Elevated",
+        "2028": "Elevated",
+        "2029": "High",
+        "2030": "High"
+       },
+       "ercot": {
+        "2026": "Elevated",
+        "2027": "Elevated",
+        "2028": "Elevated",
+        "2029": "High",
+        "2030": "High"
+       },
+       "source_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf"
+      }
+     ],
+     "verify": "The release date of the 2026 assessment is not confirmed.",
+     "status_reviewed_on": "2026-11-20"
     }
    ]
   },
