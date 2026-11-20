@@ -79,6 +79,12 @@ commit and push. Signpost statuses are not logged here; they live in
   neutral colour that carries no status meaning. The squares in each tab's summary
   carry the same labels.
 
+- **Layout approved (20 Nov):** a solid navy banner for each call (name, labelled
+  rating boxes, labelled signpost squares, next catalyst as a countdown panel), with
+  the open tab joined to it in navy. Signposts are cards, two across, each with a grey
+  header band and a headline figure in large type; the full reading, trigger and
+  sources sit behind a tap. The catalyst calendar is a navy rail down the right side.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.

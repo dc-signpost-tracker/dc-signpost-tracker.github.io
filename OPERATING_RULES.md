@@ -36,6 +36,11 @@ Each signpost in `data/signposts.json` has `latest` (plain-language reading),
 `latestDate`, `source_url`, `retrieved_on`, `verify` (a visible caveat), `next`,
 `status`, `status_reviewed_on`, `last_checked_on` and `history`.
 
+- `headline` is the figure or two-to-four-word fact the card leads with in large type
+  (for example "6,831 megawatts short", "Paused"); `summary` is the one line beneath
+  it. Both must say only what `latest` says. **Whenever `latest` changes, update
+  `headline` and `summary` in the same commit**, under the same rule that allows the
+  change to `latest`.
 - `source_url` is set **only** when the linked document was opened and read directly.
   A fact known only from press reports gets no `source_url`; say so in `verify`.
 - A US Federal Register document counts as read directly when the refresh script has

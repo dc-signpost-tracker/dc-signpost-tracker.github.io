@@ -17,7 +17,7 @@
   --sev-2:#F6E3C1; --sev-2-ink:#7A4D10;
   --sev-1:#D2E5E2; --sev-1-ink:#1F5E63;
   --ease:#3D7A3A; --ease-bg:#DDEBD5; --pers:#3A4252; --pers-bg:#E3E6EC; --int:#A32B2B; --int-bg:#F6D7D7;
-  --head:#151B3D; --gfill:#9AA5B8;
+  --head:#151B3D; --head-2:#232B5C; --on-head:#C9D0EA; --accent-on-head:#7FD6DB; --gfill:#9AA5B8;
   --good:#1B2A5C; --good-bg:#E4E8F3;
   --bad:#C0342F;  --bad-bg:#FBE9E7;
   --none-bg:#EEF1F4;
@@ -32,7 +32,7 @@
     --sev-2:#5A431C; --sev-2-ink:#F5DFB4;
     --sev-1:#1F4447; --sev-1-ink:#C3E3E0;
     --ease:#9FD49A; --ease-bg:#1F3320; --pers:#C3CAD6; --pers-bg:#252E3A; --int:#F2A3A3; --int-bg:#3D2020;
-    --head:#232B5C; --gfill:#6C7A90;
+    --head:#1B2350; --head-2:#2A3470; --on-head:#C9D0EA; --accent-on-head:#7FD6DB; --gfill:#6C7A90;
     --good:#AEBBF2; --good-bg:#232C4A;
     --bad:#F0736C;  --bad-bg:#3A1B1A;
     --none-bg:#1F2935;
@@ -46,7 +46,7 @@
   --sev-2:#5A431C; --sev-2-ink:#F5DFB4;
   --sev-1:#1F4447; --sev-1-ink:#C3E3E0;
   --ease:#9FD49A; --ease-bg:#1F3320; --pers:#C3CAD6; --pers-bg:#252E3A; --int:#F2A3A3; --int-bg:#3D2020;
-  --head:#232B5C; --gfill:#6C7A90;
+  --head:#1B2350; --head-2:#2A3470; --on-head:#C9D0EA; --accent-on-head:#7FD6DB; --gfill:#6C7A90;
   --good:#AEBBF2; --good-bg:#232C4A;
   --bad:#F0736C;  --bad-bg:#3A1B1A;
   --none-bg:#1F2935;
@@ -123,65 +123,77 @@ section{margin-top:44px}
 }
 @media (prefers-reduced-motion:reduce){.chev{transition:none}}
 
-/* tabs: one per region and constraint */
+/* tabs: one per region and constraint; the open tab joins the navy banner */
 .tabs{display:grid;grid-template-columns:repeat(6,minmax(168px,1fr));gap:6px;overflow-x:auto}
 .tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:3px;min-height:84px;
-  padding:11px 14px 12px;background:var(--none-bg);border:1px solid var(--rule);border-bottom:0;border-top:4px solid var(--rule);
-  border-radius:10px 10px 0 0;color:var(--muted)}
+  padding:12px 14px;background:var(--none-bg);border:1px solid var(--rule);border-bottom:0;border-radius:10px 10px 0 0;color:var(--muted)}
 .tab:hover{background:var(--surface)}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.tab.Easing{border-top-color:var(--ease)}.tab.Persisting{border-top-color:var(--pers)}.tab.Intensifying{border-top-color:var(--int)}
 .tab strong{font-size:15.5px;font-weight:700;line-height:1.2;color:var(--ink)}
 .tab .t-sub{font-size:13px;line-height:1.3}
 .tab .t-flag{margin-top:auto;font-size:12px;font-weight:700;color:var(--bad)}
-.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);position:relative;z-index:1;margin-bottom:-1px;padding-bottom:13px}
-.panel{background:var(--surface);border:1px solid var(--rule);border-radius:0 0 14px 14px;overflow:hidden}
-.panel-head{display:grid;gap:18px 28px;padding:24px 22px;align-items:center;grid-template-columns:1fr}
-@media (min-width:960px){.panel-head{grid-template-columns:1.2fr 1.1fr auto 1.3fr}}
-.p-name strong{display:block;font-size:26px;font-weight:800;letter-spacing:-0.015em;line-height:1.15}
-.p-name em{font-style:normal;color:var(--muted);font-size:17px}
-.p-band{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:5px;padding:4px 8px}
+.tab[aria-selected="true"]{background:var(--head);border-color:var(--head);color:var(--on-head)}
+.tab[aria-selected="true"] strong{color:#fff}
+.tab[aria-selected="true"] .t-flag{color:#FFB8B1}
+.panel{border-radius:0 0 14px 14px}
+.banner{background:var(--head);color:#fff;padding:30px 30px 28px;display:grid;gap:22px 32px;align-items:center;grid-template-columns:1fr}
+@media (min-width:1000px){.banner{grid-template-columns:1.15fr 1.05fr auto 1.25fr}}
+.banner h2{font-size:34px;font-weight:800;letter-spacing:-0.02em;line-height:1.05}
+.banner .con{color:var(--on-head);font-size:18px;margin-top:2px}
+.p-band{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:700;border-radius:5px;padding:5px 10px}
 .p-band.Easing{background:var(--ease-bg);color:var(--ease)}.p-band.Persisting{background:var(--pers-bg);color:var(--pers)}.p-band.Intensifying{background:var(--int-bg);color:var(--int)}
-.p-next b{display:block;font-size:15px;font-weight:600;line-height:1.35}
-.hz{display:inline-flex;flex-direction:column;gap:6px;align-items:flex-start}
-.hz small{font-size:12.5px;font-weight:600;color:var(--muted)}
-.shift.labelled{align-items:flex-end}
-.shift.labelled svg{margin-bottom:9px}
+.banner .flag{margin-top:10px;background:#fff;color:var(--bad)}
+.b-lab{font-size:12.5px;font-weight:600;color:var(--on-head);margin-bottom:7px}
+.shift.labelled{display:flex;align-items:flex-end;gap:10px}
+.shift.labelled svg{margin-bottom:10px;color:var(--on-head);flex:none}
+.hz{display:inline-flex;flex-direction:column;align-items:flex-start}
+.banner .chip{min-width:92px;padding:8px 14px;font-size:13.5px;font-weight:700}
+.banner .tally{display:flex;gap:6px;flex-wrap:nowrap}
+.banner .sq{width:34px;height:27px;border:1.5px solid #6F7AA8;border-radius:5px;font-size:11.5px;font-weight:700;display:grid;place-items:center;color:#fff;background:transparent}
+.banner .sq.supports{background:#fff;border-color:#fff;color:var(--head)}
+.banner .sq.challenges{background:var(--bad);border-color:var(--bad);color:#fff}
+.b-next{background:var(--head-2);border-radius:12px;padding:16px 18px}
+.b-next small{color:var(--on-head);font-size:12.5px}
+.b-next .when{font-size:26px;font-weight:800;color:var(--accent-on-head);letter-spacing:-0.01em;line-height:1.15}
+.b-next p{font-size:15px;font-weight:600;margin-top:5px;line-height:1.35}
+.why{background:var(--surface);border:1px solid var(--rule);border-top:0;border-radius:0 0 14px 14px;padding:18px 30px;display:grid;gap:14px 36px;font-size:14.5px;color:var(--muted);grid-template-columns:1fr}
+@media (min-width:900px){.why{grid-template-columns:1fr 1.4fr}}
+.why b{display:block;color:var(--ink);font-size:13px;margin-bottom:3px}
+.cols{display:grid;gap:22px;margin-top:24px;align-items:start;grid-template-columns:1fr}
+@media (min-width:1100px){.cols{grid-template-columns:1fr 340px}}
 
-/* signposts */
-.call-body{border-top:1px solid var(--rule);background:var(--bg);padding:20px 22px 24px}
-.call-body[hidden]{display:none}
-.depends{font-size:14.5px;color:var(--muted);max-width:110ch;margin:0 4px 14px}
-.depends b{color:var(--ink);font-weight:600}
-.sps{display:grid;gap:12px;align-items:start}
-@media (min-width:1100px){.sps{grid-template-columns:1fr 1fr}}
-.sp{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px}
-.sp-top{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:flex-start;justify-content:space-between}
-.sp-title{display:flex;gap:11px;align-items:center;min-width:0}
+/* signposts: a card each, leading with its headline figure */
+.sps{display:grid;gap:16px;align-items:stretch;grid-template-columns:1fr}
+@media (min-width:760px){.sps{grid-template-columns:1fr 1fr}}
+.sp{background:var(--surface);border:1px solid var(--rule);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.sp-head{display:flex;align-items:center;gap:11px;padding:13px 16px;background:var(--none-bg);border-bottom:1px solid var(--rule)}
+.sp-head h3{font-size:15.5px;font-weight:700;flex:1;line-height:1.25;min-width:0}
 .sp-id{width:34px;height:34px;border-radius:50%;background:var(--head);color:#fff;font-weight:700;font-size:13.5px;display:grid;place-items:center;flex:none}
-.sp-title h3{font-size:16.5px;font-weight:650;line-height:1.3}
-.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;border-radius:999px;padding:4px 10px 4px 8px;white-space:nowrap;background:var(--none-bg);color:var(--muted)}
-.pill.supports{background:var(--good-bg);color:var(--good)}
-.pill.challenges{background:var(--bad-bg);color:var(--bad)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;border-radius:999px;padding:4px 10px 4px 8px;white-space:nowrap;background:var(--surface);color:var(--muted);border:1px solid var(--rule)}
+.pill.supports{background:var(--good-bg);color:var(--good);border-color:transparent}
+.pill.challenges{background:var(--bad-bg);color:var(--bad);border-color:transparent}
 .pill i{font-style:normal;font-weight:800}
-.facts{display:grid;gap:10px 24px;margin-top:12px;grid-template-columns:1fr}
-@media (min-width:700px){.facts{grid-template-columns:1.4fr 1fr}}
-.fact span{display:block;font-size:12.5px;color:var(--muted)}
-.fact p{font-size:14.5px;line-height:1.4}
-.verify{color:var(--bad);font-weight:600;font-size:12.5px}
+.sp-body{padding:16px 16px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.fig{font-size:28px;font-weight:800;letter-spacing:-0.02em;line-height:1.12;font-variant-numeric:tabular-nums;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px;line-height:1.4}
+.sp-foot{border-top:1px solid var(--rule);padding:11px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline;font-size:13px;color:var(--muted)}
+.sp-foot b{color:var(--ink);font-weight:600}
+.sp-foot a{color:var(--accent);font-weight:600;white-space:nowrap}
+.unv{font-weight:600;color:var(--bad);white-space:nowrap}
+.verify{color:var(--bad);font-weight:600;font-size:13px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .tag{font-size:12px;color:var(--muted);border:1px solid var(--rule);border-radius:5px;padding:2px 7px}
-details.more{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px}
-details.more summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--accent);list-style:none}
+details.more{border-top:1px solid var(--rule);padding:10px 16px 12px}
+details.more summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--accent);list-style:none}
 details.more summary::-webkit-details-marker{display:none}
 details.more summary::after{content:" +"}
 details.more[open] summary::after{content:" \2212"}
 details.more dl{margin:10px 0 0;display:grid;gap:10px}
 details.more dt{font-size:12.5px;color:var(--muted)}
-details.more dd{margin:0;font-size:14.5px;line-height:1.45;max-width:75ch}
+details.more dd{margin:0;font-size:14.5px;line-height:1.45}
 
 /* gauge: latest reading against the trigger */
-.gauge{margin-top:14px;max-width:440px}
+.gauge{margin-top:8px;max-width:440px}
 .g-label{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--muted)}
 .g-label b{color:var(--ink);font-weight:600}
 .g-svg{display:block;width:100%;height:auto;margin-top:4px;overflow:visible}
@@ -192,21 +204,18 @@ details.more dd{margin:0;font-size:14.5px;line-height:1.45;max-width:75ch}
 .g-ref{stroke:var(--accent);stroke-width:6;stroke-linecap:round;opacity:.45}
 .g-axis{font-size:11px;fill:var(--muted);font-family:var(--font)}
 
-/* calendar: inside each tab, only that tab's signposts */
-.cal-title{margin:30px 4px 12px;font-size:19px}
-.cal{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:6px 18px}
-.cal h3{font-size:13.5px;font-weight:700;color:var(--muted);padding:16px 0 4px}
-.ev{display:grid;grid-template-columns:104px 1fr;gap:4px 16px;padding:12px 0;border-top:1px solid var(--rule)}
-.cal h3+.ev{border-top:0}
-.ev-date b{display:block;font-size:14.5px;font-weight:700;line-height:1.3}
-.ev-date span{font-size:12.5px;color:var(--muted)}
-.ev-date span.due{color:var(--bad);font-weight:600}
-.ev p{font-size:15px;line-height:1.4}
-.ev .refs{font-size:12.5px;color:var(--muted);margin-top:3px}
-@media (min-width:700px){.ev{grid-template-columns:200px 1fr}}
-.src{font-size:12.5px;color:var(--muted)}
-.src a{color:var(--accent);font-weight:600}
-.load-err{border:1px solid var(--bad);color:var(--bad);border-radius:10px;padding:12px 14px;margin-top:20px;font-size:14px}
+/* calendar: a navy rail beside the cards, only that tab's signposts */
+.rail{background:var(--head);color:#fff;border-radius:16px;padding:20px 20px 12px}
+.rail h2{font-size:17px;margin-bottom:6px}
+.rail h3{font-size:12.5px;font-weight:600;color:var(--on-head);margin:14px 0 4px}
+.rev{position:relative;padding:8px 0 11px 20px;border-left:2px solid #46508A;margin-left:5px;font-size:14px;line-height:1.4}
+.rev::before{content:"";position:absolute;left:-6px;top:14px;width:10px;height:10px;border-radius:50%;background:var(--accent-on-head)}
+.rev.past::before{background:#8A93BF}
+.rev b{display:block;font-size:13px;color:var(--accent-on-head)}
+.rev.past b{color:var(--on-head)}
+.rev small{display:block;color:var(--on-head);font-size:12px;margin-top:2px}
+.rev .due{color:#FFB8B1;font-weight:600}
+.rail .none{color:var(--on-head);font-size:14px;padding:6px 0 10px}
 
 /* method */
 .method{display:grid;gap:14px;grid-template-columns:1fr}
@@ -333,31 +342,33 @@ function gauge(g){
 function signpost(sp, call){
   const st = statusOf(sp), s = stance(call.dir, st), url = safeUrl(sp.source_url);
   const src = url
-    ? `<span class="src"><a href="${esc(url)}" target="_blank" rel="noopener">Primary source</a>${sp.retrieved_on ? " · retrieved " + esc(fmt(sp.retrieved_on)) : ""}</span>`
-    : `<span class="verify">Not yet verified against a primary source</span>`;
-  return `<article class="sp">
-    <div class="sp-top">
-      <div class="sp-title"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3></div>
-      <span class="pill ${s}"><i>${STANCE_ICON[s]}</i>${STANCE_TEXT[s]}</span>
+    ? `<a href="${esc(url)}" target="_blank" rel="noopener">Primary source</a>`
+    : `<span class="unv">Not yet verified</span>`;
+  return `<article class="sp" id="sp-${esc(sp.id)}">
+    <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3>
+      <span class="pill ${s}"><i>${STANCE_ICON[s]}</i>${STANCE_TEXT[s]}</span></header>
+    <div class="sp-body">
+      <div class="fig">${esc(sp.headline || sp.latest)}</div>
+      ${sp.headline && sp.summary ? `<p class="sub">${esc(sp.summary)}</p>` : ""}
+      ${sp.gauge ? gauge(sp.gauge) : ""}
     </div>
-    <div class="facts">
-      <div class="fact"><span>Latest reading${sp.latestDate ? " · " + esc(sp.latestDate) : ""}</span><p>${esc(sp.latest)}</p>${src}${sp.verify ? `<br><span class="verify">To verify: ${esc(sp.verify)}</span>` : ""}</div>
-      <div class="fact"><span>Next date</span><p>${esc(sp.next)}</p></div>
-    </div>
-    ${sp.gauge ? gauge(sp.gauge) : ""}
-    <details class="more"><summary>Trigger and sources</summary>
+    <footer class="sp-foot"><span>Next: <b>${esc(sp.next)}</b></span>${src}</footer>
+    <details class="more"><summary>Reading, trigger and sources</summary>
       <dl>
+        <div><dt>Latest reading${sp.latestDate ? " · " + esc(sp.latestDate) : ""}</dt><dd>${esc(sp.latest)}</dd></div>
+        ${url ? `<div><dt>Source</dt><dd><a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">Primary source</a>${sp.retrieved_on ? ", retrieved " + esc(fmt(sp.retrieved_on)) : ""}</dd></div>` : `<div><dt>Source</dt><dd><span class="verify">Not yet verified against a primary source</span></dd></div>`}
+        ${sp.verify ? `<div><dt>To verify</dt><dd>${esc(sp.verify)}</dd></div>` : ""}
         <div><dt>What we track</dt><dd>${esc(sp.track)}</dd></div>
         <div><dt>Trigger</dt><dd>${esc(sp.trigger)}</dd></div>
         <div><dt>Status against the trigger</dt><dd>${TRIGGER_TERM[st]}</dd></div>
-        <div><dt>Sources</dt><dd>${esc(sp.sources)}</dd></div>
+        <div><dt>Sources followed</dt><dd>${esc(sp.sources)}</dd></div>
       </dl>
       <div class="tags"><span class="tag">${esc(sp.type)}</span><span class="tag">${esc(sp.feed)}</span></div>
     </details>
   </article>`;
 }
 
-const ARROW = `<svg width="9" height="12" viewBox="0 0 9 12" aria-hidden="true"><path d="M2.5 2 6.5 6 2.5 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const ARROW = `<svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true"><path d="M1 6h18M15 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const BANDS = {Easing:"Easing after 2030", Persisting:"Persisting beyond 2030", Intensifying:"Intensifying after 2030"};
 const CHEV = `<svg class="chev" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5 10 12.5 15 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -365,7 +376,7 @@ const CHEV = `<svg class="chev" width="20" height="20" viewBox="0 0 20 20" aria-
 const slug = (c) => (c.region + " " + c.constraint).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 let current = null;
 function shiftHTML(c){
-  return `<span class="shift labelled"><span class="hz"><small>2026–30</small><span class="chip sev-${esc(c.from)}">${esc(c.from)}</span></span>${ARROW}<span class="hz"><small>Beyond 2030</small><span class="chip sev-${esc(c.to)}">${esc(c.to)}</span></span></span>`;
+  return `<div class="shift labelled"><div class="hz"><div class="b-lab">2026–30</div><span class="chip sev-${esc(c.from)}">${esc(c.from)}</span></div>${ARROW}<div class="hz"><div class="b-lab">Beyond 2030</div><span class="chip sev-${esc(c.to)}">${esc(c.to)}</span></div></div>`;
 }
 function tally(c){
   const stances = c.sps.map(sp => stance(c.dir, statusOf(sp)));
@@ -383,20 +394,20 @@ function renderBoard(){
       ${t.review ? `<span class="t-flag"><span aria-hidden="true">! </span>Under review</span>` : ""}</button>`;
   }).join("");
   const t = tally(c), nx = nextFor(c);
+  let when = "";
+  if (nx && !nx.fuzzy) { const n = Math.round((day(nx.d) - day(TODAY)) / 864e5); when = n === 0 ? "Today" : "In " + n + (n === 1 ? " day" : " days"); }
   el("board").innerHTML = `<div class="tabs" role="tablist" aria-label="Region and constraint">${tabs}</div>
     <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-${esc(c.id)}">
-      <div class="panel-head">
-        <div class="p-name"><strong>${esc(c.region)}</strong><em>${esc(c.constraint)}</em><br>
+      <div class="banner">
+        <div><h2>${esc(c.region)}</h2><div class="con">${esc(c.constraint)}</div>
           <span class="p-band ${esc(c.dir)}">${BANDS[c.dir]}</span>
           ${t.review ? `<br><span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
         <div>${shiftHTML(c)}</div>
-        <div><span class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</span>
-          <span class="small">${t.text}</span></div>
-        <div class="p-next">${nx ? `<span class="small" style="margin:0 0 4px">Next catalyst · ${esc(nx.label)}</span><b>${esc(nx.text)}</b>` : `<span class="small">No dated catalyst</span>`}</div>
+        <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div></div>
+        <div class="b-next">${nx ? `<small>Next catalyst · ${esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p>` : `<small>No dated catalyst</small>`}</div>
       </div>
-      <div class="call-body">
-        <p class="depends"><b>${esc(c.key.label)}:</b> ${esc(c.key.text)}</p>
-        <p class="depends"><b>What the call depends on.</b> ${esc(c.depends)}</p>
+      <div class="why"><div><b>${esc(c.key.label)}</b>${esc(c.key.text)}</div><div><b>What the call depends on</b>${esc(c.depends)}</div></div>
+      <div class="cols">
         <div class="sps">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
         ${calendarFor(c)}
       </div>
@@ -417,14 +428,14 @@ function calendarFor(c){
   });
   const row = (e, kind) => {
     let sub = "";
-    if (kind === "past") sub = e.outcome ? "" : `<span class="due">Outcome to log</span>`;
-    else if (kind === "soon" && !e.fuzzy) sub = `<span>${e.diff === 0 ? "Today" : "In " + e.diff + (e.diff === 1 ? " day" : " days")}</span>`;
-    return `<div class="ev"><div class="ev-date"><b>${esc(e.label)}</b>${sub}</div>
-      <div><p>${esc(e.text)}</p>${e.outcome ? `<p class="refs"><b>Outcome:</b> ${esc(e.outcome)}</p>` : ""}<div class="refs">Signposts ${esc(e.sp.filter(x => ids.includes(x)).join(", "))}${e.note ? " · " + esc(e.note) : ""}</div></div></div>`;
+    if (kind === "past") sub = e.outcome ? "" : ` · <span class="due">outcome to log</span>`;
+    else if (kind === "soon" && !e.fuzzy) sub = " · " + (e.diff === 0 ? "today" : "in " + e.diff + (e.diff === 1 ? " day" : " days"));
+    return `<div class="rev ${kind === "past" ? "past" : ""}"><b>${esc(e.label)}${sub}</b>${esc(e.text)}
+      ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}<small>${esc(e.sp.filter(x => ids.includes(x)).join(", "))}${e.note ? " · " + esc(e.note) : ""}</small></div>`;
   };
   const part = (title, list, kind) => list.length ? `<h3>${title}</h3>${list.map(e => row(e, kind)).join("")}` : "";
-  const body = part("Passed", groups.past, "past") + part("Next six weeks", groups.soon, "soon") + part("Further out", groups.later, "later");
-  return `<h2 class="cal-title">Catalyst calendar</h2><div class="cal">${body || `<p class="small" style="padding:14px 0">No dated catalysts for these signposts.</p>`}</div>`;
+  const body = part("Next six weeks", groups.soon, "soon") + part("Further out", groups.later, "later") + part("Passed", groups.past, "past");
+  return `<aside class="rail" aria-label="Catalyst calendar"><h2>Catalyst calendar</h2>${body || `<p class="none">No dated catalysts for these signposts.</p>`}</aside>`;
 }
 
 el("board").addEventListener("click", ev => {
