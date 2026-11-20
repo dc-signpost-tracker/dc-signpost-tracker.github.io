@@ -139,6 +139,9 @@ commit and push. Signpost statuses are not logged here; they live in
   source"), not the words "Primary source". Cards without a verified source still show
   "Not yet verified" in words, as the rules require.
 
+- **"How to read this"** keeps two boxes only: Ratings and Signpost status. "How the data
+  refreshes" and "Open data issues" were removed at the owner's request.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
