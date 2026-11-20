@@ -49,6 +49,12 @@ commit and push. Signpost statuses are not logged here; they live in
   `dc-signpost-tracker`, at `dc-signpost-tracker.github.io`. Move pending.
 - **Go-live:** on hold until the owner's design changes are made and he says so.
 
+## Design changes (20 Nov 2026, afternoon)
+
+- Removed from the top of the page: the introductory sentence under the headline, the
+  "24 signposts across 6 calls" line, the "The six calls" heading, and the severity
+  rating legend. Do not add them back.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
