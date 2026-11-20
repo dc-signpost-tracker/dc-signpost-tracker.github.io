@@ -107,6 +107,19 @@ commit and push. Signpost statuses are not logged here; they live in
 - **Signpost cards:** all white, lifted off the grey page by a soft shadow, with a rule
   under the title in the banner's tint (not navy). No grey header band (it blurred into the page background).
 
+## Design changes (20 Nov 2026, evening)
+
+- **Title** runs across the full page width on one line.
+- **"Last refreshed"** is small, italic and muted.
+- **Signpost key** (supports / challenges / no signal yet) sits inside the banner, in
+  small type under the signpost squares, not above the tabs.
+- **Calendar rail:** the countdown ("in 19 days") is italic and not bold, to separate it
+  from the date. Each event ends with an italic line "Relevant for: Signpost A1 Capacity
+  auctions" (several signposts are listed with semicolons) in place of a bare label.
+- **Pending the owner's choice:** a tagline under the title, and a calendar-style
+  treatment for the banner's next catalyst.
+
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.

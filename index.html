@@ -56,19 +56,21 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
 .wrap{max-width:1320px;margin:0 auto;padding:40px 40px 72px}
 h1,h2,h3,p{margin:0}
-h1{font-size:clamp(28px,5.2vw,44px);line-height:1.08;font-weight:800;letter-spacing:-0.02em;text-wrap:balance;max-width:18ch}
+h1{font-size:clamp(24px,2.55vw,36px);line-height:1.12;font-weight:800;letter-spacing:-0.02em;text-wrap:balance}
 h2{font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-0.01em}
 .lede{color:var(--muted);max-width:62ch;margin-top:14px;font-size:17px}
-.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:18px;color:var(--muted);font-size:14px}
-.meta b{color:var(--ink);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px;color:var(--muted);font-size:12.5px;font-style:italic}
+.meta b{font-weight:500}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-section{margin-top:44px}
+section{margin-top:30px}
 .sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:14px}
 .sec-head p{color:var(--muted);font-size:14px;max-width:60ch}
 
 /* legend */
-.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin-bottom:12px}
-.legend span{display:inline-flex;align-items:center;gap:6px}
+.key{display:flex;flex-wrap:wrap;gap:3px 10px;margin-top:9px;font-size:11.5px;color:var(--muted);width:0;min-width:100%}
+.key span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.key i{width:10px;height:10px;border-radius:2px;border:1.5px solid var(--muted);flex:none}
+.key i.supports{background:var(--good);border-color:var(--good)}.key i.challenges{background:var(--bad);border-color:var(--bad)}
 
 /* severity chips: one hue, darker means more severe */
 .chip{display:inline-block;font-size:13px;font-weight:600;line-height:1;padding:7px 12px;border-radius:4px;white-space:nowrap;min-width:82px;text-align:center}
@@ -214,9 +216,11 @@ details.more dd{margin:0;font-size:14.5px;line-height:1.45}
 .rev::before{content:"";position:absolute;left:-6px;top:14px;width:10px;height:10px;border-radius:50%;background:var(--accent-on-head)}
 .rev.past::before{background:#8A93BF}
 .rev b{display:block;font-size:13px;color:var(--accent-on-head)}
+.rev b em{font-weight:400;font-style:italic;color:var(--on-head);margin-left:4px}
+.rev .rel{font-style:italic}
 .rev.past b{color:var(--on-head)}
 .rev small{display:block;color:var(--on-head);font-size:12px;margin-top:2px}
-.rev .due{color:#FFB8B1;font-weight:600}
+.rev .due{color:#FFB8B1;font-weight:600;margin-left:4px}
 .rail .none{color:var(--on-head);font-size:14px;padding:6px 0 10px}
 
 /* method */
@@ -246,11 +250,6 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
   </header>
 
   <section aria-label="Calls and their signposts">
-    <div class="legend">
-      <span><span class="sq supports"></span> supports the call</span>
-      <span><span class="sq challenges"></span> challenges the call</span>
-      <span><span class="sq"></span> no signal yet</span>
-    </div>
     <div id="board"></div>
   </section>
 
@@ -404,7 +403,8 @@ function renderBoard(){
         <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${BANDS[c.dir]}</div>
           ${t.review ? `<span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
         <div>${shiftHTML(c)}</div>
-        <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div></div>
+        <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div>
+          <div class="key"><span><i class="supports"></i>supports the call</span><span><i class="challenges"></i>challenges the call</span><span><i></i>no signal yet</span></div></div>
         <div class="b-next">${nx ? `<small>Next catalyst · ${esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p>` : `<small>No dated catalyst</small>`}</div>
       </div>
       <div class="why"><div><b>${esc(c.key.label)}</b>${esc(c.key.text)}</div><div><b>What the call depends on</b>${esc(c.depends)}</div></div>
@@ -429,10 +429,12 @@ function calendarFor(c){
   });
   const row = (e, kind) => {
     let sub = "";
-    if (kind === "past") sub = e.outcome ? "" : ` · <span class="due">outcome to log</span>`;
-    else if (kind === "soon" && !e.fuzzy) sub = " · " + (e.diff === 0 ? "today" : "in " + e.diff + (e.diff === 1 ? " day" : " days"));
+    if (kind === "past") sub = e.outcome ? "" : ` <span class="due">outcome to log</span>`;
+    else if (kind === "soon" && !e.fuzzy) sub = ` <em>${e.diff === 0 ? "today" : "in " + e.diff + (e.diff === 1 ? " day" : " days")}</em>`;
+    const mine = e.sp.filter(x => ids.includes(x)).map(x => { const sp = c.sps.find(q => q.id === x); return esc(x + " " + sp.name); });
+    const rel = `Relevant for: Signpost${mine.length > 1 ? "s" : ""} ${mine.join("; ")}`;
     return `<div class="rev ${kind === "past" ? "past" : ""}"><b>${esc(e.label)}${sub}</b>${esc(e.text)}
-      ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}<small>${esc(e.sp.filter(x => ids.includes(x)).join(", "))}${e.note ? " · " + esc(e.note) : ""}</small></div>`;
+      ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}<small class="rel">${rel}${e.note ? ". " + esc(e.note) : ""}</small></div>`;
   };
   const part = (title, list, kind) => list.length ? `<h3>${title}</h3>${list.map(e => row(e, kind)).join("")}` : "";
   const body = part("Next six weeks", groups.soon, "soon") + part("Further out", groups.later, "later") + part("Passed", groups.past, "past");
