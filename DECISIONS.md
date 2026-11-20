@@ -89,6 +89,10 @@ commit and push. Signpost statuses are not logged here; they live in
   Region names sit on one line across all six tabs, with the constraint and direction
   on one line beneath.
 
+- **Signpost squares in the banner** sit on a white strip, so the navy "supports"
+  fill and the red "challenges" fill both show against the navy banner and match the
+  legend. The "2026–30" and "Beyond 2030" labels are centred over their rating boxes.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
