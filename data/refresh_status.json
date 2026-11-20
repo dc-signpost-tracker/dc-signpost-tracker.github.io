@@ -14,7 +14,7 @@
   "sec_edgar_ge_vernova": {
    "state": "ok",
    "found": 4,
-   "new": 4
+   "new": 0
   },
   "boe_daily_summary": {
    "state": "ok",
