@@ -191,9 +191,12 @@ section{margin-top:30px}
 .sp-body{padding:16px 16px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
 .fig{font-size:28px;font-weight:800;letter-spacing:-0.02em;line-height:1.12;font-variant-numeric:tabular-nums;text-wrap:balance}
 .sub{color:var(--muted);font-size:14px;line-height:1.4}
-.sp-foot{border-top:1px solid var(--rule);padding:11px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline;font-size:13px;color:var(--muted)}
+.sp-foot{border-top:1px solid var(--rule);padding:11px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;flex-wrap:nowrap;font-size:13px;color:var(--muted)}
 .sp-foot b{color:var(--ink);font-weight:600}
 .sp-foot a{color:var(--accent);font-weight:600;white-space:nowrap}
+.sp-foot .unv{flex:none}
+.sp-foot a.info{flex:none;width:22px;height:22px;border-radius:50%;border:1.6px solid var(--accent);display:inline-flex;align-items:center;justify-content:center;font:italic 700 13px/1 Georgia,"Times New Roman",serif;text-decoration:none}
+.sp-foot a.info:hover,.sp-foot a.info:focus-visible{background:var(--accent);color:var(--surface)}
 .unv{font-weight:600;color:var(--bad);white-space:nowrap}
 .verify{color:var(--bad);font-weight:600;font-size:13px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
@@ -355,7 +358,7 @@ function gauge(g){
 function signpost(sp, call){
   const st = statusOf(sp), s = stance(call.dir, st), url = safeUrl(sp.source_url);
   const src = url
-    ? `<a href="${esc(url)}" target="_blank" rel="noopener">Primary source</a>`
+    ? `<a class="info" href="${esc(url)}" target="_blank" rel="noopener" title="Open the primary source" aria-label="Open the primary source for ${esc(sp.name)}"><span aria-hidden="true">i</span></a>`
     : `<span class="unv">Not yet verified</span>`;
   return `<article class="sp" id="sp-${esc(sp.id)}">
     <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3>

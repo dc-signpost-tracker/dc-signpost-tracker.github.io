@@ -134,6 +134,10 @@ commit and push. Signpost statuses are not logged here; they live in
   maker tracked as an illustration of the wider market. Keep this wording when the
   reading is updated.
 
+- **Source link on each card** is an "i" in a circle (hover text "Open the primary
+  source"), not the words "Primary source". Cards without a verified source still show
+  "Not yet verified" in words, as the rules require.
+
 ## Open
 
 - The owner has design comments to give on making the site more intuitive.
