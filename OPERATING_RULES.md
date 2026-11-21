@@ -66,7 +66,7 @@ Each signpost in `data/signposts.json` has `latest` (plain-language reading),
 
 ## Owner-approved wording
 
-`insight` (the "The picture today" paragraph), `coverage_note` ("Why these six") and
+`insight` (the "The picture today" paragraph), `coverage_note` (the line under "What we currently track") and
 each call's `bottom_line` were approved by the owner on 21 Nov 2026. Never change them
 on your own. If a development makes one of them inaccurate, put the proposed new
 wording in group A of the digest and wait for the owner's answer.

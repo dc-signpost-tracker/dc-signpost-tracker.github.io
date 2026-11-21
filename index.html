@@ -344,6 +344,39 @@ html,body{overflow-x:clip}
 .cg td{height:104px}
 .cell,.cell.on{min-height:104px}
 .cell.off{align-items:flex-start}
+
+/* overview cards: arrow and next catalyst */
+.cell .go-arrow{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:14px;font-weight:700;flex:none;margin:-3px -3px 0 0}
+.cell.on:hover .go-arrow,.cell.on:focus-visible .go-arrow{background:var(--head)}
+.cell .nxc{font-size:12px;font-style:italic;color:var(--muted);margin-top:auto;text-align:left}
+.cg td{height:126px}
+.cell,.cell.on{min-height:126px}
+.cell.on{justify-content:flex-start}
+/* what changed: navy timeline */
+.chg-panel{background:var(--head);color:#fff;border-radius:16px;padding:20px 22px 10px;box-shadow:0 6px 18px rgba(17,28,43,.14)}
+.chg-panel h2{font-size:18px;margin-bottom:2px}
+.chg-panel .hint{color:var(--on-head);font-size:13px;margin-bottom:12px}
+.chg-panel .chg li{position:relative;border-top:0;padding:4px 0 16px 22px;border-left:2px solid #46508A;margin-left:5px}
+.chg-panel .chg li:last-child{border-left-color:transparent}
+.chg-panel .chg li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent-on-head)}
+.chg-panel .chg .d{color:var(--on-head)}
+.chg-panel .chg .d span:last-child{color:var(--on-head)}
+.chg-panel .chg .badge.tightening{background:#5A2326;color:#FFB8B1}.chg-panel .chg .badge.easing{background:#1F3320;color:#B7E4B2}
+.chg-panel .chg .go{display:flex;gap:10px;align-items:flex-start;color:#fff;margin-top:6px}
+.chg-panel .chg .go:hover .txt,.chg-panel .chg .go:focus-visible .txt{text-decoration:underline;text-decoration-color:var(--accent-on-head);text-underline-offset:3px}
+.chg-panel .chg .cid{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--head);font-size:11.5px;font-weight:800;margin:0}
+.chg-panel .chg .go span.txt{line-height:1.4;font-size:14px;color:#fff;font-weight:400;margin:0}
+.chg-panel .chg .go span.cid{color:var(--head);margin:0}
+/* how to read this: quiet notes, not cards */
+.notes{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted)}
+.notes .sec-head h2{font-size:14px;font-weight:700;color:var(--muted)}
+.notes .card{background:none;border:0;border-radius:0;padding:0}
+.notes .card h3{font-size:13px;color:var(--muted);font-weight:700;margin-bottom:4px}
+.notes table{font-size:12.5px}
+.notes th,.notes td{padding:4px 10px 4px 0;border-bottom:1px solid color-mix(in srgb,var(--rule) 60%,transparent)}
+.notes td,.notes td:first-child{color:var(--muted)} .notes td:first-child{font-weight:600}
+.notes p{font-size:12.5px}
+.notes .method{gap:28px}
 </style>
 </head>
 <body>
@@ -365,7 +398,7 @@ html,body{overflow-x:clip}
     <div id="board"></div>
   </section>
 
-  <section aria-labelledby="h-method">
+  <section class="notes" aria-labelledby="h-method">
     <div class="sec-head"><h2 id="h-method">How to read this</h2></div>
     <div class="method">
       <div class="card">
@@ -584,13 +617,15 @@ el("board").addEventListener("keydown", ev => {
 const CONS = ["power", "water", "land"];
 const callFor = (region, con) => CALLS.find(c => c.region === region && c.constraint.toLowerCase() === con);
 function mini(pair){ return `<span class="mini"><span class="chip sev-${esc(pair[0])}">${esc(pair[0])}</span>${ARROW}<span class="chip sev-${esc(pair[1])}">${esc(pair[1])}</span></span>`; }
+function nextLong(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d)) : "none dated"; }
 function nextShort(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d).replace(/ \d{4}$/, "")) : "none dated"; }
 function sqs(c){ return `<span class="sqs">${tally(c).signals.map(x => `<span class="sq ${x === "none" ? "" : x}"></span>`).join("")}</span>`; }
 function covCell(c){
   const t = tally(c);
   return `<button class="cell on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}" aria-label="Open ${esc(c.region)} ${esc(c.constraint)}">
-    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="open">Open →</span></span>${mini([c.from, c.to])}
-    <span class="meta2">${sqs(c)}<span>Next ${esc(nextShort(c))}</span></span></button>`;
+    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="go-arrow" aria-hidden="true">→</span></span>${mini([c.from, c.to])}
+    <span class="meta2">${sqs(c)}</span>
+    <span class="nxc">Next catalyst: ${esc(nextLong(c))}</span></button>`;
 }
 function coverageGrid(){
   const rows = HEAT.map(r => `<tr><td class="reg">${esc(r.name)}<small>${esc(r.share)}% of capacity</small></td>${CONS.map(k => {
@@ -610,12 +645,11 @@ function changes(){
   if (!items.length) return `<p class="why6">No new developments logged yet.</p>`;
   return `<ul class="chg">${items.slice(0, 6).map(({c, sp, h}) => { const sg = signalOf(sp);
     return `<li><div class="d">${esc(fmt(h.date))}${h.kind === "status" && sg !== "none" ? `<span class="badge ${sg}">${SIGNAL_ICON[sg]} Now ${sg === "tightening" ? "tightening" : "easing"}</span>` : ""}<span>${esc(c.tab || c.region)} ${esc(c.constraint)}</span></div>
-      <button class="go" type="button" data-call="${esc(c.id)}" data-sp="${esc(sp.id)}"><span>${esc(sp.id)}</span>${esc(h.brief || h.note)}</button></li>`; }).join("")}</ul>`;
+      <button class="go" type="button" data-call="${esc(c.id)}" data-sp="${esc(sp.id)}"><span class="cid">${esc(sp.id)}</span><span class="txt">${esc(h.brief || h.note)}</span></button></li>`; }).join("")}</ul>`;
 }
 function renderHome(){
-  const why = `<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p></div>`;
-  const chg = `<div class="panel-card"><h2>What changed</h2><p class="hint">Latest developments logged against the signposts</p>${changes()}</div>`;
-  const main = `<div class="panel-card"><h2>What we currently track</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
+  const chg = `<aside class="chg-panel"><h2>What changed</h2><p class="hint">Latest developments, newest first</p>${changes()}</aside>`;
+  const main = `<div class="panel-card"><h2>What we currently track</h2><p class="hint">${esc(META.coverage_note || "")}</p>${coverageGrid()}${coverageKey()}</div>${chg}`;
   el("home").innerHTML = `<div class="home-grid">${main}</div>`;
 }
 el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-call]"); if (b) openCall(b.dataset.call, b.dataset.sp); });

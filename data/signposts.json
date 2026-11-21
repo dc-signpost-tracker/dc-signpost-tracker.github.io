@@ -819,5 +819,5 @@
   }
  ],
  "insight": "To 2030, power is the binding constraint in North America, Europe and North Asia. After 2030 it eases in North America and North Asia, but Europe's core hubs wait for grid fixes into the 2030s, and growth moving into water-stressed areas makes water the rising constraint in southern Europe and South and Southeast Asia.",
- "coverage_note": "The tracker follows the four region and constraint pairs where the rating changes between 2026–30 and beyond 2030, plus the two where a Severe rating persists in the largest markets: North America land and Europe power. Every other pair keeps the same rating in both periods, so for now there is no shift to track."
+ "coverage_note": "The tracker follows the four region and constraint pairs where the rating changes between 2026–30 and beyond 2030, plus the two where a Severe rating persists. Every other pair keeps the same rating in both periods, so for now there is no shift to track."
 }
