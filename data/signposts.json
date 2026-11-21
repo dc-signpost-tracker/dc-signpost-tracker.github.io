@@ -153,15 +153,20 @@
      "status": "none",
      "headline": "Paused",
      "summary": "Approvals on hold since 3 Aug 2026; the Governor-elect has pledged a moratorium",
-     "latest": "The Governor-elect has pledged a moratorium on data centre approvals until the Legislature passes new protections; she takes office on 19 Jan 2027 and can replace the current directives. Approvals to energise large data centres have been paused since 3 Aug 2026, and passing the audit does not by itself restart them. Since 12 Nov, environmental permit reviews have resumed. The queue stood at about 475 gigawatts in June 2026, of which about 9 (roughly 2%) had approval.",
-     "latestDate": "18 Nov 2026",
+     "latest": "The Governor-elect has pledged a moratorium on data centre approvals until the Legislature passes new protections; she takes office on 19 Jan 2027 and can replace the current directives. Approvals to energise large data centres have been paused since 3 Aug 2026, and passing the audit does not by itself restart them. She repeated the call on 19 Nov 2026 and accepted that she cannot stop sites already under construction. A Senate bill filed for the session that opens on 12 Jan 2027, reported as Senate Bill 338 with 17 senators behind it, all but one of them Republican, would from 1 Sep 2027 limit new data centres to water-saving cooling, require yearly reports of water use and refuse a grid connection to sites that fall short. It is a filed bill, not law, and it neither extends nor lifts the current pause. Since 12 Nov, environmental permit reviews have resumed. The queue stood at about 475 gigawatts in June 2026, of which about 9 (roughly 2%) had approval.",
+     "latestDate": "19 Nov 2026",
      "source_url": "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
      "retrieved_on": "2026-11-20",
      "next": "Audit report 10 Dec 2026; Legislature convenes 12 Jan 2027; new Governor 19 Jan 2027",
      "sources": "ERCOT large-load status updates and monthly operational overview; Public Utility Commission of Texas filings",
-     "verify": "The linked update confirms the pause and the audit date. The Governor-elect's pledge, her powers, the resumed permit reviews and the queue figures come from a law-firm briefing and press reports, not from primary documents.",
-     "history": [],
-     "status_reviewed_on": "2026-11-20",
+     "verify": "The linked update confirms the pause and the audit date. The Governor-elect's pledge, her powers, the resumed permit reviews and the queue figures come from a law-firm briefing and press reports, not from primary documents. The Governor-elect's remarks of 19 Nov and the Senate bill are from a press report (KCBD, 19 Nov 2026); the bill text has not been read.",
+     "history": [
+      {
+       "date": "2026-11-19",
+       "note": "Governor-elect repeated her call for a moratorium; a Senate bill tying grid connection to water-saving cooling was reported filed (press only). Owner kept the status at Not yet on 21 Nov 2026"
+      }
+     ],
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
     {
