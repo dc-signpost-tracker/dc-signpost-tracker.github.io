@@ -20,6 +20,16 @@
    "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
   {
+   "d": "2026-11-20",
+   "label": "20 Nov 2026",
+   "text": "Spain: Council of Ministers approval of the data centre decree, which had been targeted by 29 Nov, before the general election",
+   "sp": [
+    "C2",
+    "D2"
+   ],
+   "outcome": "Approved on 20 Nov 2026, nine days before the election. Not yet in the official gazette."
+  },
+  {
    "d": "2026-11-27",
    "label": "27 Nov 2026",
    "text": "Thailand draft requiring 80% reuse of cooling-tower discharge goes to the national data centre board",
@@ -30,8 +40,8 @@
   },
   {
    "d": "2026-11-29",
-   "label": "By 29 Nov 2026",
-   "text": "Spain: Cabinet approval of the data centre decree targeted before the general election",
+   "label": "29 Nov 2026",
+   "text": "Spain's general election; the main opposition party has said it would repeal the data centre decree",
    "sp": [
     "C2",
     "D2"

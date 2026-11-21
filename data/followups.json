@@ -14,7 +14,7 @@
   {
    "signpost": "C2",
    "priority": 2,
-   "task": "The ministry's press release of 20 Nov 2026 confirms the Council of Ministers approved the royal decree on data centres that day (https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html). Still to do: read the decree text once it is in the official gazette, and confirm the date it takes effect and which data centres the water rule covers. Applies to D2 as well. The status decision is with the owner (digest of 21 Nov 2026)."
+   "task": "Read the text of Spain's royal decree on data centres once it is in the official gazette (approved 20 Nov 2026; the owner set C2 and D2 to Turned negative on 21 Nov 2026). Confirm the date it takes effect, which data centres the water rule covers and the unit of the 0.1 ceiling, then update C2 and D2."
   },
   {
    "signpost": "E1",

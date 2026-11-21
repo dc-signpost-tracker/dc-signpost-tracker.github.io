@@ -153,6 +153,17 @@ commit and push. Signpost statuses are not logged here; they live in
 - Every push to `main` now publishes to the public site within a minute or two.
 - The morning digest task points at the new repository name.
 
+## Decisions (21 Nov 2026)
+
+- **How a status change is written up:** when a signpost's status changes, the reading
+  gives the facts in a balanced way: what happened and why it supports the change, and
+  equally what is not yet settled (for Spain's decree: not yet in the official gazette, a
+  planned court challenge, the opposition's pledge to repeal, and which sites the water
+  rule covers and from when). "Next" names the next critical date (there, the general
+  election of 29 Nov 2026).
+- **A catalyst that arrives early** is recorded on the date it happened, with its
+  outcome, and the next critical date becomes the catalyst shown.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

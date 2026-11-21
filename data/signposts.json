@@ -287,16 +287,16 @@
      "trigger": "Positive if deals convert opposed projects into approvals.",
      "status": "none",
      "headline": "US$1 million per megawatt",
-     "summary": "New York's recommended local investment; no approvals unlocked yet",
-     "latest": "New York published a voluntary framework on 15 Sep 2026 recommending at least US$1 million per megawatt in local investment. No evidence yet of deals turning opposition into approvals.",
-     "latestDate": "15 Sep 2026",
+     "summary": "New York's recommended local investment; one county's approvals with community payments are a first example to watch",
+     "latest": "New York published a voluntary framework on 15 Sep 2026 recommending at least US$1 million per megawatt in local investment. A first example to watch: on 16 Nov 2026 Spartanburg County, South Carolina, which has a moratorium in force and rejected a large project earlier in the year, gave final approval to three data centre agreements; the county puts community benefit payments at about US$60 million across five projects. It is not shown that the payments won the approvals: the developers also agreed to smaller sites and cleaner fuel. One county is not yet evidence of deals turning opposition into approvals at scale.",
+     "latestDate": "16 Nov 2026",
      "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-strongest-community-investment-framework-nation-protect-communities",
      "retrieved_on": "2026-11-20",
      "next": "Monthly check",
      "sources": "New York Department of Public Service; Virginia Governor's office; Loudoun and Prince William board minutes",
      "history": [],
-     "verify": "Virginia's toolkit has not been checked.",
-     "status_reviewed_on": "2026-11-20",
+     "verify": "The New York framework is confirmed at the linked source. The Spartanburg County approvals are from a press report only (Fox Carolina, 18 Nov 2026); the county's own record has not been checked. Virginia's toolkit has not been checked.",
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
     {
@@ -364,18 +364,25 @@
      "feed": "Event alerts",
      "track": "Whether the data centre decree is approved before the general election, and its final terms.",
      "trigger": "Watch the 80% hourly renewables match, the 10 megawatt threshold and the five-year phase-in.",
-     "status": "none",
-     "headline": "Unconfirmed",
-     "summary": "Cabinet approval was expected on 17 Nov; not in the official gazette by 20 Nov",
-     "latest": "Endorsed by the Council of State in early November. Cabinet approval was expected on 17 Nov 2026 but is not confirmed, and the decree had not appeared in the official gazette by 20 Nov.",
+     "status": "neg",
+     "headline": "Approved",
+     "summary": "Spain's decree passed on 20 Nov 2026 with the 80% hourly renewables match kept; not yet in the official gazette, and a court challenge and the election lie ahead",
+     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The terms this signpost watches all survived. Data centres must show that 80% of their electricity is matched hour by hour by renewable generation, most of it newly added to the grid. The grid-access rules apply to sites above 10 megawatts. For five years there is an easier route for sites that accept being disconnected first when the grid is short: 60% at peak hours until the end of 2028, then 70%. Sites that fall short can lose their grid-access rights for up to three years. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party has said it would repeal it, and the general election is on 29 Nov 2026.",
      "latestDate": "20 Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Before the election on 29 Nov 2026",
+     "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
+     "retrieved_on": "2026-11-21",
+     "next": "General election 29 Nov 2026; then publication in the official gazette and any court challenge",
      "sources": "Spain's official gazette; Council of Ministers references; energy ministry; Council of State",
-     "history": [],
-     "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
-     "status_reviewed_on": "2026-11-20",
+     "history": [
+      {
+       "date": "2026-11-20",
+       "note": "Council of Ministers approved the royal decree on data centres; status set to Turned negative by the owner on 21 Nov 2026",
+       "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
+       "retrieved_on": "2026-11-21"
+      }
+     ],
+     "verify": "The approval and the terms are from the energy ministry's press release, read directly; the decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026).",
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
     {
@@ -452,18 +459,25 @@
      "feed": "Event alerts",
      "track": "Whether the final decree keeps the top water-efficiency class for new data centres above 10 megawatts.",
      "trigger": "The draft requires 0.1 litres per kilowatt-hour or less.",
-     "status": "none",
-     "headline": "Unconfirmed",
-     "summary": "Cabinet approval was expected on 17 Nov; not in the official gazette by 20 Nov",
-     "latest": "Endorsed by the Council of State in early November. Cabinet approval was expected on 17 Nov 2026 but is not confirmed, and the decree had not appeared in the official gazette by 20 Nov.",
+     "status": "neg",
+     "headline": "Approved",
+     "summary": "Spain's decree passed on 20 Nov 2026 keeping the top water-efficiency level; which sites it covers and when it takes effect are not yet stated",
+     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The water rule survived: data centres must meet the highest level for water use on the European Union's data centre label, which is still being drawn up. Until that label applies, the ceiling is 0.1, the figure in the draft (there, litres of water per kilowatt-hour). The ministry has not yet said which data centres the water rule covers (the draft applied it to new sites above 10 megawatts) or from when. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party has said it would repeal it, and the general election is on 29 Nov 2026.",
      "latestDate": "20 Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Before the election on 29 Nov 2026",
+     "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
+     "retrieved_on": "2026-11-21",
+     "next": "General election 29 Nov 2026; then publication in the official gazette, which should show which sites the water rule covers",
      "sources": "Spain's official gazette; energy ministry; river-basin authorities",
-     "history": [],
-     "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
-     "status_reviewed_on": "2026-11-20",
+     "history": [
+      {
+       "date": "2026-11-20",
+       "note": "Council of Ministers approved the royal decree on data centres, keeping the top water-efficiency level; status set to Turned negative by the owner on 21 Nov 2026",
+       "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
+       "retrieved_on": "2026-11-21"
+      }
+     ],
+     "verify": "The approval and the water rule are from the energy ministry's press release, read directly; it gives the 0.1 ceiling without a unit and does not say which sites are covered. The decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026).",
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
     {
@@ -517,16 +531,23 @@
      "trigger": "Wider or longer droughts confirm the intensification.",
      "status": "none",
      "headline": "50% in drought",
-     "summary": "Of the European Union and United Kingdom at the end of July 2026; 9% at alert level",
-     "latest": "At the end of July 2026, half of the European Union and United Kingdom was under some level of drought and 9% was at alert level. Hotspots were France, Germany, Hungary, Romania and the United Kingdom.",
-     "latestDate": "21 to 31 Jul 2026",
+     "summary": "Of the European Union and United Kingdom at the end of July 2026, 9% at alert level; still critical in early November",
+     "latest": "At the end of July 2026, half of the European Union and United Kingdom was under some level of drought and 9% was at alert level. Hotspots were France, Germany, Hungary, Romania and the United Kingdom. In early November 2026 the European Drought Observatory said drought conditions remained critical in most of Europe and had worsened in the Iberian Peninsula; it gave no share of territory.",
+     "latestDate": "Early Nov 2026",
      "source_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
-     "retrieved_on": "2026-11-20",
+     "retrieved_on": "2026-11-21",
      "next": "Summer 2027 season",
      "sources": "Copernicus European Drought Observatory; national hydrological bulletins",
-     "history": [],
-     "verify": "No earlier year has been loaded for comparison.",
-     "status_reviewed_on": "2026-11-20",
+     "history": [
+      {
+       "date": "2026-11-01",
+       "note": "European Drought Observatory, early November 2026: drought conditions remained critical in most of Europe and worsened in the Iberian Peninsula",
+       "source_url": "https://drought.emergency.copernicus.eu/",
+       "retrieved_on": "2026-11-21"
+      }
+     ],
+     "verify": "The July figures are at the linked source. The early November statement is from the European Drought Observatory's own site (https://drought.emergency.copernicus.eu/), read directly; it gives no percentage. No earlier year has been loaded for comparison.",
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     }
    ]
