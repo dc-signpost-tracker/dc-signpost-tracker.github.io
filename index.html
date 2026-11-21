@@ -332,11 +332,23 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .banner .sq{width:31px;height:31px;font-size:11px}
 .banner .tally{gap:5px}
 .key i{width:9px;height:9px}
+
+html,body{overflow-x:clip}
+/* landing page header: navy-to-teal band, full width (owner's choice, 21 Nov 2026) */
+.on-home .hero{position:relative;color:#fff;padding:6px 0 32px;margin-bottom:6px}
+.on-home .hero::before{content:"";position:absolute;top:-40px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:linear-gradient(120deg,#151B3D 0%,#1C2A5A 55%,#0F5560 100%);z-index:-1}
+.on-home .hero .tagline{color:#DCE2F5;opacity:1}.on-home .hero .meta{color:var(--on-head)}.on-home .hero .meta b{color:#fff}
+.on-home .insight{background:rgba(255,255,255,.08);border-left-color:#7FD6DB;color:#fff;box-shadow:none}
+.on-home .insight b{color:#7FD6DB}
+/* every cell in the overview grid is the same size as a tracked pair */
+.cg td{height:104px}
+.cell,.cell.on{min-height:104px}
+.cell.off{align-items:flex-start}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
+  <header class="hero">
     <h1>Where power, water and land redirect the data centre build-out</h1>
     <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 24 signposts</p>
     <div class="meta">
@@ -583,7 +595,7 @@ function covCell(c){
 function coverageGrid(){
   const rows = HEAT.map(r => `<tr><td class="reg">${esc(r.name)}<small>${esc(r.share)}% of capacity</small></td>${CONS.map(k => {
     const c = callFor(r.name, k);
-    return `<td>${c ? covCell(c) : `<div class="cell off">${mini(r[k])}</div>`}</td>`;
+    return `<td class="k-${k}">${c ? covCell(c) : `<div class="cell off s-${esc(r[k][1])}">${mini(r[k])}</div>`}</td>`;
   }).join("")}</tr>`).join("");
   return `<table class="cg"><tr><th></th><th>Power</th><th>Water</th><th>Land</th></tr>${rows}</table>`;
 }
@@ -603,7 +615,7 @@ function changes(){
 function renderHome(){
   const why = `<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p></div>`;
   const chg = `<div class="panel-card"><h2>What changed</h2><p class="hint">Latest developments logged against the signposts</p>${changes()}</div>`;
-  const main = `<div class="panel-card"><h2>Where the tracker looks</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
+  const main = `<div class="panel-card"><h2>What we currently track</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
   el("home").innerHTML = `<div class="home-grid">${main}</div>`;
 }
 el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-call]"); if (b) openCall(b.dataset.call, b.dataset.sp); });
@@ -612,6 +624,7 @@ el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-
 function route(){
   const c = CALLS.find(x => slug(x) === location.hash.slice(1));
   el("home").hidden = !!c; el("boardsec").hidden = !c; el("insight").hidden = !!c;
+  document.body.classList.toggle("on-home", !c);
   if (c) { if (c.id !== current || !el("board").innerHTML) { current = c.id; renderBoard(); } }
   else renderHome();
 }

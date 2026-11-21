@@ -199,6 +199,11 @@ The owner reviewed the site as a first-time reader would and approved:
   numbered circles on the cards; rectangles are kept for severity ratings only, so the two
   are not confused (owner, 21 Nov 2026).
 
+- **Landing page look (21 Nov 2026):** full-width navy-to-teal header behind the title and
+  "The picture today", on the landing page only; no row of key numbers; grid heading "What
+  we currently track"; every grid cell the same size as a tracked pair, untracked ones
+  faded. The owner looked at a constraint-colour version and a full heatmap and chose this.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
