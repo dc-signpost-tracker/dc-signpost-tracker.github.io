@@ -211,6 +211,10 @@ The owner reviewed the site as a first-time reader would and approved:
   italics at the bottom left. "How to read this" is quiet grey notes below a rule, not
   boxed cards.
 
+- **Header art (21 Nov 2026):** a faint line drawing of a data centre campus (halls with
+  rooftop cooling, a substation, pylons and a water tank) fades in on the right of the
+  landing-page header. It was drawn for the site; no stock photo is used.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
