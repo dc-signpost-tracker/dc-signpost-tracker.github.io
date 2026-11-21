@@ -195,6 +195,10 @@ The owner reviewed the site as a first-time reader would and approved:
   E1 to E4, E3 to E5. A1, A3, A5, A6, B1, D1, D2, D4, F1 and F2 are unchanged. Entries
   in this file written before then use the old numbers.
 
+- **Shapes:** signposts are circles everywhere (banner, legends, overview), matching the
+  numbered circles on the cards; rectangles are kept for severity ratings only, so the two
+  are not confused (owner, 21 Nov 2026).
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
