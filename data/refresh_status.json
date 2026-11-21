@@ -1,5 +1,5 @@
 {
- "run_on": "2026-11-20",
+ "run_on": "2026-11-21",
  "feeds": {
   "federal_register_ferc_large_load": {
    "state": "ok",
@@ -12,8 +12,9 @@
    "new": 0
   },
   "sec_edgar_ge_vernova": {
-   "state": "skipped",
-   "detail": "CONTACT_EMAIL is not set; the filing system requires a contact address"
+   "state": "ok",
+   "found": 4,
+   "new": 0
   },
   "boe_daily_summary": {
    "state": "ok",
