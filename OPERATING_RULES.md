@@ -25,7 +25,7 @@ taken into account. **A signpost's status changes only on a development after
 context in the reading, but never recommend a status change because of it, however
 adverse it looks. When recommending a change, state the date of the development.
 
-Some signposts turn mainly on politics. For A4 (Texas connections) the developments
+Some signposts turn mainly on politics. For A2 (Texas connections) the developments
 that matter most are statements and measures from the Governor-elect, other incoming
 Democratic office-holders and the Texas Legislature that would extend, widen or lift
 the pause on data centre approvals. Search for those by name every time.

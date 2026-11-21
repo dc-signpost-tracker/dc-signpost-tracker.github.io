@@ -188,9 +188,12 @@ The owner reviewed the site as a first-time reader would and approved:
   "Relevant for" jumps to its card.
 - Card colour follows the owner-approved status only; no good-or-bad colouring of
   readings that have no status.
-- **Signpost order (decided, not yet done):** the owner will rank the signposts in each
-  call once by materiality; they are then renumbered so the first is the most material,
-  and the order stays fixed. Order is not tied to the next catalyst date.
+- **Signpost order:** ranked once by materiality and renumbered on 21 Nov 2026 (14:23),
+  so the first card in each call is the most material. The order stays fixed; it is not
+  tied to the next catalyst date. Old to new: A4 to A2 and A2 to A4; B3 to B2 and B2 to
+  B3; C3 to C1, C1 to C2, C2 to C3; D5 to D3 and D3 to D5; E2 to E1, E4 to E2, E5 to E3,
+  E1 to E4, E3 to E5. A1, A3, A5, A6, B1, D1, D2, D4, F1 and F2 are unchanged. Entries
+  in this file written before then use the old numbers.
 
 ## Open
 

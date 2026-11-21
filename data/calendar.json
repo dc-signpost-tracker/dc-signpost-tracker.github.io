@@ -15,7 +15,7 @@
    "text": "Loudoun County vote on a 12-month pause on new applications",
    "sp": [
     "B1",
-    "B3"
+    "B2"
    ],
    "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
@@ -24,7 +24,7 @@
    "label": "20 Nov 2026",
    "text": "Spain: Council of Ministers approval of the data centre decree, which had been targeted by 29 Nov, before the general election",
    "sp": [
-    "C2",
+    "C3",
     "D2"
    ],
    "outcome": "Approved on 20 Nov 2026, nine days before the election. Not yet in the official gazette."
@@ -43,7 +43,7 @@
    "label": "29 Nov 2026",
    "text": "Spain's general election; the main opposition party has said it would repeal the data centre decree",
    "sp": [
-    "C2",
+    "C3",
     "D2"
    ]
   },
@@ -60,7 +60,7 @@
    "label": "10 Dec 2026",
    "text": "Texas statewide audit report on the large-load pause",
    "sp": [
-    "A4"
+    "A2"
    ]
   },
   {
@@ -84,7 +84,7 @@
    "label": "17 Dec 2026",
    "text": "Texas utility regulator expected to meet on the audit reports",
    "sp": [
-    "A4"
+    "A2"
    ],
    "note": "This date is expected, not yet confirmed"
   },
@@ -110,7 +110,7 @@
    "label": "12 Jan 2027",
    "text": "Texas Legislature convenes, with data centre bills already filed",
    "sp": [
-    "A4"
+    "A2"
    ]
   },
   {
@@ -118,8 +118,8 @@
    "label": "19 Jan 2027",
    "text": "New Texas governor takes office; new Congress sits in January",
    "sp": [
-    "A4",
-    "B3"
+    "A2",
+    "B2"
    ]
   },
   {
@@ -127,7 +127,7 @@
    "label": "28 Feb 2027",
    "text": "Federal suspension of the PJM backstop auction ends",
    "sp": [
-    "A2"
+    "A4"
    ]
   },
   {
@@ -135,7 +135,7 @@
    "label": "1 Mar 2027",
    "text": "Proposed bid opening for the PJM backstop auction",
    "sp": [
-    "A2"
+    "A4"
    ]
   },
   {
@@ -143,7 +143,7 @@
    "label": "10 Mar 2027",
    "text": "Korea's AI Data Centre Act enters into force",
    "sp": [
-    "E1"
+    "E4"
    ]
   },
   {
@@ -151,7 +151,7 @@
    "label": "12 Mar 2027",
    "text": "Last day to file bills in the Texas Legislature",
    "sp": [
-    "A4"
+    "A2"
    ]
   },
   {
@@ -159,7 +159,7 @@
    "label": "9 Apr 2027",
    "text": "Deadline for Texas's study of large-load connections; the grid operator has said it will miss it",
    "sp": [
-    "A4"
+    "A2"
    ]
   },
   {
@@ -167,7 +167,7 @@
    "label": "28 Apr 2027",
    "text": "PJM backstop target of about 6.8 gigawatts is reset",
    "sp": [
-    "A2"
+    "A4"
    ]
   },
   {
@@ -175,7 +175,7 @@
    "label": "31 May 2027",
    "text": "Texas legislative session ends; a special session is possible afterwards",
    "sp": [
-    "A4"
+    "A2"
    ]
   },
   {
@@ -201,7 +201,7 @@
    "label": "Jul 2027",
    "text": "Oregon's data centre permit pause ends",
    "sp": [
-    "B3"
+    "B2"
    ],
    "fuzzy": true
   },
@@ -230,7 +230,7 @@
    "text": "Loudoun County's pause on new data centre applications ends",
    "sp": [
     "B1",
-    "B3"
+    "B2"
    ],
    "fuzzy": true
   },
@@ -239,7 +239,7 @@
    "label": "2028",
    "text": "Korea regional connections checkpoint; first Texas 765 kilovolt lines late in the year",
    "sp": [
-    "E2"
+    "E1"
    ],
    "fuzzy": true,
    "note": "The Texas lines are a driver for the North America power call"
@@ -249,7 +249,7 @@
    "label": "Aug 2029, earliest",
    "text": "Kashiwazaki-Kariwa Unit 7 restart",
    "sp": [
-    "E5"
+    "E3"
    ],
    "fuzzy": true
   }
