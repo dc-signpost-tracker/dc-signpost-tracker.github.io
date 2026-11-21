@@ -349,8 +349,12 @@ html,body{overflow-x:clip}
 .cell .go-arrow{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:14px;font-weight:700;flex:none;margin:-3px -3px 0 0}
 .cell.on:hover .go-arrow,.cell.on:focus-visible .go-arrow{background:var(--head)}
 .cell .nxc{font-size:12px;font-style:italic;color:var(--muted);margin-top:auto;text-align:left}
-.cg td{height:126px}
-.cell,.cell.on{min-height:126px}
+.cg td{height:146px}
+.cell,.cell.on{min-height:146px}
+.mini.lab{align-items:flex-end}
+.mini.lab svg{margin-bottom:5px}
+.hz2{display:inline-flex;flex-direction:column;align-items:flex-start;gap:3px}
+.hz2 i{font-size:11px;color:var(--muted);font-style:italic;font-weight:400}
 .cell.on{justify-content:flex-start}
 /* what changed: beige timeline (owner's choice) */
 .chg-panel{background:#F4EDE1;color:var(--ink);border:1px solid #E6DAC6;border-radius:16px;padding:20px 22px 10px;box-shadow:0 1px 2px rgba(17,28,43,.05),0 6px 18px rgba(17,28,43,.06)}
@@ -615,13 +619,14 @@ el("board").addEventListener("keydown", ev => {
 const CONS = ["power", "water", "land"];
 const callFor = (region, con) => CALLS.find(c => c.region === region && c.constraint.toLowerCase() === con);
 function mini(pair){ return `<span class="mini"><span class="chip sev-${esc(pair[0])}">${esc(pair[0])}</span>${ARROW}<span class="chip sev-${esc(pair[1])}">${esc(pair[1])}</span></span>`; }
+function miniLab(pair){ return `<span class="mini lab"><span class="hz2"><i>2026–30</i><span class="chip sev-${esc(pair[0])}">${esc(pair[0])}</span></span>${ARROW}<span class="hz2"><i>Beyond 2030</i><span class="chip sev-${esc(pair[1])}">${esc(pair[1])}</span></span></span>`; }
 function nextLong(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d)) : "none dated"; }
 function nextShort(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d).replace(/ \d{4}$/, "")) : "none dated"; }
 function sqs(c){ return `<span class="sqs">${tally(c).signals.map(x => `<span class="sq ${x === "none" ? "" : x}"></span>`).join("")}</span>`; }
 function covCell(c){
   const t = tally(c);
   return `<button class="cell on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}" aria-label="Open ${esc(c.region)} ${esc(c.constraint)}">
-    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="go-arrow" aria-hidden="true">→</span></span>${mini([c.from, c.to])}
+    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="go-arrow" aria-hidden="true">→</span></span>${miniLab([c.from, c.to])}
     <span class="meta2">${sqs(c)}</span>
     <span class="nxc">Next catalyst: ${esc(nextLong(c))}</span></button>`;
 }
