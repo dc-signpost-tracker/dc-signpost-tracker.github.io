@@ -63,7 +63,8 @@
        "source_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf"
       }
      ],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "A2",
@@ -75,15 +76,23 @@
      "status": "none",
      "headline": "Suspended",
      "summary": "Backstop auction on hold until 28 Feb 2027; nothing contracted",
-     "latest": "The Federal Energy Regulatory Commission (FERC) accepted the backstop procurement on 29 Sep 2026 but suspended it for five months, to 28 Feb 2027. The auction due to open on 30 Sep did not open; nothing has been contracted.",
-     "latestDate": "29 Sep 2026",
+     "latest": "The Federal Energy Regulatory Commission (FERC) accepted the backstop procurement on 29 Sep 2026 but suspended it for five months, to 28 Feb 2027. The auction due to open on 30 Sep did not open; nothing has been contracted. PJM filed amendments on 29 Oct and refiled them on 9 Nov 2026, asking that most take effect on 28 Feb 2027 and that FERC rule by 29 Jan 2027; comments are due 30 Nov 2026.",
+     "latestDate": "9 Nov 2026 filing",
      "source_url": "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
-     "retrieved_on": "2026-11-20",
-     "next": "Bid opening proposed 1 Mar; target reset 28 Apr 2027",
+     "retrieved_on": "2026-11-21",
+     "next": "Comments on the amendments due 30 Nov 2026; ruling requested by 29 Jan 2027; bid opening proposed 1 Mar; target reset 28 Apr 2027",
      "sources": "FERC eLibrary docket alerts; PJM news releases and board materials",
-     "history": [],
-     "verify": "The amended plan of 29 Oct and the proposed 1 Mar 2027 bid opening are from press reports.",
-     "status_reviewed_on": "2026-11-20"
+     "history": [
+      {
+       "date": "2026-11-09",
+       "note": "PJM refiled its amendments to the backstop procurement (docket ER27-454), substantively identical to its 29 Oct filing; requested effective date 28 Feb 2027, ruling requested by 29 Jan 2027, comments due 30 Nov 2026",
+       "source_url": "https://www.pjm.com/pjmfiles/directory/etariff/FercDockets/9977/20261109%20er27-454-000.pdf",
+       "retrieved_on": "2026-11-21"
+      }
+     ],
+     "verify": "The 29 Sep order is confirmed at the linked PJM notice. The amendments, the requested dates and the 30 Nov comment date are confirmed in PJM's filing of 9 Nov 2026 (linked under history), which was read in part. The proposed 1 Mar 2027 bid opening is from press reports and was not confirmed in the passages read.",
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "A3",
@@ -131,7 +140,8 @@
        "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm"
       }
      ],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "A4",
@@ -151,7 +161,8 @@
      "sources": "ERCOT large-load status updates and monthly operational overview; Public Utility Commission of Texas filings",
      "verify": "The linked update confirms the pause and the audit date. The Governor-elect's pledge, her powers, the resumed permit reviews and the queue figures come from a law-firm briefing and press reports, not from primary documents.",
      "history": [],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "A5",
@@ -177,7 +188,8 @@
       }
      ],
      "verify": "The linked notice confirms the 16 Nov filings it lists and the 7 Dec comment date. The filings by the New England and Midwest grid operators and by PJM itself, and the absence of a ruling, are from press reports (POWER, 19 Nov). Whether Southwest Power Pool filed on 20 Nov is not yet confirmed.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "A6",
@@ -217,7 +229,8 @@
       }
      ],
      "verify": "The release date of the 2026 assessment is not confirmed.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   },
@@ -262,7 +275,8 @@
       "tText": "trigger 25%"
      },
      "history": [],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "B2",
@@ -282,7 +296,8 @@
      "sources": "New York Department of Public Service; Virginia Governor's office; Loudoun and Prince William board minutes",
      "history": [],
      "verify": "Virginia's toolkit has not been checked.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "B3",
@@ -302,7 +317,8 @@
      "sources": "Congress.gov; state bill trackers; Virginia legislative system; Federal Register",
      "history": [],
      "verify": "The linked county document is the proposal put to the vote. The result is confirmed by press reports only (Bisnow, Fox 5). The state permit pauses in New York, Oregon and Texas are not yet verified.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   },
@@ -338,7 +354,8 @@
      "sources": "Broker market reports; French, Norwegian, Swedish and Finnish grid operators; European day-ahead price data",
      "history": [],
      "verify": "From press and industry reports (The Next Web, TechTimes, BloombergNEF). No primary document has been checked. Norway is reviewing its data centre rules.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "C2",
@@ -358,7 +375,8 @@
      "sources": "Spain's official gazette; Council of Ministers references; energy ministry; Council of State",
      "history": [],
      "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "C3",
@@ -378,7 +396,8 @@
      "sources": "TenneT investment plans; German grid development plan; National Grid and the UK system operator",
      "history": [],
      "verify": "The linked page covers Noord-Holland. Frankfurt is from press reports; no current date for West London has been found.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   },
@@ -423,7 +442,8 @@
       "tText": "benchmark 0.4 L"
      },
      "history": [],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "D2",
@@ -443,7 +463,8 @@
      "sources": "Spain's official gazette; energy ministry; river-basin authorities",
      "history": [],
      "verify": "From press reports and a search of the official gazette. The official record of the 17 Nov Cabinet meeting has not been checked.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "D3",
@@ -463,7 +484,8 @@
      "sources": "Légifrance; prefectural acts; Ministry of Ecological Transition; France Datacenter",
      "history": [],
      "verify": "From legal commentary on the law of 26 May 2026. The text of the law has not been checked directly.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "D4",
@@ -483,7 +505,8 @@
      "sources": "Commission data centre database; World Resources Institute Aqueduct; European Environment Agency water index",
      "history": [],
      "verify": "The study covers operating sites, not the pipeline this signpost tracks.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "D5",
@@ -503,7 +526,8 @@
      "sources": "Copernicus European Drought Observatory; national hydrological bulletins",
      "history": [],
      "verify": "No earlier year has been loaded for comparison.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   },
@@ -539,7 +563,8 @@
      "sources": "Korea National Law Information Center; Ministry of Science and ICT releases; Yonhap, Korea Herald",
      "history": [],
      "verify": "From press reports (Seoul Economic Daily, Aju Press). The ministry's notice has not been checked. The decree is not final.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "E2",
@@ -558,7 +583,8 @@
      "next": "2028 checkpoint",
      "sources": "Korea Electric Power Corporation disclosures; Korea Power Exchange statistics; ministry designations",
      "history": [],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "E3",
@@ -578,7 +604,8 @@
      "sources": "Korea Electric Power Corporation transmission plan; Basic Plans for Electricity Supply and Demand; National Assembly audit materials",
      "history": [],
      "verify": "From a press report (Seoul Economic Daily) citing the national utility's data. No primary document has been checked.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "E4",
@@ -614,7 +641,8 @@
      },
      "history": [],
      "verify": "The Tokyo figure is confirmed at the linked source; the Osaka figure is attributed to the same research by market reports. A claim that Osaka's coastal grid now needs about eight years to expand is being checked.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "E5",
@@ -634,7 +662,8 @@
      "sources": "Nuclear Regulation Authority; Japan Atomic Industrial Forum status sheets; International Atomic Energy Agency reactor database",
      "history": [],
      "verify": "The cumulative restarted capacity of 13,946 megawatts has not been verified.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   },
@@ -670,7 +699,8 @@
      "sources": "Malaysia's water regulator fact book; Ranhill SAJ filings; Thai reservoir data; Mumbai lake levels; India's reservoir bulletin",
      "verify": "From press reports of the parliamentary statement (The Star). Thailand and India have not been checked.",
      "history": [],
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     },
     {
      "id": "F2",
@@ -696,7 +726,8 @@
       }
      ],
      "verify": "The air-cooling statement is confirmed at the linked Bernama interview. It is a stated policy; what has actually been approved since is not verified. The hold on water-cooled expansions until mid-2027 is from press reports only.",
-     "status_reviewed_on": "2026-11-20"
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-21"
     }
    ]
   }
