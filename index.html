@@ -310,7 +310,8 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .cell .meta2 .sqs{display:inline-flex;gap:3px}
 .cell .meta2 .sq{width:11px;height:11px;border-radius:2px}
 .cell .open{font-size:12px;font-weight:700;color:var(--accent)}
-.cg-key{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted);margin-top:14px}
+.cg-key{display:grid;gap:8px;font-size:12.5px;color:var(--muted);margin-top:14px}
+.cg-key>div{display:flex;flex-wrap:nowrap;gap:6px 14px;white-space:nowrap}
 .cg-key span{display:inline-flex;align-items:center;gap:6px}
 .cg-key i{width:14px;height:14px;border-radius:3px;display:inline-block;box-sizing:border-box}
 /* changes */
@@ -587,7 +588,8 @@ function coverageGrid(){
   return `<table class="cg"><tr><th></th><th>Power</th><th>Water</th><th>Land</th></tr>${rows}</table>`;
 }
 function coverageKey(){
-  return `<div class="cg-key"><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span><i class="sq tightening" style="width:11px;height:11px"></i>tightening signal</span><span><i class="sq easing" style="width:11px;height:11px"></i>easing signal</span></div>`;
+  return `<div class="cg-key"><div><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span></div>
+    <div><span><i class="sq tightening" style="width:11px;height:11px"></i>tightening signal</span><span><i class="sq easing" style="width:11px;height:11px"></i>easing signal</span></div></div>`;
 }
 function changes(){
   const items = [];
