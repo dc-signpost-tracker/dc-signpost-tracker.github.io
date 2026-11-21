@@ -291,7 +291,7 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .mini{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .mini .chip{min-width:0;padding:4px 7px;font-size:11.5px;font-weight:700}
 .mini svg{width:14px;color:var(--muted)}
-/* coverage grid (variation 1) */
+/* coverage grid */
 .cg{width:100%;border-collapse:separate;border-spacing:6px;margin:-6px}
 .cg th{border:0;font-size:12.5px;padding:0 4px 2px;color:var(--muted)}
 .cg td{border:0;padding:0;vertical-align:stretch}
@@ -324,39 +324,6 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .chg .go:hover,.chg .go:focus-visible{color:var(--accent)}
 .chg .go span{font-weight:700;color:var(--muted);margin-right:6px}
 .why6{font-size:14px;color:var(--muted);line-height:1.5}
-/* tile map (variation 2) */
-.tmap{display:grid;grid-template-columns:repeat(13,1fr);grid-auto-rows:minmax(118px,auto);gap:10px;padding:16px;border-radius:14px;
-  background:radial-gradient(circle,color-mix(in srgb,var(--muted) 22%,transparent) 1px,transparent 1.5px) 0 0/14px 14px,var(--surface);box-shadow:0 1px 2px rgba(17,28,43,.06),0 6px 18px rgba(17,28,43,.08)}
-.treg{background:color-mix(in srgb,var(--bg) 80%,var(--surface));border:1px solid var(--rule);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
-.treg h3{font-size:14px;display:flex;justify-content:space-between;gap:8px}
-.treg h3 small{font-weight:500;color:var(--muted);font-size:12px;white-space:nowrap}
-.trow{display:grid;grid-template-columns:44px 1fr;align-items:center;gap:6px;font-size:12px;color:var(--muted);border-radius:8px;padding:4px 6px}
-.trow.off{opacity:.4}
-.trow.on{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:6px;font-size:12px;border-radius:8px;padding:5px 6px;border:2px solid}
-.trow.on.Easing{border-color:var(--ease);background:var(--ease-bg)}.trow.on.Persisting{border-color:var(--pers);background:var(--pers-bg)}.trow.on.Intensifying{border-color:var(--int);background:var(--int-bg)}
-.trow.on:hover,.trow.on:focus-visible{box-shadow:0 4px 12px rgba(17,28,43,.18)}
-.trow b{color:var(--ink);font-weight:600}
-.treg .mini .chip{padding:3px 5px;font-size:10.5px}.treg .mini{gap:3px}.treg .mini svg{width:11px}
-.trow,.trow.on{grid-template-columns:38px 1fr auto}.trow{grid-template-columns:38px 1fr}
-.trow .open{font-weight:700;color:var(--accent)}
-/* overview rows (variation 3) */
-.ov{width:100%;border-collapse:collapse}
-.ov th{font-size:12.5px;color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--rule)}
-.ov td{padding:0;border-bottom:1px solid var(--rule);vertical-align:middle;color:var(--muted);font-size:13.5px}
-.ov tr.row{cursor:pointer}
-.ov tr.row:hover td{background:color-mix(in srgb,var(--accent) 6%,transparent)}
-.ov td>div{padding:14px 10px 14px 0}
-.ov td.nm{width:200px}.ov td.nm b{display:block;color:var(--ink);font-size:15px}
-.ov .dirt{font-size:12.5px;font-weight:700}
-.ov .Easing .dirt{color:var(--ease)}.ov .Persisting .dirt{color:var(--pers)}.ov .Intensifying .dirt{color:var(--int)}
-.ov .sqs{display:inline-flex;gap:3px;vertical-align:middle;margin-right:6px}.ov .sqs .sq{width:12px;height:12px;border-radius:2px}
-.ov .nx b{color:var(--ink);font-weight:600}
-.ov .chev2{color:var(--accent);font-weight:700}
-.minigrid{display:grid;grid-template-columns:auto repeat(3,1fr);gap:4px;font-size:11.5px;margin-top:10px}
-.minigrid span{padding:5px 6px;border-radius:5px;background:var(--none-bg);color:var(--muted);text-align:center;opacity:.55}
-.minigrid span.h{background:none;opacity:1;font-weight:600;text-align:left}
-.minigrid span.on{opacity:1;color:#fff;font-weight:700}
-.minigrid span.on.Easing{background:var(--ease)}.minigrid span.on.Persisting{background:var(--pers)}.minigrid span.on.Intensifying{background:var(--int)}
 </style>
 </head>
 <body>
@@ -596,7 +563,6 @@ el("board").addEventListener("keydown", ev => {
 /* ---------- overview (landing page) ---------- */
 const CONS = ["power", "water", "land"];
 const callFor = (region, con) => CALLS.find(c => c.region === region && c.constraint.toLowerCase() === con);
-const VARIANT = (new URLSearchParams(location.search).get("v") || "1");
 function mini(pair){ return `<span class="mini"><span class="chip sev-${esc(pair[0])}">${esc(pair[0])}</span>${ARROW}<span class="chip sev-${esc(pair[1])}">${esc(pair[1])}</span></span>`; }
 function nextShort(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d).replace(/ \d{4}$/, "")) : "none dated"; }
 function sqs(c){ return `<span class="sqs">${tally(c).signals.map(x => `<span class="sq ${x === "none" ? "" : x}"></span>`).join("")}</span>`; }
@@ -616,13 +582,6 @@ function coverageGrid(){
 function coverageKey(){
   return `<div class="cg-key"><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span><i class="sq tightening" style="width:11px;height:11px"></i>tightening signal</span><span><i class="sq easing" style="width:11px;height:11px"></i>easing signal</span></div>`;
 }
-const TPOS = {"North America":"1/1/3/5","Latin America":"3/2/5/5","Europe":"1/5/2/8","Middle East":"2/5/3/8","China":"1/8/2/11","North Asia excluding China":"1/11/2/14","South and Southeast Asia":"2/8/4/11","Australia":"3/11/5/14"};
-function tileMap(){
-  return `<div class="tmap">${HEAT.map(r => `<div class="treg" style="grid-area:${TPOS[r.name] || "auto"}"><h3>${esc(r.name.replace("excluding", "ex-"))}<small>${esc(r.share)}%</small></h3>
-    ${CONS.map(k => { const c = callFor(r.name, k), lab = k.charAt(0).toUpperCase() + k.slice(1);
-      return c ? `<button class="trow on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}"><b>${lab}</b>${mini([c.from, c.to])}<span class="open">→</span></button>`
-               : `<div class="trow off"><span>${lab}</span>${mini(r[k])}</div>`; }).join("")}</div>`).join("")}</div>`;
-}
 function changes(){
   const items = [];
   CALLS.forEach(c => c.sps.forEach(sp => (sp.history || []).forEach(h => { if (h.kind === "status" || h.kind === "reading") items.push({c, sp, h}); })));
@@ -632,27 +591,13 @@ function changes(){
     return `<li><div class="d">${esc(fmt(h.date))}${h.kind === "status" && sg !== "none" ? `<span class="badge ${sg}">${SIGNAL_ICON[sg]} Now ${sg === "tightening" ? "tightening" : "easing"}</span>` : ""}<span>${esc(c.tab || c.region)} ${esc(c.constraint)}</span></div>
       <button class="go" type="button" data-call="${esc(c.id)}" data-sp="${esc(sp.id)}"><span>${esc(sp.id)}</span>${esc(h.brief || h.note)}</button></li>`; }).join("")}</ul>`;
 }
-function overviewRows(){
-  return `<table class="ov"><tr><th>Region and constraint</th><th>2026–30 → beyond 2030</th><th>Signals</th><th>Verified</th><th>Next catalyst</th><th></th></tr>${CALLS.map(c => { const t = tally(c), nx = nextFor(c);
-    return `<tr class="row ${esc(c.dir)}" data-call="${esc(c.id)}" tabindex="0"><td class="nm"><div><b>${esc(c.tab || c.region)} · ${esc(c.constraint)}</b><span class="dirt">${esc(c.dir)}</span>${t.review ? ` <span class="dirt" style="color:var(--bad)">· under review</span>` : ""}</div></td>
-      <td><div>${mini([c.from, c.to])}</div></td><td><div>${sqs(c)}${(t.signals.filter(x => x !== "none").length) || "none"}</div></td><td><div>${t.ver} of ${c.sps.length}</div></td>
-      <td class="nx"><div>${nx ? `<b>${esc(nextShort(c))}</b> ${esc(nx.text)}` : "No dated catalyst"}</div></td><td><div class="chev2">→</div></td></tr>`; }).join("")}</table>`;
-}
-function miniGrid(){
-  return `<div class="minigrid"><span class="h"></span><span class="h">Power</span><span class="h">Water</span><span class="h">Land</span>${HEAT.map(r => `<span class="h">${esc(r.name.replace("excluding", "ex-").replace("South and Southeast Asia", "S & SE Asia"))}</span>${CONS.map(k => { const c = callFor(r.name, k);
-    return `<span class="${c ? "on " + esc(c.dir) : ""}">${c ? esc(c.id) : "·"}</span>`; }).join("")}`).join("")}</div>`;
-}
 function renderHome(){
   const why = `<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p></div>`;
   const chg = `<div class="panel-card"><h2>What changed</h2><p class="hint">Latest developments logged against the signposts</p>${changes()}</div>`;
-  let main;
-  if (VARIANT === "2") main = `<div style="grid-column:1/-1"><h2 style="font-size:18px;margin:0 0 4px">Where the tracker looks</h2><p class="hint" style="font-size:13px;color:var(--muted);margin-bottom:12px">All eight regions, by share of installed capacity. Highlighted pairs are tracked; select one to see its signposts.</p>${tileMap()}${coverageKey()}</div><div style="grid-column:1/-1;display:grid;gap:22px;grid-template-columns:1.4fr 1fr">${chg}${why}</div>`;
-  else if (VARIANT === "3") main = `<div class="panel-card"><h2>The six calls</h2><p class="hint">Select a row to see its signposts.</p>${overviewRows()}</div><div style="display:grid;gap:22px">${chg}<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p>${miniGrid()}</div></div>`;
-  else main = `<div class="panel-card"><h2>Where the tracker looks</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
+  const main = `<div class="panel-card"><h2>Where the tracker looks</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
   el("home").innerHTML = `<div class="home-grid">${main}</div>`;
 }
 el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-call]"); if (b) openCall(b.dataset.call, b.dataset.sp); });
-el("home").addEventListener("keydown", ev => { const r = ev.target.closest("tr[data-call]"); if (r && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); openCall(r.dataset.call); } });
 
 /* Routing: no hash shows the overview; #north-america-power and so on show that call. */
 function route(){

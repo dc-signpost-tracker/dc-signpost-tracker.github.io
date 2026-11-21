@@ -49,6 +49,27 @@ Each signpost in `data/signposts.json` has `latest` (plain-language reading),
   refuse automated readers. Use the item's `url` as the `source_url`, and claim only
   what the saved passages say.
 - Write readings in plain English. Spell out every acronym at first use.
+- `threshold` is the one short line on the card that states the trigger ("Trigger:
+  shortfall below 6,831 megawatts", or "Watch: ..." where the trigger is a list of terms).
+  Leave it unchanged unless the owner changes the trigger.
+- `delta` (optional) shows how the headline figure moved since the previous reading of
+  the same measure, for example `{"dir": "up", "text": "from 6,516 at the 2027/28
+  auction"}`. Set it only when both figures come from sources already recorded on the
+  signpost; otherwise leave it out. When a new reading of the same measure arrives,
+  move the previous figure into `delta`.
+- `history` entries that the overview's "What changed" list should show carry `kind`
+  and `brief`. `kind` is `"status"` for a status change the owner approved, `"reading"`
+  for a new development recorded in `latest`, and `"note"` for housekeeping that the
+  list should not show. `brief` is one plain sentence of no more than about 25 words
+  saying what happened. Add one such entry, dated the day the development happened,
+  whenever `latest` changes for a new development or a status changes.
+
+## Owner-approved wording
+
+`insight` (the "The picture today" paragraph), `coverage_note` ("Why these six") and
+each call's `bottom_line` were approved by the owner on 21 Nov 2026. Never change them
+on your own. If a development makes one of them inaccurate, put the proposed new
+wording in group A of the digest and wait for the owner's answer.
 
 ## How the owner's rule on review flags works
 
@@ -82,7 +103,7 @@ status challenges. The site computes this; do not set it by hand.
 | Group | When | What the task may do unattended |
 |---|---|---|
 | A. Needs the owner's decision | The finding could change a status, or it is a close call | Nothing on the site except `last_checked_on`. Present the evidence, the source links and a recommendation. Wait. |
-| B. For information, verified | Status unchanged, and the primary document was read directly | Update `latest`, `latestDate`, `source_url`, `retrieved_on`, `verify`, `next`, `history`, and calendar `outcome`. Never `status`. |
+| B. For information, verified | Status unchanged, and the primary document was read directly | Update `latest`, `latestDate`, `headline`, `summary`, `delta`, `source_url`, `retrieved_on`, `verify`, `next`, `history` (with `kind` and `brief`), and calendar `outcome`. Never `status`, `threshold`, `bottom_line`, `insight` or `coverage_note`. |
 | C. For information, press-only | Status unchanged, but only press reports were found | Nothing on the site except `last_checked_on`. List it in the digest. |
 
 If in doubt between A and B, choose A.

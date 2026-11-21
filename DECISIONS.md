@@ -169,6 +169,29 @@ commit and push. Signpost statuses are not logged here; they live in
   everything since each signpost's `last_checked_on` date. This supersedes "every
   morning" in the entries above.
 
+## Redesign (21 Nov 2026)
+
+The owner reviewed the site as a first-time reader would and approved:
+
+- **Landing page:** the site opens on an overview. "The picture today" paragraph; a grid
+  of all eight regions by power, water and land, with the six tracked pairs solid and
+  clickable and the rest faded; "What changed"; and "Why these six". Each pair opens its
+  region page, which keeps the six tabs and has "← All regions" at the top. The owner
+  chose the grid over a map-style layout and a table-first layout.
+- **Signals, not stances:** cards say "Constraint tightening" (red, status `neg`) or
+  "Constraint easing" (green, status `pos`) instead of "Supports / Challenges call".
+  The "Rating under review" rule is unchanged.
+- **Bottom line** sentence at the top of each region page; **trigger line** on each card;
+  **delta** beside the headline figure only where the earlier figure is in the data;
+  **verified count** in each banner ("2 of 3 readings verified at the primary source").
+- **Calendar:** next six weeks shown; later and passed dates folded away; each
+  "Relevant for" jumps to its card.
+- Card colour follows the owner-approved status only; no good-or-bad colouring of
+  readings that have no status.
+- **Signpost order (decided, not yet done):** the owner will rank the signposts in each
+  call once by materiality; they are then renumbered so the first is the most material,
+  and the order stays fixed. Order is not tied to the next catalyst date.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
