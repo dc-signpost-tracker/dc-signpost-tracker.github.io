@@ -223,6 +223,13 @@ The owner reviewed the site as a first-time reader would and approved:
   rooftop cooling, a substation, pylons and a water tank) fades in on the right of the
   landing-page header. It was drawn for the site; no stock photo is used.
 
+- **Phones (21 Nov 2026):** the owner now wants the site to work on phones as well as
+  computers (this replaces the earlier "computer screen only" rule). On narrow screens the
+  landing grid becomes full-width cards grouped by region, untracked pairs are listed
+  under each region or folded into "Regions not tracked", and the legend wraps. Region
+  pages stack into one column and the selected tab scrolls into view. The computer layout
+  is unchanged.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

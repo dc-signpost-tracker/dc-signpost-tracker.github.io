@@ -385,6 +385,31 @@ html,body{overflow-x:clip}
 .notes td,.notes td:first-child{color:var(--muted)} .notes td:first-child{font-weight:600}
 .notes p{font-size:12.5px}
 .notes .method{gap:28px}
+
+/* ---- phones and narrow windows ---- */
+.cg-m{display:none}
+.home-grid>*{min-width:0}
+@media (max-width:759px){
+  .cg{display:none}
+  .cg-m{display:grid;gap:18px}
+  .m-reg h3{font-size:15px;margin-bottom:8px}
+  .m-reg h3 small{font-weight:400;color:var(--muted);font-size:12px}
+  .m-con{font-size:12px;font-weight:700;color:var(--muted);margin:10px 0 4px}
+  .cg-m .cell.on{height:auto!important;min-height:0!important;gap:8px}
+  .cg-m .cell .nxc{margin-top:2px}
+  .m-off{font-size:12px;color:var(--muted);margin-top:8px;opacity:.8}
+  .m-rest summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent);list-style:none}
+  .m-rest summary::-webkit-details-marker{display:none}
+  .m-rest ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px;font-size:12px;color:var(--muted)}
+  .m-rest b{color:var(--ink)}
+  .cg-key{flex-wrap:wrap;white-space:normal;gap:6px 12px}
+  .cg-key .sep{display:none}
+  .panel-card{padding:16px}
+  .chg-panel{padding:16px 16px 6px}
+  .on-home .hero::after{opacity:.18}
+  .insight{font-size:14px}
+  .sp .fig{font-size:26px}
+}
 </style>
 </head>
 <body>
@@ -573,6 +598,9 @@ function renderBoard(){
         ${calendarFor(c)}
       </div>
     </div>`;
+  /* on narrow screens the tab strip scrolls sideways: keep the selected tab in view */
+  const at = document.querySelector('.tab[aria-selected="true"]');
+  if (at && at.parentElement && at.parentElement.scrollWidth > at.parentElement.clientWidth) at.parentElement.scrollLeft = Math.max(0, at.offsetLeft - 16);
 }
 function selectCall(id, focus){
   current = id; renderBoard();
@@ -643,6 +671,21 @@ function coverageGrid(){
   }).join("")}</tr>`).join("");
   return `<table class="cg"><tr><th></th><th>Power</th><th>Water</th><th>Land</th></tr>${rows}</table>`;
 }
+/* phone layout: tracked pairs as full-width cards grouped by region; untracked pairs folded away */
+function coverageMobile(){
+  const lab = k => k.charAt(0).toUpperCase() + k.slice(1);
+  const groups = HEAT.map(r => {
+    const on = CONS.filter(k => callFor(r.name, k));
+    if (!on.length) return "";
+    const off = CONS.filter(k => !callFor(r.name, k));
+    return `<div class="m-reg"><h3>${esc(r.name)} <small>${esc(r.share)}% of capacity</small></h3>
+      ${on.map(k => `<div class="m-con">${lab(k)}</div>${covCell(callFor(r.name, k))}`).join("")}
+      ${off.length ? `<p class="m-off">Not tracked: ${off.map(k => `${lab(k)} (${esc(r[k][0])} → ${esc(r[k][1])})`).join("; ")}</p>` : ""}</div>`;
+  }).join("");
+  const rest = HEAT.filter(r => !CONS.some(k => callFor(r.name, k)));
+  const restRows = rest.map(r => `<li><b>${esc(r.name)}</b> <small>${esc(r.share)}%</small><br>${CONS.map(k => `${lab(k)} ${esc(r[k][0])} → ${esc(r[k][1])}`).join(" · ")}</li>`).join("");
+  return `<div class="cg-m">${groups}${rest.length ? `<details class="m-rest"><summary>Regions not tracked (${rest.length}) +</summary><ul>${restRows}</ul></details>` : ""}</div>`;
+}
 function coverageKey(){
   return `<div class="cg-key"><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span class="sep" aria-hidden="true"></span><span><i class="sq tightening"></i>tightening signal</span><span><i class="sq easing"></i>easing signal</span></div>`;
 }
@@ -657,7 +700,7 @@ function changes(){
 }
 function renderHome(){
   const chg = `<aside class="chg-panel"><h2>What changed</h2><p class="hint">Latest developments, newest first</p>${changes()}</aside>`;
-  const main = `<div class="panel-card"><h2>What we currently track</h2><p class="hint">${esc(META.coverage_note || "")}</p>${coverageKey()}${coverageGrid()}</div>${chg}`;
+  const main = `<div class="panel-card"><h2>What we currently track</h2><p class="hint">${esc(META.coverage_note || "")}</p>${coverageKey()}${coverageGrid()}${coverageMobile()}</div>${chg}`;
   el("home").innerHTML = `<div class="home-grid">${main}</div>`;
 }
 el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-call]"); if (b) openCall(b.dataset.call, b.dataset.sp); });
