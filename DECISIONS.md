@@ -206,7 +206,7 @@ The owner reviewed the site as a first-time reader would and approved:
 
 - **Landing page refinements (21 Nov 2026, 15:17):** the line under "What we currently
   track" is the coverage note in the owner's wording, and the separate "Why these six" box
-  is gone. "What changed" is a navy timeline with signpost labels in circles. Tracked cells
+  is gone. "What changed" is a timeline on a beige panel (changed from navy at the owner's request, as navy clashed with the header) with signpost labels in circles. Tracked cells
   show a round arrow button instead of "Open →", and "Next catalyst: <full date>" in
   italics at the bottom left. "How to read this" is quiet grey notes below a rule, not
   boxed cards.

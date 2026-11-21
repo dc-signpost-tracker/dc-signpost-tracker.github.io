@@ -352,21 +352,19 @@ html,body{overflow-x:clip}
 .cg td{height:126px}
 .cell,.cell.on{min-height:126px}
 .cell.on{justify-content:flex-start}
-/* what changed: navy timeline */
-.chg-panel{background:var(--head);color:#fff;border-radius:16px;padding:20px 22px 10px;box-shadow:0 6px 18px rgba(17,28,43,.14)}
+/* what changed: beige timeline (owner's choice) */
+.chg-panel{background:#F4EDE1;color:var(--ink);border:1px solid #E6DAC6;border-radius:16px;padding:20px 22px 10px;box-shadow:0 1px 2px rgba(17,28,43,.05),0 6px 18px rgba(17,28,43,.06)}
 .chg-panel h2{font-size:18px;margin-bottom:2px}
-.chg-panel .hint{color:var(--on-head);font-size:13px;margin-bottom:12px}
-.chg-panel .chg li{position:relative;border-top:0;padding:4px 0 16px 22px;border-left:2px solid #46508A;margin-left:5px}
+.chg-panel .hint{color:#7A6E5C;font-size:13px;margin-bottom:12px}
+.chg-panel .chg li{position:relative;border-top:0;padding:4px 0 16px 22px;border-left:2px solid #D8C8AE;margin-left:5px}
 .chg-panel .chg li:last-child{border-left-color:transparent}
-.chg-panel .chg li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent-on-head)}
-.chg-panel .chg .d{color:var(--on-head)}
-.chg-panel .chg .d span:last-child{color:var(--on-head)}
-.chg-panel .chg .badge.tightening{background:#5A2326;color:#FFB8B1}.chg-panel .chg .badge.easing{background:#1F3320;color:#B7E4B2}
-.chg-panel .chg .go{display:flex;gap:10px;align-items:flex-start;color:#fff;margin-top:6px}
-.chg-panel .chg .go:hover .txt,.chg-panel .chg .go:focus-visible .txt{text-decoration:underline;text-decoration-color:var(--accent-on-head);text-underline-offset:3px}
-.chg-panel .chg .cid{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--head);font-size:11.5px;font-weight:800;margin:0}
-.chg-panel .chg .go span.txt{line-height:1.4;font-size:14px;color:#fff;font-weight:400;margin:0}
-.chg-panel .chg .go span.cid{color:var(--head);margin:0}
+.chg-panel .chg li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px #F4EDE1}
+.chg-panel .chg .d{color:#7A6E5C}
+.chg-panel .chg .badge.tightening{background:#F3CFCB;color:#A32328}.chg-panel .chg .badge.easing{background:var(--ease-bg);color:var(--ease)}
+.chg-panel .chg .go{display:flex;gap:10px;align-items:flex-start;margin-top:6px}
+.chg-panel .chg .go:hover .txt,.chg-panel .chg .go:focus-visible .txt{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.chg-panel .chg .go span.cid{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--head);color:#fff;font-size:11.5px;font-weight:800;margin:0}
+.chg-panel .chg .go span.txt{line-height:1.4;font-size:14px;color:var(--ink);font-weight:400;margin:0}
 /* how to read this: quiet notes, not cards */
 .notes{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted)}
 .notes .sec-head h2{font-size:14px;font-weight:700;color:var(--muted)}
