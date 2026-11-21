@@ -136,8 +136,9 @@ commit and push. Signpost statuses are not logged here; they live in
 
 - **A3 Turbine supply** (revised 21 Nov 2026, replacing the earlier "GE Vernova only"
   wording): tracks large gas turbines (215 megawatts and above) used by US utilities.
-  Headline: orders against shipments ("Orders 2.2× shipments"): above 1 means the queue
-  is still growing. Beside it, the earliest delivery slot on sale ("sold out to
+  Headline in plain English: "Turbine waiting list still growing" (or "shrinking" once
+  deliveries outpace orders), with the numbers in the sentence below (orders taken against
+  turbines delivered). No ratios or jargon in the headline. Beside it, the earliest delivery slot on sale ("sold out to
   2029–30"). The US order count by maker is context, not the headline (the owner noted a
   count alone says nothing about easing). Makers: GE Vernova, Mitsubishi Heavy Industries and Doosan
   Enerbility; Siemens Energy is noted only while its US share stays small. Small turbines
