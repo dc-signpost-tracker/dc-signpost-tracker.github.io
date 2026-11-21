@@ -2,7 +2,7 @@
 Run from the repository root:  python scripts/build_preview.py"""
 import json, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
-data = {k: json.loads((root / "data" / f"{k}.json").read_text(encoding="utf-8")) for k in ("signposts", "calendar")}
+data = {k: json.loads((root / "data" / f"{k}.json").read_text(encoding="utf-8")) for k in ("signposts", "calendar", "heatmap")}
 html = (root / "index.html").read_text(encoding="utf-8")
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 marker = "<script>\n/* Data lives in"

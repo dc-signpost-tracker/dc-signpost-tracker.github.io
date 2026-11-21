@@ -253,6 +253,110 @@ th,td{text-align:left;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)
 th{font-size:12.5px;color:var(--muted);font-weight:600}
 td{color:var(--muted)} td:first-child{color:var(--ink);font-weight:600}
 footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
+
+/* ---- signals: what a reading says about the constraint ---- */
+.pill.tightening{background:var(--bad-bg);color:var(--bad)}
+.pill.easing{background:var(--ease-bg);color:var(--ease)}
+.sq.tightening{background:var(--bad);border-color:var(--bad)}
+.sq.easing{background:var(--ease);border-color:var(--ease)}
+.banner .sq.tightening{background:var(--bad);border-color:var(--bad);color:#fff}
+.banner .sq.easing{background:var(--ease);border-color:var(--ease);color:#fff}
+.key i.tightening{background:var(--bad);border-color:var(--bad)}.key i.easing{background:var(--ease);border-color:var(--ease)}
+.delta{font-size:13px;font-weight:600;color:var(--muted);margin-top:-2px}
+.thr{font-size:13px;color:var(--muted);margin-top:2px}
+.thr b{color:var(--ink);font-weight:600}
+.ver{font-size:12.5px;color:var(--muted);margin-top:10px}
+.ver b{color:var(--ink);font-weight:600}
+.bl{grid-column:1/-1;font-size:16px;line-height:1.45;color:var(--ink);padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.bl b{display:inline;font-size:16px;margin:0 6px 0 0}
+.back{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--accent);margin-bottom:12px}
+.back:hover,.back:focus-visible{text-decoration:underline}
+.sp.flash{box-shadow:0 0 0 3px var(--accent),0 6px 18px rgba(17,28,43,.12)}
+.sp-link{all:unset;cursor:pointer;font-style:italic;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--on-head) 50%,transparent);text-underline-offset:2px}
+.sp-link:hover,.sp-link:focus-visible{color:#fff}
+.rail details{margin-top:6px}
+.rail details>summary{cursor:pointer;list-style:none;font-size:13px;font-weight:600;color:var(--accent-on-head);padding:8px 0}
+.rail details>summary::-webkit-details-marker{display:none}
+.rail details[open]>summary{color:var(--on-head)}
+
+/* ---- landing page ---- */
+[hidden]{display:none!important}
+.insight{margin-top:22px;background:var(--surface);border-left:5px solid var(--head);border-radius:0 12px 12px 0;padding:16px 22px;font-size:18px;line-height:1.5;max-width:1000px;box-shadow:0 1px 2px rgba(17,28,43,.05)}
+.insight b{display:block;font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:4px}
+.home-grid{display:grid;gap:22px;grid-template-columns:1fr;margin-top:26px;align-items:start}
+@media (min-width:1100px){.home-grid{grid-template-columns:1fr 360px}}
+.panel-card{background:var(--surface);border-radius:14px;padding:20px 22px;box-shadow:0 1px 2px rgba(17,28,43,.06),0 6px 18px rgba(17,28,43,.08)}
+.panel-card h2{font-size:18px;margin-bottom:4px}
+.panel-card .hint{font-size:13px;color:var(--muted);margin-bottom:14px}
+.mini{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.mini .chip{min-width:0;padding:4px 7px;font-size:11.5px;font-weight:700}
+.mini svg{width:14px;color:var(--muted)}
+/* coverage grid (variation 1) */
+.cg{width:100%;border-collapse:separate;border-spacing:6px;margin:-6px}
+.cg th{border:0;font-size:12.5px;padding:0 4px 2px;color:var(--muted)}
+.cg td{border:0;padding:0;vertical-align:stretch}
+.cg td.reg{padding:8px 10px 8px 2px;font-weight:700;color:var(--ink);font-size:14px;width:190px}
+.cg td.reg small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.cell{border-radius:10px;padding:10px 12px;height:100%;box-sizing:border-box;min-height:58px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.cell.off{opacity:.38;background:var(--none-bg)}
+.cell.on{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:7px;width:100%;height:100%;border-radius:10px;padding:10px 12px;background:var(--surface);border:2px solid}
+.cell.on.Easing{border-color:var(--ease);background:color-mix(in srgb,var(--ease-bg) 55%,var(--surface))}
+.cell.on.Persisting{border-color:var(--pers);background:color-mix(in srgb,var(--pers-bg) 60%,var(--surface))}
+.cell.on.Intensifying{border-color:var(--int);background:color-mix(in srgb,var(--int-bg) 55%,var(--surface))}
+.cell.on:hover,.cell.on:focus-visible{transform:translateY(-1px);box-shadow:0 6px 16px rgba(17,28,43,.14)}
+.cell .dirl{font-size:12px;font-weight:700;display:flex;justify-content:space-between;gap:8px}
+.cell.Easing .dirl{color:var(--ease)}.cell.Persisting .dirl{color:var(--pers)}.cell.Intensifying .dirl{color:var(--int)}
+.cell .meta2{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.cell .meta2 .sqs{display:inline-flex;gap:3px}
+.cell .meta2 .sq{width:11px;height:11px;border-radius:2px}
+.cell .open{font-size:12px;font-weight:700;color:var(--accent)}
+.cg-key{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted);margin-top:14px}
+.cg-key span{display:inline-flex;align-items:center;gap:6px}
+.cg-key i{width:14px;height:14px;border-radius:3px;display:inline-block;box-sizing:border-box}
+/* changes */
+.chg{list-style:none;margin:0;padding:0}
+.chg li{padding:11px 0;border-top:1px solid var(--rule)}
+.chg li:first-child{border-top:0;padding-top:2px}
+.chg .d{font-size:12.5px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chg .badge{font-size:11.5px;font-weight:700;border-radius:4px;padding:2px 6px}
+.chg .badge.tightening{background:var(--bad-bg);color:var(--bad)}.chg .badge.easing{background:var(--ease-bg);color:var(--ease)}
+.chg .go{all:unset;cursor:pointer;display:block;font-size:14px;line-height:1.4;color:var(--ink);margin-top:3px}
+.chg .go:hover,.chg .go:focus-visible{color:var(--accent)}
+.chg .go span{font-weight:700;color:var(--muted);margin-right:6px}
+.why6{font-size:14px;color:var(--muted);line-height:1.5}
+/* tile map (variation 2) */
+.tmap{display:grid;grid-template-columns:repeat(13,1fr);grid-auto-rows:minmax(118px,auto);gap:10px;padding:16px;border-radius:14px;
+  background:radial-gradient(circle,color-mix(in srgb,var(--muted) 22%,transparent) 1px,transparent 1.5px) 0 0/14px 14px,var(--surface);box-shadow:0 1px 2px rgba(17,28,43,.06),0 6px 18px rgba(17,28,43,.08)}
+.treg{background:color-mix(in srgb,var(--bg) 80%,var(--surface));border:1px solid var(--rule);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.treg h3{font-size:14px;display:flex;justify-content:space-between;gap:8px}
+.treg h3 small{font-weight:500;color:var(--muted);font-size:12px;white-space:nowrap}
+.trow{display:grid;grid-template-columns:44px 1fr;align-items:center;gap:6px;font-size:12px;color:var(--muted);border-radius:8px;padding:4px 6px}
+.trow.off{opacity:.4}
+.trow.on{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:6px;font-size:12px;border-radius:8px;padding:5px 6px;border:2px solid}
+.trow.on.Easing{border-color:var(--ease);background:var(--ease-bg)}.trow.on.Persisting{border-color:var(--pers);background:var(--pers-bg)}.trow.on.Intensifying{border-color:var(--int);background:var(--int-bg)}
+.trow.on:hover,.trow.on:focus-visible{box-shadow:0 4px 12px rgba(17,28,43,.18)}
+.trow b{color:var(--ink);font-weight:600}
+.treg .mini .chip{padding:3px 5px;font-size:10.5px}.treg .mini{gap:3px}.treg .mini svg{width:11px}
+.trow,.trow.on{grid-template-columns:38px 1fr auto}.trow{grid-template-columns:38px 1fr}
+.trow .open{font-weight:700;color:var(--accent)}
+/* overview rows (variation 3) */
+.ov{width:100%;border-collapse:collapse}
+.ov th{font-size:12.5px;color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--rule)}
+.ov td{padding:0;border-bottom:1px solid var(--rule);vertical-align:middle;color:var(--muted);font-size:13.5px}
+.ov tr.row{cursor:pointer}
+.ov tr.row:hover td{background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.ov td>div{padding:14px 10px 14px 0}
+.ov td.nm{width:200px}.ov td.nm b{display:block;color:var(--ink);font-size:15px}
+.ov .dirt{font-size:12.5px;font-weight:700}
+.ov .Easing .dirt{color:var(--ease)}.ov .Persisting .dirt{color:var(--pers)}.ov .Intensifying .dirt{color:var(--int)}
+.ov .sqs{display:inline-flex;gap:3px;vertical-align:middle;margin-right:6px}.ov .sqs .sq{width:12px;height:12px;border-radius:2px}
+.ov .nx b{color:var(--ink);font-weight:600}
+.ov .chev2{color:var(--accent);font-weight:700}
+.minigrid{display:grid;grid-template-columns:auto repeat(3,1fr);gap:4px;font-size:11.5px;margin-top:10px}
+.minigrid span{padding:5px 6px;border-radius:5px;background:var(--none-bg);color:var(--muted);text-align:center;opacity:.55}
+.minigrid span.h{background:none;opacity:1;font-weight:600;text-align:left}
+.minigrid span.on{opacity:1;color:#fff;font-weight:700}
+.minigrid span.on.Easing{background:var(--ease)}.minigrid span.on.Persisting{background:var(--pers)}.minigrid span.on.Intensifying{background:var(--int)}
 </style>
 </head>
 <body>
@@ -263,10 +367,14 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
     <div class="meta">
       <span id="asof"></span>
     </div>
+    <p class="insight" id="insight" hidden></p>
     <div id="loaderr"></div>
   </header>
 
-  <section aria-label="Calls and their signposts">
+  <section id="home" aria-label="Overview" hidden></section>
+
+  <section id="boardsec" aria-label="Calls and their signposts" hidden>
+    <button class="back" id="back" type="button"><span aria-hidden="true">←</span> All regions</button>
     <div id="board"></div>
   </section>
 
@@ -284,14 +392,14 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
         <p style="margin-top:10px">Up to 2030, ratings are capped by what is built, under construction or firmly planned. Beyond 2030, they depend on whether mitigation is delivered.</p>
       </div>
       <div class="card">
-        <h3>Signpost status</h3>
+        <h3>Signals</h3>
         <div class="tbl-wrap"><table>
-          <tr><th>Call type</th><th>Supports the call when</th><th>Challenges the call when</th></tr>
-          <tr><td>Easing</td><td>The easing is confirmed</td><td>The rating risks reverting to Severe</td></tr>
-          <tr><td>Persisting</td><td>The constraint holds</td><td>There is a case for lowering severity</td></tr>
-          <tr><td>Intensifying</td><td>The intensification is confirmed</td><td>The intensification is contained</td></tr>
+          <tr><th>Signal</th><th>Meaning</th></tr>
+          <tr><td>Constraint tightening</td><td>A development past the signpost's trigger that makes the constraint harder</td></tr>
+          <tr><td>Constraint easing</td><td>A development past the trigger that makes the constraint easier</td></tr>
+          <tr><td>No signal yet</td><td>Nothing has crossed the trigger since the ratings were set on 12 Nov 2026</td></tr>
         </table></div>
-        <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one of its signposts challenges it. Ratings change only after a manual review.</p>
+        <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one signal runs against it: an easing signal on a Persisting or Intensifying call, or a tightening signal on an Easing call. Ratings change only after a manual review.</p>
       </div>
     </div>
   </section>
@@ -301,22 +409,26 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 <script>
 /* Data lives in data/*.json. preview.html carries the same data inline (window.__DATA__)
    so it opens by double-click; it is generated by scripts/build_preview.py.
-   data/heatmap.json holds the ratings for all eight regions; the page no longer shows it. */
+   data/heatmap.json holds the ratings for all eight regions, shown on the overview. */
 const el = (id) => document.getElementById(id);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const day = (s) => new Date(s + "T00:00:00Z");
 const fmt = (s) => day(s).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
 const now = new Date();
 const TODAY = now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
-let CALLS = [], EVENTS = [];
+let CALLS = [], EVENTS = [], HEAT = [], META = {};
 
 function stance(dir, status){
   if (status === "none" || !status) return "none";
   if (dir === "Easing") return status === "pos" ? "supports" : "challenges";
   return status === "pos" ? "challenges" : "supports";
 }
-const STANCE_TEXT = {supports:"Supports call", challenges:"Challenges call", none:"No signal yet"};
-const STANCE_ICON = {supports:"✓", challenges:"!", none:"–"};
+/* What a reading says about the constraint itself, independent of the call:
+   status "neg" = constraint tightening, "pos" = constraint easing. */
+const SIGNAL = {pos:"easing", neg:"tightening", none:"none"};
+const SIGNAL_TEXT = {easing:"Constraint easing", tightening:"Constraint tightening", none:"No signal yet"};
+const SIGNAL_ICON = {easing:"▼", tightening:"▲", none:"–"};
+const signalOf = (sp) => SIGNAL[sp.status || "none"] || "none";
 const TRIGGER_TERM = {pos:"Turned positive", neg:"Turned negative", none:"Not yet"};
 const statusOf = (sp) => sp.status || "none";
 const safeUrl = (u) => /^https:\/\//.test(u || "") ? u : null;
@@ -339,17 +451,20 @@ function gauge(g){
     <svg class="g-svg" viewBox="0 0 ${W} 34">${marks}</svg></div>`;
 }
 
+function thr(t){ const i = t.indexOf(":"); return i > 0 && i < 10 ? `<b>${esc(t.slice(0, i))}:</b>${esc(t.slice(i + 1))}` : esc(t); }
 function signpost(sp, call){
-  const st = statusOf(sp), s = stance(call.dir, st), url = safeUrl(sp.source_url);
+  const st = statusOf(sp), s = signalOf(sp), url = safeUrl(sp.source_url);
   const src = url
     ? `<a class="info" href="${esc(url)}" target="_blank" rel="noopener" title="Open the primary source" aria-label="Open the primary source for ${esc(sp.name)}"><span aria-hidden="true">i</span></a>`
     : `<span class="unv">Not yet verified</span>`;
   return `<article class="sp" id="sp-${esc(sp.id)}">
     <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3>
-      <span class="pill ${s}"><i>${STANCE_ICON[s]}</i>${STANCE_TEXT[s]}</span></header>
+      <span class="pill ${s}"><i>${SIGNAL_ICON[s]}</i>${SIGNAL_TEXT[s]}</span></header>
     <div class="sp-body">
       <div class="fig">${esc(sp.headline || sp.latest)}</div>
+      ${sp.delta ? `<div class="delta">${sp.delta.dir === "down" ? "▼" : "▲"} ${esc(sp.delta.text)}</div>` : ""}
       ${sp.headline && sp.summary ? `<p class="sub">${esc(sp.summary)}</p>` : ""}
+      ${sp.threshold ? `<p class="thr">${thr(sp.threshold)}</p>` : ""}
       ${sp.gauge ? gauge(sp.gauge) : ""}
     </div>
     <footer class="sp-foot"><span>Next: <b>${esc(sp.next)}</b></span>${src}</footer>
@@ -379,10 +494,12 @@ function shiftHTML(c){
   return `<div class="shift labelled"><div class="hz"><div class="b-lab">2026–30</div><span class="chip sev-${esc(c.from)}">${esc(c.from)}</span></div>${ARROW}<div class="hz"><div class="b-lab">Beyond 2030</div><span class="chip sev-${esc(c.to)}">${esc(c.to)}</span></div></div>`;
 }
 function tally(c){
-  const stances = c.sps.map(sp => stance(c.dir, statusOf(sp)));
-  const ch = stances.filter(x => x === "challenges").length, su = stances.filter(x => x === "supports").length;
-  const text = (ch || su) ? `${su} support, ${ch} challenge, ${c.sps.length - su - ch} no signal` : `${c.sps.length} signposts, no signal yet`;
-  return {stances, review: ch >= 1 /* owner's rule: any one challenging signpost flags the call */, text};
+  const signals = c.sps.map(signalOf);
+  const ch = c.sps.filter(sp => stance(c.dir, statusOf(sp)) === "challenges").length;
+  const ti = signals.filter(x => x === "tightening").length, ea = signals.filter(x => x === "easing").length;
+  const text = (ti || ea) ? `${ti} tightening, ${ea} easing, ${c.sps.length - ti - ea} no signal` : `${c.sps.length} signposts, no signal yet`;
+  const ver = c.sps.filter(sp => safeUrl(sp.source_url)).length;
+  return {signals, review: ch >= 1 /* owner's rule: any one signal against the call flags it */, text, ver};
 }
 const MON = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
 function plainDate(e){ return !e.fuzzy && /^\d{1,2} [A-Z][a-z]{2} \d{4}$/.test(e.label); }
@@ -400,7 +517,7 @@ function points(text, sep){
   return `<ul class="pts">${parts.map(x => `<li>${esc(x.charAt(0).toUpperCase() + x.slice(1))}</li>`).join("")}</ul>`;
 }
 function renderBoard(){
-  if (!current) current = (CALLS.find(c => slug(c) === location.hash.slice(1)) || CALLS[0]).id;
+  if (!current) current = CALLS[0].id;
   const c = CALLS.find(x => x.id === current) || CALLS[0];
   const tabs = CALLS.map(x => {
     const t = tally(x), on = x.id === c.id;
@@ -415,13 +532,14 @@ function renderBoard(){
     <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-${esc(c.id)}">
       <div class="banner ${esc(c.dir)}">
         <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${BANDS[c.dir]}</div>
+          <div class="ver"><b>${t.ver} of ${c.sps.length}</b> readings verified at the primary source</div>
           ${t.review ? `<span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
         <div>${shiftHTML(c)}</div>
-        <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.stances.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div>
-          <div class="key"><span><i class="supports"></i>supports the call</span><span><i class="challenges"></i>challenges the call</span><span><i></i>no signal yet</span></div></div>
+        <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.signals.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div>
+          <div class="key"><span><i class="tightening"></i>tightening</span><span><i class="easing"></i>easing</span><span><i></i>no signal yet</span></div></div>
         <div class="b-next">${nx ? `${tileHTML(nx)}<div><small>Next catalyst${plainDate(nx) ? "" : " · " + esc(nx.label)}</small>${when ? `<div class="when">${when}</div>` : ""}<p>${esc(nx.text)}</p></div>` : `<small>No dated catalyst</small>`}</div>
       </div>
-      <div class="why ${esc(c.dir)}"><div><b>${esc(c.key.label)}</b>${points(c.key.text, /;\s+/)}</div><div><b>What the call depends on</b>${points(c.depends, /(?<=\.)\s+(?=[A-Z])/)}</div></div>
+      <div class="why ${esc(c.dir)}">${c.bottom_line ? `<p class="bl"><b>Bottom line</b>${esc(c.bottom_line)}</p>` : ""}<div><b>${esc(c.key.label)}</b>${points(c.key.text, /;\s+/)}</div><div><b>What the call depends on</b>${points(c.depends, /(?<=\.)\s+(?=[A-Z])/)}</div></div>
       <div class="cols">
         <div class="sps ${esc(c.dir)}">${c.sps.map(sp => signpost(sp, c)).join("")}</div>
         ${calendarFor(c)}
@@ -431,7 +549,7 @@ function renderBoard(){
 function selectCall(id, focus){
   current = id; renderBoard();
   const c = CALLS.find(x => x.id === id);
-  try { if (c && location.hash.slice(1) !== slug(c)) location.hash = slug(c); } catch (e) {}
+  try { if (c && location.hash.slice(1) !== slug(c)) history.replaceState(null, "", "#" + slug(c)); } catch (e) {}
   if (focus) { const tab = document.getElementById("tab-" + id); if (tab) tab.focus(); }
 }
 
@@ -446,18 +564,28 @@ function calendarFor(c){
     if (kind === "past") sub = e.outcome ? "" : ` <span class="due">outcome to log</span>`;
     else if (kind === "soon" && !e.fuzzy) sub = ` <em>${e.diff === 0 ? "today" : "in " + e.diff + (e.diff === 1 ? " day" : " days")}</em>`;
     const mine = e.sp.filter(x => ids.includes(x)).map(x => { const sp = c.sps.find(q => q.id === x); return esc(x + " " + sp.name); });
-    const rel = `Relevant for: Signpost${mine.length > 1 ? "s" : ""} ${mine.join("; ")}`;
+    const links = e.sp.filter(x => ids.includes(x)).map(x => { const sp = c.sps.find(q => q.id === x); return `<button class="sp-link" type="button" data-sp="${esc(x)}">${esc(x + " " + sp.name)}</button>`; });
+    const rel = `Relevant for: Signpost${links.length > 1 ? "s" : ""} ${links.join("; ")}`;
     return `<div class="rev ${kind === "past" ? "past" : ""}"><b>${esc(e.label)}${sub}</b>${esc(e.text)}
       ${e.outcome ? `<small>Outcome: ${esc(e.outcome)}</small>` : ""}${e.note ? `<small>Note: ${esc(e.note)}</small>` : ""}<small class="rel">${rel}</small></div>`;
   };
   const part = (title, list, kind) => list.length ? `<h3>${title}</h3>${list.map(e => row(e, kind)).join("")}` : "";
-  const body = part("Next six weeks", groups.soon, "soon") + part("Further out", groups.later, "later") + part("Passed", groups.past, "past");
+  const fold = (label, list, kind) => list.length ? `<details><summary>${label} (${list.length}) +</summary>${list.map(e => row(e, kind)).join("")}</details>` : "";
+  const body = (groups.soon.length ? part("Next six weeks", groups.soon, "soon") : `<p class="none">Nothing due in the next six weeks.</p>`)
+    + fold("Later dates", groups.later, "later") + fold("Passed", groups.past.slice().reverse(), "past");
   return `<aside class="rail" aria-label="Catalyst calendar"><h2>Catalyst calendar</h2>${body || `<p class="none">No dated catalysts for these signposts.</p>`}</aside>`;
 }
 
 el("board").addEventListener("click", ev => {
-  const tab = ev.target.closest(".tab"); if (tab) selectCall(tab.dataset.id, true);
+  const tab = ev.target.closest(".tab"); if (tab) return selectCall(tab.dataset.id, true);
+  const l = ev.target.closest(".sp-link"); if (l) flashCard(l.dataset.sp);
 });
+function flashCard(id){
+  const card = document.getElementById("sp-" + id); if (!card) return;
+  card.scrollIntoView({behavior:"smooth", block:"center"});
+  card.classList.add("flash"); setTimeout(() => card.classList.remove("flash"), 1600);
+}
+el("back").addEventListener("click", () => { try { history.pushState(null, "", location.pathname + location.search); } catch (e) {} route(); window.scrollTo(0, 0); });
 el("board").addEventListener("keydown", ev => {
   if (!ev.target.closest(".tab") || !["ArrowLeft","ArrowRight","Home","End"].includes(ev.key)) return;
   ev.preventDefault();
@@ -465,23 +593,96 @@ el("board").addEventListener("keydown", ev => {
   const j = ev.key === "Home" ? 0 : ev.key === "End" ? n - 1 : (i + (ev.key === "ArrowRight" ? 1 : n - 1)) % n;
   selectCall(CALLS[j].id, true);
 });
-window.addEventListener("hashchange", () => {
+/* ---------- overview (landing page) ---------- */
+const CONS = ["power", "water", "land"];
+const callFor = (region, con) => CALLS.find(c => c.region === region && c.constraint.toLowerCase() === con);
+const VARIANT = (new URLSearchParams(location.search).get("v") || "1");
+function mini(pair){ return `<span class="mini"><span class="chip sev-${esc(pair[0])}">${esc(pair[0])}</span>${ARROW}<span class="chip sev-${esc(pair[1])}">${esc(pair[1])}</span></span>`; }
+function nextShort(c){ const nx = nextFor(c); return nx ? (nx.fuzzy ? nx.label : fmt(nx.d).replace(/ \d{4}$/, "")) : "none dated"; }
+function sqs(c){ return `<span class="sqs">${tally(c).signals.map(x => `<span class="sq ${x === "none" ? "" : x}"></span>`).join("")}</span>`; }
+function covCell(c){
+  const t = tally(c);
+  return `<button class="cell on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}" aria-label="Open ${esc(c.region)} ${esc(c.constraint)}">
+    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="open">Open →</span></span>${mini([c.from, c.to])}
+    <span class="meta2">${sqs(c)}<span>Next ${esc(nextShort(c))}</span></span></button>`;
+}
+function coverageGrid(){
+  const rows = HEAT.map(r => `<tr><td class="reg">${esc(r.name)}<small>${esc(r.share)}% of capacity</small></td>${CONS.map(k => {
+    const c = callFor(r.name, k);
+    return `<td>${c ? covCell(c) : `<div class="cell off">${mini(r[k])}</div>`}</td>`;
+  }).join("")}</tr>`).join("");
+  return `<table class="cg"><tr><th></th><th>Power</th><th>Water</th><th>Land</th></tr>${rows}</table>`;
+}
+function coverageKey(){
+  return `<div class="cg-key"><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span><i class="sq tightening" style="width:11px;height:11px"></i>tightening signal</span><span><i class="sq easing" style="width:11px;height:11px"></i>easing signal</span></div>`;
+}
+const TPOS = {"North America":"1/1/3/5","Latin America":"3/2/5/5","Europe":"1/5/2/8","Middle East":"2/5/3/8","China":"1/8/2/11","North Asia excluding China":"1/11/2/14","South and Southeast Asia":"2/8/4/11","Australia":"3/11/5/14"};
+function tileMap(){
+  return `<div class="tmap">${HEAT.map(r => `<div class="treg" style="grid-area:${TPOS[r.name] || "auto"}"><h3>${esc(r.name.replace("excluding", "ex-"))}<small>${esc(r.share)}%</small></h3>
+    ${CONS.map(k => { const c = callFor(r.name, k), lab = k.charAt(0).toUpperCase() + k.slice(1);
+      return c ? `<button class="trow on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}"><b>${lab}</b>${mini([c.from, c.to])}<span class="open">→</span></button>`
+               : `<div class="trow off"><span>${lab}</span>${mini(r[k])}</div>`; }).join("")}</div>`).join("")}</div>`;
+}
+function changes(){
+  const items = [];
+  CALLS.forEach(c => c.sps.forEach(sp => (sp.history || []).forEach(h => { if (h.kind === "status" || h.kind === "reading") items.push({c, sp, h}); })));
+  items.sort((a, b) => a.h.date < b.h.date ? 1 : a.h.date > b.h.date ? -1 : (a.h.kind === "status" ? -1 : 1));
+  if (!items.length) return `<p class="why6">No new developments logged yet.</p>`;
+  return `<ul class="chg">${items.slice(0, 6).map(({c, sp, h}) => { const sg = signalOf(sp);
+    return `<li><div class="d">${esc(fmt(h.date))}${h.kind === "status" && sg !== "none" ? `<span class="badge ${sg}">${SIGNAL_ICON[sg]} Now ${sg === "tightening" ? "tightening" : "easing"}</span>` : ""}<span>${esc(c.tab || c.region)} ${esc(c.constraint)}</span></div>
+      <button class="go" type="button" data-call="${esc(c.id)}" data-sp="${esc(sp.id)}"><span>${esc(sp.id)}</span>${esc(h.brief || h.note)}</button></li>`; }).join("")}</ul>`;
+}
+function overviewRows(){
+  return `<table class="ov"><tr><th>Region and constraint</th><th>2026–30 → beyond 2030</th><th>Signals</th><th>Verified</th><th>Next catalyst</th><th></th></tr>${CALLS.map(c => { const t = tally(c), nx = nextFor(c);
+    return `<tr class="row ${esc(c.dir)}" data-call="${esc(c.id)}" tabindex="0"><td class="nm"><div><b>${esc(c.tab || c.region)} · ${esc(c.constraint)}</b><span class="dirt">${esc(c.dir)}</span>${t.review ? ` <span class="dirt" style="color:var(--bad)">· under review</span>` : ""}</div></td>
+      <td><div>${mini([c.from, c.to])}</div></td><td><div>${sqs(c)}${(t.signals.filter(x => x !== "none").length) || "none"}</div></td><td><div>${t.ver} of ${c.sps.length}</div></td>
+      <td class="nx"><div>${nx ? `<b>${esc(nextShort(c))}</b> ${esc(nx.text)}` : "No dated catalyst"}</div></td><td><div class="chev2">→</div></td></tr>`; }).join("")}</table>`;
+}
+function miniGrid(){
+  return `<div class="minigrid"><span class="h"></span><span class="h">Power</span><span class="h">Water</span><span class="h">Land</span>${HEAT.map(r => `<span class="h">${esc(r.name.replace("excluding", "ex-").replace("South and Southeast Asia", "S & SE Asia"))}</span>${CONS.map(k => { const c = callFor(r.name, k);
+    return `<span class="${c ? "on " + esc(c.dir) : ""}">${c ? esc(c.id) : "·"}</span>`; }).join("")}`).join("")}</div>`;
+}
+function renderHome(){
+  const why = `<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p></div>`;
+  const chg = `<div class="panel-card"><h2>What changed</h2><p class="hint">Latest developments logged against the signposts</p>${changes()}</div>`;
+  let main;
+  if (VARIANT === "2") main = `<div style="grid-column:1/-1"><h2 style="font-size:18px;margin:0 0 4px">Where the tracker looks</h2><p class="hint" style="font-size:13px;color:var(--muted);margin-bottom:12px">All eight regions, by share of installed capacity. Highlighted pairs are tracked; select one to see its signposts.</p>${tileMap()}${coverageKey()}</div><div style="grid-column:1/-1;display:grid;gap:22px;grid-template-columns:1.4fr 1fr">${chg}${why}</div>`;
+  else if (VARIANT === "3") main = `<div class="panel-card"><h2>The six calls</h2><p class="hint">Select a row to see its signposts.</p>${overviewRows()}</div><div style="display:grid;gap:22px">${chg}<div class="panel-card"><h2>Why these six</h2><p class="why6">${esc(META.coverage_note || "")}</p>${miniGrid()}</div></div>`;
+  else main = `<div class="panel-card"><h2>Where the tracker looks</h2><p class="hint">All eight regions, by share of installed capacity. The six highlighted pairs are tracked; select one to see its signposts.</p>${coverageGrid()}${coverageKey()}</div><div style="display:grid;gap:22px">${chg}${why}</div>`;
+  el("home").innerHTML = `<div class="home-grid">${main}</div>`;
+}
+el("home").addEventListener("click", ev => { const b = ev.target.closest("[data-call]"); if (b) openCall(b.dataset.call, b.dataset.sp); });
+el("home").addEventListener("keydown", ev => { const r = ev.target.closest("tr[data-call]"); if (r && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); openCall(r.dataset.call); } });
+
+/* Routing: no hash shows the overview; #north-america-power and so on show that call. */
+function route(){
   const c = CALLS.find(x => slug(x) === location.hash.slice(1));
-  if (c && c.id !== current) selectCall(c.id, false);
-});
+  el("home").hidden = !!c; el("boardsec").hidden = !c; el("insight").hidden = !!c;
+  if (c) { if (c.id !== current || !el("board").innerHTML) { current = c.id; renderBoard(); } }
+  else renderHome();
+}
+window.addEventListener("hashchange", route);
+window.addEventListener("popstate", route);
+function openCall(id, sp){
+  const c = CALLS.find(x => x.id === id); if (!c) return;
+  location.hash = slug(c); window.scrollTo(0, 0);
+  if (sp) setTimeout(() => flashCard(sp), 120);
+}
 
 async function load(){
   if (window.__DATA__) return window.__DATA__;
   const get = (f) => fetch("data/" + f, {cache:"no-cache"}).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
-  const [signposts, calendar] = await Promise.all([get("signposts.json"), get("calendar.json")]);
-  return {signposts, calendar};
+  const [signposts, calendar, heatmap] = await Promise.all([get("signposts.json"), get("calendar.json"), get("heatmap.json")]);
+  return {signposts, calendar, heatmap};
 }
 load().then(d => {
   CALLS = d.signposts.calls.slice().sort((x, y) => x.id < y.id ? -1 : 1); EVENTS = d.calendar.events;
+  HEAT = (d.heatmap && d.heatmap.regions) || []; META = d.signposts;
+  el("insight").innerHTML = META.insight ? `<b>The picture today</b>${esc(META.insight)}` : "";
   el("asof").innerHTML = d.signposts.last_refreshed
     ? `Last refreshed <b>${esc(fmt(d.signposts.last_refreshed))}</b>`
     : `<b>Not yet refreshed</b> from primary sources`;
-  renderBoard();
+  route();
 }).catch(() => {
   el("loaderr").innerHTML = `<p class="load-err">The data files could not be loaded. If you opened this file directly from a folder, open preview.html instead.</p>`;
 });

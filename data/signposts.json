@@ -64,7 +64,12 @@
       }
      ],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: shortfall below 6,831 megawatts",
+     "delta": {
+      "dir": "up",
+      "text": "from 6,516 at the 2027/28 auction"
+     }
     },
     {
      "id": "A2",
@@ -87,12 +92,15 @@
        "date": "2026-11-09",
        "note": "PJM refiled its amendments to the backstop procurement (docket ER27-454), substantively identical to its 29 Oct filing; requested effective date 28 Feb 2027, ruling requested by 29 Jan 2027, comments due 30 Nov 2026",
        "source_url": "https://www.pjm.com/pjmfiles/directory/etariff/FercDockets/9977/20261109%20er27-454-000.pdf",
-       "retrieved_on": "2026-11-21"
+       "retrieved_on": "2026-11-21",
+       "kind": "reading",
+       "brief": "PJM refiled amendments to its backstop auction; it asks for a ruling by 29 Jan 2027"
       }
      ],
      "verify": "The 29 Sep order is confirmed at the linked PJM notice. The amendments, the requested dates and the 30 Nov comment date are confirmed in PJM's filing of 9 Nov 2026 (linked under history), which was read in part. The proposed 1 Mar 2027 bid opening is from press reports and was not confirmed in the passages read.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: contracts near target, on schedule"
     },
     {
      "id": "A3",
@@ -103,7 +111,7 @@
      "trigger": "Positive if quarterly additions fall below shipments, so the backlog stops rising, and pre-2030 delivery slots reappear.",
      "status": "none",
      "headline": "122 gigawatts",
-     "summary": "GE Vernova's order book and reservations, up from 116 a quarter earlier. One turbine maker, tracked as an illustration of the wider market",
+     "summary": "GE Vernova's order book and reservations. One turbine maker, tracked as an illustration of the wider market",
      "latest": "GE Vernova only (one turbine maker, tracked as an illustration of the wider market): gas equipment backlog plus slot reservations 122 gigawatts, up from 116 a quarter earlier. In the quarter: 11 gigawatts signed, 5 shipped.",
      "latestDate": "30 Sep 2026",
      "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm",
@@ -141,7 +149,12 @@
       }
      ],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: backlog stops rising",
+     "delta": {
+      "dir": "up",
+      "text": "from 116 at 30 Jun 2026"
+     }
     },
     {
      "id": "A4",
@@ -163,11 +176,14 @@
      "history": [
       {
        "date": "2026-11-19",
-       "note": "Governor-elect repeated her call for a moratorium; a Senate bill tying grid connection to water-saving cooling was reported filed (press only). Owner kept the status at Not yet on 21 Nov 2026"
+       "note": "Governor-elect repeated her call for a moratorium; a Senate bill tying grid connection to water-saving cooling was reported filed (press only). Owner kept the status at Not yet on 21 Nov 2026",
+       "kind": "reading",
+       "brief": "Texas Governor-elect repeated her call for a moratorium on new data centre permits; a Senate bill tying connection to water-saving cooling was reported filed"
       }
      ],
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: approvals grow over 2 gigawatts a year"
     },
     {
      "id": "A5",
@@ -189,12 +205,15 @@
       {
        "date": "2026-11-16",
        "note": "Large-load filings by the California and New York grid operators and PJM's transmission owners, listed in the Federal Register notice of 19 Nov 2026",
-       "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1"
+       "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
+       "kind": "reading",
+       "brief": "Grid operators filed their large-load proposals with the federal regulator"
       }
      ],
      "verify": "The linked notice confirms the 16 Nov filings it lists and the 7 Dec comment date. The filings by the New England and Midwest grid operators and by PJM itself, and the absence of a ruling, are from press reports (POWER, 19 Nov). Whether Southwest Power Pool filed on 20 Nov is not yet confirmed.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: federal regulator approves workable rules"
     },
     {
      "id": "A6",
@@ -235,9 +254,11 @@
      ],
      "verify": "The release date of the 2026 assessment is not confirmed.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: 2026 assessment rates risk lower"
     }
-   ]
+   ],
+   "bottom_line": "Power stays Severe to 2030. It eases to Moderate after 2030 only if new turbines, the PJM backstop auction and Texas's new 765 kilovolt lines arrive on time; near-term data point the other way."
   },
   {
    "id": "B",
@@ -281,7 +302,8 @@
      },
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: below 25% for several quarters"
     },
     {
      "id": "B2",
@@ -302,7 +324,8 @@
      "history": [],
      "verify": "The New York framework is confirmed at the linked source. The Spartanburg County approvals are from a press report only (Fox Carolina, 18 Nov 2026); the county's own record has not been checked. Virginia's toolkit has not been checked.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: deals turn opposition into approvals"
     },
     {
      "id": "B3",
@@ -323,9 +346,11 @@
      "history": [],
      "verify": "The linked county document is the proposal put to the vote. The result is confirmed by press reports only (Bisnow, Fox 5). The state permit pauses in New York, Oregon and Texas are not yet verified.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: a measure that limits local vetoes"
     }
-   ]
+   ],
+   "bottom_line": "Land stays Severe in both periods: local opposition blocks or delays over half of large projects, and no state or federal override of local vetoes is in sight."
   },
   {
    "id": "C",
@@ -360,7 +385,8 @@
      "history": [],
      "verify": "From press and industry reports (The Next Web, TechTimes, BloombergNEF). No primary document has been checked. Norway is reviewing its data centre rules.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: overflow lands at scale outside core hubs"
     },
     {
      "id": "C2",
@@ -383,16 +409,20 @@
        "date": "2026-11-20",
        "note": "Council of Ministers approved the royal decree on data centres; status set to Turned negative by the owner on 21 Nov 2026",
        "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
-       "retrieved_on": "2026-11-21"
+       "retrieved_on": "2026-11-21",
+       "kind": "status",
+       "brief": "Spain's Council of Ministers approved the data centre decree, keeping the 80% hourly renewables match"
       },
       {
        "date": "2026-11-21",
-       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged"
+       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged",
+       "kind": "note"
       }
      ],
      "verify": "The approval and the terms are from the energy ministry's press release, read directly; the decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Watch: 80% hourly match, 10 megawatt threshold, five-year phase-in"
     },
     {
      "id": "C3",
@@ -413,9 +443,11 @@
      "history": [],
      "verify": "The linked page covers Noord-Holland. Frankfurt is from press reports; no current date for West London has been found.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: a core-hub fix before 2030"
     }
-   ]
+   ],
+   "bottom_line": "Power stays Severe in both periods: grid fixes for Noord-Holland, Frankfurt and West London land only in the 2030s, and secondary markets are rationing access."
   },
   {
    "id": "D",
@@ -459,7 +491,8 @@
      },
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Watch: limits near 0.4 litres per kilowatt-hour"
     },
     {
      "id": "D2",
@@ -482,16 +515,20 @@
        "date": "2026-11-20",
        "note": "Council of Ministers approved the royal decree on data centres, keeping the top water-efficiency level; status set to Turned negative by the owner on 21 Nov 2026",
        "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
-       "retrieved_on": "2026-11-21"
+       "retrieved_on": "2026-11-21",
+       "kind": "status",
+       "brief": "The same decree keeps the top water-efficiency level for data centres"
       },
       {
        "date": "2026-11-21",
-       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged"
+       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged",
+       "kind": "note"
       }
      ],
      "verify": "The approval and the water rule are from the energy ministry's press release, read directly; it gives the 0.1 ceiling without a unit and does not say which sites are covered. The decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Watch: 0.1 litres per kilowatt-hour or less"
     },
     {
      "id": "D3",
@@ -512,7 +549,8 @@
      "history": [],
      "verify": "From legal commentary on the law of 26 May 2026. The text of the law has not been checked directly.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: any refusal on water grounds"
     },
     {
      "id": "D4",
@@ -533,7 +571,8 @@
      "history": [],
      "verify": "The study covers operating sites, not the pipeline this signpost tracks.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: a rising share in water-stressed areas"
     },
     {
      "id": "D5",
@@ -556,14 +595,18 @@
        "date": "2026-11-01",
        "note": "European Drought Observatory, early November 2026: drought conditions remained critical in most of Europe and worsened in the Iberian Peninsula",
        "source_url": "https://drought.emergency.copernicus.eu/",
-       "retrieved_on": "2026-11-21"
+       "retrieved_on": "2026-11-21",
+       "kind": "reading",
+       "brief": "European Drought Observatory: drought still critical in most of Europe, worse in Iberia"
       }
      ],
      "verify": "The July figures are at the linked source. The early November statement is from the European Drought Observatory's own site (https://drought.emergency.copernicus.eu/), read directly; it gives no percentage. No earlier year has been loaded for comparison.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: wider or longer droughts"
     }
-   ]
+   ],
+   "bottom_line": "Water rises from Minor to Moderate after 2030, as growth moves into the water-scarce south and rules start to make water use a condition for building."
   },
   {
    "id": "E",
@@ -598,7 +641,8 @@
      "history": [],
      "verify": "From press reports (Seoul Economic Daily, Aju Press). The ministry's notice has not been checked. The decree is not final.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Watch: a higher threshold (50 to 100 megawatts) widens the route out of Seoul"
     },
     {
      "id": "E2",
@@ -618,7 +662,8 @@
      "sources": "Korea Electric Power Corporation disclosures; Korea Power Exchange statistics; ministry designations",
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: regional sites connect in volume by 2028"
     },
     {
      "id": "E3",
@@ -639,7 +684,8 @@
      "history": [],
      "verify": "From a press report (Seoul Economic Daily) citing the national utility's data. No primary document has been checked.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: shorter build times, fewer delays"
     },
     {
      "id": "E4",
@@ -676,7 +722,8 @@
      "history": [],
      "verify": "The Tokyo figure is confirmed at the linked source; the Osaka figure is attributed to the same research by market reports. A claim that Osaka's coastal grid now needs about eight years to expand is being checked.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: regional times stay well below Tokyo's"
     },
     {
      "id": "E5",
@@ -697,9 +744,11 @@
      "history": [],
      "verify": "The cumulative restarted capacity of 13,946 megawatts has not been verified.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: restarts continue; Unit 7 on schedule"
     }
-   ]
+   ],
+   "bottom_line": "Power eases from Severe to Moderate after 2030 if Korea and Japan succeed in routing data centres to regions with spare grid, with nuclear restarts adding firm supply for Tokyo."
   },
   {
    "id": "F",
@@ -734,7 +783,8 @@
      "verify": "From press reports of the parliamentary statement (The Star). Thailand and India have not been checked.",
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: supply and rules keep up with the pipeline"
     },
     {
      "id": "F2",
@@ -761,9 +811,13 @@
      ],
      "verify": "The air-cooling statement is confirmed at the linked Bernama interview. It is a stated policy; what has actually been approved since is not verified. The hold on water-cooled expansions until mid-2027 is from press reports only.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21"
+     "last_checked_on": "2026-11-21",
+     "threshold": "Trigger: approvals move to low-water designs"
     }
-   ]
+   ],
+   "bottom_line": "Water rises from Moderate to Severe after 2030: growth is concentrated in water-stressed hubs, and in droughts governments put households first."
   }
- ]
+ ],
+ "insight": "To 2030, power is the binding constraint in North America, Europe and North Asia. After 2030 it eases in North America and North Asia, but Europe's core hubs wait for grid fixes into the 2030s, and growth moving into water-stressed areas makes water the rising constraint in southern Europe and South and Southeast Asia.",
+ "coverage_note": "The tracker follows the four region and constraint pairs where the rating changes between 2026–30 and beyond 2030, plus the two where a Severe rating persists in the largest markets: North America land and Europe power. Every other pair keeps the same rating in both periods, so for now there is no shift to track."
 }
