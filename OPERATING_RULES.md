@@ -60,7 +60,8 @@ status challenges. The site computes this; do not set it by hand.
 
 1. `.github/workflows/refresh.yml` runs `scripts/refresh.py` every day. It files new
    documents in `data/inbox.json` with `"state": "new"`. It changes no reading.
-2. The morning digest (an AI task) then, every day:
+2. The morning digest (an AI task) then, every Wednesday (weekly since 21 Nov 2026; it was
+   daily before), covering everything since the last run:
    - **Feeds:** reads every inbox item with `"state": "new"`;
    - **Catalysts:** checks the dated events in `data/calendar.json` that have passed
      without an `outcome`;

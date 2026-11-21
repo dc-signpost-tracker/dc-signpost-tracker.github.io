@@ -163,6 +163,11 @@ commit and push. Signpost statuses are not logged here; they live in
   election of 29 Nov 2026).
 - **A catalyst that arrives early** is recorded on the date it happened, with its
   outcome, and the next critical date becomes the catalyst shown.
+- **Digest runs weekly (decided 21 Nov 2026, evening):** the signpost digest runs every
+  Wednesday morning, not every day, to save usage while the tracker is still a work in
+  progress. The feeds still refresh daily on GitHub's scheduler. Each run covers
+  everything since each signpost's `last_checked_on` date. This supersedes "every
+  morning" in the entries above.
 
 ## Open
 
