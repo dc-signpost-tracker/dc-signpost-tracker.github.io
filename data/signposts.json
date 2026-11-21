@@ -105,17 +105,17 @@
      "name": "Turbine supply",
      "type": "Time series",
      "feed": "Filings and results, quarterly",
-     "track": "GE Vernova gas turbine backlog plus slot reservations against quarterly shipments, and the earliest delivery year on sale.",
-     "trigger": "Positive if quarterly additions fall below shipments, so the backlog stops rising, and pre-2030 delivery slots reappear.",
+     "track": "US supply of large gas turbines (215 megawatts and above) used by utilities: backlogs and US orders at GE Vernova, Mitsubishi Heavy Industries and Doosan Enerbility, with Siemens Energy noted, and the earliest delivery year on sale.",
+     "trigger": "Positive if large-turbine backlogs stop rising and delivery slots before 2030 reappear.",
      "status": "none",
      "headline": "122 gigawatts",
-     "summary": "GE Vernova's order book and reservations. One turbine maker, tracked as an illustration of the wider market",
-     "latest": "GE Vernova only (one turbine maker, tracked as an illustration of the wider market): gas equipment backlog plus slot reservations 122 gigawatts, up from 116 a quarter earlier. In the quarter: 11 gigawatts signed, 5 shipped.",
+     "summary": "GE Vernova's large-turbine order book and reservations, mostly US demand. US large-turbine orders, first half 2026: GE Vernova 13, Mitsubishi 8, Doosan 7, Siemens Energy 1 (press-reported)",
+     "latest": "GE Vernova, the largest supplier to US utilities, had a gas equipment backlog plus slot reservations of 122 gigawatts at 30 Sep 2026, up from 116 a quarter earlier; in the quarter it signed 11 gigawatts and shipped 5. US orders for large gas turbines (215 megawatts and above) totalled 29 units in the first half of 2026: GE Vernova 13, Mitsubishi Heavy Industries 8, Doosan Enerbility 7 and Siemens Energy 1, according to McCoy Power Reports as cited in the press. Siemens Energy sells mainly outside the US and is noted only while its US share stays small.",
      "latestDate": "30 Sep 2026",
      "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm",
      "retrieved_on": "2026-11-20",
      "next": "Next quarterly results",
-     "sources": "US Securities and Exchange Commission filings; GE Vernova, Siemens Energy and Mitsubishi Heavy Industries results; US Energy Information Administration monthly generator file",
+     "sources": "US Securities and Exchange Commission filings (GE Vernova); Mitsubishi Heavy Industries quarterly results; Doosan Enerbility order announcements; Siemens Energy results; industry order counts reported in the press (McCoy Power Reports, S&P Global)",
      "history": [
       {
        "date": "2025-12-31",
@@ -144,15 +144,21 @@
        "unit": "gigawatts",
        "measure": "Gas equipment backlog plus slot reservations",
        "source_url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm"
+      },
+      {
+       "date": "2026-11-21",
+       "kind": "note",
+       "note": "Scope widened by the owner from GE Vernova alone to the large-turbine suppliers to US utilities (GE Vernova, Mitsubishi Heavy Industries, Doosan Enerbility; Siemens Energy noted); trigger reworded; small turbines and on-site power excluded."
       }
      ],
-     "status_reviewed_on": "2026-11-20",
+     "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21",
-     "threshold": "Trigger: backlog stops rising",
+     "threshold": "Trigger: backlogs stop rising; pre-2030 slots reappear",
      "delta": {
       "dir": "up",
       "text": "from 116 at 30 Jun 2026"
-     }
+     },
+     "verify": "The GE Vernova figures are confirmed in its filing with the US Securities and Exchange Commission (linked). The first-half 2026 US order count by maker is from a press report citing McCoy Power Reports (Herald Corporation, mbiz.heraldcorp.com/article/10883205), a paid source not read directly. Mitsubishi's and Doosan's own US figures have not yet been checked."
     },
     {
      "id": "A4",

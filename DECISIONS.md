@@ -134,9 +134,12 @@ commit and push. Signpost statuses are not logged here; they live in
   sits on its own line with a round bullet in the call's direction colour (vertical bars
   were tried and the owner found them confusing).
 
-- **A3 Turbine supply** must say on the card that the figure is GE Vernova only, one
-  maker tracked as an illustration of the wider market. Keep this wording when the
-  reading is updated.
+- **A3 Turbine supply** (revised 21 Nov 2026, replacing the earlier "GE Vernova only"
+  wording): tracks large gas turbines (215 megawatts and above) used by US utilities.
+  Makers: GE Vernova (headline backlog figure), Mitsubishi Heavy Industries and Doosan
+  Enerbility; Siemens Energy is noted only while its US share stays small. Small turbines
+  and other on-site power are out of scope. Trigger: positive if large-turbine backlogs
+  stop rising and delivery slots before 2030 reappear.
 
 - **Source link on each card** is an "i" in a circle (hover text "Open the primary
   source"), not the words "Primary source". Cards without a verified source still show
