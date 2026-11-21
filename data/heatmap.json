@@ -18,23 +18,6 @@
    ]
   },
   {
-   "name": "China",
-   "sub": "",
-   "share": 27,
-   "power": [
-    "Minor",
-    "Minor"
-   ],
-   "water": [
-    "Moderate",
-    "Moderate"
-   ],
-   "land": [
-    "Minor",
-    "Minor"
-   ]
-  },
-  {
    "name": "Europe",
    "sub": "For example Frankfurt, London, Amsterdam, Paris, Dublin",
    "share": 13,
@@ -83,6 +66,23 @@
    "land": [
     "Moderate",
     "Moderate"
+   ]
+  },
+  {
+   "name": "China",
+   "sub": "",
+   "share": 27,
+   "power": [
+    "Minor",
+    "Minor"
+   ],
+   "water": [
+    "Moderate",
+    "Moderate"
+   ],
+   "land": [
+    "Minor",
+    "Minor"
    ]
   },
   {
