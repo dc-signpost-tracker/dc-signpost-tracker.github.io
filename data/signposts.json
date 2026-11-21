@@ -367,7 +367,7 @@
      "status": "neg",
      "headline": "Approved",
      "summary": "Spain's decree passed on 20 Nov 2026 with the 80% hourly renewables match kept; not yet in the official gazette, and a court challenge and the election lie ahead",
-     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The terms this signpost watches all survived. Data centres must show that 80% of their electricity is matched hour by hour by renewable generation, most of it newly added to the grid. The grid-access rules apply to sites above 10 megawatts. For five years there is an easier route for sites that accept being disconnected first when the grid is short: 60% at peak hours until the end of 2028, then 70%. Sites that fall short can lose their grid-access rights for up to three years. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party has said it would repeal it, and the general election is on 29 Nov 2026.",
+     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The terms this signpost watches all survived. Data centres must show that 80% of their electricity is matched hour by hour by renewable generation, most of it newly added to the grid. The grid-access rules apply to sites above 10 megawatts. For five years there is an easier route for sites that accept being disconnected first when the grid is short: 60% at peak hours until the end of 2028, then 70%. Sites that fall short can lose their grid-access rights for up to three years. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party, the Partido Popular (People's Party), has said it would repeal it, and the general election is on 29 Nov 2026. Why the opposition objects: its economy spokesman said the decree in practice prohibits new data centres and that the party would replace it with a law that allows them to be built. The regions it governs, among them Aragón and Madrid, host most of the large projects; Aragón's president said the decree makes many of the region's projects impossible and that he will challenge it. The government's case: the energy minister said data centres have already been granted about 15 gigawatts of grid access, roughly 40% of Spain's peak demand, and that without the decree households and businesses would pay about €5 billion more on their bills and industry about 25% more for energy.",
      "latestDate": "20 Nov 2026",
      "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
      "retrieved_on": "2026-11-21",
@@ -379,9 +379,13 @@
        "note": "Council of Ministers approved the royal decree on data centres; status set to Turned negative by the owner on 21 Nov 2026",
        "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
        "retrieved_on": "2026-11-21"
+      },
+      {
+       "date": "2026-11-21",
+       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged"
       }
      ],
-     "verify": "The approval and the terms are from the energy ministry's press release, read directly; the decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026).",
+     "verify": "The approval and the terms are from the energy ministry's press release, read directly; the decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
      "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
@@ -462,7 +466,7 @@
      "status": "neg",
      "headline": "Approved",
      "summary": "Spain's decree passed on 20 Nov 2026 keeping the top water-efficiency level; which sites it covers and when it takes effect are not yet stated",
-     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The water rule survived: data centres must meet the highest level for water use on the European Union's data centre label, which is still being drawn up. Until that label applies, the ceiling is 0.1, the figure in the draft (there, litres of water per kilowatt-hour). The ministry has not yet said which data centres the water rule covers (the draft applied it to new sites above 10 megawatts) or from when. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party has said it would repeal it, and the general election is on 29 Nov 2026.",
+     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The water rule survived: data centres must meet the highest level for water use on the European Union's data centre label, which is still being drawn up. Until that label applies, the ceiling is 0.1, the figure in the draft (there, litres of water per kilowatt-hour). The ministry has not yet said which data centres the water rule covers (the draft applied it to new sites above 10 megawatts) or from when. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party, the Partido Popular (People's Party), has said it would repeal it, and the general election is on 29 Nov 2026. Why the opposition objects: its economy spokesman said the decree in practice prohibits new data centres, and the regions it governs, among them Aragón and Madrid, host most of the large projects. Its objections are aimed at the electricity rules; none found so far is aimed at the water rule, but a repeal would remove both. The government's case is that data centres' demand on the grid would otherwise raise bills for households and industry.",
      "latestDate": "20 Nov 2026",
      "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
      "retrieved_on": "2026-11-21",
@@ -474,9 +478,13 @@
        "note": "Council of Ministers approved the royal decree on data centres, keeping the top water-efficiency level; status set to Turned negative by the owner on 21 Nov 2026",
        "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
        "retrieved_on": "2026-11-21"
+      },
+      {
+       "date": "2026-11-21",
+       "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged"
       }
      ],
-     "verify": "The approval and the water rule are from the energy ministry's press release, read directly; it gives the 0.1 ceiling without a unit and does not say which sites are covered. The decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026).",
+     "verify": "The approval and the water rule are from the energy ministry's press release, read directly; it gives the 0.1 ceiling without a unit and does not say which sites are covered. The decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
      "status_reviewed_on": "2026-11-21",
      "last_checked_on": "2026-11-21"
     },
