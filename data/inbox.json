@@ -2,6 +2,41 @@
  "items": [
   {
    "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23765/combined-notice-of-filings-1",
+   "published": "2026-11-23",
+   "kind": "Notice",
+   "source": "federal_register_ferc_large_load",
+   "signposts": [
+    "A5"
+   ],
+   "retrieved_on": "2026-11-22",
+   "state": "new",
+   "excerpt": [
+    "Docket Numbers: ER27-506-001. Applicants: California Independent System Operator Corporation. Description: Compliance filing: 2026-11-18 Amendment to Large Load Amendment in Original Docket Number to be effective N/A. Filed Date: 11/18/26. Accession Number: 20261118-5181. Comment Date: 5 p.m. ET 12/9/26.",
+    "Docket Numbers: ER27-526-000. Applicants: Midcontinent Independent System Operator, Inc. Description: 205(d) Rate Filing: 2026-11-16_Large Load Review, Cost Recovery and Transmission Services Filing to be effective 2/14/2027. Filed Date: 11/16/26. Accession Number: 20261116-5323. Comment Date: 5 p.m. ET 12/16/26.",
+    "Docket Numbers: ER27-528-000. Applicants: LS Power Grid California, LLC. Description: 205(d) Rate Filing: Revisions to TO Tariff to Provide for Large Load Interconnection. Filed Date: 11/16/26. Accession Number: 20261116-5329. Comment Date: 5 p.m. ET 12/7/26.",
+    "Docket Numbers: ER27-529-000. Applicants: New York Independent System Operator, Inc., Central Hudson Gas & Electric Corporation, New York State Electric & Gas Corporation, Rochester Gas and Electric Corporation, Niagara Mohawk Power Corporation, Consolidated Edison Company of New York, Inc., Orange and Rockland Utilities, Inc. Description: 205(d) Rate Filing: New York Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: NYTOs 205: Proposed Revisions re: Integration of Large Loads to be effective 2/1/ 2027. Filed Date: 11/16/26. Accession Number: 20261116-5335. Comment Date: 5 p.m. ET 12/7/26.",
+    "Docket Numbers: ER27-531-000. Applicants: PJM Interconnection, L.L.C. Description: 205(d) Rate Filing: Proposed Tariff Revisions for Large Loads and Compliance with EL26-67 to be effective 3/16/2027. Filed Date: 11/16/26. Accession Number: 20261116-5340. Comment Date: 5 p.m. ET 1/15/27.",
+    "Docket Numbers: ER27-532-000. Applicants: California Independent System Operator Corporation. Description: 205(d) Rate Filing: 2026-11-16 Large Load Tariff Amendment: Resubmission. Filed Date: 11/16/26. Accession Number: 20261116-5343. Comment Date: 5 p.m. ET 12/16/26.",
+    "Docket Numbers: ER27-534-000. Applicants: DesertLink, LLC. Description: 205(d) Rate Filing: Revisions to TO Tariff to Provide for Large Load Interconnection. Filed Date: 11/16/26. Accession Number: 20261116-5346. Comment Date: 5 p.m. ET 12/7/26."
+   ],
+   "excerpt_from": "https://www.federalregister.gov/documents/full_text/text/2026/11/23/2026-23765.txt"
+  },
+  {
+   "title": "Real Decreto 1032/2026, de 20 de noviembre, por el que se regulan los requisitos de sostenibilidad energética, medioambiental y de resiliencia y soberanía digital aplicables a los centros de datos.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
+   "published": "2026-11-21",
+   "kind": "Gazette item",
+   "source": "boe_daily_summary",
+   "signposts": [
+    "C3",
+    "D2"
+   ],
+   "retrieved_on": "2026-11-22",
+   "state": "new"
+  },
+  {
+   "title": "Combined Notice of Filings #1",
    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
    "published": "2026-11-19",
    "kind": "Notice",
