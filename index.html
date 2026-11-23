@@ -420,6 +420,7 @@ html,body{overflow-x:clip}
 .chart svg{width:100%;height:auto;display:block;overflow:visible}
 .chart .cv{font-size:8px;fill:var(--muted);font-weight:600}
 .chart .cx{font-size:7.5px;fill:var(--muted)}
+.chart .cs{font-size:7.5px;fill:var(--ink);font-style:italic;font-weight:600}
 .chart .hit{fill:transparent;cursor:pointer;outline:none}
 .chart .hit:hover,.chart .hit.on,.chart .hit:focus-visible{fill:color-mix(in srgb,var(--accent) 13%,transparent)}
 .c-read{font-size:12px;color:var(--ink);font-weight:600;min-height:2.6em;line-height:1.3;margin-top:4px;font-variant-numeric:tabular-nums}
@@ -532,7 +533,7 @@ function gauge(g){
 const CCOL = {head:"var(--head)", soft:"#8FA3D9", warn:"#C8791B", accent:"var(--accent)"};
 const nf = (v) => typeof v === "number" ? v.toLocaleString("en-GB", {maximumFractionDigits: 1}) : v;
 function chartSvg(b){
-  const W = 320, H = 150, L = 6, R = 6, T = 14, B = 20, n = b.x.length, cw = (W - L - R) / n, ph = H - T - B;
+  const W = 320, H = b.spans ? 172 : 150, L = 6, R = 6, T = b.spans ? 36 : 14, B = 20, n = b.x.length, cw = (W - L - R) / n, ph = H - T - B;
   const ser = b.series || [], line = b.line;
   const tops = b.type === "stack" ? b.x.map((_, i) => ser.reduce((a, s) => a + s.values[i], 0)) : [].concat(...ser.map(s => s.values));
   const lo = b.min != null ? b.min : 0, hi = b.max != null ? b.max : Math.max(...tops, ...(line ? line.values : [])) * 1.12;
@@ -544,6 +545,10 @@ function chartSvg(b){
       ser.forEach(s => { const v = s.values[i]; g += `<rect x="${(cx(i) - bw / 2).toFixed(1)}" y="${y(base + v).toFixed(1)}" width="${bw.toFixed(1)}" height="${(y(base) - y(base + v)).toFixed(1)}" fill="${CCOL[s.color] || CCOL.head}" rx="1.5"/>`; base += v; });
       g += `<text x="${cx(i).toFixed(1)}" y="${(y(base) - 3).toFixed(1)}" text-anchor="middle" class="cv">${nf(base)}</text>`; });
   }
+  /* annotation brackets over a run of columns, e.g. the data centre share of requests */
+  (b.spans || []).forEach(sp => { const x1 = L + cw * sp.from + 3, x2 = L + cw * (sp.to + 1) - 3, top = Math.max(...tops.slice(sp.from, sp.to + 1)), yy = y(top) - 15;
+    g += `<path d="M${x1.toFixed(1)} ${yy.toFixed(1)}H${x2.toFixed(1)}M${(x1 + 4).toFixed(1)} ${(yy - 2.5).toFixed(1)}L${x1.toFixed(1)} ${yy.toFixed(1)}L${(x1 + 4).toFixed(1)} ${(yy + 2.5).toFixed(1)}M${(x2 - 4).toFixed(1)} ${(yy - 2.5).toFixed(1)}L${x2.toFixed(1)} ${yy.toFixed(1)}L${(x2 - 4).toFixed(1)} ${(yy + 2.5).toFixed(1)}" fill="none" stroke="var(--muted)" stroke-width="1"/>
+      <text x="${((x1 + x2) / 2).toFixed(1)}" y="${(yy - 4).toFixed(1)}" text-anchor="middle" class="cs">${esc(sp.text)}</text>`; });
   const poly = (s) => `<polyline points="${s.values.map((v, i) => cx(i).toFixed(1) + "," + y(v).toFixed(1)).join(" ")}" fill="none" stroke="${CCOL[s.color] || CCOL.head}" stroke-width="2"/>` + s.values.map((v, i) => `<circle cx="${cx(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2.6" fill="${CCOL[s.color] || CCOL.head}"/>`).join("");
   if (b.type === "line") ser.forEach(s => { g += poly(s); });
   if (b.type === "line" && b.labels) b.x.forEach((_, i) => { const top = Math.max(...ser.map(s => s.values[i]));

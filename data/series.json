@@ -206,7 +206,19 @@
       "5": "data centres 70–75% of requests",
       "6": "data centres 70–75% of requests",
       "7": "data centres 70–75% of requests"
-     }
+     },
+     "spans": [
+      {
+       "from": 4,
+       "to": 7,
+       "text": "Data centre share: 70–75%"
+      },
+      {
+       "from": 8,
+       "to": 10,
+       "text": "Data centre share: ~90%"
+      }
+     ]
     }
    ],
    "caption": "Approved capacity grew by about 2 gigawatts in the year to August 2026 (7,502 to 9,456 megawatts), roughly 2% of the 474 gigawatts requested. Actual peak use is under half of approved capacity. Readings are one to four months apart; the charts space them evenly.",
