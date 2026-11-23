@@ -230,6 +230,11 @@ The owner reviewed the site as a first-time reader would and approved:
   pages stack into one column and the selected tab scrolls into view. The computer layout
   is unchanged.
 
+- **Digest schedule (confirmed 23 Nov 2026):** the morning digest runs weekly, on
+  Wednesdays at 07:08 Singapore time. The GitHub feed check still runs every day and only
+  collects documents into the inbox; the Wednesday digest reads everything that arrived
+  during the week.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
