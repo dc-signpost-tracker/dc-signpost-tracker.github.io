@@ -329,48 +329,176 @@
    "charts": [
     {
      "type": "table",
-     "title": "Reliability risk ratings by assessment year",
+     "title": "Reliability risk ratings by assessment edition",
      "columns": [
-      "Assessment",
-      "Years covered",
-      "PJM",
-      "Texas (ERCOT)"
+      "Assessment edition",
+      "Risk window",
+      {
+       "v": "PJM rating",
+       "sub": "(as published)",
+       "dark": true
+      },
+      {
+       "v": "Texas rating",
+       "sub": "(as published)",
+       "dark": true
+      }
      ],
      "rows": [
       [
        "2022",
        "2023–2027",
-       "Normal",
-       "Elevated"
+       {
+        "parts": [
+         {
+          "t": "Normal",
+          "tone": "good"
+         }
+        ]
+       },
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         }
+        ]
+       }
       ],
       [
        "2023",
        "2024–2028",
-       "Normal",
-       "Elevated (from 2024)"
+       {
+        "parts": [
+         {
+          "t": "Normal",
+          "tone": "good"
+         }
+        ]
+       },
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "(from 2024)"
+         }
+        ]
+       }
       ],
       [
        "2024",
        "2025–2029",
-       "Elevated (from 2026)",
-       "Elevated (from 2026)"
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "(from 2026)"
+         }
+        ]
+       },
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "(from 2026)"
+         }
+        ]
+       }
       ],
       [
        "2025",
        "2026–2030",
-       "Elevated 2026–28; High from 2029",
-       "Elevated 2026–28; High from 2029"
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         },
+         {
+          "t": " 2026–28;"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "High",
+          "tone": "bad"
+         },
+         {
+          "t": " 2029–"
+         }
+        ]
+       },
+       {
+        "parts": [
+         {
+          "t": "Elevated",
+          "tone": "warn"
+         },
+         {
+          "t": " 2026–28;"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "High",
+          "tone": "bad"
+         },
+         {
+          "t": " 2029–"
+         }
+        ]
+       }
       ],
       [
-       "2026",
-       "2027–2031",
-       "Pending: expected Dec 2026 or Jan 2027",
-       ""
+       {
+        "v": "2026",
+        "pend": true
+       },
+       {
+        "v": "2027–2031",
+        "pend": true
+       },
+       {
+        "parts": [
+         {
+          "t": "Pending"
+         },
+         {
+          "br": true
+         },
+         {
+          "t": "(Expected in Dec 2026 / Jan 2027)"
+         }
+        ],
+        "span": 2,
+        "pend": true
+       }
       ]
-     ]
+     ],
+     "style": "grid"
     }
    ],
-   "source": "North American Electric Reliability Corporation (NERC), Long-Term Reliability Assessment reports.",
+   "source": "North American Electric Reliability Corporation (NERC), Long-Term Reliability Assessment reports. Texas is the area run by its grid operator, ERCOT.",
    "next_point": "2026 assessment, expected Dec 2026 or Jan 2027"
   },
   "G3": {

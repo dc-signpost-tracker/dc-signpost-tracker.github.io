@@ -437,6 +437,19 @@ html,body{overflow-x:clip}
 .c-tbl .r{text-align:right}
 .c-tbl td.good{color:var(--ease);font-weight:700}.c-tbl td.bad{color:var(--bad);font-weight:700}
 .c-tbl td.pend{font-style:italic;color:var(--muted)}
+/* grid table: navy header cells, ruled cells, centred, ratings in colour */
+.c-tbl.grid{margin-top:6px}
+.c-tbl.grid th,.c-tbl.grid td{text-align:center;vertical-align:middle;border:1px solid #AEB6C4;padding:9px 6px;line-height:1.35}
+.c-tbl.grid th{border:0;font-size:12px;padding:10px 6px}
+.c-tbl.grid th.dark{background:var(--head);color:#fff;border:1px solid var(--head);border-left-color:#fff}
+.c-tbl.grid th.dark small{color:#fff;font-style:italic;font-weight:700;font-size:11.5px}
+.c-tbl.grid td{font-size:12px;font-weight:600;white-space:normal}
+.c-tbl.grid td:nth-child(2){white-space:nowrap}
+.c-tbl.grid th.dark{width:31%}
+.c-tbl.grid td:first-child{font-weight:800;white-space:nowrap}
+.c-tbl.grid tr:last-child td{border-bottom:1px solid #AEB6C4}
+.c-tbl.grid td.pend{background:color-mix(in srgb,var(--muted) 10%,transparent);font-weight:600}
+.c-tbl .t-good{color:#2E7D32}.c-tbl .t-warn{color:#C2571A}.c-tbl .t-bad{color:var(--bad)}
 .c-cap{font-size:12px;color:var(--muted);line-height:1.4}
 .c-src{font-size:11px;color:var(--muted);font-style:italic;line-height:1.35}
 </style>
@@ -580,9 +593,12 @@ function chartSvg(b){
 }
 function chartTable(b){
   const al = (i) => (b.align && b.align[i] === "right") ? " r" : "";
+  const body = (o) => o.parts ? o.parts.map(p => p.br ? "<br>" : `<span class="${p.tone ? "t-" + p.tone : ""}">${esc(p.t)}</span>`).join("") : esc(o.v);
   const cell = (c, i) => { const o = (c && typeof c === "object") ? c : {v: c};
-    return `<td class="${(o.tone || "") + (o.pend ? " pend" : "") + al(o.span ? -1 : i)}"${o.span ? ` colspan="${o.span}"` : ""}>${esc(o.v)}${o.sub ? `<small>${esc(o.sub)}</small>` : ""}</td>`; };
-  return `<div class="chart"><div class="c-title">${esc(b.title)}</div><div class="tbl-wrap"><table class="c-tbl"><tr>${b.columns.map((c, i) => `<th class="${al(i)}">${esc(c)}${b.units && b.units[i] ? `<small>${esc(b.units[i])}</small>` : ""}</th>`).join("")}</tr>
+    return `<td class="${(o.tone || "") + (o.pend ? " pend" : "") + al(o.span ? -1 : i)}"${o.span ? ` colspan="${o.span}"` : ""}>${body(o)}${o.sub ? `<small>${esc(o.sub)}</small>` : ""}</td>`; };
+  const head = (c, i) => { const o = (c && typeof c === "object") ? c : {v: c}, sub = o.sub || (b.units && b.units[i]);
+    return `<th class="${al(i)}${o.dark ? " dark" : ""}">${esc(o.v)}${sub ? `<small>${esc(sub)}</small>` : ""}</th>`; };
+  return `<div class="chart"><div class="c-title">${esc(b.title)}</div><div class="tbl-wrap"><table class="c-tbl${b.style === "grid" ? " grid" : ""}"><tr>${b.columns.map(head).join("")}</tr>
     ${b.rows.map(r => `<tr>${r.filter(c => c !== "").map(cell).join("")}</tr>`).join("")}</table></div></div>`;
 }
 function chartsFor(s){
