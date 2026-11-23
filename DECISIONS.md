@@ -263,6 +263,25 @@ The owner reviewed the site as a first-time reader would and approved:
   published and read at source. A2's approved-to-energise and observed-peak lines were
   added from the owner's figures. The PJM reserve margin chart shows data labels.
 
+## Nineteen signposts added (23 Nov 2026)
+
+- After a source sweep of 23 proposed signposts, the owner approved 19: the 15 with a
+  dependable source and 4 that can only be followed through news (A10 on-site power, E7
+  water company objections, G7 Japan's siting shift, H6 India's hubs). Four were dropped
+  or merged: water used by power plants, flexible connections, low-water cooling uptake,
+  and the share of the pipeline in water-stressed areas. Taiwan was excluded earlier.
+- Added at the end of each tab so the new ones are easy to see: A7 Texas high-voltage
+  lines, A8 New generation connecting, A9 Who pays for the grid, A10 On-site power, A11
+  Build-out plans (all regions); C4 Local pauses and bans, C5 State tax incentives, C6
+  Federal sites; D4 Britain's connection-queue reform, D5 Ireland's connection policy; E6
+  Reported water use, E7 Water company objections; F8 Ireland's planning decisions; G6
+  Tokyo-area grid upgrades, G7 Japan's siting shift; H3 Thailand's water-reuse rule, H4
+  Johor reclaimed water and tariffs, H5 Johor reservoir levels, H6 India's hubs.
+- All start at "No signal yet" and "Not yet verified", with a "New" tag. Baseline 23 Nov
+  2026. Names, trigger wording and headlines were drafted by Claude and await the owner's
+  confirmation. Relabelling and ordering by urgency are deferred at the owner's request.
+- The site now has 57 signposts; the tagline says so.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

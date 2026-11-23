@@ -200,6 +200,7 @@ section{margin-top:30px}
 .sp-foot a.info{flex:none;width:22px;height:22px;border-radius:50%;border:1.6px solid var(--accent);display:inline-flex;align-items:center;justify-content:center;font:italic 700 13px/1 Georgia,"Times New Roman",serif;text-decoration:none}
 .sp-foot a.info:hover,.sp-foot a.info:focus-visible{background:var(--accent);color:var(--surface)}
 .unv{font-weight:600;color:var(--bad);white-space:nowrap}
+.new-tag{display:inline-block;vertical-align:middle;margin-left:6px;padding:1px 7px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:0;line-height:1.5}
 .verify{color:var(--bad);font-weight:600;font-size:13px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .tag{font-size:12px;color:var(--muted);border:1px solid var(--rule);border-radius:5px;padding:2px 7px}
@@ -458,7 +459,7 @@ html,body{overflow-x:clip}
 <div class="wrap">
   <header class="hero">
     <h1>Where power, water and land redirect the data centre build-out</h1>
-    <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 38 signposts</p>
+    <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 57 signposts</p>
     <div class="meta">
       <span id="asof"></span>
     </div>
@@ -612,7 +613,7 @@ function signpost(sp, call){
     ? `<a class="info" href="${esc(url)}" target="_blank" rel="noopener" title="Open the primary source" aria-label="Open the primary source for ${esc(sp.name)}"><span aria-hidden="true">i</span></a>`
     : `<span class="unv">Not yet verified</span>`;
   return `<article class="sp" id="sp-${esc(sp.id)}">
-    <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}</h3>
+    <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}${sp.added ? ` <span class="new-tag" title="Added ${esc(fmt(sp.added))}">New</span>` : ""}</h3>
       <span class="pill ${s}"><i>${SIGNAL_ICON[s]}</i>${SIGNAL_TEXT[s]}</span></header>
     <div class="sp-body">
       <div class="fig">${esc(sp.headline || sp.latest)}</div>

@@ -114,8 +114,8 @@ calls a signal in either direction flags the call.
    - **Feeds:** reads every inbox item with `"state": "new"`;
    - **Catalysts:** checks the dated events in `data/calendar.json` that have passed
      without an `outcome`;
-   - **Sweep of all 38 signposts:** runs at least one web search for every signpost,
-     A1 to H2, for developments since its `last_checked_on` date, and reads further
+   - **Sweep of all 57 signposts:** runs at least one web search for every signpost,
+     A1 to H6, for developments since its `last_checked_on` date, and reads further
      only where something is new relative to its current `latest` reading. No signpost
      is skipped because it has no feed. `last_checked_on` is set to the day's date on
      every signpost searched, whether or not anything was found;
@@ -142,7 +142,7 @@ If in doubt between A and B, choose A.
 
 One message to the owner, in this order: (1) "Needs your decision", each item with what
 happened, sources, what the trigger says and a recommendation; (2) "For information",
-listing what was updated on the site and what is press-only; (3) one closing line saying how many of the 38 signposts were
+listing what was updated on the site and what is press-only; (3) one closing line saying how many of the 57 signposts were
 searched and how many had nothing new, naming any that could not be searched. Use plain English, spell out acronyms at first use, and keep
 it short. When the owner replies with decisions, apply them, commit and push.
 
@@ -150,3 +150,17 @@ it short. When the owner replies with decisions, apply them, commit and push.
 
 Commit to `main` with a message that says which signposts changed and why. After any
 change to `data/`, the site updates by itself once pushed.
+
+## Signposts added on 23 Nov 2026
+
+Nineteen signposts were added at the end of their tabs: A7 to A11, C4 to C6, D4, D5, E6,
+E7, F8, G6, G7, H3 to H6. Each carries `"added": "2026-11-23"` and shows a "New" tag.
+
+- Their baseline is 23 Nov 2026: only developments after that date can change a status.
+- Their trigger wording is a draft until the owner confirms it. Until then, report
+  developments in the digest but do not propose a status change on them.
+- Their readings came from search results and press and are "Not yet verified". Verify
+  them at the primary source as for any other reading.
+- A11 (build-out plans) applies to all eight calls; it sits under North America Power
+  until the owner decides where it belongs.
+- C4 needs the owner to choose one tracker before the count is used as a series.
