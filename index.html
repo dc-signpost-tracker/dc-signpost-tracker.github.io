@@ -266,8 +266,6 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .delta{font-size:13px;font-weight:600;color:var(--muted);margin-top:-2px}
 .thr{font-size:13px;color:var(--muted);margin-top:2px}
 .thr b{color:var(--ink);font-weight:600}
-.ver{font-size:12.5px;color:var(--muted);margin-top:10px}
-.ver b{color:var(--ink);font-weight:600}
 .bl{grid-column:1/-1;font-size:16px;line-height:1.45;color:var(--ink);padding-bottom:12px;border-bottom:1px solid var(--rule)}
 .bl b{display:inline;font-size:16px;margin:0 6px 0 0}
 .back{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--accent);margin-bottom:12px}
@@ -693,7 +691,6 @@ function renderBoard(){
     <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-${esc(c.id)}">
       <div class="banner ${esc(c.dir)}">
         <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${esc(bandText(c))}</div>
-          <div class="ver"><b>${t.ver} of ${c.sps.length}</b> readings verified at the primary source</div>
           ${t.review ? `<span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
         <div>${shiftHTML(c)}</div>
         <div><div class="b-lab">${t.text}</div><div class="tally" role="img" aria-label="${t.text}">${t.signals.map((x, i) => `<span class="sq ${x === "none" ? "" : x}">${esc(c.sps[i].id)}</span>`).join("")}</div>

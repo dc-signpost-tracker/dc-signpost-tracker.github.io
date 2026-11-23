@@ -287,6 +287,10 @@ The owner reviewed the site as a first-time reader would and approved:
   instead of "No signal yet", in the same grey. It applies when the history holds a
   reviewed development (kind "reading"). Wording chosen by Claude; alternatives offered.
 
+- **Verified-readings counter removed (24 Nov 2026):** the "X of N readings verified at
+  the primary source" line on each call's banner was deleted at the owner's request. Each
+  card still shows "Not yet verified" where that applies.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
