@@ -410,6 +410,26 @@ html,body{overflow-x:clip}
   .insight{font-size:14px}
   .sp .fig{font-size:26px}
 }
+
+/* charts on signpost cards */
+.charts{margin-top:10px;display:grid;gap:12px}
+.chart{border:1px solid var(--rule);border-radius:10px;padding:10px 10px 8px;background:color-mix(in srgb,var(--bg) 55%,var(--surface))}
+.c-title{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.c-leg{display:flex;flex-wrap:wrap;gap:3px 12px;font-size:11.5px;color:var(--muted);margin-bottom:2px}
+.c-leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart .cv{font-size:8px;fill:var(--muted);font-weight:600}
+.chart .cx{font-size:7.5px;fill:var(--muted)}
+.chart .hit{fill:transparent;cursor:pointer;outline:none}
+.chart .hit:hover,.chart .hit.on,.chart .hit:focus-visible{fill:color-mix(in srgb,var(--accent) 13%,transparent)}
+.c-read{font-size:12px;color:var(--ink);font-weight:600;min-height:2.6em;line-height:1.3;margin-top:4px;font-variant-numeric:tabular-nums}
+.c-tbl{font-size:11.5px;width:100%}
+.c-tbl th{font-size:11px;padding:4px 6px 4px 0;vertical-align:bottom}
+.c-tbl td{padding:5px 6px 5px 0;color:var(--muted);vertical-align:top}
+.c-tbl td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+.c-tbl td.pend{font-style:italic}
+.c-cap{font-size:12px;color:var(--muted);line-height:1.4}
+.c-src{font-size:11px;color:var(--muted);font-style:italic;line-height:1.35}
 </style>
 </head>
 <body>
@@ -469,7 +489,7 @@ const day = (s) => new Date(s + "T00:00:00Z");
 const fmt = (s) => day(s).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
 const now = new Date();
 const TODAY = now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
-let CALLS = [], EVENTS = [], HEAT = [], META = {};
+let CALLS = [], EVENTS = [], HEAT = [], META = {}, SERIES = {};
 
 /* A call holding at Moderate can move either way, so any signal runs against it. */
 const holding = (c) => c.from === c.to && c.from !== "Severe";
@@ -508,6 +528,46 @@ function gauge(g){
     <svg class="g-svg" viewBox="0 0 ${W} 34">${marks}</svg></div>`;
 }
 
+/* ---------- charts on signpost cards (data/series.json) ---------- */
+const CCOL = {head:"var(--head)", soft:"#8FA3D9", warn:"#C8791B", accent:"var(--accent)"};
+const nf = (v) => typeof v === "number" ? v.toLocaleString("en-GB", {maximumFractionDigits: 1}) : v;
+function chartSvg(b){
+  const W = 320, H = 150, L = 6, R = 6, T = 14, B = 20, n = b.x.length, cw = (W - L - R) / n, ph = H - T - B;
+  const ser = b.series || [], line = b.line;
+  const tops = b.type === "stack" ? b.x.map((_, i) => ser.reduce((a, s) => a + s.values[i], 0)) : [].concat(...ser.map(s => s.values));
+  const lo = b.min != null ? b.min : 0, hi = b.max != null ? b.max : Math.max(...tops, ...(line ? line.values : [])) * 1.12;
+  const y = v => T + ph - (v - lo) / (hi - lo) * ph, cx = i => L + cw * (i + .5);
+  let g = `<line x1="${L}" y1="${T + ph}" x2="${W - R}" y2="${T + ph}" stroke="var(--rule)"/>`;
+  if (b.type === "bar" || b.type === "stack") {
+    const bw = Math.min(cw * .68, 30);
+    b.x.forEach((_, i) => { let base = lo;
+      ser.forEach(s => { const v = s.values[i]; g += `<rect x="${(cx(i) - bw / 2).toFixed(1)}" y="${y(base + v).toFixed(1)}" width="${bw.toFixed(1)}" height="${(y(base) - y(base + v)).toFixed(1)}" fill="${CCOL[s.color] || CCOL.head}" rx="1.5"/>`; base += v; });
+      g += `<text x="${cx(i).toFixed(1)}" y="${(y(base) - 3).toFixed(1)}" text-anchor="middle" class="cv">${nf(base)}</text>`; });
+  }
+  const poly = (s) => `<polyline points="${s.values.map((v, i) => cx(i).toFixed(1) + "," + y(v).toFixed(1)).join(" ")}" fill="none" stroke="${CCOL[s.color] || CCOL.head}" stroke-width="2"/>` + s.values.map((v, i) => `<circle cx="${cx(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2.6" fill="${CCOL[s.color] || CCOL.head}"/>`).join("");
+  if (b.type === "line") ser.forEach(s => { g += poly(s); });
+  if (line) g += poly(line);
+  b.x.forEach((lab, i) => {
+    const parts = ser.map(s => `${s.name} ${nf(s.values[i])}`).concat(line ? [`${line.name} ${nf(line.values[i])}`] : []);
+    const read = `${lab}: ${parts.join(" · ")}${b.type === "stack" ? " · Total " + nf(tops[i]) : ""}${b.notes && b.notes[i] ? " · " + b.notes[i] : ""}`;
+    g += `<text x="${cx(i).toFixed(1)}" y="${H - 6}" text-anchor="middle" class="cx">${esc(lab)}</text>
+      <rect class="hit" tabindex="0" role="button" aria-label="${esc(read)}" data-r="${esc(read)}" x="${(L + cw * i).toFixed(1)}" y="0" width="${cw.toFixed(1)}" height="${H}"/>`; });
+  const last = n - 1, lparts = ser.map(s => `${s.name} ${nf(s.values[last])}`).concat(line ? [`${line.name} ${nf(line.values[last])}`] : []);
+  const def = `${b.x[last]}: ${lparts.join(" · ")}${b.type === "stack" ? " · Total " + nf(tops[last]) : ""}${b.notes && b.notes[last] ? " · " + b.notes[last] : ""}`;
+  const leg = ser.concat(line ? [line] : []);
+  return `<div class="chart"><div class="c-title">${esc(b.title)}</div>
+    ${leg.length > 1 ? `<div class="c-leg">${leg.map(s => `<span><i style="background:${CCOL[s.color] || CCOL.head}"></i>${esc(s.name)}</span>`).join("")}</div>` : ""}
+    <svg viewBox="0 0 ${W} ${H}" role="group" aria-label="${esc(b.title)}">${g}</svg>
+    <div class="c-read" aria-live="polite" data-def="${esc(def)}">${esc(def)}</div></div>`;
+}
+function chartTable(b){
+  return `<div class="chart"><div class="c-title">${esc(b.title)}</div><div class="tbl-wrap"><table class="c-tbl"><tr>${b.columns.map(c => `<th>${esc(c)}</th>`).join("")}</tr>
+    ${b.rows.map(r => { const filled = r.filter(x => x !== ""); return `<tr>${r.map((c, i) => c === "" ? "" : `<td${i === r.length - 1 || (r[i + 1] === "" ) ? (filled.length < r.length && i === filled.length - 1 ? ` colspan="${r.length - filled.length + 1}" class="pend"` : "") : ""}>${esc(c)}</td>`).join("")}</tr>`; }).join("")}</table></div></div>`;
+}
+function chartsFor(s){
+  return `<div class="charts">${s.charts.map(b => b.type === "table" ? chartTable(b) : chartSvg(b)).join("")}
+    ${s.caption ? `<p class="c-cap">${esc(s.caption)}</p>` : ""}<p class="c-src">Source: ${esc(s.source)}${s.next_point ? ` Next data point: ${esc(s.next_point)}.` : ""}</p></div>`;
+}
 function thr(t){ const i = t.indexOf(":"); return i > 0 && i < 10 ? `<b>${esc(t.slice(0, i))}:</b>${esc(t.slice(i + 1))}` : esc(t); }
 function signpost(sp, call){
   const st = statusOf(sp), s = signalOf(sp), url = safeUrl(sp.source_url);
@@ -522,7 +582,7 @@ function signpost(sp, call){
       ${sp.delta ? `<div class="delta">${sp.delta.dir === "down" ? "▼" : "▲"} ${esc(sp.delta.text)}</div>` : ""}
       ${sp.headline && sp.summary ? `<p class="sub">${esc(sp.summary)}</p>` : ""}
       ${sp.threshold ? `<p class="thr">${thr(sp.threshold)}</p>` : ""}
-      ${sp.gauge ? gauge(sp.gauge) : ""}
+      ${SERIES[sp.id] ? chartsFor(SERIES[sp.id]) : (sp.gauge ? gauge(sp.gauge) : "")}
     </div>
     <footer class="sp-foot"><span>Next: <b>${esc(sp.next)}</b></span>${src}</footer>
     <details class="more"><summary>Reading, trigger and sources</summary>
@@ -640,6 +700,13 @@ el("board").addEventListener("click", ev => {
   const tab = ev.target.closest(".tab"); if (tab) return selectCall(tab.dataset.id, true);
   const l = ev.target.closest(".sp-link"); if (l) flashCard(l.dataset.sp);
 });
+/* chart read-out: hover, tap or focus a column to see its figures */
+function chartRead(ev){
+  const h = ev.target.closest && ev.target.closest(".hit"); if (!h) return;
+  const c = h.closest(".chart"); c.querySelectorAll(".hit.on").forEach(x => x.classList.remove("on")); h.classList.add("on");
+  c.querySelector(".c-read").textContent = h.dataset.r;
+}
+["pointerover", "focusin", "click"].forEach(t => el("board").addEventListener(t, chartRead));
 function flashCard(id){
   const card = document.getElementById("sp-" + id); if (!card) return;
   card.scrollIntoView({behavior:"smooth", block:"center"});
@@ -728,12 +795,12 @@ function openCall(id, sp){
 async function load(){
   if (window.__DATA__) return window.__DATA__;
   const get = (f) => fetch("data/" + f, {cache:"no-cache"}).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
-  const [signposts, calendar, heatmap] = await Promise.all([get("signposts.json"), get("calendar.json"), get("heatmap.json")]);
-  return {signposts, calendar, heatmap};
+  const [signposts, calendar, heatmap, series] = await Promise.all([get("signposts.json"), get("calendar.json"), get("heatmap.json"), get("series.json").catch(() => ({series:{}}))]);
+  return {signposts, calendar, heatmap, series};
 }
 load().then(d => {
   CALLS = d.signposts.calls.slice().sort((x, y) => x.id < y.id ? -1 : 1); EVENTS = d.calendar.events;
-  HEAT = (d.heatmap && d.heatmap.regions) || []; META = d.signposts;
+  HEAT = (d.heatmap && d.heatmap.regions) || []; META = d.signposts; SERIES = (d.series && d.series.series) || {};
   el("insight").innerHTML = META.insight ? `<b>The picture today</b>${esc(META.insight)}` : "";
   el("asof").innerHTML = d.signposts.last_refreshed
     ? `Last refreshed <b>${esc(fmt(d.signposts.last_refreshed))}</b>`

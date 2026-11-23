@@ -1,0 +1,298 @@
+{
+ "about": "Time series shown as charts on signpost cards. Figures come from the analysis behind each call; the digest appends a point when a new one is published and read at its source.",
+ "series": {
+  "A1": {
+   "charts": [
+    {
+     "type": "line",
+     "title": "PJM reserve margin: procured against target (%)",
+     "x": [
+      "2025/26",
+      "2026/27",
+      "2027/28",
+      "2028/29"
+     ],
+     "unit": "%",
+     "min": 10,
+     "max": 22,
+     "series": [
+      {
+       "name": "Procured",
+       "values": [
+        18.5,
+        18.9,
+        14.9,
+        14.7
+       ],
+       "color": "head"
+      },
+      {
+       "name": "Target",
+       "values": [
+        17.8,
+        19.1,
+        20.0,
+        20.0
+       ],
+       "color": "warn"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Auction results by delivery year",
+     "columns": [
+      "Delivery year",
+      "Surplus or shortfall, megawatts",
+      "New generation, megawatts",
+      "Clearing price, US$ per megawatt-day"
+     ],
+     "rows": [
+      [
+       "2025/26",
+       "+660",
+       "864",
+       "269.92 (no cap)"
+      ],
+      [
+       "2026/27",
+       "+139",
+       "2,669",
+       "329.17 at cap (uncapped: 388.57)"
+      ],
+      [
+       "2027/28",
+       "−6,516",
+       "774",
+       "333.44 at cap (uncapped: 529.80)"
+      ],
+      [
+       "2028/29",
+       "−6,831",
+       "525",
+       "325.00 at cap (uncapped: 554.72)"
+      ],
+      [
+       "2029/30",
+       "Auction opens 9 Dec 2026; results due 22 Dec 2026",
+       "",
+       ""
+      ]
+     ]
+    }
+   ],
+   "source": "PJM Base Residual Auction reports, 2025/26 to 2028/29; PJM news release, 17 Dec 2025; uncapped prices are PJM simulations using the same offers.",
+   "next_point": "2029/30 auction results, due 22 Dec 2026"
+  },
+  "A2": {
+   "charts": [
+    {
+     "type": "bar",
+     "title": "Texas grid: large-load connection requests (gigawatts)",
+     "x": [
+      "Sep-24",
+      "Dec-24",
+      "Mar-25",
+      "May-25",
+      "Sep-25",
+      "Oct-25",
+      "Nov-25",
+      "Dec-25",
+      "Mar-26",
+      "May-26",
+      "Jun-26"
+     ],
+     "unit": "gigawatts",
+     "series": [
+      {
+       "name": "Requested",
+       "values": [
+        56,
+        63,
+        108,
+        156,
+        189,
+        205,
+        226,
+        239,
+        411,
+        438,
+        474
+       ],
+       "color": "head"
+      }
+     ],
+     "notes": {
+      "8": "data centres about 90% of requests",
+      "9": "data centres about 90% of requests",
+      "10": "data centres about 90% of requests",
+      "4": "data centres 70–75% of requests",
+      "5": "data centres 70–75% of requests",
+      "6": "data centres 70–75% of requests",
+      "7": "data centres 70–75% of requests"
+     }
+    }
+   ],
+   "caption": "Approved to energise: about 7.5 gigawatts in August 2025 and 9.5 in August 2026, roughly 2% of the 474 requested. Actual peak use is under half of approved capacity. Readings are one to four months apart; the chart spaces them evenly.",
+   "source": "Texas grid operator (ERCOT) board and planning updates, Sep 2025 to Jun 2026; Texas Senate testimony, Apr and Jul 2026; Monthly Operational Overview, Aug 2026.",
+   "next_point": "Statewide audit report, 10 Dec 2026"
+  },
+  "A3": {
+   "charts": [
+    {
+     "type": "stack",
+     "title": "GE Vernova gas turbines: waiting list against deliveries (gigawatts)",
+     "x": [
+      "Q1 25",
+      "Q2 25",
+      "Q3 25",
+      "Q4 25",
+      "Q1 26",
+      "Q2 26",
+      "Q3 26"
+     ],
+     "unit": "gigawatts",
+     "series": [
+      {
+       "name": "Firm orders",
+       "values": [
+        29,
+        29,
+        33,
+        40,
+        44,
+        53,
+        64
+       ],
+       "color": "head"
+      },
+      {
+       "name": "Reserved slots",
+       "values": [
+        21,
+        25,
+        29,
+        43,
+        56,
+        63,
+        58
+       ],
+       "color": "soft"
+      }
+     ],
+     "line": {
+      "name": "Delivered in the quarter",
+      "values": [
+       4,
+       5,
+       4,
+       3,
+       4,
+       3,
+       5
+      ],
+      "color": "warn"
+     }
+    }
+   ],
+   "caption": "GE Vernova is shown because its figures are the most detailed. Siemens Energy and Mitsubishi Heavy Industries report less often and in different units, but show the same pattern.",
+   "source": "GE Vernova quarterly results, filed with the US Securities and Exchange Commission.",
+   "next_point": "GE Vernova fourth-quarter 2026 results"
+  },
+  "A6": {
+   "charts": [
+    {
+     "type": "table",
+     "title": "Reliability risk ratings by assessment year",
+     "columns": [
+      "Assessment",
+      "Years covered",
+      "PJM",
+      "Texas (ERCOT)"
+     ],
+     "rows": [
+      [
+       "2022",
+       "2023–2027",
+       "Normal",
+       "Elevated"
+      ],
+      [
+       "2023",
+       "2024–2028",
+       "Normal",
+       "Elevated (from 2024)"
+      ],
+      [
+       "2024",
+       "2025–2029",
+       "Elevated (from 2026)",
+       "Elevated (from 2026)"
+      ],
+      [
+       "2025",
+       "2026–2030",
+       "Elevated 2026–28; High from 2029",
+       "Elevated 2026–28; High from 2029"
+      ],
+      [
+       "2026",
+       "2027–2031",
+       "Pending: expected Dec 2026 or Jan 2027",
+       ""
+      ]
+     ]
+    }
+   ],
+   "source": "North American Electric Reliability Corporation (NERC), Long-Term Reliability Assessment reports.",
+   "next_point": "2026 assessment, expected Dec 2026 or Jan 2027"
+  },
+  "G3": {
+   "charts": [
+    {
+     "type": "bar",
+     "title": "Japan: nuclear capacity restarted since 2018 (cumulative megawatts)",
+     "x": [
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+     ],
+     "unit": "megawatts",
+     "series": [
+      {
+       "name": "Restarted capacity",
+       "values": [
+        8706,
+        8706,
+        8706,
+        9486,
+        9486,
+        11046,
+        12631,
+        12631,
+        13946
+       ],
+       "color": "head"
+      }
+     ],
+     "notes": {
+      "0": "Ohi 3 and 4; Genkai 3 and 4",
+      "3": "Mihama 3",
+      "5": "Takahama 1 and 2",
+      "6": "Onagawa 2; Shimane 2",
+      "8": "Kashiwazaki-Kariwa 6"
+     }
+    }
+   ],
+   "caption": "Capacity stalled in 2019–20, 2022 and 2025. Kashiwazaki-Kariwa 7 cannot restart before August 2029.",
+   "source": "US Energy Information Administration; Japan Atomic Industrial Forum status sheets; NucNet.",
+   "next_point": "Next reactor restart"
+  }
+ }
+}

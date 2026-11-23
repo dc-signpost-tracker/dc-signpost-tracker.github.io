@@ -68,6 +68,27 @@ Each signpost in `data/signposts.json` has `latest` (plain-language reading),
   saying what happened. Add one such entry, dated the day the development happened,
   whenever `latest` changes for a new development or a status changes.
 
+## Charts (`data/series.json`)
+
+Five signposts carry a time series shown as a chart or table on the card: A1 (PJM reserve
+margin and auction table), A2 (Texas large-load requests), A3 (GE Vernova firm orders,
+reserved slots and deliveries), A6 (reliability risk ratings by assessment year) and G3
+(Japan's restarted nuclear capacity). Each entry names its `source` and its `next_point`.
+
+When a new data point for one of these series is published (for example the PJM 2029/30
+auction results, GE Vernova's next quarterly filing, the Texas audit report, the 2026
+reliability assessment, or a reactor restart), the digest:
+
+1. reads the figure at its primary source (the daily feed check files GE Vernova's
+   filings in the inbox; the others are found in the weekly sweep and from the calendar);
+2. appends the point to the series in `data/series.json`: add the label to `x`, one value
+   to every series in that chart (and to `line` and `rows` where present), and update
+   `next_point`. Never change or remove an existing point without telling the owner;
+3. updates the signpost's reading fields in the same commit, as a group B change.
+
+A figure found only in the press is not added to a chart; list it in the digest as
+group C. Never estimate a point or read one off a picture of a chart.
+
 ## Owner-approved wording
 
 `insight` (the "The picture today" paragraph), `coverage_note` (the line under "What we currently track") and
