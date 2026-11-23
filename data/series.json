@@ -44,41 +44,79 @@
      "title": "Auction results by delivery year",
      "columns": [
       "Delivery year",
-      "Surplus or shortfall, megawatts",
-      "New generation, megawatts",
-      "Clearing price, US$ per megawatt-day"
+      "Surplus or shortfall",
+      "New generation",
+      "Clearing price"
      ],
      "rows": [
       [
        "2025/26",
-       "+660",
+       {
+        "v": "+660",
+        "tone": "good"
+       },
        "864",
-       "269.92 (no cap)"
+       {
+        "v": "269.92",
+        "sub": "no cap"
+       }
       ],
       [
        "2026/27",
-       "+139",
+       {
+        "v": "+139",
+        "tone": "good"
+       },
        "2,669",
-       "329.17 at cap (uncapped: 388.57)"
+       {
+        "v": "329.17",
+        "sub": "at cap · uncapped 388.57"
+       }
       ],
       [
        "2027/28",
-       "−6,516",
+       {
+        "v": "−6,516",
+        "tone": "bad"
+       },
        "774",
-       "333.44 at cap (uncapped: 529.80)"
+       {
+        "v": "333.44",
+        "sub": "at cap · uncapped 529.80"
+       }
       ],
       [
        "2028/29",
-       "−6,831",
+       {
+        "v": "−6,831",
+        "tone": "bad"
+       },
        "525",
-       "325.00 at cap (uncapped: 554.72)"
+       {
+        "v": "325.00",
+        "sub": "at cap · uncapped 554.72"
+       }
       ],
       [
        "2029/30",
-       "Auction opens 9 Dec 2026; results due 22 Dec 2026",
-       "",
-       ""
+       {
+        "v": "Auction opens 9 Dec 2026; results due 22 Dec 2026",
+        "span": 3,
+        "pend": true
+       }
       ]
+     ],
+     "units": [
+      "",
+      "megawatts",
+      "megawatts",
+      "US$ per megawatt-day"
+     ],
+     "align": [
+      "left",
+      "right",
+      "right",
+      "right"
      ]
     }
    ],

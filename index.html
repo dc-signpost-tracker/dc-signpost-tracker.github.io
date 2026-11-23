@@ -413,7 +413,10 @@ html,body{overflow-x:clip}
 
 /* charts on signpost cards */
 .charts{margin-top:10px;display:grid;gap:12px}
-.chart{border:1px solid var(--rule);border-radius:10px;padding:10px 10px 8px;background:color-mix(in srgb,var(--bg) 55%,var(--surface))}
+/* glass look: no tinted box, a faint sheen and soft glow so a chart does not read as a card within the card */
+.chart{border:1px solid rgba(255,255,255,.75);border-radius:14px;padding:12px 12px 10px;
+  background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.62));
+  box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(17,28,43,.025),0 10px 26px rgba(17,28,43,.055)}
 .c-title{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
 .c-leg{display:flex;flex-wrap:wrap;gap:3px 12px;font-size:11.5px;color:var(--muted);margin-bottom:2px}
 .c-leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
@@ -424,11 +427,15 @@ html,body{overflow-x:clip}
 .chart .hit{fill:transparent;cursor:pointer;outline:none}
 .chart .hit:hover,.chart .hit.on,.chart .hit:focus-visible{fill:color-mix(in srgb,var(--accent) 13%,transparent)}
 .c-read{font-size:12px;color:var(--ink);font-weight:600;min-height:2.6em;line-height:1.3;margin-top:4px;font-variant-numeric:tabular-nums}
-.c-tbl{font-size:11.5px;width:100%}
-.c-tbl th{font-size:11px;padding:4px 6px 4px 0;vertical-align:bottom}
-.c-tbl td{padding:5px 6px 5px 0;color:var(--muted);vertical-align:top}
-.c-tbl td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
-.c-tbl td.pend{font-style:italic}
+.c-tbl{font-size:12px;width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.c-tbl th{font-size:11px;font-weight:700;color:var(--ink);padding:6px 8px;vertical-align:bottom;border-bottom:2px solid var(--head);text-align:left;line-height:1.25}
+.c-tbl th small,.c-tbl td small{display:block;font-weight:400;font-size:10px;color:var(--muted);line-height:1.3}
+.c-tbl td{padding:7px 8px;color:var(--ink);vertical-align:top;border-bottom:1px solid var(--rule)}
+.c-tbl tr:last-child td{border-bottom:0}
+.c-tbl td:first-child{font-weight:700;white-space:nowrap}
+.c-tbl .r{text-align:right}
+.c-tbl td.good{color:var(--ease);font-weight:700}.c-tbl td.bad{color:var(--bad);font-weight:700}
+.c-tbl td.pend{font-style:italic;color:var(--muted)}
 .c-cap{font-size:12px;color:var(--muted);line-height:1.4}
 .c-src{font-size:11px;color:var(--muted);font-style:italic;line-height:1.35}
 </style>
@@ -569,8 +576,11 @@ function chartSvg(b){
     <div class="c-read" aria-live="polite" data-def="${esc(def)}">${esc(def)}</div></div>`;
 }
 function chartTable(b){
-  return `<div class="chart"><div class="c-title">${esc(b.title)}</div><div class="tbl-wrap"><table class="c-tbl"><tr>${b.columns.map(c => `<th>${esc(c)}</th>`).join("")}</tr>
-    ${b.rows.map(r => { const filled = r.filter(x => x !== ""); return `<tr>${r.map((c, i) => c === "" ? "" : `<td${i === r.length - 1 || (r[i + 1] === "" ) ? (filled.length < r.length && i === filled.length - 1 ? ` colspan="${r.length - filled.length + 1}" class="pend"` : "") : ""}>${esc(c)}</td>`).join("")}</tr>`; }).join("")}</table></div></div>`;
+  const al = (i) => (b.align && b.align[i] === "right") ? " r" : "";
+  const cell = (c, i) => { const o = (c && typeof c === "object") ? c : {v: c};
+    return `<td class="${(o.tone || "") + (o.pend ? " pend" : "") + al(o.span ? -1 : i)}"${o.span ? ` colspan="${o.span}"` : ""}>${esc(o.v)}${o.sub ? `<small>${esc(o.sub)}</small>` : ""}</td>`; };
+  return `<div class="chart"><div class="c-title">${esc(b.title)}</div><div class="tbl-wrap"><table class="c-tbl"><tr>${b.columns.map((c, i) => `<th class="${al(i)}">${esc(c)}${b.units && b.units[i] ? `<small>${esc(b.units[i])}</small>` : ""}</th>`).join("")}</tr>
+    ${b.rows.map(r => `<tr>${r.filter(c => c !== "").map(cell).join("")}</tr>`).join("")}</table></div></div>`;
 }
 function chartsFor(s){
   return `<div class="charts">${s.charts.map(b => b.type === "table" ? chartTable(b) : chartSvg(b)).join("")}
