@@ -164,3 +164,11 @@ E7, F8, G6, G7, H3 to H6. Each carries `"added": "2026-11-23"` and shows a "New"
 - A11 (build-out plans) applies to all eight calls; it sits under North America Power
   until the owner decides where it belongs.
 - C4 needs the owner to choose one tracker before the count is used as a series.
+
+## "News, no signal" label
+
+A signpost with status `none` shows "News, no signal" (same grey as "No signal yet") when
+its history holds at least one entry with `"kind": "reading"`, meaning a development was
+reviewed and did not cross the trigger. Otherwise it shows "No signal yet". So when a
+group B finding is logged, always add the history entry with `"kind": "reading"` and a
+`brief`; that entry is what switches the label and lists the item under "What changed".

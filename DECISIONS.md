@@ -282,6 +282,11 @@ The owner reviewed the site as a first-time reader would and approved:
   confirmation. Relabelling and ordering by urgency are deferred at the owner's request.
 - The site now has 57 signposts; the tagline says so.
 
+- **"News, no signal" (23 Nov 2026):** at the owner's request, a signpost where new
+  developments were reviewed but did not cross the trigger now shows "News, no signal"
+  instead of "No signal yet", in the same grey. It applies when the history holds a
+  reviewed development (kind "reading"). Wording chosen by Claude; alternatives offered.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

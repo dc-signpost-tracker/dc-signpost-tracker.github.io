@@ -493,7 +493,8 @@ html,body{overflow-x:clip}
           <tr><th>Signal</th><th>Meaning</th></tr>
           <tr><td>Constraint tightening</td><td>A development past the signpost's trigger that makes the constraint harder</td></tr>
           <tr><td>Constraint easing</td><td>A development past the trigger that makes the constraint easier</td></tr>
-          <tr><td>No signal yet</td><td>Nothing has crossed the trigger since the ratings were set on 12 Nov 2026</td></tr>
+          <tr><td>News, no signal</td><td>New developments were reviewed and did not cross the trigger</td></tr>
+          <tr><td>No signal yet</td><td>No new developments since the ratings were set on 12 Nov 2026</td></tr>
         </table></div>
         <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one signal runs against it: an easing signal on a Persisting or Intensifying call, or a tightening signal on an Easing call. On a call holding at Moderate, a signal in either direction counts. Ratings change only after a manual review.</p>
       </div>
@@ -528,6 +529,8 @@ function stance(dir, status){
 const SIGNAL = {pos:"easing", neg:"tightening", none:"none"};
 const SIGNAL_TEXT = {easing:"Constraint easing", tightening:"Constraint tightening", none:"No signal yet"};
 const SIGNAL_ICON = {easing:"▼", tightening:"▲", none:"–"};
+/* A signpost with no signal whose history holds a reviewed development (kind "reading") shows "News, no signal". */
+const noted = sp => (sp.history || []).some(h => h.kind === "reading");
 const signalOf = (sp) => SIGNAL[sp.status || "none"] || "none";
 const TRIGGER_TERM = {pos:"Turned positive", neg:"Turned negative", none:"Not yet"};
 const statusOf = (sp) => sp.status || "none";
@@ -614,7 +617,7 @@ function signpost(sp, call){
     : `<span class="unv">Not yet verified</span>`;
   return `<article class="sp" id="sp-${esc(sp.id)}">
     <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}${sp.added ? ` <span class="new-tag" title="Added ${esc(fmt(sp.added))}">New</span>` : ""}</h3>
-      <span class="pill ${s}"><i>${SIGNAL_ICON[s]}</i>${SIGNAL_TEXT[s]}</span></header>
+      <span class="pill ${s}"${s === "none" && noted(sp) ? ` title="New developments were reviewed and did not cross the trigger"` : ""}><i>${s === "none" && noted(sp) ? "•" : SIGNAL_ICON[s]}</i>${s === "none" && noted(sp) ? "News, no signal" : SIGNAL_TEXT[s]}</span></header>
     <div class="sp-body">
       <div class="fig">${esc(sp.headline || sp.latest)}</div>
       ${sp.delta ? `<div class="delta">${sp.delta.dir === "down" ? "▼" : "▲"} ${esc(sp.delta.text)}</div>` : ""}
