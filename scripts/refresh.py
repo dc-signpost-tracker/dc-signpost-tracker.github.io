@@ -76,10 +76,9 @@ def main():
     inbox["items"].sort(key=lambda item: (item["published"], item["url"]), reverse=True)
     save("inbox.json", inbox)
     save("refresh_status.json", {"run_on": run_on, "feeds": feeds})
-    if any_ok:
-        signposts = load("signposts.json")
-        signposts["last_refreshed"] = run_on
-        save("signposts.json", signposts)
+    # "Last refreshed" on the site is the date of the last digest, which reviews the
+    # signposts; this feed check only files documents, so it leaves that date alone.
+    # The date of this run is kept in refresh_status.json.
 
     for name, result in feeds.items():
         print(f"{name}: {result}")

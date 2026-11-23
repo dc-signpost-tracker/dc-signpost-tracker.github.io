@@ -235,6 +235,9 @@ The owner reviewed the site as a first-time reader would and approved:
   collects documents into the inbox; the Wednesday digest reads everything that arrived
   during the week.
 
+- **"Last refreshed" (23 Nov 2026):** shows the date of the last digest, when the
+  signposts were reviewed. The daily feed check no longer changes it.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

@@ -80,7 +80,8 @@ status challenges. The site computes this; do not set it by hand.
 ## The daily cycle
 
 1. `.github/workflows/refresh.yml` runs `scripts/refresh.py` every day. It files new
-   documents in `data/inbox.json` with `"state": "new"`. It changes no reading.
+   documents in `data/inbox.json` with `"state": "new"`. It changes no reading and does
+   not touch `last_refreshed`; its own run date is in `data/refresh_status.json`.
 2. The morning digest (an AI task) then, every Wednesday (weekly since 21 Nov 2026; it was
    daily before), covering everything since the last run:
    - **Feeds:** reads every inbox item with `"state": "new"`;
@@ -94,6 +95,8 @@ status challenges. The site computes this; do not set it by hand.
    - **Follow-ups:** works through at most two items in `data/followups.json`;
    - opens the primary document for each finding where it can;
    - sorts each finding into one of three groups (below);
+   - sets `last_refreshed` in `data/signposts.json` to the day's date once the sweep is
+     done (the site shows it as "Last refreshed", meaning the signposts were reviewed);
    - marks each inbox item it handled `"state": "reviewed"` with `"reviewed_on"`.
      Routine notices that say nothing about a signpost are marked reviewed too; an
      item is left `"new"` only if it could not be opened, and the digest says so.
