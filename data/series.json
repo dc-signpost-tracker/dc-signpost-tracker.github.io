@@ -36,7 +36,8 @@
        ],
        "color": "warn"
       }
-     ]
+     ],
+     "labels": true
     },
     {
      "type": "table",
@@ -87,6 +88,81 @@
   "A2": {
    "charts": [
     {
+     "type": "line",
+     "title": "Texas grid: large loads approved to energise against observed peak (megawatts)",
+     "x": [
+      "Jul-23",
+      "Jan-24",
+      "May-24",
+      "Jun-24",
+      "Mar-25",
+      "Apr-25",
+      "May-25",
+      "Jun-25",
+      "Jul-25",
+      "Aug-25",
+      "Sep-25",
+      "Dec-25",
+      "Feb-26",
+      "Mar-26",
+      "May-26",
+      "Jun-26",
+      "Jul-26",
+      "Aug-26"
+     ],
+     "unit": "megawatts",
+     "series": [
+      {
+       "name": "Approved to energise",
+       "values": [
+        2973,
+        4479,
+        5479,
+        5479,
+        6306,
+        6779,
+        6874,
+        6874,
+        7150,
+        7502,
+        7502,
+        8787,
+        9043,
+        9042,
+        9062,
+        8926,
+        9456,
+        9456
+       ],
+       "color": "head"
+      },
+      {
+       "name": "Observed monthly peak",
+       "values": [
+        2072,
+        2587,
+        2991,
+        3065,
+        3315,
+        3691,
+        3489,
+        3605,
+        3820,
+        3694,
+        4126,
+        3349,
+        4037,
+        4008,
+        4145,
+        3966,
+        4370,
+        4316
+       ],
+       "color": "warn"
+      }
+     ]
+    },
+    {
      "type": "bar",
      "title": "Texas grid: large-load connection requests (gigawatts)",
      "x": [
@@ -133,7 +209,7 @@
      }
     }
    ],
-   "caption": "Approved to energise: about 7.5 gigawatts in August 2025 and 9.5 in August 2026, roughly 2% of the 474 requested. Actual peak use is under half of approved capacity. Readings are one to four months apart; the chart spaces them evenly.",
+   "caption": "Approved capacity grew by about 2 gigawatts in the year to August 2026 (7,502 to 9,456 megawatts), roughly 2% of the 474 gigawatts requested. Actual peak use is under half of approved capacity. Readings are one to four months apart; the charts space them evenly.",
    "source": "Texas grid operator (ERCOT) board and planning updates, Sep 2025 to Jun 2026; Texas Senate testimony, Apr and Jul 2026; Monthly Operational Overview, Aug 2026.",
    "next_point": "Statewide audit report, 10 Dec 2026"
   },

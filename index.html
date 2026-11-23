@@ -546,11 +546,14 @@ function chartSvg(b){
   }
   const poly = (s) => `<polyline points="${s.values.map((v, i) => cx(i).toFixed(1) + "," + y(v).toFixed(1)).join(" ")}" fill="none" stroke="${CCOL[s.color] || CCOL.head}" stroke-width="2"/>` + s.values.map((v, i) => `<circle cx="${cx(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2.6" fill="${CCOL[s.color] || CCOL.head}"/>`).join("");
   if (b.type === "line") ser.forEach(s => { g += poly(s); });
+  if (b.type === "line" && b.labels) b.x.forEach((_, i) => { const top = Math.max(...ser.map(s => s.values[i]));
+    ser.forEach(s => { const v = s.values[i], up = v === top && !(ser.length > 1 && ser.every(q => q.values[i] === v) && s !== ser[0]);
+      g += `<text x="${cx(i).toFixed(1)}" y="${(y(v) + (up ? -6 : 11)).toFixed(1)}" text-anchor="middle" class="cv" style="fill:${CCOL[s.color] || CCOL.head}">${nf(v)}${b.unit === "%" ? "%" : ""}</text>`; }); });
   if (line) g += poly(line);
   b.x.forEach((lab, i) => {
     const parts = ser.map(s => `${s.name} ${nf(s.values[i])}`).concat(line ? [`${line.name} ${nf(line.values[i])}`] : []);
     const read = `${lab}: ${parts.join(" · ")}${b.type === "stack" ? " · Total " + nf(tops[i]) : ""}${b.notes && b.notes[i] ? " · " + b.notes[i] : ""}`;
-    g += `<text x="${cx(i).toFixed(1)}" y="${H - 6}" text-anchor="middle" class="cx">${esc(lab)}</text>
+    g += `${n <= 12 || (i % 3 === 0 && n - 1 - i >= 3) || i === n - 1 ? `<text x="${cx(i).toFixed(1)}" y="${H - 6}" text-anchor="${n > 12 && i === n - 1 ? "end" : "middle"}" class="cx">${esc(lab)}</text>` : ""}
       <rect class="hit" tabindex="0" role="button" aria-label="${esc(read)}" data-r="${esc(read)}" x="${(L + cw * i).toFixed(1)}" y="0" width="${cw.toFixed(1)}" height="${H}"/>`; });
   const last = n - 1, lparts = ser.map(s => `${s.name} ${nf(s.values[last])}`).concat(line ? [`${line.name} ${nf(line.values[last])}`] : []);
   const def = `${b.x[last]}: ${lparts.join(" · ")}${b.type === "stack" ? " · Total " + nf(tops[last]) : ""}${b.notes && b.notes[last] ? " · " + b.notes[last] : ""}`;

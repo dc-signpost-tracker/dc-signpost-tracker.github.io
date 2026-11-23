@@ -260,8 +260,8 @@ The owner reviewed the site as a first-time reader would and approved:
 - **Charts on cards (23 Nov 2026):** five signposts (A1, A2, A3, A6, G3) show their time
   series as an interactive chart or table on the card, from `data/series.json`, using the
   figures in the owner's analysis pages. The digest appends new points as they are
-  published and read at source. A2's approved-to-energise and observed-peak lines are not
-  charted yet: the owner's page shows them only as a picture, with no numbers.
+  published and read at source. A2's approved-to-energise and observed-peak lines were
+  added from the owner's figures. The PJM reserve margin chart shows data labels.
 
 ## Open
 
