@@ -198,7 +198,10 @@
        ],
        "color": "warn"
       }
-     ]
+     ],
+     "axis": true,
+     "max": 10000,
+     "tick": 2000
     },
     {
      "type": "bar",

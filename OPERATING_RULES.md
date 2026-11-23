@@ -151,6 +151,9 @@ it short. When the owner replies with decisions, apply them, commit and push.
 Commit to `main` with a message that says which signposts changed and why. After any
 change to `data/`, the site updates by itself once pushed.
 
+A chart may set `"axis": true` (with `"max"` and `"tick"`) to show numbers down the left
+side; A2's line chart does.
+
 ## Signposts added on 23 Nov 2026
 
 Nineteen signposts were added at the end of their tabs: A7 to A11, C4 to C6, D4, D5, E6,

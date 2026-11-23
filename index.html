@@ -558,12 +558,15 @@ function gauge(g){
 const CCOL = {head:"var(--head)", soft:"#8FA3D9", warn:"#C8791B", accent:"var(--accent)"};
 const nf = (v) => typeof v === "number" ? v.toLocaleString("en-GB", {maximumFractionDigits: 1}) : v;
 function chartSvg(b){
-  const W = 320, H = b.spans ? 172 : 150, L = 6, R = 6, T = b.spans ? 36 : 14, B = 20, n = b.x.length, cw = (W - L - R) / n, ph = H - T - B;
+  const W = 320, H = b.spans ? 172 : 150, L = b.axis ? 36 : 6, R = 6, T = b.spans ? 36 : 14, B = 20, n = b.x.length, cw = (W - L - R) / n, ph = H - T - B;
   const ser = b.series || [], line = b.line;
   const tops = b.type === "stack" ? b.x.map((_, i) => ser.reduce((a, s) => a + s.values[i], 0)) : [].concat(...ser.map(s => s.values));
   const lo = b.min != null ? b.min : 0, hi = b.max != null ? b.max : Math.max(...tops, ...(line ? line.values : [])) * 1.12;
   const y = v => T + ph - (v - lo) / (hi - lo) * ph, cx = i => L + cw * (i + .5);
   let g = `<line x1="${L}" y1="${T + ph}" x2="${W - R}" y2="${T + ph}" stroke="var(--rule)"/>`;
+  /* optional vertical axis: numbers down the left with faint gridlines (set "axis": true and "tick" on the chart) */
+  if (b.axis) { const step = b.tick || (hi - lo) / 5;
+    for (let v = lo; v <= hi + 1e-9; v += step) g += `${v > lo ? `<line x1="${L}" y1="${y(v).toFixed(1)}" x2="${W - R}" y2="${y(v).toFixed(1)}" stroke="var(--rule)" stroke-opacity=".55"/>` : ""}<text x="${L - 5}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end" class="cx">${nf(v)}</text>`; }
   if (b.type === "bar" || b.type === "stack") {
     const bw = Math.min(cw * .68, 30);
     b.x.forEach((_, i) => { let base = lo;
