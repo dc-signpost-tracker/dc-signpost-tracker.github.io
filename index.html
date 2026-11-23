@@ -127,13 +127,13 @@ section{margin-top:30px}
 @media (prefers-reduced-motion:reduce){.chev{transition:none}}
 
 /* tabs: one per region and constraint; the open tab joins the navy banner */
-.tabs{display:grid;grid-template-columns:repeat(6,minmax(168px,1fr));gap:6px;overflow-x:auto}
+.tabs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(max-content,1fr);gap:5px;overflow-x:auto}
 .tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:3px;min-height:66px;
-  padding:11px 12px;background:var(--none-bg);border:1px solid var(--rule);border-bottom:0;border-radius:10px 10px 0 0;color:var(--muted)}
+  padding:11px 9px;background:var(--none-bg);border:1px solid var(--rule);border-bottom:0;border-radius:10px 10px 0 0;color:var(--muted)}
 .tab:hover{background:var(--surface)}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.tab strong{font-size:14px;font-weight:700;line-height:1.25;color:var(--ink);white-space:nowrap}
-.tab .t-sub{font-size:12.5px;line-height:1.3;white-space:nowrap}
+.tab strong{font-size:12.5px;font-weight:700;line-height:1.25;color:var(--ink);white-space:nowrap}
+.tab .t-sub{font-size:11.5px;line-height:1.3;white-space:nowrap}
 .tab .t-flag{font-size:12px;font-weight:700;color:var(--bad);white-space:nowrap}
 .tab[aria-selected="true"].Easing{background:var(--ease-bg);border-color:var(--ease-bg);color:var(--ease)}
 .tab[aria-selected="true"].Persisting{background:var(--pers-bg);border-color:var(--pers-bg);color:var(--pers)}
@@ -310,7 +310,7 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:70ch}
 .cell .meta2 .sqs{display:inline-flex;gap:3px}
 .cell .meta2 .sq{width:11px;height:11px;border-radius:2px}
 .cell .open{font-size:12px;font-weight:700;color:var(--accent)}
-.cg-key{display:flex;flex-wrap:nowrap;align-items:center;gap:0 11px;white-space:nowrap;font-size:11px;color:var(--muted);margin:2px 0 14px;padding:0}
+.cg-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 11px;white-space:nowrap;font-size:11px;color:var(--muted);margin:2px 0 14px;padding:0}
 .cg-key .sep{width:1px;height:14px;background:var(--rule)}
 .cg-key i.sq{width:10px!important;height:10px!important}
 .cg-key span{display:inline-flex;align-items:center;gap:6px}
@@ -416,7 +416,7 @@ html,body{overflow-x:clip}
 <div class="wrap">
   <header class="hero">
     <h1>Where power, water and land redirect the data centre build-out</h1>
-    <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 24 signposts</p>
+    <p class="tagline">The outlook for physical constraint severity in select regions till 2030 and beyond, tested against 38 signposts</p>
     <div class="meta">
       <span id="asof"></span>
     </div>
@@ -452,7 +452,7 @@ html,body{overflow-x:clip}
           <tr><td>Constraint easing</td><td>A development past the trigger that makes the constraint easier</td></tr>
           <tr><td>No signal yet</td><td>Nothing has crossed the trigger since the ratings were set on 12 Nov 2026</td></tr>
         </table></div>
-        <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one signal runs against it: an easing signal on a Persisting or Intensifying call, or a tightening signal on an Easing call. Ratings change only after a manual review.</p>
+        <p style="margin-top:10px">A call is marked <b>Rating under review</b> as soon as one signal runs against it: an easing signal on a Persisting or Intensifying call, or a tightening signal on an Easing call. On a call holding at Moderate, a signal in either direction counts. Ratings change only after a manual review.</p>
       </div>
     </div>
   </section>
@@ -471,6 +471,10 @@ const now = new Date();
 const TODAY = now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
 let CALLS = [], EVENTS = [], HEAT = [], META = {};
 
+/* A call holding at Moderate can move either way, so any signal runs against it. */
+const holding = (c) => c.from === c.to && c.from !== "Severe";
+const dirLabel = (c) => holding(c) ? "Holding" : c.dir;
+const bandText = (c) => holding(c) ? `Holding at ${c.from} beyond 2030` : BANDS[c.dir];
 function stance(dir, status){
   if (status === "none" || !status) return "none";
   if (dir === "Easing") return status === "pos" ? "supports" : "challenges";
@@ -548,7 +552,7 @@ function shiftHTML(c){
 }
 function tally(c){
   const signals = c.sps.map(signalOf);
-  const ch = c.sps.filter(sp => stance(c.dir, statusOf(sp)) === "challenges").length;
+  const ch = c.sps.filter(sp => holding(c) ? statusOf(sp) !== "none" : stance(c.dir, statusOf(sp)) === "challenges").length;
   const ti = signals.filter(x => x === "tightening").length, ea = signals.filter(x => x === "easing").length;
   const text = (ti || ea) ? `${ti} tightening, ${ea} easing, ${c.sps.length - ti - ea} no signal` : `${c.sps.length} signposts, no signal yet`;
   const ver = c.sps.filter(sp => safeUrl(sp.source_url)).length;
@@ -575,7 +579,7 @@ function renderBoard(){
   const tabs = CALLS.map(x => {
     const t = tally(x), on = x.id === c.id;
     return `<button class="tab ${esc(x.dir)}" role="tab" id="tab-${esc(x.id)}" data-id="${esc(x.id)}" aria-selected="${on}" aria-controls="panel" tabindex="${on ? 0 : -1}">
-      <strong>${esc(x.tab || x.region)}</strong><span class="t-sub">${esc(x.constraint)} · ${esc(x.dir)}</span>
+      <strong>${esc(x.tab || x.region)}</strong><span class="t-sub">${esc(x.constraint)} · ${esc(dirLabel(x))}</span>
       ${t.review ? `<span class="t-flag"><span aria-hidden="true">! </span>Under review</span>` : ""}</button>`;
   }).join("");
   const t = tally(c), nx = nextFor(c);
@@ -584,7 +588,7 @@ function renderBoard(){
   el("board").innerHTML = `<div class="tabs" role="tablist" aria-label="Region and constraint">${tabs}</div>
     <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-${esc(c.id)}">
       <div class="banner ${esc(c.dir)}">
-        <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${BANDS[c.dir]}</div>
+        <div><h2>${esc(c.tab || c.region)}</h2><div class="con">${esc(c.constraint)} | ${esc(bandText(c))}</div>
           <div class="ver"><b>${t.ver} of ${c.sps.length}</b> readings verified at the primary source</div>
           ${t.review ? `<span class="flag"><span aria-hidden="true">!</span> Rating under review</span>` : ""}</div>
         <div>${shiftHTML(c)}</div>
@@ -660,7 +664,7 @@ function sqs(c){ return `<span class="sqs">${tally(c).signals.map(x => `<span cl
 function covCell(c){
   const t = tally(c);
   return `<button class="cell on ${esc(c.dir)}" type="button" data-call="${esc(c.id)}" aria-label="Open ${esc(c.region)} ${esc(c.constraint)}">
-    <span class="dirl"><span>${esc(c.dir)}${t.review ? " · under review" : ""}</span><span class="go-arrow" aria-hidden="true">→</span></span>${miniLab([c.from, c.to])}
+    <span class="dirl"><span>${esc(dirLabel(c))}${t.review ? " · under review" : ""}</span><span class="go-arrow" aria-hidden="true">→</span></span>${miniLab([c.from, c.to])}
     <span class="meta2">${sqs(c)}</span>
     <span class="nxc">Next catalyst: ${esc(nextLong(c))}</span></button>`;
 }
@@ -687,7 +691,7 @@ function coverageMobile(){
   return `<div class="cg-m">${groups}${rest.length ? `<details class="m-rest"><summary>Regions not tracked (${rest.length}) +</summary><ul>${restRows}</ul></details>` : ""}</div>`;
 }
 function coverageKey(){
-  return `<div class="cg-key"><span>Each cell: rating for 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span class="sep" aria-hidden="true"></span><span><i class="sq tightening"></i>tightening signal</span><span><i class="sq easing"></i>easing signal</span></div>`;
+  return `<div class="cg-key"><span>Rating: 2026–30 → beyond 2030</span><span><i style="border:2px solid var(--ease)"></i>Easing</span><span><i style="border:2px solid var(--pers)"></i>Persisting or holding</span><span><i style="border:2px solid var(--int)"></i>Intensifying</span><span><i style="background:var(--none-bg);border:1px solid var(--rule)"></i>Not tracked (faded)</span><span class="sep" aria-hidden="true"></span><span><i class="sq tightening"></i>tightening signal</span><span><i class="sq easing"></i>easing signal</span></div>`;
 }
 function changes(){
   const items = [];

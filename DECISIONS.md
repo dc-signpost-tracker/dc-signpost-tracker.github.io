@@ -238,6 +238,25 @@ The owner reviewed the site as a first-time reader would and approved:
 - **"Last refreshed" (23 Nov 2026):** shows the date of the last digest, when the
   signposts were reviewed. The daily feed check no longer changes it.
 
+## Two calls added (23 Nov 2026)
+
+- **Coverage widened to eight calls and 38 signposts.** At the owner's request the
+  tracker now also follows North America Water and Europe Land, both Moderate in both
+  periods, to complete power, water and land for North America and Europe. The question
+  on each is whether Moderate eases to Minor or intensifies to Severe. Each has seven
+  signposts taken from the owner's analysis pages.
+- **Relettered again so letters follow the tab order.** Tabs: A North America Power,
+  B North America Water (new), C North America Land, D Europe Power, E Europe Water,
+  F Europe Land (new), G North Asia ex-China Power, H South & Southeast Asia Water.
+  Old to new: B to C, C to D, D to E, E to G, F to H; numbers unchanged (old C3, Spain's
+  final rules, is now D3). Entries above this point use the older letters.
+- **Baseline for B and F is 23 Nov 2026.** Their readings are baseline readings from the
+  owner's analysis, shown as "Not yet verified" until a primary source is read.
+- **Review flag on holding calls:** a signal in either direction flags B or F.
+- The tagline now says 38 signposts and the coverage note under "What we currently
+  track" was reworded for eight pairs (wording to be confirmed by the owner, along with
+  the two new bottom lines).
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

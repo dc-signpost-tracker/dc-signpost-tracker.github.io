@@ -1,6 +1,6 @@
 # Data Centre Signpost Tracker
 
-A static website that tracks 24 signposts behind six calls on how power, water and
+A static website that tracks 38 signposts behind eight calls on how power, water and
 land constrain the build-out of artificial intelligence (AI) data centres.
 
 ## How it works

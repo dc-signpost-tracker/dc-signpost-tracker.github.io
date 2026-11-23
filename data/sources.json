@@ -30,7 +30,7 @@
    "name": "US Federal Register: rules, proposed rules and presidential documents on data centres",
    "url": "https://www.federalregister.gov/developers/documentation/api/v1",
    "signposts": [
-    "B2"
+    "C2"
    ],
    "feed": "api",
    "access": "open",
@@ -90,8 +90,8 @@
    "name": "Spain's official gazette (Boletín Oficial del Estado): daily summary",
    "url": "https://www.boe.es/datosabiertos/",
    "signposts": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ],
    "feed": "api",
    "access": "open",
@@ -287,7 +287,7 @@
    "name": "Korea National Law Information Center",
    "url": "https://www.law.go.kr/",
    "signposts": [
-    "E4"
+    "G4"
    ],
    "feed": "event",
    "access": "open",
@@ -304,8 +304,8 @@
    "name": "Korea Ministry of Science and ICT",
    "url": "https://www.msit.go.kr/eng/",
    "signposts": [
-    "E4",
-    "E1"
+    "G4",
+    "G1"
    ],
    "feed": "event",
    "access": "open",
@@ -322,8 +322,8 @@
    "name": "Korea Electric Power Corporation",
    "url": "https://home.kepco.co.kr/",
    "signposts": [
-    "E1",
-    "E5"
+    "G1",
+    "G5"
    ],
    "feed": "manual",
    "access": "open",
@@ -340,7 +340,7 @@
    "name": "Korea Power Exchange electricity statistics",
    "url": "https://epsis.kpx.or.kr/",
    "signposts": [
-    "E1"
+    "G1"
    ],
    "feed": "manual",
    "access": "open",
@@ -357,7 +357,7 @@
    "name": "Japan's grid coordination body (OCCTO)",
    "url": "https://www.occto.or.jp/en/",
    "signposts": [
-    "E2"
+    "G2"
    ],
    "feed": "manual",
    "access": "open",
@@ -374,7 +374,7 @@
    "name": "Japan Nuclear Regulation Authority",
    "url": "https://www.nra.go.jp/english/",
    "signposts": [
-    "E3"
+    "G3"
    ],
    "feed": "document",
    "access": "open",
@@ -391,7 +391,7 @@
    "name": "Japan Atomic Industrial Forum: reactor status",
    "url": "https://www.jaif.or.jp/en/",
    "signposts": [
-    "E3"
+    "G3"
    ],
    "feed": "document",
    "access": "open",
@@ -408,7 +408,7 @@
    "name": "International Atomic Energy Agency reactor database: Japan",
    "url": "https://pris.iaea.org/PRIS/CountryStatistics/CountryDetails.aspx?current=JP",
    "signposts": [
-    "E3"
+    "G3"
    ],
    "feed": "document",
    "access": "open",
@@ -425,7 +425,7 @@
    "name": "RTE, the French grid operator",
    "url": "https://www.rte-france.com/en",
    "signposts": [
-    "C2"
+    "D2"
    ],
    "feed": "document",
    "access": "open",
@@ -442,7 +442,7 @@
    "name": "Statnett, the Norwegian grid operator",
    "url": "https://www.statnett.no/en/",
    "signposts": [
-    "C2"
+    "D2"
    ],
    "feed": "document",
    "access": "open",
@@ -459,7 +459,7 @@
    "name": "Svenska kraftnät, the Swedish grid operator",
    "url": "https://www.svk.se/en/",
    "signposts": [
-    "C2"
+    "D2"
    ],
    "feed": "document",
    "access": "open",
@@ -476,7 +476,7 @@
    "name": "Fingrid, the Finnish grid operator",
    "url": "https://www.fingrid.fi/en/",
    "signposts": [
-    "C2"
+    "D2"
    ],
    "feed": "document",
    "access": "open",
@@ -493,8 +493,8 @@
    "name": "Spain: Council of Ministers references",
    "url": "https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/index.aspx",
    "signposts": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ],
    "feed": "event",
    "access": "open",
@@ -511,8 +511,8 @@
    "name": "Spain: Ministry for the Ecological Transition",
    "url": "https://www.miteco.gob.es/",
    "signposts": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ],
    "feed": "event",
    "access": "open",
@@ -529,7 +529,7 @@
    "name": "TenneT grid investment plans",
    "url": "https://www.tennet.eu/",
    "signposts": [
-    "C1"
+    "D1"
    ],
    "feed": "document",
    "access": "open",
@@ -546,7 +546,7 @@
    "name": "Netbeheer Nederland grid capacity map",
    "url": "https://capaciteitskaart.netbeheernederland.nl/",
    "signposts": [
-    "C1"
+    "D1"
    ],
    "feed": "document",
    "access": "open",
@@ -563,7 +563,7 @@
    "name": "Germany's grid development plan",
    "url": "https://www.netzentwicklungsplan.de/",
    "signposts": [
-    "C1"
+    "D1"
    ],
    "feed": "document",
    "access": "open",
@@ -580,7 +580,7 @@
    "name": "National Energy System Operator (United Kingdom)",
    "url": "https://www.neso.energy/",
    "signposts": [
-    "C1"
+    "D1"
    ],
    "feed": "document",
    "access": "open",
@@ -597,7 +597,7 @@
    "name": "Data Center Watch quarterly reports",
    "url": "https://www.datacenterwatch.org/",
    "signposts": [
-    "B1"
+    "C1"
    ],
    "feed": "document",
    "access": "open",
@@ -614,7 +614,7 @@
    "name": "Ballotpedia: local ballot measures",
    "url": "https://ballotpedia.org/",
    "signposts": [
-    "B1"
+    "C1"
    ],
    "feed": "manual",
    "access": "open",
@@ -631,7 +631,7 @@
    "name": "New York Department of Public Service",
    "url": "https://dps.ny.gov/",
    "signposts": [
-    "B3"
+    "C3"
    ],
    "feed": "event",
    "access": "open",
@@ -648,9 +648,9 @@
    "name": "Loudoun County, Virginia: board agendas and minutes",
    "url": "https://www.loudoun.gov/",
    "signposts": [
-    "B1",
-    "B3",
-    "B2"
+    "C1",
+    "C3",
+    "C2"
    ],
    "feed": "event",
    "access": "open",
@@ -667,7 +667,7 @@
    "name": "Virginia Legislative Information System",
    "url": "https://lis.virginia.gov/",
    "signposts": [
-    "B2"
+    "C2"
    ],
    "feed": "event",
    "access": "open",
@@ -684,7 +684,7 @@
    "name": "European Commission energy directorate",
    "url": "https://energy.ec.europa.eu/",
    "signposts": [
-    "D1"
+    "E1"
    ],
    "feed": "event",
    "access": "open",
@@ -701,7 +701,7 @@
    "name": "EUR-Lex: European Union law",
    "url": "https://eur-lex.europa.eu/",
    "signposts": [
-    "D1"
+    "E1"
    ],
    "feed": "event",
    "access": "open",
@@ -718,7 +718,7 @@
    "name": "France: Ministry of Ecological Transition",
    "url": "https://www.ecologie.gouv.fr/",
    "signposts": [
-    "D5"
+    "E5"
    ],
    "feed": "manual",
    "access": "open",
@@ -735,7 +735,7 @@
    "name": "World Resources Institute Aqueduct water-stress data",
    "url": "https://www.wri.org/aqueduct",
    "signposts": [
-    "D4"
+    "E4"
    ],
    "feed": "calculated",
    "access": "open",
@@ -752,8 +752,8 @@
    "name": "European Environment Agency",
    "url": "https://www.eea.europa.eu/",
    "signposts": [
-    "D4",
-    "D3"
+    "E4",
+    "E3"
    ],
    "feed": "document",
    "access": "open",
@@ -770,7 +770,7 @@
    "name": "Copernicus European Drought Observatory",
    "url": "https://drought.emergency.copernicus.eu/",
    "signposts": [
-    "D3"
+    "E3"
    ],
    "feed": "document",
    "access": "open",
@@ -787,8 +787,8 @@
    "name": "Malaysia's National Water Services Commission (SPAN)",
    "url": "https://www.span.gov.my/",
    "signposts": [
-    "F1",
-    "F2"
+    "H1",
+    "H2"
    ],
    "feed": "document",
    "access": "open",
@@ -805,7 +805,7 @@
    "name": "Bursa Malaysia company announcements (Ranhill)",
    "url": "https://www.bursamalaysia.com/",
    "signposts": [
-    "F1"
+    "H1"
    ],
    "feed": "document",
    "access": "open",
@@ -822,7 +822,7 @@
    "name": "Thailand national water data (Thaiwater)",
    "url": "https://www.thaiwater.net/",
    "signposts": [
-    "F1"
+    "H1"
    ],
    "feed": "document",
    "access": "open",
@@ -839,7 +839,7 @@
    "name": "India Central Water Commission reservoir bulletin",
    "url": "https://cwc.gov.in/",
    "signposts": [
-    "F1"
+    "H1"
    ],
    "feed": "document",
    "access": "open",
@@ -856,7 +856,7 @@
    "name": "India Meteorological Department",
    "url": "https://mausam.imd.gov.in/",
    "signposts": [
-    "F1"
+    "H1"
    ],
    "feed": "document",
    "access": "open",
@@ -873,7 +873,7 @@
    "name": "Malaysian Investment Development Authority",
    "url": "https://www.mida.gov.my/",
    "signposts": [
-    "F2"
+    "H2"
    ],
    "feed": "event",
    "access": "open",
@@ -890,8 +890,8 @@
    "name": "Thailand Board of Investment",
    "url": "https://www.boi.go.th/",
    "signposts": [
-    "F1",
-    "F2"
+    "H1",
+    "H2"
    ],
    "feed": "event",
    "access": "open",
@@ -908,7 +908,7 @@
    "name": "Uptime Institute annual survey",
    "url": "https://uptimeinstitute.com/",
    "signposts": [
-    "F2"
+    "H2"
    ],
    "feed": "document",
    "access": "open",
@@ -943,7 +943,7 @@
    "name": "European power transparency platform (ENTSO-E)",
    "url": "https://transparency.entsoe.eu/",
    "signposts": [
-    "C2"
+    "D2"
    ],
    "feed": "api",
    "access": "free_key",
@@ -961,7 +961,7 @@
    "name": "Congress.gov",
    "url": "https://api.congress.gov/",
    "signposts": [
-    "B2"
+    "C2"
    ],
    "feed": "api",
    "access": "free_key",
@@ -979,7 +979,7 @@
    "name": "LegiScan state bill tracker",
    "url": "https://legiscan.com/legiscan",
    "signposts": [
-    "B2"
+    "C2"
    ],
    "feed": "api",
    "access": "free_key",
@@ -997,7 +997,7 @@
    "name": "Korea National Law Information Center open data",
    "url": "https://open.law.go.kr/",
    "signposts": [
-    "E4"
+    "G4"
    ],
    "feed": "api",
    "access": "free_key",
@@ -1015,7 +1015,7 @@
    "name": "France's Légifrance, through the PISTE portal",
    "url": "https://piste.gouv.fr/",
    "signposts": [
-    "D5"
+    "E5"
    ],
    "feed": "api",
    "access": "free_key",
@@ -1033,10 +1033,10 @@
    "name": "DC Byte",
    "url": "https://www.dcbyte.com/",
    "signposts": [
-    "E1",
-    "C2",
-    "D4",
-    "F1"
+    "G1",
+    "D2",
+    "E4",
+    "H1"
    ],
    "feed": "paid",
    "access": "paid",
@@ -1054,7 +1054,7 @@
    "name": "Structure Research",
    "url": "https://www.structureresearch.net/",
    "signposts": [
-    "E1"
+    "G1"
    ],
    "feed": "paid",
    "access": "paid",
@@ -1090,7 +1090,7 @@
    "name": "S&P Global 451 Research",
    "url": "https://www.spglobal.com/marketintelligence/",
    "signposts": [
-    "B1"
+    "C1"
    ],
    "feed": "paid",
    "access": "paid",

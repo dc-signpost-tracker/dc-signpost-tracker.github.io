@@ -25,6 +25,10 @@ taken into account. **A signpost's status changes only on a development after
 context in the reading, but never recommend a status change because of it, however
 adverse it looks. When recommending a change, state the date of the development.
 
+Calls B (North America Water) and F (Europe Land) were added on 23 Nov 2026, so their
+baseline date is 23 Nov 2026 (the call's `baseline` field): only developments after that
+date can change the status of B1 to B7 and F1 to F7.
+
 Some signposts turn mainly on politics. For A2 (Texas connections) the developments
 that matter most are statements and measures from the Governor-elect, other incoming
 Democratic office-holders and the Texas Legislature that would extend, widen or lift
@@ -75,7 +79,9 @@ wording in group A of the digest and wait for the owner's answer.
 
 A call shows "Rating under review" as soon as one of its signposts challenges it. For
 Easing calls a `neg` status challenges; for Persisting and Intensifying calls a `pos`
-status challenges. The site computes this; do not set it by hand.
+status challenges. The site computes this; do not set it by hand. Calls B and F hold at
+Moderate in both periods and can move either way (to Minor or to Severe), so on those
+calls a signal in either direction flags the call.
 
 ## The daily cycle
 
@@ -87,8 +93,8 @@ status challenges. The site computes this; do not set it by hand.
    - **Feeds:** reads every inbox item with `"state": "new"`;
    - **Catalysts:** checks the dated events in `data/calendar.json` that have passed
      without an `outcome`;
-   - **Sweep of all 24 signposts:** runs at least one web search for every signpost,
-     A1 to F2, for developments since its `last_checked_on` date, and reads further
+   - **Sweep of all 38 signposts:** runs at least one web search for every signpost,
+     A1 to H2, for developments since its `last_checked_on` date, and reads further
      only where something is new relative to its current `latest` reading. No signpost
      is skipped because it has no feed. `last_checked_on` is set to the day's date on
      every signpost searched, whether or not anything was found;
@@ -115,7 +121,7 @@ If in doubt between A and B, choose A.
 
 One message to the owner, in this order: (1) "Needs your decision", each item with what
 happened, sources, what the trigger says and a recommendation; (2) "For information",
-listing what was updated on the site and what is press-only; (3) one closing line saying how many of the 24 signposts were
+listing what was updated on the site and what is press-only; (3) one closing line saying how many of the 38 signposts were
 searched and how many had nothing new, naming any that could not be searched. Use plain English, spell out acronyms at first use, and keep
 it short. When the owner replies with decisions, apply them, commit and push.
 

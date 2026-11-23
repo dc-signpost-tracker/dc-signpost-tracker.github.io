@@ -29,8 +29,8 @@
    "kind": "Gazette item",
    "source": "boe_daily_summary",
    "signposts": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ],
    "retrieved_on": "2026-11-22",
    "state": "new"
@@ -64,7 +64,7 @@
    "kind": "Rule",
    "source": "federal_register_data_centre_rules",
    "signposts": [
-    "B2"
+    "C2"
    ],
    "retrieved_on": "2026-11-20",
    "state": "reviewed",

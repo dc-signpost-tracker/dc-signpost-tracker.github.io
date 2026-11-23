@@ -14,8 +14,8 @@
    "label": "17 Nov 2026",
    "text": "Loudoun County vote on a 12-month pause on new applications",
    "sp": [
-    "B1",
-    "B2"
+    "C1",
+    "C2"
    ],
    "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
@@ -24,18 +24,26 @@
    "label": "20 Nov 2026",
    "text": "Spain: Council of Ministers approval of the data centre decree, which had been targeted by 29 Nov, before the general election",
    "sp": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ],
    "outcome": "Approved on 20 Nov 2026, nine days before the election. Not yet in the official gazette."
+  },
+  {
+   "d": "2026-11-24",
+   "label": "24 Nov 2026",
+   "text": "Council of the European Union starts work on its compromise on the data centre part of the Cloud and AI Development Act",
+   "sp": [
+    "F1"
+   ]
   },
   {
    "d": "2026-11-27",
    "label": "27 Nov 2026",
    "text": "Thailand draft requiring 80% reuse of cooling-tower discharge goes to the national data centre board",
    "sp": [
-    "F1",
-    "F2"
+    "H1",
+    "H2"
    ]
   },
   {
@@ -43,8 +51,8 @@
    "label": "29 Nov 2026",
    "text": "Spain's general election; the main opposition party has said it would repeal the data centre decree",
    "sp": [
-    "C3",
-    "D2"
+    "D3",
+    "E2"
    ]
   },
   {
@@ -68,7 +76,7 @@
    "label": "14 Dec 2026",
    "text": "European Union consultation on minimum performance standards for data centres closes",
    "sp": [
-    "D1"
+    "E1"
    ]
   },
   {
@@ -106,11 +114,29 @@
    "fuzzy": true
   },
   {
+   "d": "2026-12-31",
+   "label": "By end-2026",
+   "text": "Scotland's progress report on national planning guidance for data centres",
+   "sp": [
+    "F5"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-01-08",
+   "label": "8 Jan 2027",
+   "text": "England's consultation on its data centre National Policy Statement closes",
+   "sp": [
+    "F2"
+   ]
+  },
+  {
    "d": "2027-01-12",
    "label": "12 Jan 2027",
    "text": "Texas Legislature convenes, with data centre bills already filed",
    "sp": [
-    "A2"
+    "A2",
+    "B6"
    ]
   },
   {
@@ -119,7 +145,7 @@
    "text": "New Texas governor takes office; new Congress sits in January",
    "sp": [
     "A2",
-    "B2"
+    "C2"
    ]
   },
   {
@@ -143,7 +169,7 @@
    "label": "10 Mar 2027",
    "text": "Korea's AI Data Centre Act enters into force",
    "sp": [
-    "E4"
+    "G4"
    ]
   },
   {
@@ -171,11 +197,21 @@
    ]
   },
   {
+   "d": "2027-04-30",
+   "label": "Apr 2027",
+   "text": "European Parliament's position on the Cloud and AI Development Act planned",
+   "sp": [
+    "F1"
+   ],
+   "fuzzy": true
+  },
+  {
    "d": "2027-05-31",
    "label": "31 May 2027",
    "text": "Texas legislative session ends; a special session is possible afterwards",
    "sp": [
-    "A2"
+    "A2",
+    "B6"
    ]
   },
   {
@@ -183,7 +219,7 @@
    "label": "Second quarter 2027",
    "text": "European Union proposal on minimum performance standards",
    "sp": [
-    "D1"
+    "E1"
    ],
    "fuzzy": true
   },
@@ -192,7 +228,7 @@
    "label": "Mid-2027, earliest",
    "text": "Johor's reported freeze on water-cooled builds ends",
    "sp": [
-    "F2"
+    "H2"
    ],
    "fuzzy": true
   },
@@ -201,7 +237,7 @@
    "label": "Jul 2027",
    "text": "Oregon's data centre permit pause ends",
    "sp": [
-    "B2"
+    "C2"
    ],
    "fuzzy": true
   },
@@ -210,8 +246,17 @@
    "label": "Aug 2027",
    "text": "European Union public water-efficiency labels start for sites of 500 kilowatts or more",
    "sp": [
-    "D1",
-    "D4"
+    "E1",
+    "E4"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-08-31",
+   "label": "Summer 2027, possible",
+   "text": "Lake Mead could be projected below 1,010 feet, triggering consultation on deeper Colorado River cuts",
+   "sp": [
+    "B5"
    ],
    "fuzzy": true
   },
@@ -220,7 +265,7 @@
    "label": "2027 dry season",
    "text": "Test of commercial water supply in India's main hubs",
    "sp": [
-    "F1"
+    "H1"
    ],
    "fuzzy": true
   },
@@ -229,8 +274,17 @@
    "label": "Sep 2027, latest",
    "text": "Loudoun County's pause on new data centre applications ends",
    "sp": [
-    "B1",
-    "B2"
+    "C1",
+    "C2"
+   ],
+   "fuzzy": true
+  },
+  {
+   "d": "2027-09-30",
+   "label": "By Sep 2027",
+   "text": "Scotland's full national planning guidance for data centres",
+   "sp": [
+    "F5"
    ],
    "fuzzy": true
   },
@@ -239,7 +293,7 @@
    "label": "2028",
    "text": "Korea regional connections checkpoint; first Texas 765 kilovolt lines late in the year",
    "sp": [
-    "E1"
+    "G1"
    ],
    "fuzzy": true,
    "note": "The Texas lines are a driver for the North America power call"
@@ -249,7 +303,7 @@
    "label": "Aug 2029, earliest",
    "text": "Kashiwazaki-Kariwa Unit 7 restart",
    "sp": [
-    "E3"
+    "G3"
    ],
    "fuzzy": true
   }

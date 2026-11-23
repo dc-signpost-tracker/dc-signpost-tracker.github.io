@@ -282,6 +282,171 @@
    "id": "B",
    "region": "North America",
    "tab": "North America",
+   "constraint": "Water",
+   "from": "Moderate",
+   "to": "Moderate",
+   "dir": "Persisting",
+   "baseline": "2026-11-23",
+   "key": {
+    "label": "Eases to Minor if",
+    "text": "Zero-water, closed-loop cooling becomes the norm for new capacity; hub utilities expand reclaimed water; states fund water supply ahead of data centre demand; growth tilts to water-rich basins."
+   },
+   "depends": "Water stays a cost and a siting filter, not a hard stop, as developers adapt instead of leaving. Waterless cooling uses more electricity, and most of a data centre's water footprint sits in power generation that operators do not control. It intensifies to Severe if Colorado River cuts deepen, states turn disclosure rules into hard limits, or drought leads utilities to refuse supply.",
+   "bottom_line": "Water holds at Moderate in both periods: it adds cost and steers where sites go, but developers adapt with closed-loop cooling and reclaimed water instead of leaving. The risks run both ways, to Minor or to Severe.",
+   "sps": [
+    {
+     "id": "B1",
+     "name": "Closed-loop becomes standard",
+     "type": "Measured",
+     "feed": "Annual disclosures; state reporting",
+     "track": "Whether zero-water, closed-loop designs become the norm for new US capacity, as shown in hyperscale operators' water disclosures and new state reporting (California, New Jersey, Utah).",
+     "trigger": "Positive if on-site water use stays well below the national laboratory's projection for 2028.",
+     "status": "none",
+     "headline": "Microsoft: all new designs",
+     "summary": "Use zero-evaporation closed loops since August 2024. Not yet shown to be the norm across new US capacity",
+     "latest": "All new Microsoft data centre designs since August 2024 use zero-evaporation closed-loop cooling. Project Blue near Tucson moved away from evaporative cooling after the city blocked its original plan. The benchmark is Lawrence Berkeley National Laboratory's projection: US data centres used about 17 billion gallons directly in 2023, and hyperscale sites alone could use 16 to 33 billion gallons by 2028.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Next round of operator water disclosures; first state water reports",
+     "sources": "Operators' sustainability reports; Lawrence Berkeley National Laboratory; state water reporting in California, New Jersey and Utah",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: on-site use well below the 16 to 33 billion gallons projected for 2028"
+    },
+    {
+     "id": "B2",
+     "name": "Reclaimed water at scale",
+     "type": "Measured",
+     "feed": "Annual utility reports",
+     "track": "Whether hub utilities expand reclaimed water for data centres, sparing drinking water.",
+     "trigger": "Positive if other hub utilities follow Loudoun Water at scale.",
+     "status": "none",
+     "headline": "750 million gallons",
+     "summary": "Reclaimed water Loudoun Water supplied to data centres in 2025, in Northern Virginia",
+     "latest": "Loudoun Water, which serves the Northern Virginia hub, supplied over 750 million gallons of reclaimed water in 2025.",
+     "latestDate": "2025",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Utility annual reports for 2026",
+     "sources": "Loudoun Water; water utilities in the Phoenix, Dallas, Atlanta and Columbus hubs",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: other hub utilities supply reclaimed water at scale"
+    },
+    {
+     "id": "B3",
+     "name": "Water planning catches up",
+     "type": "Event",
+     "feed": "State water plans and budgets",
+     "track": "Whether states fund water supply ahead of data centre demand.",
+     "trigger": "Positive if states plan and fund supply for data centres, for example Texas adding them to its water plan and drawing on its US$20 billion water fund.",
+     "status": "none",
+     "headline": "Left out of Texas's plan",
+     "summary": "Texas's draft 2027 water plan omits data centres, which could use up to 2.7% of the state's water by 2030",
+     "latest": "Texas's draft 2027 state water plan omits data centres, which could use up to 2.7% of the state's water by 2030, according to the Houston Advanced Research Center. Texas has a US$20 billion water fund that could be drawn on.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Adoption of Texas's 2027 state water plan",
+     "sources": "Texas Water Development Board; Houston Advanced Research Center; state water plans",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: states plan and fund supply for data centres"
+    },
+    {
+     "id": "B4",
+     "name": "Growth shifts to water-rich basins",
+     "type": "Measured",
+     "feed": "Annual siting studies",
+     "track": "Whether the share of new capacity going to water-stressed basins falls as growth tilts to water-rich regions such as the Great Lakes.",
+     "trigger": "Positive if the share in water-stressed areas falls, without any project nearing the Great Lakes Compact's review trigger (a loss of 5 million gallons a day over 90 days).",
+     "status": "none",
+     "headline": "Two-thirds in stressed areas",
+     "summary": "Share of data centres built or in development since 2022 that sit in water-stressed areas",
+     "latest": "Two-thirds of data centres built or in development since 2022 sit in water-stressed areas such as southern Arizona, the Colorado River Basin and Texas, according to the World Resources Institute. Microsoft expects its Great Lakes campuses to stay far below the Great Lakes Compact's regional-review trigger.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Next siting update from the World Resources Institute",
+     "sources": "World Resources Institute; Ceres; Great Lakes Compact filings",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: share in water-stressed areas falls below two-thirds"
+    },
+    {
+     "id": "B5",
+     "name": "Colorado River shortage",
+     "type": "Event",
+     "feed": "Monthly",
+     "track": "Whether Lake Mead falls below 1,010 feet in the Bureau of Reclamation's monthly 24-Month Study projections, and how deep the next guidelines cut.",
+     "trigger": "Negative if Lake Mead is projected below 1,010 feet, which triggers consultation on deeper cuts, or if the next guidelines (from 2029) cut beyond 1.25 million acre-feet.",
+     "status": "none",
+     "headline": "1.25 million acre-feet cut",
+     "summary": "A year, in Lower Basin deliveries for 2027–28. Arizona loses 760,000 acre-feet, about 27% of its allocation",
+     "latest": "The Colorado River, which supplies the Phoenix, Tucson and Las Vegas hubs, is at record lows. Lower Basin deliveries are cut by 1.25 million acre-feet a year in 2027–28, with Arizona losing 760,000 acre-feet, about 27% of its allocation. Lake Mead could be projected below 1,010 feet by summer 2027. The framework allows cuts of up to 3 million acre-feet, with central Arizona first in line.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Monthly 24-Month Study; possible breach by summer 2027",
+     "sources": "US Bureau of Reclamation 24-Month Study; US Department of the Interior",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: Lake Mead projected below 1,010 feet, or cuts beyond 1.25 million acre-feet"
+    },
+    {
+     "id": "B6",
+     "name": "Hard limits in law",
+     "type": "Event",
+     "feed": "Weekly while legislatures sit",
+     "track": "Whether 2027 state legislatures turn water disclosure rules into hard limits.",
+     "trigger": "Negative if a state enacts hard limits on data centre water use or pauses approvals, for example Texas Senate Bill 338 or a statewide pause in Arizona.",
+     "status": "none",
+     "headline": "Disclosure, not limits",
+     "summary": "State rules so far mostly require reporting. Texas Senate Bill 338 and an Arizona pause are proposed, not law",
+     "latest": "Rules are tightening, so far mostly through disclosure. From 2027 California requires a water-supply assessment before approving a data centre and makes developers fund the water infrastructure they need. Virginia, New Jersey and Utah now require water reporting. Locally, Marana bars drinking water for data centre cooling and Chandler caps data centre water use. Proposed: Texas Senate Bill 338 (water-efficient cooling for new data centres), under a Governor-elect who has pledged to pause approvals, and a statewide pause backed by Arizona's new legislature and Attorney General.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Texas Legislature convenes 12 Jan 2027; Arizona session opens Jan 2027",
+     "sources": "Texas Legislature Online; Arizona Legislature; state bill trackers",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: a state enacts hard water limits or a pause"
+    },
+    {
+     "id": "B7",
+     "name": "Drought curtailments",
+     "type": "Event",
+     "feed": "Weekly",
+     "track": "Whether drought leads utilities to curtail or refuse data centre water supply in Georgia, Northern Virginia or central Texas.",
+     "trigger": "Negative if utilities in these hubs curtail or refuse supply because of drought.",
+     "status": "none",
+     "headline": "Some refusals in Georgia",
+     "summary": "Some Georgia utilities already refuse large water requests. Northern Virginia and central Texas are also watched",
+     "latest": "Some utilities in Georgia already refuse large water requests. Northern Virginia and central Texas are the other hubs watched, using the US Drought Monitor.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Weekly US Drought Monitor; summer 2027 season",
+     "sources": "US Drought Monitor; utility notices in Georgia, Northern Virginia and central Texas",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: drought-driven curtailment or refusal in a major hub"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "region": "North America",
+   "tab": "North America",
    "constraint": "Land",
    "from": "Severe",
    "to": "Severe",
@@ -293,7 +458,7 @@
    "depends": "Local consent. Over half of large US projects were blocked or delayed in the second quarter of 2026. New York, Oregon and Texas have paused state permits, and an override of local vetoes looks unlikely.",
    "sps": [
     {
-     "id": "B1",
+     "id": "C1",
      "name": "Projects disrupted",
      "type": "Event",
      "feed": "Report, quarterly",
@@ -324,7 +489,7 @@
      "threshold": "Trigger: below 25% for several quarters"
     },
     {
-     "id": "B2",
+     "id": "C2",
      "name": "State or federal override",
      "type": "Event",
      "feed": "Weekly while legislatures sit",
@@ -346,7 +511,7 @@
      "threshold": "Trigger: a measure that limits local vetoes"
     },
     {
-     "id": "B3",
+     "id": "C3",
      "name": "Community benefit deals",
      "type": "Event",
      "feed": "Manual, monthly",
@@ -371,7 +536,7 @@
    "bottom_line": "Land stays Severe in both periods: local opposition blocks or delays over half of large projects, and no state or federal override of local vetoes is in sight."
   },
   {
-   "id": "C",
+   "id": "D",
    "region": "Europe",
    "tab": "Europe",
    "constraint": "Power",
@@ -385,7 +550,7 @@
    "depends": "Grid fixes for the core hubs land after 2030: Noord-Holland 2033 to 2038, Frankfurt mid-2030s, West London 2037. Secondary markets are rationing access, and on-site gas is limited by carbon pricing.",
    "sps": [
     {
-     "id": "C1",
+     "id": "D1",
      "name": "Earlier grid expansions",
      "type": "Event",
      "feed": "Quarterly check",
@@ -407,7 +572,7 @@
      "threshold": "Trigger: a core-hub fix before 2030"
     },
     {
-     "id": "C2",
+     "id": "D2",
      "name": "France and the Nordics as relief valves",
      "type": "Event",
      "feed": "Reports quarterly; prices daily",
@@ -429,7 +594,7 @@
      "threshold": "Trigger: overflow lands at scale outside core hubs"
     },
     {
-     "id": "C3",
+     "id": "D3",
      "name": "Spain's final rules",
      "type": "Event",
      "feed": "Event alerts",
@@ -468,7 +633,7 @@
    "bottom_line": "Power stays Severe in both periods: grid fixes for Noord-Holland, Frankfurt and West London land only in the 2030s, and secondary markets are rationing access."
   },
   {
-   "id": "D",
+   "id": "E",
    "region": "Europe",
    "tab": "Europe",
    "constraint": "Water",
@@ -482,7 +647,7 @@
    "depends": "Growth is moving into the water-scarce south. The European Union rating scheme and national rules turn water into a condition for building.",
    "sps": [
     {
-     "id": "D1",
+     "id": "E1",
      "name": "European Union minimum standards",
      "type": "Event",
      "feed": "Event alerts",
@@ -513,7 +678,7 @@
      "threshold": "Watch: limits near 0.4 litres per kilowatt-hour"
     },
     {
-     "id": "D2",
+     "id": "E2",
      "name": "Spain's final rules on water",
      "type": "Event",
      "feed": "Event alerts",
@@ -549,7 +714,7 @@
      "threshold": "Watch: 0.1 litres per kilowatt-hour or less"
     },
     {
-     "id": "D3",
+     "id": "E3",
      "name": "Drought",
      "type": "Event",
      "feed": "Download, every 10 days in summer",
@@ -580,7 +745,7 @@
      "threshold": "Trigger: wider or longer droughts"
     },
     {
-     "id": "D4",
+     "id": "E4",
      "name": "Pipeline in water-stressed areas",
      "type": "Event",
      "feed": "Calculated, annual",
@@ -602,7 +767,7 @@
      "threshold": "Trigger: a rising share in water-stressed areas"
     },
     {
-     "id": "D5",
+     "id": "E5",
      "name": "French permit refusals",
      "type": "Event",
      "feed": "Manual; likely data gap",
@@ -627,7 +792,172 @@
    "bottom_line": "Water rises from Minor to Moderate after 2030, as growth moves into the water-scarce south and rules start to make water use a condition for building."
   },
   {
-   "id": "E",
+   "id": "F",
+   "region": "Europe",
+   "tab": "Europe",
+   "constraint": "Land",
+   "from": "Moderate",
+   "to": "Moderate",
+   "dir": "Persisting",
+   "baseline": "2026-11-23",
+   "key": {
+    "label": "Eases to Minor if",
+    "text": "The European Union's fast-track permitting survives with a 12-month cap; England's national consent route is adopted and delivers; France's fast-track produces permits that survive court challenges."
+   },
+   "depends": "Land decides where and how fast capacity is built, not whether it is. As power-short core hubs close, capacity moves to secondary, brownfield and peripheral sites, where fast-tracks shorten approvals but larger campuses draw more organised opposition. The two forces broadly offset, but fast-track routes are untested and contested. It intensifies to Severe if rejections keep rising, local bans spread, national decision-makers side against developers on appeal, or powered-land prices keep climbing.",
+   "bottom_line": "Land holds at Moderate in both periods: scarce, zoned land in the core hubs and rising local refusals are broadly offset by national fast-track routes. Those routes are untested, so the risks run both ways, to Minor or to Severe.",
+   "sps": [
+    {
+     "id": "F1",
+     "name": "EU fast-track permitting",
+     "type": "Event",
+     "feed": "Event alerts",
+     "track": "Whether the European Union's Cloud and AI Development Act keeps mandatory acceleration zones with a 12-month permit cap, and whether member states place zones where grid capacity is available.",
+     "trigger": "Positive if the act keeps mandatory acceleration zones and the 12-month cap.",
+     "status": "none",
+     "headline": "12-month cap proposed",
+     "summary": "The proposed Cloud and AI Development Act would cap permitting in acceleration zones at 12 months; unlikely to bite before about 2029",
+     "latest": "The European Union's proposed Cloud and AI Development Act would cap permitting in acceleration zones at 12 months. The Council takes up its compromise on the data centre part from 24 Nov 2026, and the European Parliament's position is planned for April 2027. The act is unlikely to bite before about 2029.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Council talks from 24 Nov 2026; Parliament's position April 2027",
+     "sources": "Council of the European Union; European Parliament legislative observatory; European Commission",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: 12-month cap and mandatory zones survive"
+    },
+    {
+     "id": "F2",
+     "name": "UK national route",
+     "type": "Event",
+     "feed": "Event alerts",
+     "track": "Whether England adopts its data centre National Policy Statement with the proposed presumption of consent and 100 megawatt threshold intact, and whether the projects already in the national regime are consented within about 18 months.",
+     "trigger": "Positive if the statement is adopted intact and the three directed projects, such as Wapseys Wood, are consented within about 18 months.",
+     "status": "none",
+     "headline": "Consultation open",
+     "summary": "England's draft National Policy Statement proposes a presumption of consent above 100 megawatts; consultation closes 8 Jan 2027",
+     "latest": "England offers an opt-in national consent route alongside five AI Growth Zones. Its draft data centre National Policy Statement proposes a presumption of consent and a 100 megawatt threshold; the consultation closes on 8 Jan 2027. Three projects, including Wapseys Wood, were directed into the national regime by July 2026.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Consultation closes 8 Jan 2027",
+     "sources": "UK government consultations; Planning Inspectorate national infrastructure register",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: statement adopted intact; directed projects consented in about 18 months"
+    },
+    {
+     "id": "F3",
+     "name": "France's fast-track",
+     "type": "Event",
+     "feed": "Monthly",
+     "track": "Whether France grants major-national-interest status to large data centres, how many of its 63 ready sites win permits, and whether those permits survive court challenges.",
+     "trigger": "Positive if France grants the status, permits follow, and they survive in court.",
+     "status": "none",
+     "headline": "None granted yet",
+     "summary": "No large data centre had major-national-interest status by mid-October 2026. 63 ready sites identified, 26 already secured",
+     "latest": "France can designate data centres as projects of major national interest and has identified 63 data-centre-ready sites, 26 of them already secured. No large data centre had been granted the status by mid-October 2026. In July 2026 a French court suspended the permit for a 40 megawatt AI data centre at Alixan.",
+     "latestDate": "Mid-Oct 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Monthly check of decrees and court rulings",
+     "sources": "Légifrance; French economy ministry; administrative court rulings",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: status granted and permits survive court challenges"
+    },
+    {
+     "id": "F4",
+     "name": "Projects rejected or restricted",
+     "type": "Measured",
+     "feed": "Quarterly",
+     "track": "Whether the European Data Centre Monitor's count of rejected or restricted projects keeps rising after a likely record 2026, especially in overflow markets such as Spain (protests in Aragón) and France.",
+     "trigger": "Negative if the count keeps rising after 2026.",
+     "status": "none",
+     "headline": "Over 70 in four months",
+     "summary": "Projects rejected or restricted in January to April 2026, more than in all of 2025",
+     "latest": "More than 70 projects were rejected or restricted in January to April 2026, more than in all of 2025, according to the European Data Centre Monitor. Councils from Groß-Gerau near Frankfurt to Cologno Monzese near Milan and Pyhäjoki in Finland have refused schemes.",
+     "latestDate": "Jan to Apr 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Next update of the European Data Centre Monitor",
+     "sources": "European Data Centre Monitor; local planning decisions",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: the count keeps rising after a record 2026"
+    },
+    {
+     "id": "F5",
+     "name": "Local bans spread",
+     "type": "Event",
+     "feed": "Monthly",
+     "track": "Whether zoning bans and pauses spread beyond the Netherlands and Scotland, and whether Scotland's guidance reopens consents on clear terms.",
+     "trigger": "Negative if bans or pauses spread to further countries or hubs. Scotland reopening consents on clear terms would count the other way.",
+     "status": "none",
+     "headline": "Netherlands and Scotland",
+     "summary": "Dutch zoning confines hyperscale sites to two areas; Scotland has paused hyperscale decisions pending national guidance",
+     "latest": "The Netherlands confines new hyperscale data centres (over 10 hectares and 70 megawatts) to two designated areas, and Amsterdam and Zaanstad bar new data centres above 2,000 square metres and 5 megavolt-amperes. Frankfurt limits new colocation data centres to designated districts. Scotland has paused hyperscale decisions pending national guidance: a progress report is due by end-2026 and full guidance by September 2027.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Scotland's progress report by end-2026; full guidance by Sep 2027",
+     "sources": "Scottish Government planning guidance; Dutch national and municipal zoning rules; city of Frankfurt",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: bans or pauses spread beyond the Netherlands and Scotland"
+    },
+    {
+     "id": "F6",
+     "name": "Contested appeals",
+     "type": "Event",
+     "feed": "Event alerts",
+     "track": "Whether national decision-makers back developers on contested sites, for example Scottish Ministers' ruling on Edinburgh's South Gyle appeal and English green-belt appeals.",
+     "trigger": "Negative if national decision-makers side against developers on contested sites.",
+     "status": "none",
+     "headline": "South Gyle awaits ruling",
+     "summary": "Scottish Ministers have recalled the appeal on Edinburgh's South Gyle scheme, about 210 megawatts",
+     "latest": "Scottish Ministers have recalled the appeal over Edinburgh's South Gyle data centre (about 210 megawatts) and will decide it themselves. English green-belt appeals are also pending.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Scottish Ministers' ruling on South Gyle",
+     "sources": "Scottish Government planning appeals; Planning Inspectorate appeal decisions",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: national rulings go against developers"
+    },
+    {
+     "id": "F7",
+     "name": "Powered-land prices",
+     "type": "Measured",
+     "feed": "Half-yearly",
+     "track": "Whether prices for power-ready data centre plots in the core hubs keep climbing, a sign that consented, powered land is getting scarcer.",
+     "trigger": "Negative if prices for power-ready plots in the core hubs keep climbing.",
+     "status": "none",
+     "headline": "€1,000–2,000+ per m²",
+     "summary": "Power-ready plots in Greater Frankfurt, against about €350 for industrial land",
+     "latest": "Power-ready plots in Greater Frankfurt's designated districts sell for €1,000 to over €2,000 per square metre, against about €350 for industrial land, according to Colliers. Planned hyperscale campuses now sit about 175 kilometres from hub cities.",
+     "latestDate": "Baseline, Nov 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Next broker land-price update",
+     "sources": "Colliers and other broker reports",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: power-ready plot prices keep climbing"
+    }
+   ]
+  },
+  {
+   "id": "G",
    "region": "North Asia excluding China",
    "tab": "North Asia ex-China",
    "constraint": "Power",
@@ -641,7 +971,7 @@
    "depends": "Korea's AI Data Centre Act and Japan's Watt-Bit policy route capacity to regions with grid headroom. Nuclear restarts add firm supply for Tokyo.",
    "sps": [
     {
-     "id": "E1",
+     "id": "G1",
      "name": "Regional connections",
      "type": "Event",
      "feed": "Manual, twice a year",
@@ -662,7 +992,7 @@
      "threshold": "Trigger: regional sites connect in volume by 2028"
     },
     {
-     "id": "E2",
+     "id": "G2",
      "name": "Japanese connection times",
      "type": "Event",
      "feed": "Manual, twice a year",
@@ -700,7 +1030,7 @@
      "threshold": "Trigger: regional times stay well below Tokyo's"
     },
     {
-     "id": "E3",
+     "id": "G3",
      "name": "Nuclear restarts",
      "type": "Time series",
      "feed": "Monthly check",
@@ -722,7 +1052,7 @@
      "threshold": "Trigger: restarts continue; Unit 7 on schedule"
     },
     {
-     "id": "E4",
+     "id": "G4",
      "name": "Korea's exemption threshold",
      "type": "Event",
      "feed": "Event alerts",
@@ -744,7 +1074,7 @@
      "threshold": "Watch: a higher threshold (50 to 100 megawatts) widens the route out of Seoul"
     },
     {
-     "id": "E5",
+     "id": "G5",
      "name": "Korean transmission build",
      "type": "Event",
      "feed": "Manual, annual",
@@ -769,7 +1099,7 @@
    "bottom_line": "Power eases from Severe to Moderate after 2030 if Korea and Japan succeed in routing data centres to regions with spare grid, with nuclear restarts adding firm supply for Tokyo."
   },
   {
-   "id": "F",
+   "id": "H",
    "region": "South and Southeast Asia",
    "tab": "South & Southeast Asia",
    "constraint": "Water",
@@ -783,7 +1113,7 @@
    "depends": "Growth is concentrated in water-stressed hubs: Johor, Mumbai, Thailand's Eastern Economic Corridor and West Java. In droughts, governments put households first.",
    "sps": [
     {
-     "id": "F1",
+     "id": "H1",
      "name": "Supply and rules keep pace",
      "type": "Event",
      "feed": "Mixed, daily to annual",
@@ -805,7 +1135,7 @@
      "threshold": "Trigger: supply and rules keep up with the pipeline"
     },
     {
-     "id": "F2",
+     "id": "H2",
      "name": "Shift away from water cooling",
      "type": "Event",
      "feed": "Event alerts and annual survey",
@@ -837,5 +1167,5 @@
   }
  ],
  "insight": "To 2030, power is the binding constraint in North America, Europe and North Asia. After 2030 it eases in North America and North Asia, but Europe's core hubs wait for grid fixes into the 2030s, and growth moving into water-stressed areas makes water the rising constraint in southern Europe and South and Southeast Asia.",
- "coverage_note": "The tracker follows the four region and constraint pairs where the rating changes between 2026–30 and beyond 2030, plus the two where a Severe rating persists. Every other pair keeps the same rating in both periods, so for now there is no shift to track."
+ "coverage_note": "The tracker follows eight region and constraint pairs: the four where the rating changes between 2026–30 and beyond 2030, the two where a Severe rating persists, and the two Moderate pairs that complete the picture for North America and Europe, where the question is whether Moderate eases to Minor or intensifies to Severe."
 }

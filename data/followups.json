@@ -2,7 +2,12 @@
  "about": "Readings that rest on press reports and still need checking at the primary source. Work through at most two per morning; remove an item once done.",
  "items": [
   {
-   "signpost": "E2",
+   "signpost": "B1",
+   "priority": 1,
+   "task": "New calls B (North America Water, B1 to B7) and F (Europe Land, F1 to F7) were added on 23 Nov 2026 with baseline readings that have not been checked at a primary source. Over the next digests, open the primary source for each of the 14 readings (two or more per run, in addition to the usual two follow-ups if time allows), then set source_url, retrieved_on and verify. Start with B5 (Bureau of Reclamation 24-Month Study), F1 (Council and Parliament records), F2 (UK consultation page) and F4 (European Data Centre Monitor)."
+  },
+  {
+   "signpost": "G2",
    "priority": 1,
    "task": "Find the Osaka Prefecture document (reported as dated 9 Oct 2026) on grid capacity along the Osaka Bay coast and the time needed to expand it. If regional connection times are no longer well below Tokyo's, this could change the status: treat as group A. The paper is among the documents of the 2nd Osaka Digital Infrastructure Council meeting of 9 Oct 2026, listed at https://www.pref.osaka.lg.jp/o060020/senryaku_kikaku/smartcity_senryaku/kyogikai.html ; the progress report is https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf . The file would not open on 20 Nov 2026; the owner asked for a retry at the next digest. Retried on 21 Nov 2026: the list page and the progress report again would not open. The paper from the first meeting (28 Apr 2026, https://www.pref.osaka.lg.jp/documents/128924/shiryo.pdf) was read: it gives Osaka-wide connection lead times of 'several years to five years or more' and no figure for the bay coast. Retried again later on 21 Nov 2026: both Osaka pages again could not be opened by the automated reader."
   },
@@ -12,17 +17,17 @@
    "task": "A3 each quarter: add Mitsubishi Heavy Industries' large-frame orders and shipments (and its US units) beside GE Vernova's, and Doosan Enerbility's US orders from its announcements. Find a primary statement of the earliest delivery year on sale (results deck or call transcript) for GE Vernova and Mitsubishi. Confirm the first-half 2026 US order count by maker at a better source than the press report. Large frames for utilities only."
   },
   {
-   "signpost": "F2",
+   "signpost": "H2",
    "priority": 2,
    "task": "Find an original source (the Johor state government or Bernama) for the reported request that operators hold water-cooled expansions until mid-2027. The air-cooling statement of 10 Mar 2026 is already confirmed at Bernama and the owner kept the status at Not yet on 20 Nov 2026. Checked on 21 Nov 2026: no original source found. The mid-2027 hold traces to a South China Morning Post report citing unnamed officials (repeated by Lowyat, 20 Nov 2025). A Bernama report of a written parliamentary reply by the Ministry of Investment, Trade and Industry (11 Feb 2026, carried by EdgeProp) says that as of January 2026 no data centre investment had been deferred. Still to try: a Johor state statement from around November 2025, and The Edge Malaysia's report (https://theedgemalaysia.com/node/781121)."
   },
   {
-   "signpost": "C3",
+   "signpost": "D3",
    "priority": 2,
-   "task": "Read the text of Spain's royal decree on data centres once it is in the official gazette (approved 20 Nov 2026; the owner set C3 and D2 to Turned negative on 21 Nov 2026). Confirm the date it takes effect, which data centres the water rule covers and the unit of the 0.1 ceiling, then update C3 and D2."
+   "task": "Read the text of Spain's royal decree on data centres once it is in the official gazette (approved 20 Nov 2026; the owner set D3 and E2 to Turned negative on 21 Nov 2026). Confirm the date it takes effect, which data centres the water rule covers and the unit of the 0.1 ceiling, then update D3 and E2."
   },
   {
-   "signpost": "E4",
+   "signpost": "G4",
    "priority": 2,
    "task": "Open the Korean ministry's legislative notice of 20 Nov 2026 and confirm the 50 megawatt exemption threshold."
   },
@@ -37,7 +42,7 @@
    "task": "Confirm the 16 Nov 2026 filings in the federal regulator's dockets EL26-67 to EL26-72, and whether Southwest Power Pool filed on 20 Nov."
   },
   {
-   "signpost": "E3",
+   "signpost": "G3",
    "priority": 3,
    "task": "Verify or replace the cumulative restarted nuclear capacity figure of 13,946 megawatts."
   }
