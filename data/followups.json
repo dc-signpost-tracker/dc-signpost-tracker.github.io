@@ -4,7 +4,7 @@
   {
    "signpost": "B1",
    "priority": 1,
-   "task": "Calls B (North America Water) and F (Europe Land) were added on 23 Nov 2026 with baseline readings not checked at a primary source. Checked on 25 Nov 2026 and updated: B1, B2, B3, B4, F1, F2, F5, F6, F7, F8. Still to do: B5 (primary documents read on 25 Nov; the reading needs correcting and is with the owner as a decision); B6 (confirm at California's legislature site whether the water-supply assessment duty under Assembly Bill 2469 starts on 1 Jan 2028, not 2027; check the Virginia, New Jersey, Utah, Marana and Chandler rules); B7 (no source found for Georgia utilities refusing large water requests: find one or soften the reading); F3 (the Alixan court order of 10 Jul 2026 was read and gives long-term power above 60 megawatts, not 40; the 63 and 26 site figures are press-only and the 26 dates from January 2026; check Légifrance for any decree granting the status); F4 (the European Data Centre Monitor's own page and publisher were not found; the count is second-hand); F5 (Dutch, Amsterdam and Frankfurt rules at source)."
+   "task": "Calls B (North America Water) and F (Europe Land) were added on 23 Nov 2026 with baseline readings not checked at a primary source. Checked on 25 Nov 2026 and updated: B1, B2, B3, B4, F1, F2, F5, F6, F7, F8. Still to do: B6 (confirm at California's legislature site whether the water-supply assessment duty under Assembly Bill 2469 starts on 1 Jan 2028, not 2027; check the Virginia, New Jersey, Utah, Marana and Chandler rules); B7 (no source found for Georgia utilities refusing large water requests: find one or soften the reading); F3 (the Alixan court order of 10 Jul 2026 was read and gives long-term power above 60 megawatts, not 40; the 63 and 26 site figures are press-only and the 26 dates from January 2026; check Légifrance for any decree granting the status); F4 (the European Data Centre Monitor's own page and publisher were not found; the count is second-hand); F5 (Dutch, Amsterdam and Frankfurt rules at source)."
   },
   {
    "signpost": "A7",
@@ -14,7 +14,7 @@
   {
    "signpost": "G2",
    "priority": 1,
-   "task": "The Osaka Prefecture progress report of 9 Oct 2026 (https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf, slide 17) was opened and read on 25 Nov 2026. It says the Osaka Bay coast has almost no spare grid capacity and that reinforcement takes about 8 years; Keihanna more than 10 years; southern Osaka has a few hundred megawatts now and more than 10 years beyond that. The '3 to 5 years' holds only for points with spare capacity (press report of the grid operator's map). The document predates the 12 Nov 2026 baseline. Put to the owner as a decision in the 25 Nov 2026 digest; update G2 once he answers. The minutes (1009gizi.pdf) and the grid operator's map are still unread."
+   "task": "Done on 25 Nov 2026: G2 reading updated from Osaka's paper of 9 Oct 2026; the owner kept Not yet. Still to read: the meeting minutes (1009gizi.pdf) and the grid operator's capacity map behind the '3 to 5 years where spare' figure."
   },
   {
    "signpost": "A3",
@@ -39,7 +39,7 @@
   {
    "signpost": "G3",
    "priority": 3,
-   "task": "The Japan Atomic Industrial Forum's status sheet of 7 Aug 2026 (https://www.jaif.or.jp/cms_admin/wp-content/uploads/2026/08/jp-npps-operation20260807.pdf), read on 25 Nov 2026, gives 15 restarted reactors totalling 14,609 megawatts, not 13,946. Changing the figure changes a point on the G3 chart, so it was put to the owner in the 25 Nov 2026 digest. Also check the restart date of Kashiwazaki-Kariwa Unit 6 (the reading says 9 Feb 2026; a press headline says 21 Jan 2026)."
+   "task": "Done on 25 Nov 2026: 14,609 megawatts applied with the owner's approval. Still to do: check the restart date of Kashiwazaki-Kariwa Unit 6 (the reading's source says 9 Feb 2026; a press headline says 21 Jan 2026), and check the earlier chart points against the Japan Atomic Industrial Forum's sheets (tell the owner before changing any)."
   },
   {
    "signpost": "C1",

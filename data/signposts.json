@@ -585,16 +585,25 @@
      "trigger": "Negative if Lake Mead is projected below 1,010 feet, which triggers consultation on deeper cuts, or if the next guidelines (from 2029) cut beyond 1.25 million acre-feet.",
      "status": "none",
      "headline": "1.25 million acre-feet cut",
-     "summary": "A year, in Lower Basin deliveries for 2027–28. Arizona loses 760,000 acre-feet, about 27% of its allocation",
-     "latest": "The Colorado River, which supplies the Phoenix, Tucson and Las Vegas hubs, is at record lows. Lower Basin deliveries are cut by 1.25 million acre-feet a year in 2027–28, with Arizona losing 760,000 acre-feet, about 27% of its allocation. Lake Mead could be projected below 1,010 feet by summer 2027. The framework allows cuts of up to 3 million acre-feet, with central Arizona first in line.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Monthly 24-Month Study; possible breach by summer 2027",
+     "summary": "A year, in Lower Basin deliveries for 2027–28. The November study keeps Lake Mead above the 1,010-foot trigger, at a low of 1,014 feet",
+     "latest": "The Colorado River, which supplies the Phoenix, Tucson and Las Vegas hubs, reached record lows in August 2026. Lower Basin deliveries are cut by 1.25 million acre-feet a year in 2027 and 2028; if the Lower Basin states carry out their proposed sharing agreement, Arizona's share of the cut is 760,000 acre-feet, about 27% of its normal allocation. Under the 2027–28 operating guidelines, a most-probable projection of Lake Mead below 1,010 feet starts consultation on further action. The Bureau of Reclamation's November 2026 study, of 16 Nov, keeps the lake above that line: its most-probable runs reach a low of 1,014.0 feet in July 2027 (1,022.0 feet if 7 million acre-feet are released from Lake Powell), and only the minimum-probable run falls below 1,010 feet, from April 2028. The September and October studies are reported to have shown the lake below 1,010 feet in July 2027; both predate this call's baseline of 23 Nov 2026.",
+     "latestDate": "16 Nov 2026 study",
+     "source_url": "https://www.usbr.gov/lc/region/g4000/24mo_6.pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "December 24-Month Study, mid-December 2026; summer 2027 low point",
      "sources": "US Bureau of Reclamation 24-Month Study; US Department of the Interior",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
-     "status_reviewed_on": "2026-11-23",
+     "history": [
+      {
+       "date": "2026-11-16",
+       "note": "Reclamation's November 24-Month Study read directly; owner kept the status at Not yet on 25 Nov 2026",
+       "kind": "reading",
+       "brief": "The November study keeps Lake Mead above the 1,010-foot trigger, at a most-probable low of 1,014 feet in July 2027",
+       "source_url": "https://www.usbr.gov/lc/region/g4000/24mo_6.pdf",
+       "retrieved_on": "2026-11-25"
+      }
+     ],
+     "verify": "The November study (linked; also https://www.usbr.gov/lc/region/g4000/24mo_MIN.pdf), the 2027–28 operating guidelines and the Interior Department's release of 21 Aug 2026 were read directly. The 27% is worked out from the guidelines' figures (760,000 of 2.8 million acre-feet). The September and October projections are from press reports (Newsweek, 17 Sep 2026; 8newsnow, 15 Oct 2026). The earlier statement that the framework allows cuts of up to 3 million acre-feet with central Arizona first in line was not found in the documents read and has been removed.",
+     "status_reviewed_on": "2026-11-25",
      "threshold": "Trigger: Lake Mead projected below 1,010 feet, or cuts beyond 1.25 million acre-feet",
      "last_checked_on": "2026-11-25"
     },
@@ -1479,13 +1488,13 @@
      "track": "Quoted grid connection times for new data centres in Hokkaido, Kyushu and Osaka against Tokyo.",
      "trigger": "Positive if regional times stay well below Tokyo's.",
      "status": "none",
-     "headline": "3 to 5 years",
-     "summary": "Osaka, against 8 to 10 years in Tokyo",
-     "latest": "Tokyo 8 to 10 years; Osaka 3 to 5 years",
-     "latestDate": "Industry research, Sep 2025",
-     "source_url": "https://www.jll.com/en-in/insights/japan-s-data-centre-market-expands-beyond-tokyo-and-osaka",
-     "retrieved_on": "2026-11-20",
-     "next": "Next half-yearly check",
+     "headline": "3 to 5 years where spare",
+     "summary": "In Osaka where spare capacity exists; about 8 years on the bay coast and over 10 in parts, against 8 to 10 in Tokyo",
+     "latest": "Tokyo takes 8 to 10 years to connect a large data centre. In Osaka, 3 to 5 years applies only where the grid already has spare capacity. Osaka Prefecture's paper of 9 Oct 2026 says the Osaka Bay coast has almost no spare capacity, that strengthening the grid there takes about 8 years, and that large headroom will not appear even afterwards. It gives more than 10 years for Keihanna, and for southern Osaka beyond the few hundred megawatts it can take now. Saito could gain gigawatt-scale capacity if grid work is tied to site development. The paper predates the 12 Nov 2026 baseline.",
+     "latestDate": "9 Oct 2026 prefecture paper",
+     "source_url": "https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "Next half-yearly check; the grid operator's next capacity map",
      "sources": "Japan's grid coordination body (OCCTO); regional grid operators' capacity maps; ministry Watt-Bit materials",
      "gauge": {
       "label": "Quoted connection time, Osaka",
@@ -1503,9 +1512,18 @@
       "vText": "3 to 5 years",
       "tText": "Tokyo 8 to 10"
      },
-     "history": [],
-     "verify": "The Tokyo figure is confirmed at the linked source; the Osaka figure is attributed to the same research by market reports. A claim that Osaka's coastal grid now needs about eight years to expand is being checked.",
-     "status_reviewed_on": "2026-11-20",
+     "history": [
+      {
+       "date": "2026-10-09",
+       "note": "Osaka Prefecture's paper of 9 Oct 2026 read directly on 25 Nov 2026; owner kept the status at Not yet",
+       "kind": "reading",
+       "brief": "Osaka's own paper says strengthening the bay-coast grid takes about 8 years, and more than 10 in parts",
+       "source_url": "https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf",
+       "retrieved_on": "2026-11-25"
+      }
+     ],
+     "verify": "The Osaka figures were read directly in the prefecture's progress report to its digital infrastructure council (linked, slide 17). The Tokyo figure is confirmed at industry research (https://www.jll.com/en-in/insights/japan-s-data-centre-market-expands-beyond-tokyo-and-osaka). The 3 to 5 years for points with spare capacity is from a press report of the grid operator's map (Postation, 14 Oct 2026); the map itself was not opened.",
+     "status_reviewed_on": "2026-11-25",
      "last_checked_on": "2026-11-25",
      "threshold": "Trigger: regional times stay well below Tokyo's"
     },
@@ -1519,14 +1537,20 @@
      "status": "none",
      "headline": "15 reactors",
      "summary": "Operating after Unit 6 restarted; Unit 7 delayed to 2029 or 2030",
-     "latest": "15 reactors operating after Kashiwazaki-Kariwa Unit 6 restarted on 9 Feb 2026. Unit 7 is delayed to 2029 or 2030.",
-     "latestDate": "2 Mar 2026",
-     "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-     "retrieved_on": "2026-11-20",
+     "latest": "15 reactors, totalling 14,609 megawatts, have restarted under the post-Fukushima safety rules, the latest being Kashiwazaki-Kariwa Unit 6. Unit 7 is delayed to 2029 or 2030.",
+     "latestDate": "7 Aug 2026 status sheet",
+     "source_url": "https://www.jaif.or.jp/cms_admin/wp-content/uploads/2026/08/jp-npps-operation20260807.pdf",
+     "retrieved_on": "2026-11-25",
      "next": "Unit 7 not before Aug 2029",
      "sources": "Nuclear Regulation Authority; Japan Atomic Industrial Forum status sheets; International Atomic Energy Agency reactor database",
-     "history": [],
-     "verify": "The cumulative restarted capacity of 13,946 megawatts has not been verified.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Restarted capacity corrected from 13,946 to 14,609 megawatts in the reading and the 2026 chart point, from the Japan Atomic Industrial Forum's sheet of 7 Aug 2026, with the owner's approval",
+       "kind": "note"
+      }
+     ],
+     "verify": "The count of 15 reactors and 14,609 megawatts was read directly in the Japan Atomic Industrial Forum's status sheet of 7 Aug 2026 (linked); it replaces an unverified 13,946 megawatts, at the owner's approval on 25 Nov 2026. The restart date of Unit 6 (9 Feb 2026, from the US Energy Information Administration, https://www.eia.gov/todayinenergy/detail.php?id=67244) is being checked against a press report of 21 Jan 2026. The Unit 7 delay is not stated in the status sheet.",
      "status_reviewed_on": "2026-11-20",
      "last_checked_on": "2026-11-25",
      "threshold": "Trigger: restarts continue; Unit 7 on schedule"
