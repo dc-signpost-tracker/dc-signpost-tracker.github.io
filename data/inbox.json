@@ -10,7 +10,7 @@
     "A5"
    ],
    "retrieved_on": "2026-11-22",
-   "state": "new",
+   "state": "reviewed",
    "excerpt": [
     "Docket Numbers: ER27-506-001. Applicants: California Independent System Operator Corporation. Description: Compliance filing: 2026-11-18 Amendment to Large Load Amendment in Original Docket Number to be effective N/A. Filed Date: 11/18/26. Accession Number: 20261118-5181. Comment Date: 5 p.m. ET 12/9/26.",
     "Docket Numbers: ER27-526-000. Applicants: Midcontinent Independent System Operator, Inc. Description: 205(d) Rate Filing: 2026-11-16_Large Load Review, Cost Recovery and Transmission Services Filing to be effective 2/14/2027. Filed Date: 11/16/26. Accession Number: 20261116-5323. Comment Date: 5 p.m. ET 12/16/26.",
@@ -20,7 +20,8 @@
     "Docket Numbers: ER27-532-000. Applicants: California Independent System Operator Corporation. Description: 205(d) Rate Filing: 2026-11-16 Large Load Tariff Amendment: Resubmission. Filed Date: 11/16/26. Accession Number: 20261116-5343. Comment Date: 5 p.m. ET 12/16/26.",
     "Docket Numbers: ER27-534-000. Applicants: DesertLink, LLC. Description: 205(d) Rate Filing: Revisions to TO Tariff to Provide for Large Load Interconnection. Filed Date: 11/16/26. Accession Number: 20261116-5346. Comment Date: 5 p.m. ET 12/7/26."
    ],
-   "excerpt_from": "https://www.federalregister.gov/documents/full_text/text/2026/11/23/2026-23765.txt"
+   "excerpt_from": "https://www.federalregister.gov/documents/full_text/text/2026/11/23/2026-23765.txt",
+   "reviewed_on": "2026-11-25"
   },
   {
    "title": "Real Decreto 1032/2026, de 20 de noviembre, por el que se regulan los requisitos de sostenibilidad energética, medioambiental y de resiliencia y soberanía digital aplicables a los centros de datos.",
@@ -33,7 +34,8 @@
     "E2"
    ],
    "retrieved_on": "2026-11-22",
-   "state": "new"
+   "state": "reviewed",
+   "reviewed_on": "2026-11-25"
   },
   {
    "title": "Combined Notice of Filings #1",

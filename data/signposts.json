@@ -1,5 +1,5 @@
 {
- "last_refreshed": "2026-11-21",
+ "last_refreshed": "2026-11-25",
  "calls": [
   {
    "id": "A",
@@ -64,7 +64,7 @@
       }
      ],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: shortfall below 6,831 megawatts",
      "delta": {
       "dir": "up",
@@ -87,17 +87,22 @@
      "retrieved_on": "2026-11-20",
      "next": "Audit report 10 Dec 2026; Legislature convenes 12 Jan 2027; new Governor 19 Jan 2027",
      "sources": "ERCOT large-load status updates and monthly operational overview; Public Utility Commission of Texas filings",
-     "verify": "The linked update confirms the pause and the audit date. The Governor-elect's pledge, her powers, the resumed permit reviews and the queue figures come from a law-firm briefing and press reports, not from primary documents. The Governor-elect's remarks of 19 Nov and the Senate bill are from a press report (KCBD, 19 Nov 2026); the bill text has not been read.",
+     "verify": "The linked update confirms the pause and the audit date. Senate Bill 338 has now been read directly (https://capitol.texas.gov/tlodocs/90R/billtext/pdf/SB00338I.pdf): it would take effect on 1 Sep 2027, allow only water-saving cooling, require yearly water-use reports and bar a grid connection for sites that do not comply; it contains no pause. The count of 17 senators is from a press report (KCBD, 19 Nov 2026). The queue of about 474 gigawatts and about 8.9 gigawatts approved to energise in June 2026 are confirmed in the grid operator's presentation to the Texas Senate of 29 Jul 2026 and its monthly overview for June. The Governor-elect's pledge and remarks, her powers and the resumed permit reviews come from a law-firm briefing and press reports, not from primary documents.",
      "history": [
       {
        "date": "2026-11-19",
        "note": "Governor-elect repeated her call for a moratorium; a Senate bill tying grid connection to water-saving cooling was reported filed (press only). Owner kept the status at Not yet on 21 Nov 2026",
        "kind": "reading",
        "brief": "Texas Governor-elect repeated her call for a moratorium on new data centre permits; a Senate bill tying connection to water-saving cooling was reported filed"
+      },
+      {
+       "date": "2026-11-25",
+       "note": "Senate Bill 338 text and the grid operator's Senate presentation of 29 Jul 2026 read directly; reading unchanged",
+       "kind": "note"
       }
      ],
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: approvals grow over 2 gigawatts a year"
     },
     {
@@ -168,7 +173,7 @@
       }
      ],
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: waiting list stops growing; deliveries before 2030 become possible again",
      "verify": "The GE Vernova orders, shipments and backlog are confirmed in its filing with the US Securities and Exchange Commission (linked). The 2029–30 delivery slots are from press reports (Turbomachinery Magazine, Inspenet), not a filed figure. The US order count by maker is from a press report citing McCoy Power Reports (Herald Corporation), a paid source not read directly. Mitsubishi's orders and shipments have not yet been added."
     },
@@ -200,7 +205,7 @@
      ],
      "verify": "The 29 Sep order is confirmed at the linked PJM notice. The amendments, the requested dates and the 30 Nov comment date are confirmed in PJM's filing of 9 Nov 2026 (linked under history), which was read in part. The proposed 1 Mar 2027 bid opening is from press reports and was not confirmed in the passages read.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: contracts near target, on schedule"
     },
     {
@@ -213,11 +218,11 @@
      "status": "none",
      "headline": "Proposals filed",
      "summary": "Grid operators have filed their large-load proposals; the regulator has not ruled",
-     "latest": "Grid operators have filed their large-load proposals. The Federal Register notice of 19 Nov 2026 lists filings made on 16 Nov by the California and New York grid operators and by PJM Interconnection's transmission owners, with comments due 7 Dec. Southwest Power Pool's deadline is 20 Nov. The Federal Energy Regulatory Commission (FERC) has not yet ruled.",
-     "latestDate": "19 Nov 2026 notice",
-     "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
-     "retrieved_on": "2026-11-20",
-     "next": "Comments on the 16 Nov filings due 7 Dec 2026; replies under the June orders due 16 Dec 2026; then a FERC ruling",
+     "latest": "Grid operators have filed their large-load proposals, and the regulator has not yet ruled. A second Federal Register notice, of 23 Nov 2026, lists more filings made on 16 Nov: PJM Interconnection's own tariff changes for large loads, proposed to take effect on 16 Mar 2027, with comments due 15 Jan 2027; the Midwest grid operator's filing on large-load review, cost recovery and transmission service, with comments due 16 Dec; a resubmitted filing by California's grid operator, with comments due 16 Dec; and filings by New York's grid operator and transmission owners and by two California transmission owners, with comments due 7 Dec. An earlier notice, of 19 Nov, listed the first batch. Southwest Power Pool is reported to have filed on 20 Nov. The Federal Energy Regulatory Commission (FERC) has not ruled on any of them.",
+     "latestDate": "23 Nov 2026 notice",
+     "source_url": "https://www.federalregister.gov/documents/2026/11/23/2026-23765/combined-notice-of-filings-1",
+     "retrieved_on": "2026-11-25",
+     "next": "Comments due 7 Dec and 16 Dec 2026 and 15 Jan 2027; replies under the June orders due 16 Dec 2026; then a FERC ruling",
      "sources": "FERC eLibrary and open-meeting agendas; Federal Register",
      "history": [
       {
@@ -226,11 +231,19 @@
        "source_url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
        "kind": "reading",
        "brief": "Grid operators filed their large-load proposals with the federal regulator"
+      },
+      {
+       "date": "2026-11-23",
+       "note": "Federal Register notice of 23 Nov 2026 lists further large-load filings of 16 Nov, including PJM Interconnection's own and the Midwest grid operator's",
+       "kind": "reading",
+       "brief": "A second official notice lists more large-load filings, including PJM's own tariff changes, with comments due between 7 Dec 2026 and 15 Jan 2027",
+       "source_url": "https://www.federalregister.gov/documents/2026/11/23/2026-23765/combined-notice-of-filings-1",
+       "retrieved_on": "2026-11-25"
       }
      ],
-     "verify": "The linked notice confirms the 16 Nov filings it lists and the 7 Dec comment date. The filings by the New England and Midwest grid operators and by PJM itself, and the absence of a ruling, are from press reports (POWER, 19 Nov). Whether Southwest Power Pool filed on 20 Nov is not yet confirmed.",
+     "verify": "The linked notice, read through the saved official passages, confirms the filings it lists, their dates and comment deadlines. The first batch is in the notice of 19 Nov 2026 (https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1). That Southwest Power Pool filed on 20 Nov, and the absence of a ruling, are from press reports (POWER, updated 23 Nov 2026); its filing has not been confirmed at the regulator.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: federal regulator approves workable rules"
     },
     {
@@ -247,7 +260,7 @@
      "latestDate": "2025 assessment, published Jan 2026",
      "source_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
      "retrieved_on": "2026-11-20",
-     "next": "2026 assessment due Dec 2026 or Jan 2027",
+     "next": "2026 assessment scheduled for publication on 27 Jan 2027",
      "sources": "NERC annual and seasonal assessments; ERCOT capacity, demand and reserves report; PJM load forecast",
      "history": [
       {
@@ -268,11 +281,16 @@
         "2030": "High"
        },
        "source_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf"
+      },
+      {
+       "date": "2026-11-25",
+       "note": "Publication date of the 2026 assessment read in the reliability body's committee papers: 27 Jan 2027",
+       "kind": "note"
       }
      ],
-     "verify": "The release date of the 2026 assessment is not confirmed.",
+     "verify": "The reliability body's committee papers of 10 Sep 2026 give 27 Jan 2027 as the publication date of the 2026 assessment (https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/0-rstc-agenda-links/rstc-september-10-_-agenda-package-1.pdf); a schedule can slip.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: 2026 assessment rates risk lower"
     },
     {
@@ -283,19 +301,26 @@
      "track": "Approval and construction of Texas's new 765-kilovolt transmission lines, which carry power to the areas where large users are connecting.",
      "trigger": "Positive if all the planned lines are approved and stay on schedule. Negative if approvals slip or routes are blocked.",
      "status": "none",
-     "headline": "Two lines approved",
-     "summary": "On 28 Aug 2026; three more, about 800 miles, were under consideration in September (press-reported)",
-     "latest": "Texas's utility regulator approved two 765-kilovolt lines on 28 Aug 2026 and was considering three more, about 800 miles, in September 2026. A status report of 19 Nov 2026 puts the programme at five projects, about 1,200 miles and about US$11 billion, with one import path unresolved and landowner opposition on some routes.",
+     "headline": "Three of five approved",
+     "summary": "Two lines approved on 28 Aug 2026 and a third on 11 Sep; the other two were sent back for further hearings (the third approval and the two sent back are press-reported)",
+     "latest": "Texas's utility regulator approved two 765-kilovolt lines on 28 Aug 2026. Its order for one of them, read directly, covers a single-circuit line of about 243 miles at an estimated cost of about US$2.2 billion. Press reports say it approved a third line, of about 370 miles, on 11 Sep 2026 and sent the remaining two back to administrative law judges, with no date set for their response. An analyst's status report of 19 Nov 2026 puts the programme at five projects, about 1,200 miles and about US$11 billion. Requests to rehear the approvals, and motions asking the regulator's chairman to step aside from the cases, are pending. All of this predates the 23 Nov 2026 baseline.",
      "latestDate": "19 Nov 2026 report",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Regulator's decisions on the remaining lines",
+     "source_url": "https://interchange.puc.texas.gov/Documents/59315_5819_1678289.PDF",
+     "retrieved_on": "2026-11-25",
+     "next": "Judges' response on the two remaining lines; rehearing requests on the third line run to the end of December 2026",
      "sources": "Public Utility Commission of Texas case files; Texas Tribune; FactSet",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked: the regulator's order of 28 Aug 2026 for one line read directly; press shows a third line approved on 11 Sep 2026 and two sent back, all before the 23 Nov baseline",
+       "kind": "note"
+      }
+     ],
+     "verify": "The linked order (Docket 59315, filed 28 Aug 2026) was read directly. The second approval of 28 Aug, the third approval of 11 Sep, the two lines sent back and the programme totals are from press and an analyst's report (Texas Tribune, 28 Aug and 11 Sep 2026; FactSet, 19 Nov 2026), not from the regulator's orders. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: all planned lines approved and on schedule",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "A8",
@@ -307,17 +332,24 @@
      "status": "none",
      "headline": "About 3 gigawatts",
      "summary": "Connected in 2025. Since 2020, 103 gigawatts signed agreements but only 23 are in service",
-     "latest": "About 3,045 megawatts of new generation connected in PJM in 2025. Since 2020, projects totalling 103 gigawatts have signed connection agreements but only 23 gigawatts are in service. In the first round of the reformed process, 811 projects totalling 220 gigawatts applied in April 2026 and 715 were accepted in August 2026.",
+     "latest": "About 3,045 megawatts of new generation connected in PJM in 2025, nearly all of it solar. Since 2020, projects totalling 103 gigawatts have completed connection agreements but only 23 gigawatts had entered service by March 2026. In the first round of the reformed process, 811 projects totalling 220 gigawatts applied in April 2026, 715 were accepted for study in August, and 617 projects totalling nearly 169 gigawatts remained when the first study phase began on 28 Sep 2026.",
      "latestDate": "2025 full year",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/",
+     "retrieved_on": "2026-11-25",
      "next": "PJM's 2026 full-year figure, early 2027",
      "sources": "PJM news releases, annual report and fact sheets",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the grid operator's own publications; figures confirmed and the 30 Sep 2026 study count added",
+       "kind": "note"
+      }
+     ],
+     "verify": "All figures were read directly in the grid operator's own posts: the linked year-in-review (8 Jan 2026) and its posts of 16 Mar, 29 Apr, 3 Aug and 30 Sep 2026. Its fact sheet of 21 May 2026 gives a slightly different count, 25 gigawatts connected since 2020. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: yearly connections well above about 3 gigawatts",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "A9",
@@ -328,18 +360,25 @@
      "trigger": "Positive if the fast-growing states adopt such tariffs without stalling connections. Negative if disputes over cost delay connections.",
      "status": "none",
      "headline": "104 tariffs",
-     "summary": "Approved or proposed for large users across US states; Pennsylvania finalised a model tariff on 13 May 2026",
-     "latest": "A public database lists 104 approved or proposed large-user tariffs. Pennsylvania's regulator issued its final order on a model tariff on 13 May 2026. An industry list was last updated in September 2026.",
-     "latestDate": "Database as found, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Further state orders",
+     "summary": "Approved or proposed for large users across 37 US states, as of 30 Jun 2026; Pennsylvania released its model tariff order on 13 May 2026",
+     "latest": "A public database lists 104 approved and proposed large-user tariffs and service rules across 37 states, as last updated on 30 Jun 2026; it is updated quarterly. Pennsylvania's regulator released its final order on a model tariff on 13 May 2026; the model is guidance for future utility filings and applies to customers above 50 megawatts, or 100 megawatts in aggregate. An industry list was last updated on 9 Oct 2026.",
+     "latestDate": "Database as of 30 Jun 2026",
+     "source_url": "https://sepapower.org/large-load-tariffs-database/what-is-a-large-load-tariff/",
+     "retrieved_on": "2026-11-25",
+     "next": "Next quarterly update of the database; further state orders",
      "sources": "Database of large-load tariffs (Smart Electric Power Alliance and North Carolina Clean Energy Technology Center); Edison Electric Institute; state utility regulators",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the database's own page: 104 confirmed, as of 30 Jun 2026",
+       "kind": "note"
+      }
+     ],
+     "verify": "The count and its date were read directly on the linked database page. The Pennsylvania order is confirmed in the regulator's press release (https://www.puc.pa.gov/press-release/2026/puc-releases-final-order-establishing-first-of-its-kind-large-load-model-tariff-framework-05132026); the order itself was not opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: tariffs adopted without stalling connections",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "A10",
@@ -349,19 +388,33 @@
      "track": "Power plants built at data centre sites instead of waiting for a grid connection: how much is announced and how much is operating.",
      "trigger": "Positive if operating on-site capacity grows quickly, showing it is a real way round the connection queue.",
      "status": "none",
-     "headline": "116 gigawatts",
-     "summary": "Announced to operating across 108 plants; an earlier count had only about 2 gigawatts operating (third-party tracker)",
-     "latest": "A third-party tracker lists 108 on-site power plants totalling 116 gigawatts, from announced to operating. An earlier report from the same tracker counted 59 projects and about 90 gigawatts, of which about 2 gigawatts were operating. This is not an official source.",
-     "latestDate": "Tracker as found, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
+     "headline": "129 gigawatts",
+     "summary": "Announced to operating across 120 plants; an earlier count had only about 2 gigawatts operating (third-party tracker)",
+     "latest": "A third-party tracker lists 120 on-site power plants totalling 129 gigawatts, from announced to operating, as its page stood on 25 Nov 2026; the page carries no update date. When this signpost was added the same tracker was recorded at 108 plants and 116 gigawatts. It gives no current total for capacity actually operating. An earlier report from the same tracker counted 59 data centres with about 90 gigawatts of on-site power, of which about 2 gigawatts were operating. This is not an official source.",
+     "latestDate": "Tracker as found, 25 Nov 2026",
+     "source_url": "https://cleanview.co/products/behind-the-meter-tracker",
+     "retrieved_on": "2026-11-25",
      "next": "Tracker updates",
      "sources": "Cleanview tracker of on-site power at data centres; Global Energy Monitor",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Third-party tracker opened directly: 120 on-site power plants totalling 129 gigawatts, up from 108 and 116 when first recorded",
+       "kind": "reading",
+       "brief": "A third-party tracker now lists 120 on-site power plants totalling 129 gigawatts, announced to operating, up from 108 and 116",
+       "source_url": "https://cleanview.co/products/behind-the-meter-tracker",
+       "retrieved_on": "2026-11-25"
+      }
+     ],
+     "verify": "The tracker's own page and its earlier report were opened directly. The tracker is a private company's product, not an official source, and the trigger is about operating capacity, which the page does not total. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: operating on-site capacity grows quickly",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "delta": {
+      "dir": "up",
+      "text": "from 116 when first recorded"
+     },
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "A11",
@@ -373,17 +426,24 @@
      "status": "none",
      "headline": "Still rising",
      "summary": "Amazon expects about US$220 billion in 2026 and meaningfully more in 2027; analysts see over US$1 trillion across the big cloud companies in 2027 (press-reported)",
-     "latest": "On its third-quarter 2026 results call Amazon said it still expects about US$220 billion of cash capital spending in 2026 and meaningfully more in 2027. Analysts' combined estimate for the largest cloud companies in 2027 has risen above US$1 trillion.",
+     "latest": "In its third-quarter 2026 results Amazon said it still expects about US$220 billion of cash capital spending in 2026; its chief executive is reported to have said on the results call that it will spend meaningfully more in 2027. Analysts' estimates of 2027 spending by the largest cloud companies have been above US$1 trillion since April 2026, according to press reports. Microsoft is reported to have trimmed its 2026 forecast from US$175 billion to US$170 billion on 28 Oct 2026, citing late deliveries, not weaker demand.",
      "latestDate": "Third quarter 2026 results",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
+     "retrieved_on": "2026-11-25",
      "next": "Fourth-quarter results, late January to early February 2027",
      "sources": "Company results and filings (Amazon, Microsoft, Alphabet, Meta, Oracle); analyst summaries",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Amazon's 2026 spending figure confirmed in its own results release of 29 Oct 2026",
+       "kind": "note"
+      }
+     ],
+     "verify": "The US$220 billion figure was read directly in Amazon's results release of 29 Oct 2026. The remark about 2027, the analysts' estimates and Microsoft's trim are from press reports; the call transcript was not opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: spending plans cut or flat",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Power stays Severe to 2030. It eases to Moderate after 2030 only if new turbines, the PJM backstop auction and Texas's new 765 kilovolt lines arrive on time; near-term data point the other way."
@@ -416,14 +476,21 @@
      "summary": "Use zero-evaporation closed loops since August 2024. Not yet shown to be the norm across new US capacity",
      "latest": "All new Microsoft data centre designs since August 2024 use zero-evaporation closed-loop cooling. Project Blue near Tucson moved away from evaporative cooling after the city blocked its original plan. The benchmark is Lawrence Berkeley National Laboratory's projection: US data centres used about 17 billion gallons directly in 2023, and hyperscale sites alone could use 16 to 33 billion gallons by 2028.",
      "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/us_data_center_energy_usage_report_lbnl-2001637.pdf",
+     "retrieved_on": "2026-11-25",
      "next": "Next round of operator water disclosures; first state water reports",
      "sources": "Operators' sustainability reports; Lawrence Berkeley National Laboratory; state water reporting in California, New Jersey and Utah",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at Microsoft's own statement and the national laboratory's report",
+       "kind": "note"
+      }
+     ],
+     "verify": "Microsoft's statement that all its new designs since August 2024 use this cooling was read directly on its own site (https://www.microsoft.com/en-us/microsoft-cloud/blog/?p=4238); the first sites using it are due online in late 2027. The linked laboratory report gives the figures in litres: 66 billion litres of direct use in 2023 (about 17 billion gallons) and 60 to 124 billion litres for hyperscale sites in 2028 (about 16 to 33 billion gallons). The Project Blue account has not been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: on-site use well below the 16 to 33 billion gallons projected for 2028"
+     "threshold": "Trigger: on-site use well below the 16 to 33 billion gallons projected for 2028",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B2",
@@ -434,17 +501,24 @@
      "trigger": "Positive if other hub utilities follow Loudoun Water at scale.",
      "status": "none",
      "headline": "750 million gallons",
-     "summary": "Reclaimed water Loudoun Water supplied to data centres in 2025, in Northern Virginia",
-     "latest": "Loudoun Water, which serves the Northern Virginia hub, supplied over 750 million gallons of reclaimed water in 2025.",
+     "summary": "Reclaimed water Loudoun Water delivered to its customers in 2025, in the Northern Virginia hub",
+     "latest": "Loudoun Water, which serves the Northern Virginia hub, delivered more than 750 million gallons of reclaimed water in 2025, to roughly 40 customers. Neither the utility nor the county says how much of it went to data centres. The county says data centres account for 9% of drinking-water use in Loudoun on an average day.",
      "latestDate": "2025",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.loudounwater.org/commercial-customers/reclaimed-water-program",
+     "retrieved_on": "2026-11-25",
      "next": "Utility annual reports for 2026",
      "sources": "Loudoun Water; water utilities in the Phoenix, Dallas, Atlanta and Columbus hubs",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the utility's own page; the volume went to about 40 customers, not only data centres",
+       "kind": "note"
+      }
+     ],
+     "verify": "Read directly on the utility's page and on Loudoun County's page on data centres and water (https://www.loudoun.gov/6402/Data-Centers-Water-Considerations).",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: other hub utilities supply reclaimed water at scale"
+     "threshold": "Trigger: other hub utilities supply reclaimed water at scale",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B3",
@@ -455,17 +529,24 @@
      "trigger": "Positive if states plan and fund supply for data centres, for example Texas adding them to its water plan and drawing on its US$20 billion water fund.",
      "status": "none",
      "headline": "Left out of Texas's plan",
-     "summary": "Texas's draft 2027 water plan omits data centres, which could use up to 2.7% of the state's water by 2030",
-     "latest": "Texas's draft 2027 state water plan omits data centres, which could use up to 2.7% of the state's water by 2030, according to the Houston Advanced Research Center. Texas has a US$20 billion water fund that could be drawn on.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Adoption of Texas's 2027 state water plan",
+     "summary": "Texas adopted its 2027 water plan on 23 Jul 2026 without demand forecasts for data centres, which could use up to 2.7% of the state's water by 2030",
+     "latest": "Texas adopted its 2027 state water plan on 23 Jul 2026 without demand forecasts for data centres, according to press reports; forecasts are deferred to the 2032 plan. The water board is due to consider an amendment to the plan at a meeting tentatively set for December 2026. Data centres could use up to 2.7% of the state's water by 2030, according to the Houston Advanced Research Center, a figure that includes water used to generate their electricity. Texas has a US$20 billion water fund that could be drawn on.",
+     "latestDate": "Plan adopted 23 Jul 2026",
+     "source_url": "https://www.twdb.texas.gov/waterplanning/swp/2027/index.asp",
+     "retrieved_on": "2026-11-25",
+     "next": "Water board's meeting on the plan amendment, tentatively December 2026; Texas Legislature convenes 12 Jan 2027",
      "sources": "Texas Water Development Board; Houston Advanced Research Center; state water plans",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked: Texas's 2027 plan was adopted on 23 Jul 2026 (water board's page read directly), before the baseline",
+       "kind": "note"
+      }
+     ],
+     "verify": "The adoption date and the pending amendment were read directly on the water board's page; the plan itself would not open, so the omission of data centres is from press reports (E&E News, 24 Jul 2026; Community Impact). The 2.7% figure was read at the research centre's own release (https://harcresearch.org/news/texas-data-center-boom-could-consume-up-to-161-billion-gallons-of-water-annually-by-2030/). The US$20 billion fund has not been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: states plan and fund supply for data centres"
+     "threshold": "Trigger: states plan and fund supply for data centres",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B4",
@@ -477,16 +558,23 @@
      "status": "none",
      "headline": "Two-thirds in stressed areas",
      "summary": "Share of data centres built or in development since 2022 that sit in water-stressed areas",
-     "latest": "Two-thirds of data centres built or in development since 2022 sit in water-stressed areas such as southern Arizona, the Colorado River Basin and Texas, according to the World Resources Institute. Microsoft expects its Great Lakes campuses to stay far below the Great Lakes Compact's regional-review trigger.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Next siting update from the World Resources Institute",
+     "latest": "About two-thirds of new US data centres built or in development since 2022 sit in areas of high water stress, according to a Bloomberg News analysis that used the World Resources Institute's water-stress data and covered sites to early 2025. It was a one-off analysis, not a regular series. Microsoft expects its Great Lakes campuses to stay far below the Great Lakes Compact's regional-review trigger.",
+     "latestDate": "Analysis of data to early 2025",
+     "source_url": "https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/",
+     "retrieved_on": "2026-11-25",
+     "next": "Any repeat of the analysis, or a comparable siting study",
      "sources": "World Resources Institute; Ceres; Great Lakes Compact filings",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked: the two-thirds figure is a Bloomberg News analysis using World Resources Institute data, not an Institute publication",
+       "kind": "note"
+      }
+     ],
+     "verify": "The figure was read directly in the linked analysis. Because it is a one-off, there is no scheduled update to compare against. Microsoft's Great Lakes statement has not been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: share in water-stressed areas falls below two-thirds"
+     "threshold": "Trigger: share in water-stressed areas falls below two-thirds",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B5",
@@ -507,7 +595,8 @@
      "history": [],
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: Lake Mead projected below 1,010 feet, or cuts beyond 1.25 million acre-feet"
+     "threshold": "Trigger: Lake Mead projected below 1,010 feet, or cuts beyond 1.25 million acre-feet",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B6",
@@ -528,7 +617,8 @@
      "history": [],
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: a state enacts hard water limits or a pause"
+     "threshold": "Trigger: a state enacts hard water limits or a pause",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "B7",
@@ -549,7 +639,8 @@
      "history": [],
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: drought-driven curtailment or refusal in a major hub"
+     "threshold": "Trigger: drought-driven curtailment or refusal in a major hub",
+     "last_checked_on": "2026-11-25"
     }
    ]
   },
@@ -595,7 +686,7 @@
      },
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: below 25% for several quarters"
     },
     {
@@ -617,7 +708,7 @@
      "history": [],
      "verify": "The linked county document is the proposal put to the vote. The result is confirmed by press reports only (Bisnow, Fox 5). The state permit pauses in New York, Oregon and Texas are not yet verified.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: a measure that limits local vetoes"
     },
     {
@@ -639,7 +730,7 @@
      "history": [],
      "verify": "The New York framework is confirmed at the linked source. The Spartanburg County approvals are from a press report only (Fox Carolina, 18 Nov 2026); the county's own record has not been checked. Virginia's toolkit has not been checked.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: deals turn opposition into approvals"
     },
     {
@@ -662,7 +753,8 @@
      "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: count stops rising; pauses expire",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "C5",
@@ -673,18 +765,25 @@
      "trigger": "Positive if no further states pause or repeal, and paused incentives are restored.",
      "status": "none",
      "headline": "Eight states",
-     "summary": "Paused or repealed data centre tax breaks between May and August 2026 (press-reported)",
-     "latest": "Between May and August 2026, five states paused data centre tax incentives (Arizona, Illinois, Massachusetts, New Jersey, Ohio) and three repealed them (Maine, Minnesota, Nebraska), according to a report of 11 Sep 2026.",
+     "summary": "Paused or repealed data centre tax breaks between May and August 2026",
+     "latest": "Between May and August 2026, five states paused data centre tax incentives (Arizona, for three years; Illinois, Massachusetts and Ohio, indefinitely for new applications; New Jersey, a tax-credit programme) and three repealed them (Maine, Minnesota, Nebraska), according to a report of 11 Sep 2026. North Carolina separately repealed its exemption on data centre electricity. Bills to repeal Texas's exemption were filed on 9 Nov 2026 for the 2027 session; they are filed bills, not law.",
      "latestDate": "11 Sep 2026 report",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/091126-where-states-stand-on-data-center-sales-tax-exemptions-ahead-of-us-midterms",
+     "retrieved_on": "2026-11-25",
      "next": "2027 state legislative sessions, from January",
      "sources": "S&P Global; National Conference of State Legislatures; Bloomberg Tax",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the 11 Sep 2026 report itself",
+       "kind": "note"
+      }
+     ],
+     "verify": "The linked report (S&P Global Energy, 11 Sep 2026) was read directly; it is an analyst's summary, and no state law was opened. The Texas bills are from a law-firm note (11 Nov 2026). The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: no further pauses or repeals",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "C6",
@@ -695,18 +794,25 @@
      "trigger": "Positive if construction starts on federal sites at scale.",
      "status": "none",
      "headline": "Four sites selected",
-     "summary": "Idaho, Oak Ridge, Paducah and Savannah River; developers named at Paducah and Savannah River",
-     "latest": "The US Department of Energy identified 16 candidate sites in April 2025 and selected four in July 2025: Idaho National Laboratory, Oak Ridge, Paducah and Savannah River. Developers have been named at Paducah (29 Jul 2026) and Savannah River.",
+     "summary": "Idaho, Oak Ridge, Paducah and Savannah River; developers named at Paducah, and one selected to negotiate a lease at Savannah River",
+     "latest": "The US Department of Energy identified 16 candidate sites in April 2025 and selected four in July 2025: Idaho National Laboratory, Oak Ridge, Paducah and Savannah River. On 29 Jul 2026 it named the developers at Paducah: a 1.8 gigawatt campus with about 2 gigawatts of gas generation, expected to be complete in 2031, with the power agreement still needing the Kentucky regulator's approval. At Savannah River a developer was selected in July 2026 to negotiate a phased lease, which trade press says is not yet a final award. No developer has been named for Idaho or Oak Ridge and no construction start has been reported.",
      "latestDate": "29 Jul 2026 announcement",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.energy.gov/articles/energy-department-announces-partnership-expand-reliable-affordable-energy-access-and-power",
+     "retrieved_on": "2026-11-25",
      "next": "Developers for the remaining sites; first construction start",
      "sources": "US Department of Energy announcements",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the Department of Energy's releases; the Savannah River developer is selected to negotiate, not yet awarded a lease",
+       "kind": "note"
+      }
+     ],
+     "verify": "The Department's releases of 3 Apr 2025, 24 Jul 2025 and 29 Jul 2026 (linked) were read directly. The Savannah River selection is from trade press (American Nuclear Society, 31 Jul 2026); the agency's own page would not open. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: construction starts at scale",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Land stays Severe in both periods: local opposition blocks or delays over half of large projects, and no state or federal override of local vetoes is in sight."
@@ -744,7 +850,7 @@
      "history": [],
      "verify": "The linked page covers Noord-Holland. Frankfurt is from press reports; no current date for West London has been found.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: a core-hub fix before 2030"
     },
     {
@@ -766,7 +872,7 @@
      "history": [],
      "verify": "From press and industry reports (The Next Web, TechTimes, BloombergNEF). No primary document has been checked. Norway is reviewing its data centre rules.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: overflow lands at scale outside core hubs"
     },
     {
@@ -777,13 +883,13 @@
      "track": "Whether the data centre decree is approved before the general election, and its final terms.",
      "trigger": "Watch the 80% hourly renewables match, the 10 megawatt threshold and the five-year phase-in.",
      "status": "neg",
-     "headline": "Approved",
-     "summary": "Spain's decree passed on 20 Nov 2026 with the 80% hourly renewables match kept; not yet in the official gazette, and a court challenge and the election lie ahead",
-     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The terms this signpost watches all survived. Data centres must show that 80% of their electricity is matched hour by hour by renewable generation, most of it newly added to the grid. The grid-access rules apply to sites above 10 megawatts. For five years there is an easier route for sites that accept being disconnected first when the grid is short: 60% at peak hours until the end of 2028, then 70%. Sites that fall short can lose their grid-access rights for up to three years. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party, the Partido Popular (People's Party), has said it would repeal it, and the general election is on 29 Nov 2026. Why the opposition objects: its economy spokesman said the decree in practice prohibits new data centres and that the party would replace it with a law that allows them to be built. The regions it governs, among them Aragón and Madrid, host most of the large projects; Aragón's president said the decree makes many of the region's projects impossible and that he will challenge it. The government's case: the energy minister said data centres have already been granted about 15 gigawatts of grid access, roughly 40% of Spain's peak demand, and that without the decree households and businesses would pay about €5 billion more on their bills and industry about 25% more for energy.",
-     "latestDate": "20 Nov 2026",
-     "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
-     "retrieved_on": "2026-11-21",
-     "next": "General election 29 Nov 2026; then publication in the official gazette and any court challenge",
+     "headline": "In force",
+     "summary": "Spain's decree took effect on 22 Nov 2026 with the 80% hourly renewables match kept; a court challenge is announced and the election of 29 Nov lies ahead",
+     "latest": "Spain's royal decree on data centres (Royal Decree 1032/2026) was published in the official gazette on 21 Nov 2026 and has been in force since 22 Nov. The Council of Ministers approved it on 20 Nov, nine days before the general election. The terms this signpost watches are all in the published text. It applies to data centres with a grid access capacity of 10 megawatts or more, including projects that hold grid permits but are not yet connected; sites already connected are outside it. There are two separate 80% tests. In every hour, at least 80% of the electricity used must be backed by renewable power generated in that same hour. And 80% of total consumption must come from self-generation or long-term contracts with renewable or storage plants in Spain that are no more than 36 months older than the data centre, with exceptions that include solar plants which had no such contract when the decree took effect. For five years there is an easier route for sites able to cut their demand to zero when the grid operator calls: 60% in peak-tariff hours until the end of 2028, then 70% in peak hours and 60% in the next tariff band; it is open only to sites operating before 31 Dec 2030. Projects that hold permits have six months to show they comply or the permits lapse; pending applications are refused after three months; either can withdraw within six months without losing its deposits. A site that falls short pays a monthly charge of between €6 and €25 per megawatt-hour on the test for new renewable supply, and between €2 and €16 on the hourly test. The published text does not contain the loss of grid-access rights for up to three years that was reported at approval; it says permits can be suspended or revoked only as existing laws provide. What is not settled: the data centre industry association said on 23 Nov 2026 that it would go to the Supreme Court within days and ask for the decree to be suspended; no filing had been confirmed when this was written. The regional governments of Aragón and Madrid have said they will also challenge it. The main opposition party, the Partido Popular (People's Party), has repeated that it would repeal the decree, and the general election is on 29 Nov 2026. Why the opposition objects: its economy spokesman said the decree in practice prohibits new data centres and that the party would replace it with a law that allows them to be built. The regions it governs, among them Aragón and Madrid, host most of the large projects. The government's case: the energy minister said data centres have already been granted about 15 gigawatts of grid access, roughly 40% of Spain's peak demand, and that without the decree households and businesses would pay about €5 billion more on their bills and industry about 25% more for energy.",
+     "latestDate": "21 Nov 2026",
+     "source_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
+     "retrieved_on": "2026-11-25",
+     "next": "General election 29 Nov 2026; any Supreme Court filing and ruling on suspension; deadlines for pending applications (about 22 Feb 2027) and permit-holders (about 22 May 2027)",
      "sources": "Spain's official gazette; Council of Ministers references; energy ministry; Council of State",
      "history": [
       {
@@ -798,11 +904,19 @@
        "date": "2026-11-21",
        "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged",
        "kind": "note"
+      },
+      {
+       "date": "2026-11-21",
+       "note": "Royal Decree 1032/2026 published in the official gazette on 21 Nov 2026 and in force from 22 Nov; text read directly; status unchanged",
+       "kind": "reading",
+       "brief": "Spain's data centre decree was published and took effect on 22 Nov 2026; the published text keeps the 80% hourly match, the 10 megawatt threshold and the five-year easier route",
+       "source_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
+       "retrieved_on": "2026-11-25"
       }
      ],
-     "verify": "The approval and the terms are from the energy ministry's press release, read directly; the decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
+     "verify": "The decree text was read directly in the official gazette (linked). The approval is in the energy ministry's press release (https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html). The planned court challenges and the opposition's pledge to repeal are from press reports (El Español, Europa Press, El Correo Gallego, 23 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Watch: 80% hourly match, 10 megawatt threshold, five-year phase-in"
     },
     {
@@ -815,17 +929,24 @@
      "status": "none",
      "headline": "73 gigawatts queued",
      "summary": "Data centre requests in Britain, about 315 projects. The government backed a commitment fee on 28 Oct 2026",
-     "latest": "Contracted demand offers in Britain rose from 41 to 125 gigawatts between November 2024 and June 2025. Data centres account for about 73 gigawatts, around 315 projects. The energy regulator consulted on data centre connection reforms to 16 Sep 2026, and the government's response of 28 Oct 2026 supported them, including a commitment fee for data centres.",
+     "latest": "Contracted demand offers in Britain rose from 41 to 125 gigawatts between November 2024 and June 2025. Data centres account for about 73 gigawatts, around 315 projects. The energy regulator consulted on data centre connection reforms to 16 Sep 2026. The government, responding to its own consultation on connections for strategic demand, said it strongly supports them, including a commitment fee for data centres of between £237,500 and £712,500 per megawatt. The regulator has said it will publish its decision before the next application window.",
      "latestDate": "28 Oct 2026 government response",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.ofgem.gov.uk/consultation/proposed-data-centre-connection-reforms",
+     "retrieved_on": "2026-11-25",
      "next": "Regulator's decision; next application window",
      "sources": "Ofgem; National Energy System Operator; UK Department for Energy Security and Net Zero",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the energy regulator's consultation and the government's response",
+       "kind": "note"
+      }
+     ],
+     "verify": "The queue figures and the consultation dates were read directly in the regulator's consultation document (linked page). The government's support and the fee range were read in its response on gov.uk, which shows 28 Oct 2026 as its date and 2 Nov 2026 as first published. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: speculative projects cleared; earlier firm dates",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "D5",
@@ -836,18 +957,25 @@
      "trigger": "Positive if connection offers resume in the Dublin area under the new rules.",
      "status": "none",
      "headline": "New rules in force",
-     "summary": "Since 12 Dec 2025 new data centres must bring their own generation or storage. Offers made under the policy are not yet checked",
-     "latest": "Ireland's energy regulator decided on 12 Dec 2025 that new data centres must have generation or storage, on site or nearby, matching their demand, and must in time meet at least 80% of yearly demand from additional Irish renewable generation. Grid operators must publish regular information on capacity by location.",
+     "summary": "Since 12 Dec 2025 new data centres must bring their own generation or storage. No connection offer under the policy has been reported",
+     "latest": "Ireland's energy regulator decided in December 2025 that new data centres must provide generation or storage, on site or nearby, matching the demand they request, and must over a six-year path meet at least 80% of yearly demand from additional renewable generation in Ireland. Grid operators must regularly publish information on capacity by location; the transmission operator published an overview of constrained areas in May 2026. No connection offer under the policy has been reported. A court challenge by environmental groups is reported to be listed for hearing in May 2027.",
      "latestDate": "12 Dec 2025 decision",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
+     "retrieved_on": "2026-11-25",
      "next": "Grid operators' capacity information; first offers under the policy",
      "sources": "Commission for Regulation of Utilities; EirGrid; ESB Networks",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the Irish energy regulator's own announcement",
+       "kind": "note"
+      }
+     ],
+     "verify": "The policy's terms were read directly in the regulator's announcement (linked); the decision paper itself was not opened, and the date of 12 Dec 2025 and the court challenge are from a law-firm note. The absence of offers rests on searches, not on an official statement. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: connection offers resume around Dublin",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Power stays Severe in both periods: grid fixes for Noord-Holland, Frankfurt and West London land only in the 2030s, and secondary markets are rationing access."
@@ -894,7 +1022,7 @@
      },
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Watch: limits near 0.4 litres per kilowatt-hour"
     },
     {
@@ -905,13 +1033,13 @@
      "track": "Whether the final decree keeps the top water-efficiency class for new data centres above 10 megawatts.",
      "trigger": "The draft requires 0.1 litres per kilowatt-hour or less.",
      "status": "neg",
-     "headline": "Approved",
-     "summary": "Spain's decree passed on 20 Nov 2026 keeping the top water-efficiency level; which sites it covers and when it takes effect are not yet stated",
-     "latest": "Spain's Council of Ministers approved the royal decree on data centres on 20 Nov 2026, nine days before the general election. The water rule survived: data centres must meet the highest level for water use on the European Union's data centre label, which is still being drawn up. Until that label applies, the ceiling is 0.1, the figure in the draft (there, litres of water per kilowatt-hour). The ministry has not yet said which data centres the water rule covers (the draft applied it to new sites above 10 megawatts) or from when. Three things are not settled. The decree text had not appeared in the official gazette when this was written, so the date it takes effect is not known. The data centre industry association has said it will challenge the decree in court and ask for it to be suspended. The main opposition party, the Partido Popular (People's Party), has said it would repeal it, and the general election is on 29 Nov 2026. Why the opposition objects: its economy spokesman said the decree in practice prohibits new data centres, and the regions it governs, among them Aragón and Madrid, host most of the large projects. Its objections are aimed at the electricity rules; none found so far is aimed at the water rule, but a repeal would remove both. The government's case is that data centres' demand on the grid would otherwise raise bills for households and industry.",
-     "latestDate": "20 Nov 2026",
-     "source_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html",
-     "retrieved_on": "2026-11-21",
-     "next": "General election 29 Nov 2026; then publication in the official gazette, which should show which sites the water rule covers",
+     "headline": "In force",
+     "summary": "Spain's decree took effect on 22 Nov 2026 keeping the top water-efficiency class; it covers sites of 10 megawatts or more that are not yet connected",
+     "latest": "Spain's royal decree on data centres (Royal Decree 1032/2026) was published in the official gazette on 21 Nov 2026 and has been in force since 22 Nov. The water rule is in the published text: data centres must reach class A, the top class for water use on the European Union's data centre label, once that label exists. Until then the ceiling is a water-use ratio of 0.1 or less, calculated under the European Union's reporting rules; the decree gives the figure without a unit (the draft gave it as litres of water per kilowatt-hour). The text now shows who is covered and when. There is no separate water threshold: the rule applies to every data centre with a grid access capacity of 10 megawatts or more that is applying for grid access or holds permits but was not yet connected on 22 Nov 2026, which is wider than the draft's new sites. Sites already connected are not covered. The level must be met one year after a site starts operating. The text has no exemption for reclaimed or non-drinking water. Projects under European Union digital-sovereignty programmes, such as AI gigafactories, get easier steps: 0.4, then 0.2, then 0.1 for those starting from 2030. What is not settled: the data centre industry association said on 23 Nov 2026 that it would go to the Supreme Court within days and ask for the decree to be suspended; no filing had been confirmed when this was written. The regional governments of Aragón and Madrid have said they will also challenge it. The main opposition party, the Partido Popular (People's Party), has repeated that it would repeal the decree, and the general election is on 29 Nov 2026. The opposition's objections are aimed at the electricity rules; none found so far is aimed at the water rule, but a repeal or suspension would remove both. The government's case is that data centres' demand on the grid would otherwise raise bills for households and industry.",
+     "latestDate": "21 Nov 2026",
+     "source_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
+     "retrieved_on": "2026-11-25",
+     "next": "General election 29 Nov 2026; any Supreme Court filing and ruling on suspension; permit-holders have until about 22 May 2027 to commit to the rule",
      "sources": "Spain's official gazette; energy ministry; river-basin authorities",
      "history": [
       {
@@ -926,11 +1054,19 @@
        "date": "2026-11-21",
        "note": "Added, at the owner's request, why the main opposition party says it would repeal the decree and the government's reply (press reports only); status unchanged",
        "kind": "note"
+      },
+      {
+       "date": "2026-11-21",
+       "note": "Royal Decree 1032/2026 published in the official gazette on 21 Nov 2026 and in force from 22 Nov; water rule read directly; status unchanged",
+       "kind": "reading",
+       "brief": "Spain's data centre decree took effect on 22 Nov 2026; its water rule covers sites of 10 megawatts or more that are not yet connected, including those already holding permits",
+       "source_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
+       "retrieved_on": "2026-11-25"
       }
      ],
-     "verify": "The approval and the water rule are from the energy ministry's press release, read directly; it gives the 0.1 ceiling without a unit and does not say which sites are covered. The decree text itself has not been read because it is not yet in the official gazette. The planned court challenge and the opposition's pledge to repeal are from press reports (EFE news agency, elDiario, 20 Nov 2026). The opposition's reasons and the minister's figures are also from press reports (El Español, elDiario Aragón, 20 Nov 2026), not from a party or ministry document.",
+     "verify": "The decree text was read directly in the official gazette (linked). The European Union regulation that defines how the 0.1 ratio is calculated was not opened, so its unit is not confirmed from the decree. The planned court challenges and the opposition's pledge to repeal are from press reports (El Español, Europa Press, El Correo Gallego, 23 Nov 2026).",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Watch: 0.1 litres per kilowatt-hour or less"
     },
     {
@@ -961,7 +1097,7 @@
      ],
      "verify": "The July figures are at the linked source. The early November statement is from the European Drought Observatory's own site (https://drought.emergency.copernicus.eu/), read directly; it gives no percentage. No earlier year has been loaded for comparison.",
      "status_reviewed_on": "2026-11-21",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: wider or longer droughts"
     },
     {
@@ -983,7 +1119,7 @@
      "history": [],
      "verify": "The study covers operating sites, not the pipeline this signpost tracks.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: a rising share in water-stressed areas"
     },
     {
@@ -1005,7 +1141,7 @@
      "history": [],
      "verify": "From legal commentary on the law of 26 May 2026. The text of the law has not been checked directly.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: any refusal on water grounds"
     },
     {
@@ -1016,19 +1152,26 @@
      "track": "On-site water use that EU data centres report to the European Commission's database each year.",
      "trigger": "Positive if reported water use falls year on year and sites in water-stressed areas report low use.",
      "status": "none",
-     "headline": "Report published",
-     "summary": "On 21 Sep 2026, covering 2024 data. The average figure is still to be read from the report",
-     "latest": "The European Commission published its report on the energy efficiency of data centres on 21 Sep 2026, assessing the data reported for 2024, including water use. It proposed a common rating scheme the same day. A report on the 2025 data is in preparation.",
+     "headline": "0.58 litres",
+     "summary": "Per kilowatt-hour, the average reported in the first reporting period (2024), from 458 data centres; no second year yet to compare",
+     "latest": "The European Commission's report on the energy efficiency of data centres, published on 21 Sep 2026, covers the first reporting period (May to September 2024). The average reported water use was 0.58 litres per kilowatt-hour of computing-equipment energy, ranging from 0.07 to 1.28 across member states, based on 458 data centres whose water figures were judged reliable. In all, 770 data centres reported, about 36% of the estimated total. The report gives no total volume of water. A report on the 2025 reporting period is in preparation, so no year-on-year comparison is possible yet.",
      "latestDate": "21 Sep 2026 report",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://energy.ec.europa.eu/document/download/8a87a5fe-0260-462a-b165-09f1496d1aa0_en?filename=COM_2026_500_1_EN_ACT_part1_v4.pdf",
+     "retrieved_on": "2026-11-25",
      "next": "Commission report on 2025 data",
      "sources": "European Commission report COM(2026) 500; European database on data centres",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked: the Commission's report COM(2026) 500 read; average water figure 0.58, from 458 data centres",
+       "kind": "note"
+      }
+     ],
+     "verify": "The report's text (COM(2026) 500 final, dated 21 Sep 2026) was read on a national parliament's copy of the same file as the linked Commission document; the Commission's own publication page would not open. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: reported water use falls year on year",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "E7",
@@ -1039,18 +1182,25 @@
      "trigger": "Negative if objections become routine or lead to refusals. Positive if large projects pass without them.",
      "status": "none",
      "headline": "Two known objections",
-     "summary": "Anglian Water in North Lincolnshire (July 2025); Thames Water reported in west London (July 2026, press-reported)",
-     "latest": "Anglian Water asked North Lincolnshire Council in July 2025 to oppose the Elsham data centre application, citing water supply and sewer capacity. A press report of July 2026 says Thames Water objected to a data centre in Ealing. In May 2026 a House of Lords committee recommended that water companies be consulted by law on all major planning decisions. There is no central register of objections.",
-     "latestDate": "July 2026 press report",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Government response on consultation rights; further applications",
+     "summary": "Anglian Water in North Lincolnshire (July 2025, press-reported); a Thames Water objection in west London rests on one resident's remark. The government rejected a consultation right on 14 Jul 2026",
+     "latest": "Anglian Water asked North Lincolnshire Council in July 2025 to oppose the Elsham data centre application, citing water supply and sewer capacity, according to press and campaign reports. A Thames Water objection to a data centre in west London is reported only through a resident's remark in a press report of 30 Jul 2026; no document has been found. On 21 May 2026 a House of Lords committee recommended that water companies be consulted by law on all major planning decisions, including data centres; the government rejected that recommendation in its response of 14 Jul 2026. There is no central register of objections.",
+     "latestDate": "14 Jul 2026 government response",
+     "source_url": "https://committees.parliament.uk/publications/54262/documents/301721/default/",
+     "retrieved_on": "2026-11-25",
+     "next": "Further applications; any water company objection on a planning file",
      "sources": "Council planning files; Planning Inspectorate documents; press",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked: the government's response of 14 Jul 2026 rejecting a legal consultation right for water companies read directly; before the baseline",
+       "kind": "note"
+      }
+     ],
+     "verify": "The government's response was read directly (linked). Neither water company's objection has been seen in a planning file: Anglian Water's is from press and campaign reports of July 2025, and Thames Water's rests on a resident quoted by a broadcaster. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: objections become routine or lead to refusals",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Water rises from Minor to Moderate after 2030, as growth moves into the water-scarce south and rules start to make water use a condition for building."
@@ -1081,16 +1231,23 @@
      "status": "none",
      "headline": "12-month cap proposed",
      "summary": "The proposed Cloud and AI Development Act would cap permitting in acceleration zones at 12 months; unlikely to bite before about 2029",
-     "latest": "The European Union's proposed Cloud and AI Development Act would cap permitting in acceleration zones at 12 months. The Council takes up its compromise on the data centre part from 24 Nov 2026, and the European Parliament's position is planned for April 2027. The act is unlikely to bite before about 2029.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Council talks from 24 Nov 2026; Parliament's position April 2027",
+     "latest": "The European Union's proposed Cloud and AI Development Act would require each member state to designate at least one data centre acceleration zone and would cap permitting there at 12 months from a complete application. In the Council, the Irish Presidency's first compromise text on the data centre part was on the agenda of a working party on 24 Nov 2026; no account of the discussion has been found. A Presidency progress report of 13 Nov says the compromise gives member states 12 months, not 6, to designate a zone and moves the date the act applies from 12 to 18 months after it enters into force. A progress report goes to ministers on 1 Dec 2026. The European Parliament plans to adopt its position on 27 Apr 2027. The act is unlikely to bite before about 2029.",
+     "latestDate": "24 Nov 2026",
+     "source_url": "https://data.consilium.europa.eu/doc/document/ST-15300-2026-INIT/en/pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "Progress report to ministers 1 Dec 2026; Parliament's position 27 Apr 2027",
      "sources": "Council of the European Union; European Parliament legislative observatory; European Commission",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the Council's documents and the Commission's proposal; a Council working party was scheduled to discuss the first compromise text on 24 Nov 2026, outcome not yet reported",
+       "kind": "note"
+      }
+     ],
+     "verify": "The Presidency's progress report (linked), the meeting notice for 24 Nov and the Commission's proposal (COM(2026) 502) were read directly. The compromise text itself was not opened, so whether the 12-month permitting cap is unchanged in it is not confirmed. The view that the act is unlikely to bite before about 2029 is from the analysis behind this call.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: 12-month cap and mandatory zones survive"
+     "threshold": "Trigger: 12-month cap and mandatory zones survive",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F2",
@@ -1102,16 +1259,23 @@
      "status": "none",
      "headline": "Consultation open",
      "summary": "England's draft National Policy Statement proposes a presumption of consent above 100 megawatts; consultation closes 8 Jan 2027",
-     "latest": "England offers an opt-in national consent route alongside five AI Growth Zones. Its draft data centre National Policy Statement proposes a presumption of consent and a 100 megawatt threshold; the consultation closes on 8 Jan 2027. Three projects, including Wapseys Wood, were directed into the national regime by July 2026.",
+     "latest": "England offers an opt-in national consent route alongside its AI Growth Zones. Its draft data centre National Policy Statement, published on 28 Oct 2026, proposes a presumption in favour of consent, with exceptions that include protected habitats and Green Belt projects, and an indicative threshold of 100 megawatts of computing load; the consultation closes on 8 Jan 2027. Three projects have been directed into the national regime: Wapseys Wood in Buckinghamshire (16 Mar 2026), Ampthill Road in Bedford (15 Jun 2026) and New Barn Road in Dartford (1 Jul 2026).",
      "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.gov.uk/government/consultations/draft-national-policy-statement-for-data-centres",
+     "retrieved_on": "2026-11-25",
      "next": "Consultation closes 8 Jan 2027",
      "sources": "UK government consultations; Planning Inspectorate national infrastructure register",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the government's consultation page, the draft statement and the three directions",
+       "kind": "note"
+      }
+     ],
+     "verify": "Read directly on the linked consultation page, in the draft statement and in the three direction letters on gov.uk. The number of AI Growth Zones was not checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: statement adopted intact; directed projects consented in about 18 months"
+     "threshold": "Trigger: statement adopted intact; directed projects consented in about 18 months",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F3",
@@ -1132,7 +1296,8 @@
      "history": [],
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: status granted and permits survive court challenges"
+     "threshold": "Trigger: status granted and permits survive court challenges",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F4",
@@ -1153,7 +1318,8 @@
      "history": [],
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: the count keeps rising after a record 2026"
+     "threshold": "Trigger: the count keeps rising after a record 2026",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F5",
@@ -1164,17 +1330,24 @@
      "trigger": "Negative if bans or pauses spread to further countries or hubs. Scotland reopening consents on clear terms would count the other way.",
      "status": "none",
      "headline": "Netherlands and Scotland",
-     "summary": "Dutch zoning confines hyperscale sites to two areas; Scotland has paused hyperscale decisions pending national guidance",
-     "latest": "The Netherlands confines new hyperscale data centres (over 10 hectares and 70 megawatts) to two designated areas, and Amsterdam and Zaanstad bar new data centres above 2,000 square metres and 5 megavolt-amperes. Frankfurt limits new colocation data centres to designated districts. Scotland has paused hyperscale decisions pending national guidance: a progress report is due by end-2026 and full guidance by September 2027.",
+     "summary": "Dutch zoning confines hyperscale sites to two areas; Scotland requires large applications to be notified to ministers and expects none to be decided before national guidance",
+     "latest": "The Netherlands confines new hyperscale data centres to two designated areas, and Amsterdam has barred new data centres and expansions until at least 2030, according to press reports. Frankfurt limits new colocation data centres to designated districts. In Scotland the government has not imposed a pause: since September 2026 planning authorities must notify ministers of data centre applications above 50 megawatts, the Scottish Parliament passed a non-binding motion that no decisions be made until guidance is issued, and the minister said a moratorium is not necessary. The government says it does not expect any such application to be decided before the guidance, which it has promised before Christmas 2026.",
      "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Scotland's progress report by end-2026; full guidance by Sep 2027",
+     "source_url": "https://www.gov.scot/news/direction-for-new-data-centres/",
+     "retrieved_on": "2026-11-25",
+     "next": "Scotland's national planning guidance, promised before Christmas 2026",
      "sources": "Scottish Government planning guidance; Dutch national and municipal zoning rules; city of Frankfurt",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked: Scottish Government documents show a notification rule and guidance due before Christmas 2026, not a government pause",
+       "kind": "note"
+      }
+     ],
+     "verify": "The Scottish Government's announcements of 17 Aug and 16 Sep 2026 (linked) and the minister's letter of 8 Oct 2026 to a parliamentary committee were read directly. The Dutch, Amsterdam and Frankfurt rules are from press reports (Reuters, 14 Jul 2026) and have not been checked at source; the earlier reading's size thresholds for them could not be confirmed.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: bans or pauses spread beyond the Netherlands and Scotland"
+     "threshold": "Trigger: bans or pauses spread beyond the Netherlands and Scotland",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F6",
@@ -1186,16 +1359,23 @@
      "status": "none",
      "headline": "South Gyle awaits ruling",
      "summary": "Scottish Ministers have recalled the appeal on Edinburgh's South Gyle scheme, about 210 megawatts",
-     "latest": "Scottish Ministers have recalled the appeal over Edinburgh's South Gyle data centre (about 210 megawatts) and will decide it themselves. English green-belt appeals are also pending.",
+     "latest": "Scottish Ministers recalled the appeal over Edinburgh's South Gyle data centre (about 210 megawatts) on 17 Aug 2026 and will decide it themselves; the case page shows a target date of 1 Dec 2026 and no decision yet. English green-belt appeals are also pending.",
      "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Scottish Ministers' ruling on South Gyle",
+     "source_url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?ID=128582",
+     "retrieved_on": "2026-11-25",
+     "next": "Scottish Ministers' ruling on South Gyle; target date 1 Dec 2026",
      "sources": "Scottish Government planning appeals; Planning Inspectorate appeal decisions",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the Scottish appeals case page: recalled 17 Aug 2026, target date 1 Dec 2026",
+       "kind": "note"
+      }
+     ],
+     "verify": "The recall, the target date and the absence of a decision were read directly on the linked case page. The size is from press reports. The English appeals have not been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: national rulings go against developers"
+     "threshold": "Trigger: national rulings go against developers",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F7",
@@ -1207,16 +1387,23 @@
      "status": "none",
      "headline": "€1,000–2,000+ per m²",
      "summary": "Power-ready plots in Greater Frankfurt, against about €350 for industrial land",
-     "latest": "Power-ready plots in Greater Frankfurt's designated districts sell for €1,000 to over €2,000 per square metre, against about €350 for industrial land, according to Colliers. Planned hyperscale campuses now sit about 175 kilometres from hub cities.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
+     "latest": "Plots for data centres in locations comparable to Greater Frankfurt's industrial areas sell for over €1,000 per square metre, and in some cases well over €2,000, according to Colliers' report for 2025; logistics and industrial land in the Frankfurt region costs about €350. Planned hyperscale campuses now sit about 175 kilometres from hub cities.",
+     "latestDate": "Broker report for 2025, published early 2026",
+     "source_url": "https://www.colliers.de/wp-content/uploads/2026/03/Colliers_Data-Center_Infographics_2025-Q4_DE-1.pdf",
+     "retrieved_on": "2026-11-25",
      "next": "Next broker land-price update",
      "sources": "Colliers and other broker reports",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the broker's report for 2025",
+       "kind": "note"
+      }
+     ],
+     "verify": "The price figures were read directly in the linked broker report; the €350 comparison is from a press report (Börsen-Zeitung, 18 Feb 2026). The 175 kilometre figure has not been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: power-ready plot prices keep climbing"
+     "threshold": "Trigger: power-ready plot prices keep climbing",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "F8",
@@ -1227,18 +1414,25 @@
      "trigger": "Positive if appeals are mostly granted. Negative if refusals on grid or climate grounds return.",
      "status": "none",
      "headline": "Google expansion granted",
-     "summary": "In September 2026, overturning the council's refusal; a Mayo project was refused on appeal the same month (press-reported)",
-     "latest": "The planning appeals body granted Google's expansion at Grange Castle, south Dublin, in September 2026, more than two years after the council refused it. In the same month it overturned permission for a data centre in Mayo on electricity and climate grounds. It refused a Clondalkin data centre on 4 Apr 2025.",
+     "summary": "On 23 Sep 2026, two years after the council's refusal; a Mayo project was refused on appeal on 15 Sep 2026",
+     "latest": "The planning appeals body granted Google's expansion at Grange Castle, south Dublin, on 23 Sep 2026, two years after the council refused it. On 15 Sep 2026 it refused a data centre at Killala, Mayo, overturning the county council's permission; press reports give the grounds as the lack of a grid connection and climate policy. It refused data centres in Clondalkin on 19 Feb and 4 Apr 2025, and granted one in north-west Dublin on 19 Dec 2025.",
      "latestDate": "September 2026 decisions",
-     "source_url": null,
-     "retrieved_on": null,
+     "source_url": "https://www.pleanala.ie/en-ie/case/320852",
+     "retrieved_on": "2026-11-25",
      "next": "Pending Dublin appeals",
      "sources": "An Coimisiún Pleanála case pages; Irish Times",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the planning appeals body's case pages",
+       "kind": "note"
+      }
+     ],
+     "verify": "The decisions and their dates were read directly on the appeals body's case pages (the linked case, and cases 322575, 317446, 317936 and 318180). The council's earlier refusal and the grounds in the Mayo case are from press reports (Irish Times, Irish Examiner, September 2026). The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: appeals mostly granted",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ]
   },
@@ -1274,7 +1468,7 @@
      "sources": "Korea Electric Power Corporation disclosures; Korea Power Exchange statistics; ministry designations",
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: regional sites connect in volume by 2028"
     },
     {
@@ -1312,7 +1506,7 @@
      "history": [],
      "verify": "The Tokyo figure is confirmed at the linked source; the Osaka figure is attributed to the same research by market reports. A claim that Osaka's coastal grid now needs about eight years to expand is being checked.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: regional times stay well below Tokyo's"
     },
     {
@@ -1334,7 +1528,7 @@
      "history": [],
      "verify": "The cumulative restarted capacity of 13,946 megawatts has not been verified.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: restarts continue; Unit 7 on schedule"
     },
     {
@@ -1347,16 +1541,22 @@
      "status": "none",
      "headline": "50 megawatts",
      "summary": "Draft exemption threshold, the bottom of the 50 to 100 megawatt range",
-     "latest": "A draft decree published for comment on 20 Nov 2026 sets the exemption at 50 megawatts of contracted power, the bottom of the 50 to 100 megawatt range that was under discussion. Data centres in designated special zones would skip the non-technical review regardless of size.",
+     "latest": "A draft decree published for comment on 20 Nov 2026 sets the exemption at 50 megawatts of contracted power or less for AI data centres built, expanded or converted outside the capital region, the bottom of the 50 to 100 megawatt range that was under discussion. The government also plans to let data centres in designated special zones skip the non-technical review regardless of size, through a change to the assessment rules. Comments are open until 30 Dec 2026.",
      "latestDate": "Draft, 20 Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Final decree around the Act's entry into force, 10 Mar 2027",
+     "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976211",
+     "retrieved_on": "2026-11-25",
+     "next": "Comments close 30 Dec 2026; final decree around the Act's entry into force, 10 Mar 2027",
      "sources": "Korea National Law Information Center; Ministry of Science and ICT releases; Yonhap, Korea Herald",
-     "history": [],
-     "verify": "From press reports (Seoul Economic Daily, Aju Press). The ministry's notice has not been checked. The decree is not final.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the Korean government's announcement of 20 Nov 2026: 50 megawatts confirmed",
+       "kind": "note"
+      }
+     ],
+     "verify": "The threshold, the comment period and the planned special-zone exemption were read directly in the government's announcement (linked) and the ministry's notice of 20 Nov 2026; the attached decree text was not opened. That the special-zone exemption applies regardless of size is from a press report (Energy Daily, 22 Nov 2026).",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Watch: a higher threshold (50 to 100 megawatts) widens the route out of Seoul"
     },
     {
@@ -1378,7 +1578,7 @@
      "history": [],
      "verify": "From a press report (Seoul Economic Daily) citing the national utility's data. No primary document has been checked.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: shorter build times, fewer delays"
     },
     {
@@ -1389,19 +1589,26 @@
      "track": "New substations and transformers serving the Tokyo-area data centre cluster at Inzai, Chiba.",
      "trigger": "Positive if upgrades enter service on schedule and connection waits shorten.",
      "status": "none",
-     "headline": "Fourth unit due 2027",
+     "headline": "Fourth unit due Feb 2027",
      "summary": "At the Inzai substation. The third was scheduled for May 2026; its start is not yet confirmed",
-     "latest": "The Tokyo-area grid company opened the Chiba Inzai substation in June 2024 with two transformers. A third was scheduled for May 2026 and a fourth for 2027, and a further substation in Inzai is under consideration. Demand in the area is expected to reach six times its 2017 level by 2027.",
-     "latestDate": "Schedule as reported, 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Fourth transformer, 2027; decision on a further substation",
+     "latest": "The Tokyo-area grid company opened the Chiba Inzai substation on 5 Jun 2024. Its facility plan schedules a third transformer for May 2026 and a fourth for February 2027; a think-tank article says the third was added in May 2026, but no company document confirming that has been found. The company plans a further substation in Inzai; local press reports a construction period from July 2027 to September 2034 and residents asking for the plan to be withdrawn. Demand in the area is expected to reach six times its 2017 level by 2027.",
+     "latestDate": "Company plan as of early 2026",
+     "source_url": "https://www.tepco.co.jp/corporateinfo/illustrated/electricity-supply/network-facility-plan-j.html",
+     "retrieved_on": "2026-11-25",
+     "next": "Fourth transformer, February 2027; the further substation",
      "sources": "TEPCO Power Grid; Shulman Advisory digest",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the grid company's facility plan: fourth transformer scheduled for February 2027",
+       "kind": "note"
+      }
+     ],
+     "verify": "The schedule, the opening date and the demand forecast were read directly in the company's facility plan (linked) and its investor presentation of April 2026. That the third transformer entered service, and the details of the further substation, are from a think-tank article (August 2026) and local press (September 2026). The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: upgrades in service on schedule",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "G7",
@@ -1412,18 +1619,25 @@
      "trigger": "Positive if a meaningful share of new capacity is committed outside Tokyo and Osaka.",
      "status": "none",
      "headline": "About 90%",
-     "summary": "Of Japan's data centres are in the Tokyo and Osaka areas. Nine prefectures were named as candidate cluster locations on 24 Apr 2026",
-     "latest": "About 90% of Japan's data centres by floor area are in the Tokyo and Osaka areas. On 24 Apr 2026 the economy ministry named nine prefectures, including Hokkaido, Akita, Miyagi and Fukuoka, as candidate locations for data centre clusters. The share is updated rarely, so this signpost follows policy steps and announced projects.",
-     "latestDate": "24 Apr 2026 announcement",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Selection of cluster locations",
+     "summary": "Of Japan's data centres are in the Tokyo and Osaka areas. Nine regions shortlisted on 24 Apr 2026 are reported to have been certified as cluster locations in September 2026",
+     "latest": "About 90% of Japan's data centres by floor area are in the Tokyo and Osaka areas, according to a press report of June 2025. On 24 Apr 2026 the economy ministry shortlisted nine regions for data centre clusters: Hokkaido, Akita, Miyagi, Tochigi, Ibaraki, Toyama, Kagawa, Fukuoka and Kagoshima. Press reports say all nine were certified in the first batch in September 2026, with a second batch planned by March 2027; one of the cities concerned confirms its own certification. The share is updated rarely, so this signpost follows policy steps and announced projects.",
+     "latestDate": "September 2026 certification (press-reported)",
+     "source_url": "https://www.meti.go.jp/press/2026/04/20260424007/20260424007.html",
+     "retrieved_on": "2026-11-25",
+     "next": "Second batch of certified regions; capacity announced in the certified regions",
      "sources": "Ministry of Economy, Trade and Industry; Ministry of Internal Affairs and Communications; press",
-     "history": [],
-     "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked at the economy ministry's announcement of 24 Apr 2026; press reports say all nine regions were certified in September 2026, before the baseline",
+       "kind": "note"
+      }
+     ],
+     "verify": "The shortlist of 24 Apr 2026 was read directly in the ministry's announcement (linked). The September 2026 certification is from a press report (Mynavi, 13 Oct 2026) and Tsukuba City's own page; the ministry's release would not open. The 90% figure is from a press report (Nikkan Kogyo, 20 Jun 2025). The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: meaningful share committed outside Tokyo and Osaka",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Power eases from Severe to Moderate after 2030 if Korea and Japan succeed in routing data centres to regions with spare grid, with nuclear restarts adding firm supply for Tokyo."
@@ -1461,7 +1675,7 @@
      "verify": "From press reports of the parliamentary statement (The Star). Thailand and India have not been checked.",
      "history": [],
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: supply and rules keep up with the pipeline"
     },
     {
@@ -1489,7 +1703,7 @@
      ],
      "verify": "The air-cooling statement is confirmed at the linked Bernama interview. It is a stated policy; what has actually been approved since is not verified. The hold on water-cooled expansions until mid-2027 is from press reports only.",
      "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-21",
+     "last_checked_on": "2026-11-25",
      "threshold": "Trigger: approvals move to low-water designs"
     },
     {
@@ -1512,7 +1726,8 @@
      "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: rule adopted with 80% intact",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "H4",
@@ -1534,7 +1749,8 @@
      "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: reclaimed supply grows with capacity",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "H5",
@@ -1556,7 +1772,8 @@
      "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: several Johor dams at alert or critical",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     },
     {
      "id": "H6",
@@ -1578,7 +1795,8 @@
      "verify": "Added on 23 Nov 2026 after a source sweep. The reading comes from search results and press reports; the primary source has not yet been opened. The trigger wording is a draft awaiting the owner's confirmation.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: hub states require treated wastewater or low-water cooling",
-     "added": "2026-11-23"
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
     }
    ],
    "bottom_line": "Water rises from Moderate to Severe after 2030: growth is concentrated in water-stressed hubs, and in droughts governments put households first."

@@ -4,17 +4,17 @@
   {
    "signpost": "B1",
    "priority": 1,
-   "task": "New calls B (North America Water, B1 to B7) and F (Europe Land, F1 to F7) were added on 23 Nov 2026 with baseline readings that have not been checked at a primary source. Over the next digests, open the primary source for each of the 14 readings (two or more per run, in addition to the usual two follow-ups if time allows), then set source_url, retrieved_on and verify. Start with B5 (Bureau of Reclamation 24-Month Study), F1 (Council and Parliament records), F2 (UK consultation page) and F4 (European Data Centre Monitor)."
+   "task": "Calls B (North America Water) and F (Europe Land) were added on 23 Nov 2026 with baseline readings not checked at a primary source. Checked on 25 Nov 2026 and updated: B1, B2, B3, B4, F1, F2, F5, F6, F7, F8. Still to do: B5 (primary documents read on 25 Nov; the reading needs correcting and is with the owner as a decision); B6 (confirm at California's legislature site whether the water-supply assessment duty under Assembly Bill 2469 starts on 1 Jan 2028, not 2027; check the Virginia, New Jersey, Utah, Marana and Chandler rules); B7 (no source found for Georgia utilities refusing large water requests: find one or soften the reading); F3 (the Alixan court order of 10 Jul 2026 was read and gives long-term power above 60 megawatts, not 40; the 63 and 26 site figures are press-only and the 26 dates from January 2026; check Légifrance for any decree granting the status); F4 (the European Data Centre Monitor's own page and publisher were not found; the count is second-hand); F5 (Dutch, Amsterdam and Frankfurt rules at source)."
   },
   {
    "signpost": "A7",
    "priority": 1,
-   "task": "Nineteen signposts were added on 23 Nov 2026 (A7 to A11, C4 to C6, D4, D5, E6, E7, F8, G6, G7, H3 to H6) with readings from search results and press that have not been checked at a primary source. Over the next digests open the primary source for each (two or more per run), then set source_url, retrieved_on and verify. Start with H3 (outcome of Thailand's board meeting of 27 Nov 2026), D4 (Ofgem and the government response of 28 Oct 2026), F8 (An Coimisiún Pleanála case pages), E6 (read the average water figure in the Commission report COM(2026) 500) and G6 (whether the third Inzai transformer entered service in May 2026). For C4 the owner must choose one tracker. Trigger wording on all nineteen is a draft awaiting the owner's confirmation; do not change a status on them until he confirms it."
+   "task": "Nineteen signposts were added on 23 Nov 2026 with readings from search results and press. Checked on 25 Nov 2026 and updated: A7, A8, A9, A10, A11, C5, C6, D4, D5, E6, E7, F8, G6, G7. Still to do: H3 (outcome of Thailand's board meeting of 27 Nov 2026; no official draft found, and the 80% figure and the date rest on one press chain); H4 (press shows the reclaimed-water agreements were signed on 11 Aug 2025 between the national sewerage company and Johor Special Water, not in June 2026 with the state water company, and the 'about 8.5 gigawatts' figure could not be found for Johor: correct once a primary source is read); H5 (the water regulator's dam status page would not open); H6 (Karnataka and Rajasthan policy documents not found; Rajasthan's wastewater requirement unconfirmed); C4 (the owner must choose one tracker; counts today range from 40 to over 1,000 depending on the tracker, and the 76 and 54 figures date from August and July 2026); A7 (open the regulator's orders for the second and third lines); G6 (find a company document confirming the third Inzai transformer entered service). Trigger wording on all nineteen is a draft awaiting the owner's confirmation; do not change a status on them until he confirms it."
   },
   {
    "signpost": "G2",
    "priority": 1,
-   "task": "Find the Osaka Prefecture document (reported as dated 9 Oct 2026) on grid capacity along the Osaka Bay coast and the time needed to expand it. If regional connection times are no longer well below Tokyo's, this could change the status: treat as group A. The paper is among the documents of the 2nd Osaka Digital Infrastructure Council meeting of 9 Oct 2026, listed at https://www.pref.osaka.lg.jp/o060020/senryaku_kikaku/smartcity_senryaku/kyogikai.html ; the progress report is https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf . The file would not open on 20 Nov 2026; the owner asked for a retry at the next digest. Retried on 21 Nov 2026: the list page and the progress report again would not open. The paper from the first meeting (28 Apr 2026, https://www.pref.osaka.lg.jp/documents/128924/shiryo.pdf) was read: it gives Osaka-wide connection lead times of 'several years to five years or more' and no figure for the bay coast. Retried again later on 21 Nov 2026: both Osaka pages again could not be opened by the automated reader."
+   "task": "The Osaka Prefecture progress report of 9 Oct 2026 (https://www.pref.osaka.lg.jp/documents/128924/shiryono1.pdf, slide 17) was opened and read on 25 Nov 2026. It says the Osaka Bay coast has almost no spare grid capacity and that reinforcement takes about 8 years; Keihanna more than 10 years; southern Osaka has a few hundred megawatts now and more than 10 years beyond that. The '3 to 5 years' holds only for points with spare capacity (press report of the grid operator's map). The document predates the 12 Nov 2026 baseline. Put to the owner as a decision in the 25 Nov 2026 digest; update G2 once he answers. The minutes (1009gizi.pdf) and the grid operator's map are still unread."
   },
   {
    "signpost": "A3",
@@ -27,29 +27,29 @@
    "task": "Find an original source (the Johor state government or Bernama) for the reported request that operators hold water-cooled expansions until mid-2027. The air-cooling statement of 10 Mar 2026 is already confirmed at Bernama and the owner kept the status at Not yet on 20 Nov 2026. Checked on 21 Nov 2026: no original source found. The mid-2027 hold traces to a South China Morning Post report citing unnamed officials (repeated by Lowyat, 20 Nov 2025). A Bernama report of a written parliamentary reply by the Ministry of Investment, Trade and Industry (11 Feb 2026, carried by EdgeProp) says that as of January 2026 no data centre investment had been deferred. Still to try: a Johor state statement from around November 2025, and The Edge Malaysia's report (https://theedgemalaysia.com/node/781121)."
   },
   {
-   "signpost": "D3",
-   "priority": 2,
-   "task": "Read the text of Spain's royal decree on data centres once it is in the official gazette (approved 20 Nov 2026; the owner set D3 and E2 to Turned negative on 21 Nov 2026). Confirm the date it takes effect, which data centres the water rule covers and the unit of the 0.1 ceiling, then update D3 and E2."
-  },
-  {
-   "signpost": "G4",
-   "priority": 2,
-   "task": "Open the Korean ministry's legislative notice of 20 Nov 2026 and confirm the 50 megawatt exemption threshold."
-  },
-  {
    "signpost": "A2",
    "priority": 2,
-   "task": "Open the Texas grid operator's July 2026 update to the Texas Senate and confirm the queue size and whether 'approved to energise' is 3.2 gigawatts approved plus 5.9 energised."
+   "task": "Checked on 25 Nov 2026 in the grid operator's Senate presentation of 29 Jul 2026 and monthly overviews: queue about 474 gigawatts; 8,926 megawatts approved to energise in June 2026 and 9,456 in July; observed peak consumption 3,966 megawatts in June and 4,370 in July. The split '3.2 gigawatts approved plus 5.9 energised' on the A2 chart could not be confirmed and the figures read point elsewhere; the chart lines came from the owner's figures, so ask him before changing them."
   },
   {
    "signpost": "A5",
    "priority": 3,
-   "task": "Confirm the 16 Nov 2026 filings in the federal regulator's dockets EL26-67 to EL26-72, and whether Southwest Power Pool filed on 20 Nov."
+   "task": "Confirm at the federal regulator that Southwest Power Pool filed its large-load response on 20 Nov 2026 (press says it did; reported dockets ER27-559, ER27-577, ER27-578), and whether the regulator's errata of 18 Nov moved the comment dates for New York's grid operator (to 14 Dec) and PJM's transmission owners (to 15 Jan 2027), as a third-party tracker says."
   },
   {
    "signpost": "G3",
    "priority": 3,
-   "task": "Verify or replace the cumulative restarted nuclear capacity figure of 13,946 megawatts."
+   "task": "The Japan Atomic Industrial Forum's status sheet of 7 Aug 2026 (https://www.jaif.or.jp/cms_admin/wp-content/uploads/2026/08/jp-npps-operation20260807.pdf), read on 25 Nov 2026, gives 15 restarted reactors totalling 14,609 megawatts, not 13,946. Changing the figure changes a point on the G3 chart, so it was put to the owner in the 25 Nov 2026 digest. Also check the restart date of Kashiwazaki-Kariwa Unit 6 (the reading says 9 Feb 2026; a press headline says 21 Jan 2026)."
+  },
+  {
+   "signpost": "C1",
+   "priority": 2,
+   "task": "The 'over 50%' share on the C1 card was not found on the tracker's second-quarter 2026 page (which confirms 45 projects and nearly US$68 billion). Find where the share comes from or ask the owner. The third-quarter 2026 report was not yet published on 25 Nov 2026."
+  },
+  {
+   "signpost": "H1",
+   "priority": 3,
+   "task": "H1's 'track' text and H4's reading mention about 8.5 gigawatts on the way in Johor; the nearest figure found (a parliamentary reply reported on 20 Oct 2026) is 8.39 gigawatts of peak data centre demand for Peninsular Malaysia by 2030, of which Johor 4.42. Check and correct with the owner."
   }
  ]
 }
