@@ -394,6 +394,15 @@ The owner reviewed the site as a first-time reader would and approved:
   the two cards no longer share a headline. "Data centres avoid water-stressed areas" was
   cut from "Stays contained if" as nothing tracks it. The site now has 54 signposts.
 
+- **Europe Land reordered; Europe headers name their geography (25 Nov 2026):** owner
+  approved, most critical first: F1 Europe-wide project rejections (was F4, "Projects rejected or restricted"),
+  F2 EU fast-track permitting (was F1), F3 England's national route (was F2, "UK national
+  route"), F4 France's fast-track (was F3), F5 Local bans: Netherlands and Scotland (was
+  "Local bans spread"), F6 Contested appeals: Scotland and England, F7 Ireland's planning
+  decisions (was F8), F8 Powered-land prices: Frankfurt (was F7). On Europe Water: "EU-wide
+  reported water use", "Drought: EU and UK", "UK water company objections". The owner asked
+  that every Europe signpost header say whether it is EU-wide or country-specific.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

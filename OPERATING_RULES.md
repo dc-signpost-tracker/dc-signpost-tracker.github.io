@@ -27,7 +27,7 @@ adverse it looks. When recommending a change, state the date of the development.
 
 Calls B (North America Water) and F (Europe Land) were added on 23 Nov 2026, so their
 baseline date is 23 Nov 2026 (the call's `baseline` field): only developments after that
-date can change the status of B1 to B7 and F1 to F7.
+date can change the status of B1 to B7 and F1 to F8.
 
 Some signposts turn mainly on politics. For A2 (Texas connections) the developments
 that matter most are statements and measures from the Governor-elect, other incoming
@@ -157,7 +157,7 @@ side; A2's line chart does.
 ## Signposts added on 23 Nov 2026
 
 Nineteen signposts were added at the end of their tabs on 23 Nov 2026; seventeen remain:
-A7 to A9, C2, C4, C6, D4, D5, E2, E6, F8, G6, G7, H3 to H6 (the owner dropped the old A8 and
+A7 to A9, C2, C4, C6, D4, D5, E2, E6, F7, G6, G7, H3 to H6 (the owner dropped the old A8 and
 A11 on 25 Nov 2026, and the old A9 and A10 became A8 and A9). Each carries `"added": "2026-11-23"` and shows a "New" tag.
 
 - Their baseline is 23 Nov 2026: only developments after that date can change a status.
@@ -206,3 +206,9 @@ The owner's original analysis pages are legacy and are no longer a source. Every
 come from something found on the web (official documents first, then trackers and press)
 and carry its link. Never describe a reading as coming from "the analysis behind this call".
 The site itself is now the live record of the analysis.
+
+## Europe headers name their geography
+
+On the three Europe tabs every signpost name says where it applies: "EU-wide",
+"Europe-wide", or the country or city (for example "England's national route",
+"Powered-land prices: Frankfurt"). Keep this when adding or renaming signposts.

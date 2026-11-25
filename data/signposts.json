@@ -1006,7 +1006,7 @@
     },
     {
      "id": "E2",
-     "name": "Reported water use",
+     "name": "EU-wide reported water use",
      "type": "Measured",
      "feed": "European Commission report, annual",
      "track": "On-site water use that EU data centres report to the European Commission's database each year.",
@@ -1089,7 +1089,7 @@
     },
     {
      "id": "E4",
-     "name": "Drought",
+     "name": "Drought: EU and UK",
      "type": "Event",
      "feed": "Download, every 10 days in summer",
      "track": "Share of the European Union and United Kingdom under drought warning or alert, especially Italy, Spain and Portugal.",
@@ -1142,7 +1142,7 @@
     },
     {
      "id": "E6",
-     "name": "Water company objections",
+     "name": "UK water company objections",
      "type": "Event",
      "feed": "Event alerts",
      "track": "Water companies formally objecting to data centre planning applications, in the UK first, and whether they gain a legal right to be consulted.",
@@ -1190,6 +1190,34 @@
    "sps": [
     {
      "id": "F1",
+     "name": "Europe-wide project rejections",
+     "type": "Measured",
+     "feed": "Quarterly",
+     "track": "Whether the European Data Centre Monitor's count of rejected or restricted projects keeps rising after a likely record 2026, especially in overflow markets such as Spain (protests in Aragón) and France.",
+     "trigger": "Negative if the count keeps rising after 2026.",
+     "status": "none",
+     "headline": "Over 70 in four months",
+     "summary": "Projects rejected or restricted in January to April 2026, more than in all of 2025",
+     "latest": "The European Data Centre Monitor counted more than 70 projects rejected or restricted in January to April 2026, more than in all of 2025, as reported by CNBC. STL Partners puts the European projects delayed, reworked or cancelled over public concern at about US$42 billion, against about US$77 billion in the US. Refusals include Groß-Gerau near Frankfurt and the South Gyle scheme in Edinburgh.",
+     "latestDate": "Jan to Apr 2026",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Next update of the European Data Centre Monitor",
+     "sources": "European Data Centre Monitor and STL Partners (as reported by CNBC and Capacity); local planning decisions",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      }
+     ],
+     "verify": "Press-reported: CNBC and Capacity coverage of the European Data Centre Monitor and STL Partners. The Monitor's own page has not been found.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: the count keeps rising after a record 2026",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "F2",
      "name": "EU fast-track permitting",
      "type": "Event",
      "feed": "Event alerts",
@@ -1217,8 +1245,8 @@
      "last_checked_on": "2026-11-25"
     },
     {
-     "id": "F2",
-     "name": "UK national route",
+     "id": "F3",
+     "name": "England's national route",
      "type": "Event",
      "feed": "Event alerts",
      "track": "Whether England adopts its data centre National Policy Statement with the proposed presumption of consent and 100 megawatt threshold intact, and whether the projects already in the national regime are consented within about 18 months.",
@@ -1245,7 +1273,7 @@
      "last_checked_on": "2026-11-25"
     },
     {
-     "id": "F3",
+     "id": "F4",
      "name": "France's fast-track",
      "type": "Event",
      "feed": "Monthly",
@@ -1273,36 +1301,8 @@
      "last_checked_on": "2026-11-25"
     },
     {
-     "id": "F4",
-     "name": "Projects rejected or restricted",
-     "type": "Measured",
-     "feed": "Quarterly",
-     "track": "Whether the European Data Centre Monitor's count of rejected or restricted projects keeps rising after a likely record 2026, especially in overflow markets such as Spain (protests in Aragón) and France.",
-     "trigger": "Negative if the count keeps rising after 2026.",
-     "status": "none",
-     "headline": "Over 70 in four months",
-     "summary": "Projects rejected or restricted in January to April 2026, more than in all of 2025",
-     "latest": "The European Data Centre Monitor counted more than 70 projects rejected or restricted in January to April 2026, more than in all of 2025, as reported by CNBC. STL Partners puts the European projects delayed, reworked or cancelled over public concern at about US$42 billion, against about US$77 billion in the US. Refusals include Groß-Gerau near Frankfurt and the South Gyle scheme in Edinburgh.",
-     "latestDate": "Jan to Apr 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Next update of the European Data Centre Monitor",
-     "sources": "European Data Centre Monitor and STL Partners (as reported by CNBC and Capacity); local planning decisions",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "kind": "note",
-       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
-      }
-     ],
-     "verify": "Press-reported: CNBC and Capacity coverage of the European Data Centre Monitor and STL Partners. The Monitor's own page has not been found.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: the count keeps rising after a record 2026",
-     "last_checked_on": "2026-11-25"
-    },
-    {
      "id": "F5",
-     "name": "Local bans spread",
+     "name": "Local bans: Netherlands and Scotland",
      "type": "Event",
      "feed": "Monthly",
      "track": "Whether zoning bans and pauses spread beyond the Netherlands and Scotland, and whether Scotland's guidance reopens consents on clear terms.",
@@ -1330,7 +1330,7 @@
     },
     {
      "id": "F6",
-     "name": "Contested appeals",
+     "name": "Contested appeals: Scotland and England",
      "type": "Event",
      "feed": "Event alerts",
      "track": "Whether national decision-makers back developers on contested sites, for example Scottish Ministers' ruling on Edinburgh's South Gyle appeal and English green-belt appeals.",
@@ -1358,34 +1358,6 @@
     },
     {
      "id": "F7",
-     "name": "Powered-land prices",
-     "type": "Measured",
-     "feed": "Half-yearly",
-     "track": "Whether prices for power-ready data centre plots in the core hubs keep climbing, a sign that consented, powered land is getting scarcer.",
-     "trigger": "Negative if prices for power-ready plots in the core hubs keep climbing.",
-     "status": "none",
-     "headline": "€1,000–2,000+ per m²",
-     "summary": "Power-ready plots in Greater Frankfurt, against about €350 for industrial land",
-     "latest": "Plots for data centres in locations comparable to Greater Frankfurt's industrial areas sell for over €1,000 per square metre, and in some cases well over €2,000, according to Colliers' report for 2025; logistics and industrial land in the Frankfurt region costs about €350. Planned hyperscale campuses now sit about 175 kilometres from hub cities.",
-     "latestDate": "Broker report for 2025, published early 2026",
-     "source_url": "https://www.colliers.de/wp-content/uploads/2026/03/Colliers_Data-Center_Infographics_2025-Q4_DE-1.pdf",
-     "retrieved_on": "2026-11-25",
-     "next": "Next broker land-price update",
-     "sources": "Colliers and other broker reports",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Baseline reading checked at the broker's report for 2025",
-       "kind": "note"
-      }
-     ],
-     "verify": "The price figures were read directly in the linked broker report; the €350 comparison is from a press report (Börsen-Zeitung, 18 Feb 2026). The 175 kilometre figure has not been checked.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: power-ready plot prices keep climbing",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "F8",
      "name": "Ireland's planning decisions",
      "type": "Event",
      "feed": "Planning body case pages",
@@ -1411,6 +1383,34 @@
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: appeals mostly granted",
      "added": "2026-11-23",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "F8",
+     "name": "Powered-land prices: Frankfurt",
+     "type": "Measured",
+     "feed": "Half-yearly",
+     "track": "Whether prices for power-ready data centre plots in the core hubs keep climbing, a sign that consented, powered land is getting scarcer.",
+     "trigger": "Negative if prices for power-ready plots in the core hubs keep climbing.",
+     "status": "none",
+     "headline": "€1,000–2,000+ per m²",
+     "summary": "Power-ready plots in Greater Frankfurt, against about €350 for industrial land",
+     "latest": "Plots for data centres in locations comparable to Greater Frankfurt's industrial areas sell for over €1,000 per square metre, and in some cases well over €2,000, according to Colliers' report for 2025; logistics and industrial land in the Frankfurt region costs about €350. Planned hyperscale campuses now sit about 175 kilometres from hub cities.",
+     "latestDate": "Broker report for 2025, published early 2026",
+     "source_url": "https://www.colliers.de/wp-content/uploads/2026/03/Colliers_Data-Center_Infographics_2025-Q4_DE-1.pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "Next broker land-price update",
+     "sources": "Colliers and other broker reports",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the broker's report for 2025",
+       "kind": "note"
+      }
+     ],
+     "verify": "The price figures were read directly in the linked broker report; the €350 comparison is from a press report (Börsen-Zeitung, 18 Feb 2026). The 175 kilometre figure has not been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: power-ready plot prices keep climbing",
      "last_checked_on": "2026-11-25"
     }
    ]
