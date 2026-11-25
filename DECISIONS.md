@@ -314,6 +314,11 @@ The owner reviewed the site as a first-time reader would and approved:
   primary report shows 16 to 33 billion gallons is right for hyperscale sites, so the trigger
   was then reworded with the owner's approval to say it covers the largest cloud sites.
 
+- **B2 and B3 swapped (25 Nov 2026):** Drought curtailments is now B2 and Colorado River
+  shortage is B3. The owner noted the Colorado River mainly affects Phoenix (plus Las Vegas
+  and Tucson), not the largest hubs, and mostly indirectly, while a drought curtailment is a
+  direct hard stop that can hit any hub.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
