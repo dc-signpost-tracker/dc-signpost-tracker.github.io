@@ -433,6 +433,15 @@ The owner reviewed the site as a first-time reader would and approved:
   contained if" so the banner covers Thailand's reuse rule and Johor's reclaimed water:
   "water reuse becomes the norm, through rules and reclaimed supply".
 
+- **Flags and symbols (25 Nov 2026):** the owner chose Option A of three mock-ups: small
+  flags beside each region name and a symbol beside each constraint (bolt for power, droplet
+  for water, pin for land), on the tabs and on the landing page (region rows, column
+  headings, phone cards). Flags: North America = United States; Europe = European Union;
+  North Asia ex-China = Japan, Korea; South and Southeast Asia = Malaysia, Thailand, India;
+  China; Latin America = Brazil, Mexico, Chile; Australia; Middle East = United Arab
+  Emirates, Saudi Arabia. They are drawn as inline SVG because flag emoji do not show on
+  Windows.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
