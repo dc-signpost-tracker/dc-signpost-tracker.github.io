@@ -415,8 +415,9 @@ The owner reviewed the site as a first-time reader would and approved:
 - **G1 simplified (25 Nov 2026):** the owner pointed out that the Osaka-against-Tokyo
   connection-time bar does not fit a signpost about capacity moving outside both cities.
   The bar was removed and the trigger went back to a single test: "Positive if a meaningful
-  share of new capacity is committed outside Tokyo and Osaka." Connection times remain in
-  the full reading as context only.
+  share of new capacity is committed outside Tokyo and Osaka." The owner then noted that without connection times the card read like a land
+  issue, so the summary keeps the power reason: Tokyo takes 8 to 10 years to connect, and
+  policy steers sites to regions with spare grid.
 
 ## Open
 
