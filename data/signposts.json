@@ -324,35 +324,6 @@
     },
     {
      "id": "A8",
-     "name": "New generation connecting",
-     "type": "Measured",
-     "feed": "Grid operator releases, a few times a year",
-     "track": "How much new generation actually connects each year in PJM, the grid operator for the US mid-Atlantic, against what has signed a connection agreement.",
-     "trigger": "Positive if yearly connections rise well above the 2025 level and the gap between signed and in-service capacity narrows.",
-     "status": "none",
-     "headline": "About 3 gigawatts",
-     "summary": "Connected in 2025. Since 2020, 103 gigawatts signed agreements but only 23 are in service",
-     "latest": "About 3,045 megawatts of new generation connected in PJM in 2025, nearly all of it solar. Since 2020, projects totalling 103 gigawatts have completed connection agreements but only 23 gigawatts had entered service by March 2026. In the first round of the reformed process, 811 projects totalling 220 gigawatts applied in April 2026, 715 were accepted for study in August, and 617 projects totalling nearly 169 gigawatts remained when the first study phase began on 28 Sep 2026.",
-     "latestDate": "2025 full year",
-     "source_url": "https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/",
-     "retrieved_on": "2026-11-25",
-     "next": "PJM's 2026 full-year figure, early 2027",
-     "sources": "PJM news releases, annual report and fact sheets",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Reading checked at the grid operator's own publications; figures confirmed and the 30 Sep 2026 study count added",
-       "kind": "note"
-      }
-     ],
-     "verify": "All figures were read directly in the grid operator's own posts: the linked year-in-review (8 Jan 2026) and its posts of 16 Mar, 29 Apr, 3 Aug and 30 Sep 2026. Its fact sheet of 21 May 2026 gives a slightly different count, 25 gigawatts connected since 2020. The trigger wording is a draft awaiting the owner's confirmation.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: yearly connections well above about 3 gigawatts",
-     "added": "2026-11-23",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "A9",
      "name": "Who pays for the grid",
      "type": "Event",
      "feed": "Public database; state regulator orders",
@@ -381,7 +352,7 @@
      "last_checked_on": "2026-11-25"
     },
     {
-     "id": "A10",
+     "id": "A9",
      "name": "On-site power",
      "type": "Measured",
      "feed": "Third-party tracker",
@@ -414,35 +385,6 @@
       "dir": "up",
       "text": "from 116 when first recorded"
      },
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "A11",
-     "name": "Build-out plans (all regions)",
-     "type": "Measured",
-     "feed": "Company results, quarterly",
-     "track": "Spending plans of the largest cloud companies, the main driver of data centre demand in every region. Shown here for now; it applies to all eight calls.",
-     "trigger": "Positive if spending plans are cut or flatten, easing demand on power, water and land everywhere. Negative if they keep rising.",
-     "status": "none",
-     "headline": "Still rising",
-     "summary": "Amazon expects about US$220 billion in 2026 and meaningfully more in 2027; analysts see over US$1 trillion across the big cloud companies in 2027 (press-reported)",
-     "latest": "In its third-quarter 2026 results Amazon said it still expects about US$220 billion of cash capital spending in 2026; its chief executive is reported to have said on the results call that it will spend meaningfully more in 2027. Analysts' estimates of 2027 spending by the largest cloud companies have been above US$1 trillion since April 2026, according to press reports. Microsoft is reported to have trimmed its 2026 forecast from US$175 billion to US$170 billion on 28 Oct 2026, citing late deliveries, not weaker demand.",
-     "latestDate": "Third quarter 2026 results",
-     "source_url": "https://aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
-     "retrieved_on": "2026-11-25",
-     "next": "Fourth-quarter results, late January to early February 2027",
-     "sources": "Company results and filings (Amazon, Microsoft, Alphabet, Meta, Oracle); analyst summaries",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Amazon's 2026 spending figure confirmed in its own results release of 29 Oct 2026",
-       "kind": "note"
-      }
-     ],
-     "verify": "The US$220 billion figure was read directly in Amazon's results release of 29 Oct 2026. The remark about 2027, the analysts' estimates and Microsoft's trim are from press reports; the call transcript was not opened. The trigger wording is a draft awaiting the owner's confirmation.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: spending plans cut or flat",
-     "added": "2026-11-23",
      "last_checked_on": "2026-11-25"
     }
    ],

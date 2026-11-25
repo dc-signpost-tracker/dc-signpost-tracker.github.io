@@ -295,6 +295,13 @@ The owner reviewed the site as a first-time reader would and approved:
   the two plain cards next to it stack and share its height instead of each stretching to
   the full height (e.g. A3 beside A4 and A5; A6 beside A7 and A8). Phones are unchanged.
 
+- **Two signposts dropped, two relettered (25 Nov 2026):** the owner dropped A8 New
+  generation connecting (it overlaps with A1, and both are about PJM: keep A1 only) and A11
+  Build-out plans (it measures demand across all regions, not a constraint). A9 Who pays for
+  the grid stays, to be ranked low when signposts are reordered by urgency. To avoid gaps,
+  the old A9 Who pays for the grid became A8 and the old A10 On-site power became A9. The
+  site now has 55 signposts.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
