@@ -636,7 +636,7 @@
      "type": "Event",
      "feed": "Report, quarterly",
      "track": "Share, count and value of large US data centre projects blocked or delayed by local opposition.",
-     "trigger": "Positive if the share falls below about 25% for several consecutive quarters.",
+     "trigger": "Positive if the share of large projects blocked or delayed falls consistently for several quarters.",
      "status": "none",
      "headline": "Over half disrupted",
      "summary": "Over half of large projects were blocked or delayed in the second quarter of 2026",
@@ -651,25 +651,25 @@
       "min": 0,
       "max": 100,
       "value": 50,
-      "trig": 25,
       "unit": "%",
       "vText": "over 50%",
-      "tText": "Eases below 25%",
-      "good": [
-       0,
-       25
-      ]
+      "tText": ""
      },
      "history": [
       {
        "date": "2026-11-25",
        "kind": "note",
        "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      },
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Trigger changed by the owner from a 25% threshold, which had no basis, to a consistent fall in the share over several quarters"
       }
      ],
      "status_reviewed_on": "2026-11-20",
      "last_checked_on": "2026-11-25",
-     "threshold": "Trigger: below 25% for several quarters",
+     "threshold": "Trigger: share falls consistently for several quarters",
      "verify": "Press-reported: Bloomberg and others citing Data Center Watch (September 2026), and ESG Dive citing Relae. The Data Center Watch report itself has not been opened."
     },
     {

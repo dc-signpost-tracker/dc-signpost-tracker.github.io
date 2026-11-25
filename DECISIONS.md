@@ -374,6 +374,12 @@ The owner reviewed the site as a first-time reader would and approved:
   over the dot, the trigger is written under its own tick (C1: "Eases below 25%"), and the
   easing zone is shaded green where there is one (A1, C1). Applies to A1, C1, E1 and G2.
 
+- **C1 trigger changed (25 Nov 2026):** the owner replaced the 25% threshold, which had no
+  basis, with "Positive if the share of large projects blocked or delayed falls consistently
+  for several quarters." The measure is the share, not the count (the count already fell
+  from 75 to 45 between the first and second quarters of 2026 while the share stayed above
+  half). The gauge now shows only the current reading.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
