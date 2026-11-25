@@ -312,7 +312,7 @@ The owner reviewed the site as a first-time reader would and approved:
   Microsoft kept as one example; headline "17 billion gallons" (on-site use in 2023, national
   laboratory estimate). The owner approved correcting the 2028 range in the trigger, but the
   primary report shows 16 to 33 billion gallons is right for hyperscale sites, so the trigger
-  was left unchanged pending the owner's view on whether to say "hyperscale" in it.
+  was then reworded with the owner's approval to say it covers the largest cloud sites.
 
 ## Open
 
