@@ -319,6 +319,12 @@ The owner reviewed the site as a first-time reader would and approved:
   and Tucson), not the largest hubs, and mostly indirectly, while a drought curtailment is a
   direct hard stop that can hit any hub.
 
+- **North America Land reordered by criticality (25 Nov 2026):** owner approved, most
+  critical first: C1 Projects disrupted (unchanged), C2 Local pauses and bans (was C4), C3
+  State or federal override (was C2), C4 State tax incentives (was C5), C5 Community benefit
+  deals (was C3), C6 Federal sites (unchanged). Community deals stays above Federal sites
+  because it is named in the call's "Eases if" line.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

@@ -15,7 +15,7 @@
    "text": "Loudoun County vote on a 12-month pause on new applications",
    "sp": [
     "C1",
-    "C2"
+    "C3"
    ],
    "outcome": "Passed 7 to 1 with one abstention. Backdated to 15 Sep 2026; runs to as late as September 2027. 33 applications were active."
   },
@@ -147,7 +147,7 @@
    "text": "New Texas governor takes office; new Congress sits in January",
    "sp": [
     "A2",
-    "C2"
+    "C3"
    ]
   },
   {
@@ -239,7 +239,7 @@
    "label": "Jul 2027",
    "text": "Oregon's data centre permit pause ends",
    "sp": [
-    "C2"
+    "C3"
    ],
    "fuzzy": true
   },
@@ -277,7 +277,7 @@
    "text": "Loudoun County's pause on new data centre applications ends",
    "sp": [
     "C1",
-    "C2"
+    "C3"
    ],
    "fuzzy": true
   },

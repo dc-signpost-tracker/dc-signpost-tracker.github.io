@@ -157,7 +157,7 @@ side; A2's line chart does.
 ## Signposts added on 23 Nov 2026
 
 Nineteen signposts were added at the end of their tabs on 23 Nov 2026; seventeen remain:
-A7 to A9, C4 to C6, D4, D5, E6, E7, F8, G6, G7, H3 to H6 (the owner dropped the old A8 and
+A7 to A9, C2, C4, C6, D4, D5, E6, E7, F8, G6, G7, H3 to H6 (the owner dropped the old A8 and
 A11 on 25 Nov 2026, and the old A9 and A10 became A8 and A9). Each carries `"added": "2026-11-23"` and shows a "New" tag.
 
 - Their baseline is 23 Nov 2026: only developments after that date can change a status.
@@ -165,7 +165,7 @@ A11 on 25 Nov 2026, and the old A9 and A10 became A8 and A9). Each carries `"add
   developments in the digest but do not propose a status change on them.
 - Their readings came from search results and press and are "Not yet verified". Verify
   them at the primary source as for any other reading.
-- C4 needs the owner to choose one tracker before the count is used as a series.
+- C2 (local pauses and bans) needs the owner to choose one tracker before the count is used as a series.
 
 ## "News, no signal" label
 
