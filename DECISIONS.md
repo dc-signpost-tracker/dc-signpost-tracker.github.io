@@ -291,6 +291,10 @@ The owner reviewed the site as a first-time reader would and approved:
   the primary source" line on each call's banner was deleted at the owner's request. Each
   card still shows "Not yet verified" where that applies.
 
+- **Card layout (25 Nov 2026):** on computer screens a card with charts takes two rows, so
+  the two plain cards next to it stack and share its height instead of each stretching to
+  the full height (e.g. A3 beside A4 and A5; A6 beside A7 and A8). Phones are unchanged.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

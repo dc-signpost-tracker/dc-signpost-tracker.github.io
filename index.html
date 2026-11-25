@@ -180,7 +180,9 @@ section{margin-top:30px}
 
 /* signposts: a card each, leading with its headline figure */
 .sps{display:grid;gap:16px;align-items:stretch;grid-template-columns:1fr}
-@media (min-width:760px){.sps{grid-template-columns:1fr 1fr}}
+@media (min-width:760px){.sps{grid-template-columns:1fr 1fr}
+  /* a card with charts takes two rows, so the two plain cards beside it stack and share its height */
+  .sps .sp.tall{grid-row:span 2}}
 .sp{background:var(--surface);border:1px solid transparent;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(17,28,43,.06),0 6px 18px rgba(17,28,43,.08)}
 .sp-head{display:flex;align-items:center;gap:11px;padding:13px 16px;background:var(--surface);border-bottom:4px solid var(--rule)}
 .sps.Easing .sp-head{border-bottom-color:var(--ease-bg)}.sps.Persisting .sp-head{border-bottom-color:var(--pers-bg)}.sps.Intensifying .sp-head{border-bottom-color:var(--int-bg)}
@@ -616,7 +618,7 @@ function signpost(sp, call){
   const src = url
     ? `<a class="info" href="${esc(url)}" target="_blank" rel="noopener" title="Open the primary source" aria-label="Open the primary source for ${esc(sp.name)}"><span aria-hidden="true">i</span></a>`
     : `<span class="unv">Not yet verified</span>`;
-  return `<article class="sp" id="sp-${esc(sp.id)}">
+  return `<article class="sp${SERIES[sp.id] ? " tall" : ""}" id="sp-${esc(sp.id)}">
     <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}${sp.added ? ` <span class="new-tag" title="Added ${esc(fmt(sp.added))}">New</span>` : ""}</h3>
       <span class="pill ${s}"${s === "none" && noted(sp) ? ` title="New developments were reviewed and did not cross the trigger"` : ""}><i>${s === "none" && noted(sp) ? "•" : SIGNAL_ICON[s]}</i>${s === "none" && noted(sp) ? "News, no signal" : SIGNAL_TEXT[s]}</span></header>
     <div class="sp-body">
