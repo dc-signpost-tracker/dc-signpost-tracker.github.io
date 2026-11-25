@@ -380,6 +380,11 @@ The owner reviewed the site as a first-time reader would and approved:
   from 75 to 45 between the first and second quarters of 2026 while the share stayed above
   half). The gauge now shows only the current reading.
 
+- **Europe Power order kept; D1 renamed (25 Nov 2026):** the owner kept the order D1 to D5
+  (D4 Britain and D5 Ireland stay last as country-specific). D1 was renamed from "Earlier
+  grid expansions" to "Grid fixes: Amsterdam, Frankfurt, London" so the header says
+  which hubs it covers.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

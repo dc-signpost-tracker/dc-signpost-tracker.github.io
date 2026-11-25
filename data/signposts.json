@@ -822,7 +822,7 @@
    "sps": [
     {
      "id": "D1",
-     "name": "Earlier grid expansions",
+     "name": "Grid fixes: Amsterdam, Frankfurt, London",
      "type": "Event",
      "feed": "Quarterly check",
      "track": "Whether dated grid fixes for Noord-Holland, Frankfurt and West London are brought forward or slip.",
