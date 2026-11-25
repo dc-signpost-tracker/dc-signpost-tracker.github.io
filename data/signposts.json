@@ -415,15 +415,21 @@
      "trigger": "Negative if a state enacts hard limits on data centre water use or pauses approvals, for example Texas Senate Bill 338 or a statewide pause in Arizona.",
      "status": "none",
      "headline": "Disclosure, not limits",
-     "summary": "State rules so far mostly require reporting. Texas Senate Bill 338 and an Arizona pause are proposed, not law",
-     "latest": "Rules are tightening, so far mostly through disclosure. From 2027 California requires a water-supply assessment before approving a data centre and makes developers fund the water infrastructure they need. Virginia, New Jersey and Utah now require water reporting. Locally, Marana bars drinking water for data centre cooling and Chandler caps data centre water use. Proposed: Texas Senate Bill 338 (water-efficient cooling for new data centres), under a Governor-elect who has pledged to pause approvals, and a statewide pause backed by Arizona's new legislature and Attorney General.",
+     "summary": "State rules so far mostly require reporting. Texas Senate Bill 338 is proposed, not law; no Arizona statewide pause bill has been found",
+     "latest": "Rules are tightening, so far mostly through disclosure. From 1 Jan 2027 California requires a water-supply assessment before approving a data centre and makes developers fund the water infrastructure they need. Virginia, New Jersey and Utah now require water reporting. Locally, Marana will not supply drinking water to data centres, and Mesa, Avondale and Phoenix cap industrial water use. Proposed: Texas Senate Bill 338 (water-efficient cooling for new data centres), under a Governor-elect who has pledged to pause approvals. No Arizona statewide pause bill has been found yet.",
      "latestDate": "Baseline, Nov 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Texas Legislature convenes 12 Jan 2027; Arizona session opens Jan 2027",
      "sources": "Texas Legislature Online; Arizona Legislature; state bill trackers",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Reading corrected with the owner's approval: Chandler replaced by Mesa, Avondale and Phoenix; no Arizona statewide pause bill found"
+      }
+     ],
+     "verify": "California's package, including AB 2469, was signed on 21 Sep 2026 and mainly takes effect on 1 Jan 2027 (law firm and press summaries; the governor's own page would not open). Marana's rule and the Mesa, Avondale and Phoenix caps are press-reported. Corrected on 25 Nov 2026 with the owner's approval: Chandler's rules cover siting and noise, not water caps, and no Arizona statewide pause bill was found. Virginia, New Jersey and Utah reporting rules and Texas Senate Bill 338 are still to be checked at source.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: a state enacts hard water limits or a pause",
      "last_checked_on": "2026-11-25"
@@ -436,16 +442,22 @@
      "track": "Whether drought leads utilities to curtail or refuse data centre water supply in Georgia, Northern Virginia or central Texas.",
      "trigger": "Negative if utilities in these hubs curtail or refuse supply because of drought.",
      "status": "none",
-     "headline": "Some refusals in Georgia",
-     "summary": "Some Georgia utilities already refuse large water requests. Northern Virginia and central Texas are also watched",
-     "latest": "Some utilities in Georgia already refuse large water requests. Northern Virginia and central Texas are the other hubs watched, using the US Drought Monitor.",
-     "latestDate": "Baseline, Nov 2026",
+     "headline": "Georgia utilities balking",
+     "summary": "At large data centre water requests during the drought, as they lack the water (press-reported; no utility named yet). Northern Virginia and central Texas are also watched",
+     "latest": "During Georgia's drought, local utilities have balked at data centre developers' requests for millions of gallons a day because they do not have the water, according to Bloomberg Law (June 2026); no specific utility is named. Northern Virginia and central Texas are the other hubs watched, using the US Drought Monitor.",
+     "latestDate": "June 2026 report",
      "source_url": null,
      "retrieved_on": null,
      "next": "Weekly US Drought Monitor; summer 2027 season",
-     "sources": "US Drought Monitor; utility notices in Georgia, Northern Virginia and central Texas",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "sources": "Bloomberg Law (June 2026); US Drought Monitor; utility notices in Georgia, Northern Virginia and central Texas",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Reading softened with the owner's approval and cited to Bloomberg Law; no named utility yet"
+      }
+     ],
+     "verify": "Press-reported only: Bloomberg Law, 22 Jun 2026, quoting metro Atlanta water planners. No utility notice naming a refusal has been found. Softened on 25 Nov 2026 with the owner's approval.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: drought-driven curtailment or refusal in a major hub",
      "last_checked_on": "2026-11-25"

@@ -346,6 +346,12 @@ The owner reviewed the site as a first-time reader would and approved:
   Open gaps noted for later: "avoid water-stressed areas" has no signpost on calls E and H;
   E1 and E6 both show 0.58 litres; "The picture today" does not mention calls B and F.
 
+- **B1 and B2 readings corrected (25 Nov 2026):** with the owner's approval, B1 no longer
+  says Chandler caps data centre water use (its rules cover siting and noise; Mesa, Avondale
+  and Phoenix cap industrial water use) and says no Arizona statewide pause bill has been
+  found. B2's headline became "Georgia utilities balking", cited to Bloomberg Law (June
+  2026). Both stay "Not yet verified" until the original documents are read.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
