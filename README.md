@@ -16,7 +16,7 @@ The page reads the data files when it loads. Changing a data file changes the si
 ## Rules the data follows
 
 - Every reading carries a primary source link and a retrieval date. A reading
-  without one is shown as "Not yet verified against a primary source".
+  without one is shown as "Press-reported; to be verified against primary source".
 - New readings publish automatically. A change of signpost status, or of a severity
   rating, is made only by the owner.
 - No keys or credentials are stored in this repository.

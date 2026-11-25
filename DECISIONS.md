@@ -352,6 +352,16 @@ The owner reviewed the site as a first-time reader would and approved:
   found. B2's headline became "Georgia utilities balking", cited to Bloomberg Law (June
   2026). Both stay "Not yet verified" until the original documents are read.
 
+- **Unverified caveat softened (25 Nov 2026):** the red "Not yet verified" label became a
+  small grey italic caveat, "Press-reported; to be verified against primary source", at the
+  owner's request, because the red label read as a credibility problem.
+- **Headline style (25 Nov 2026):** the owner found headlines whose summary continued the
+  sentence (e.g. "Georgia utilities balking" / "At large data centre water requests...")
+  unintuitive. All such cards were rewritten so the summary is a complete sentence: A6, A8,
+  A9, B2, B3, B6, B7, C1, C2, C4, D1, D2, D4, E1, E3, E5, E6, F8, G2, G3, G4, G6, G7, H1, H2,
+  H4, H5, H6. Headlines changed on B2 ("Pushback in Georgia"), B3 ("1.25 million acre-feet
+  cut a year") and C1 ("Over half disrupted"). The rule is in OPERATING_RULES.md.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

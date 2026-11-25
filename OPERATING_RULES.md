@@ -163,7 +163,7 @@ A11 on 25 Nov 2026, and the old A9 and A10 became A8 and A9). Each carries `"add
 - Their baseline is 23 Nov 2026: only developments after that date can change a status.
 - Their trigger wording is a draft until the owner confirms it. Until then, report
   developments in the digest but do not propose a status change on them.
-- Their readings came from search results and press and are "Not yet verified". Verify
+- Their readings came from search results and press and carry the grey "Press-reported; to be verified against primary source" caveat. Verify
   them at the primary source as for any other reading.
 - C2 (local pauses and bans) uses the US Data Center Moratorium Tracker, chosen by the owner on
   25 Nov 2026; its trigger uses the count of active pauses and bans, not the running total.
@@ -190,3 +190,12 @@ that this text still matches the signposts. Where it no longer does, draft the u
 wording (marking what is new) and put it under "Needs your decision" in the digest. Never
 apply it without the owner's approval. Reordering `key.text` points to follow signpost
 order needs no approval, as long as the wording is unchanged.
+
+## Headline and summary style
+
+Each card's headline must make sense on its own (a figure with its unit, or a short
+plain-English phrase), and the summary under it must be a complete sentence that reads on
+its own. Never write a summary that continues the headline's sentence (for example a
+headline "Eight states" followed by "Paused or repealed ..."). Repeating the headline's
+figure in the summary is fine. A card without a primary source shows a grey caveat,
+"Press-reported; to be verified against primary source", not a red label.

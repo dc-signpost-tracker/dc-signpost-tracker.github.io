@@ -198,10 +198,11 @@ section{margin-top:30px}
 .sp-foot{border-top:1px solid var(--rule);padding:11px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;flex-wrap:nowrap;font-size:13px;color:var(--muted)}
 .sp-foot b{color:var(--ink);font-weight:600}
 .sp-foot a{color:var(--accent);font-weight:600;white-space:nowrap}
-.sp-foot .unv{flex:none}
+.sp-foot:has(.unv){flex-wrap:wrap}
+.sp-foot .unv{flex:1 0 100%;order:2}
 .sp-foot a.info{flex:none;width:22px;height:22px;border-radius:50%;border:1.6px solid var(--accent);display:inline-flex;align-items:center;justify-content:center;font:italic 700 13px/1 Georgia,"Times New Roman",serif;text-decoration:none}
 .sp-foot a.info:hover,.sp-foot a.info:focus-visible{background:var(--accent);color:var(--surface)}
-.unv{font-weight:600;color:var(--bad);white-space:nowrap}
+.unv{font-size:12px;font-weight:400;color:var(--muted);font-style:italic}
 .new-tag{display:inline-block;vertical-align:middle;margin-left:6px;padding:1px 7px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:0;line-height:1.5}
 .verify{color:var(--bad);font-weight:600;font-size:13px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
@@ -617,7 +618,7 @@ function signpost(sp, call){
   const st = statusOf(sp), s = signalOf(sp), url = safeUrl(sp.source_url);
   const src = url
     ? `<a class="info" href="${esc(url)}" target="_blank" rel="noopener" title="Open the primary source" aria-label="Open the primary source for ${esc(sp.name)}"><span aria-hidden="true">i</span></a>`
-    : `<span class="unv">Not yet verified</span>`;
+    : `<span class="unv">Press-reported; to be verified against primary source</span>`;
   return `<article class="sp${SERIES[sp.id] ? " tall" : ""}" id="sp-${esc(sp.id)}">
     <header class="sp-head"><span class="sp-id">${esc(sp.id)}</span><h3>${esc(sp.name)}${sp.added ? ` <span class="new-tag" title="Added ${esc(fmt(sp.added))}">New</span>` : ""}</h3>
       <span class="pill ${s}"${s === "none" && noted(sp) ? ` title="New developments were reviewed and did not cross the trigger"` : ""}><i>${s === "none" && noted(sp) ? "•" : SIGNAL_ICON[s]}</i>${s === "none" && noted(sp) ? "News, no signal" : SIGNAL_TEXT[s]}</span></header>
@@ -632,7 +633,7 @@ function signpost(sp, call){
     <details class="more"><summary>Reading, trigger and sources</summary>
       <dl>
         <div><dt>Latest reading${sp.latestDate ? " · " + esc(sp.latestDate) : ""}</dt><dd>${esc(sp.latest)}</dd></div>
-        ${url ? `<div><dt>Source</dt><dd><a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">Primary source</a>${sp.retrieved_on ? ", retrieved " + esc(fmt(sp.retrieved_on)) : ""}</dd></div>` : `<div><dt>Source</dt><dd><span class="verify">Not yet verified against a primary source</span></dd></div>`}
+        ${url ? `<div><dt>Source</dt><dd><a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">Primary source</a>${sp.retrieved_on ? ", retrieved " + esc(fmt(sp.retrieved_on)) : ""}</dd></div>` : `<div><dt>Source</dt><dd><span class="verify">Press-reported; to be verified against primary source</span></dd></div>`}
         ${sp.verify ? `<div><dt>To verify</dt><dd>${esc(sp.verify)}</dd></div>` : ""}
         <div><dt>What we track</dt><dd>${esc(sp.track)}</dd></div>
         <div><dt>Trigger</dt><dd>${esc(sp.trigger)}</dd></div>
