@@ -385,6 +385,15 @@ The owner reviewed the site as a first-time reader would and approved:
   grid expansions" to "Grid fixes: Amsterdam, Frankfurt, London" so the header says
   which hubs it covers.
 
+- **Europe Water reordered; pipeline signpost dropped (25 Nov 2026):** the owner dropped
+  Pipeline in water-stressed areas (was E4: no source publishes the figure before August
+  2027) and approved this order: E1 European Union minimum standards (unchanged), E2
+  Reported water use (was E6), E3 Spain's final rules on water (was E2), E4 Drought (was
+  E3), E5 French permit refusals (unchanged), E6 Water company objections (was E7). E1's
+  headline became "No limit set yet" and the 0.58 against 0.4 litres bar moved to E2, so
+  the two cards no longer share a headline. "Data centres avoid water-stressed areas" was
+  cut from "Stays contained if" as nothing tracks it. The site now has 54 signposts.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

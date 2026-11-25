@@ -25,7 +25,7 @@
    "text": "Spain: Council of Ministers approval of the data centre decree, which had been targeted by 29 Nov, before the general election",
    "sp": [
     "D3",
-    "E2"
+    "E3"
    ],
    "outcome": "Approved on 20 Nov 2026, nine days before the election. Published in the official gazette on 21 Nov and in force from 22 Nov."
   },
@@ -54,7 +54,7 @@
    "text": "Spain's general election; the main opposition party has said it would repeal the data centre decree",
    "sp": [
     "D3",
-    "E2"
+    "E3"
    ]
   },
   {
@@ -248,8 +248,7 @@
    "label": "Aug 2027",
    "text": "European Union public water-efficiency labels start for sites of 500 kilowatts or more",
    "sp": [
-    "E1",
-    "E4"
+    "E1"
    ],
    "fuzzy": true
   },

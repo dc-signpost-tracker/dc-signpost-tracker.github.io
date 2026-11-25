@@ -979,7 +979,7 @@
    "dir": "Intensifying",
    "key": {
     "label": "Stays contained if",
-    "text": "Water rules push data centres to low-water cooling; southern droughts remain manageable; data centres avoid water-stressed areas."
+    "text": "Water rules push data centres to low-water cooling; southern droughts remain manageable."
    },
    "depends": "Growth is moving into the water-scarce south. The European Union rating scheme and national rules turn water into a condition for building.",
    "sps": [
@@ -991,14 +991,47 @@
      "track": "Whether the proposal includes water-use limits, and at what level.",
      "trigger": "Watch for limits near the 0.4 litres per kilowatt-hour benchmark, and tighter limits in water-stressed areas.",
      "status": "none",
-     "headline": "0.58 litres",
-     "summary": "EU data centres used 0.58 litres of water per kilowatt-hour on average in 2024, against a 0.4 benchmark",
+     "headline": "No limit set yet",
+     "summary": "The EU has not yet proposed a water-use limit for data centres. A consultation on minimum standards is open until 14 Dec 2026",
      "latest": "2024 European Union average 0.58 litres per kilowatt-hour. A consultation on minimum standards is open until 14 Dec 2026.",
      "latestDate": "Commission report, 21 Sep 2026",
      "source_url": "https://energy.ec.europa.eu/document/download/8a87a5fe-0260-462a-b165-09f1496d1aa0_en?filename=COM_2026_500_1_EN_ACT_part1_v4.pdf",
      "retrieved_on": "2026-11-20",
      "next": "Consultation closes 14 Dec 2026; proposal due second quarter 2027",
      "sources": "European Commission energy directorate; EUR-Lex; public consultations",
+     "history": [],
+     "status_reviewed_on": "2026-11-20",
+     "last_checked_on": "2026-11-25",
+     "threshold": "Watch: limits near 0.4 litres per kilowatt-hour"
+    },
+    {
+     "id": "E2",
+     "name": "Reported water use",
+     "type": "Measured",
+     "feed": "European Commission report, annual",
+     "track": "On-site water use that EU data centres report to the European Commission's database each year.",
+     "trigger": "Positive if reported water use falls year on year and sites in water-stressed areas report low use.",
+     "status": "none",
+     "headline": "0.58 litres",
+     "summary": "458 data centres reported an average of 0.58 litres per kilowatt-hour in the first reporting period (2024); there is no second year yet to compare",
+     "latest": "The European Commission's report on the energy efficiency of data centres, published on 21 Sep 2026, covers the first reporting period (May to September 2024). The average reported water use was 0.58 litres per kilowatt-hour of computing-equipment energy, ranging from 0.07 to 1.28 across member states, based on 458 data centres whose water figures were judged reliable. In all, 770 data centres reported, about 36% of the estimated total. The report gives no total volume of water. A report on the 2025 reporting period is in preparation, so no year-on-year comparison is possible yet.",
+     "latestDate": "21 Sep 2026 report",
+     "source_url": "https://energy.ec.europa.eu/document/download/8a87a5fe-0260-462a-b165-09f1496d1aa0_en?filename=COM_2026_500_1_EN_ACT_part1_v4.pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "Commission report on 2025 data",
+     "sources": "European Commission report COM(2026) 500; European database on data centres",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Reading checked: the Commission's report COM(2026) 500 read; average water figure 0.58, from 458 data centres",
+       "kind": "note"
+      }
+     ],
+     "verify": "The report's text (COM(2026) 500 final, dated 21 Sep 2026) was read on a national parliament's copy of the same file as the linked Commission document; the Commission's own publication page would not open. The trigger wording is a draft awaiting the owner's confirmation.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: reported water use falls year on year",
+     "added": "2026-11-23",
+     "last_checked_on": "2026-11-25",
      "gauge": {
       "label": "Average water use per kilowatt-hour",
       "min": 0,
@@ -1008,14 +1041,10 @@
       "unit": " L",
       "vText": "0.58 L",
       "tText": "Benchmark: 0.4 L"
-     },
-     "history": [],
-     "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-25",
-     "threshold": "Watch: limits near 0.4 litres per kilowatt-hour"
+     }
     },
     {
-     "id": "E2",
+     "id": "E3",
      "name": "Spain's final rules on water",
      "type": "Event",
      "feed": "Event alerts",
@@ -1059,7 +1088,7 @@
      "threshold": "Watch: 0.1 litres per kilowatt-hour or less"
     },
     {
-     "id": "E3",
+     "id": "E4",
      "name": "Drought",
      "type": "Event",
      "feed": "Download, every 10 days in summer",
@@ -1090,28 +1119,6 @@
      "threshold": "Trigger: wider or longer droughts"
     },
     {
-     "id": "E4",
-     "name": "Pipeline in water-stressed areas",
-     "type": "Event",
-     "feed": "Calculated, annual",
-     "track": "Share of new European Union data centre capacity sited in basins under high water stress.",
-     "trigger": "A rising share confirms the shift south.",
-     "status": "none",
-     "headline": "No pipeline figure",
-     "summary": "For context, 64% of Spain's operating sites are in areas with water gaps",
-     "latest": "No pipeline figure is available. A study of operating sites found 64% of Spain's data centres in areas with water gaps, against none in Germany.",
-     "latestDate": "Study published Sep 2026",
-     "source_url": "https://pubs.acs.org/esthag/article/60/39/27780/5437283/One-Quarter-of-Global-Data-Centers-are-Located-in",
-     "retrieved_on": "2026-11-20",
-     "next": "Improves once public labels start in Aug 2027",
-     "sources": "Commission data centre database; World Resources Institute Aqueduct; European Environment Agency water index",
-     "history": [],
-     "verify": "The study covers operating sites, not the pipeline this signpost tracks.",
-     "status_reviewed_on": "2026-11-20",
-     "last_checked_on": "2026-11-25",
-     "threshold": "Trigger: a rising share in water-stressed areas"
-    },
-    {
      "id": "E5",
      "name": "French permit refusals",
      "type": "Event",
@@ -1135,35 +1142,6 @@
     },
     {
      "id": "E6",
-     "name": "Reported water use",
-     "type": "Measured",
-     "feed": "European Commission report, annual",
-     "track": "On-site water use that EU data centres report to the European Commission's database each year.",
-     "trigger": "Positive if reported water use falls year on year and sites in water-stressed areas report low use.",
-     "status": "none",
-     "headline": "0.58 litres",
-     "summary": "458 data centres reported an average of 0.58 litres per kilowatt-hour in the first reporting period (2024); there is no second year yet to compare",
-     "latest": "The European Commission's report on the energy efficiency of data centres, published on 21 Sep 2026, covers the first reporting period (May to September 2024). The average reported water use was 0.58 litres per kilowatt-hour of computing-equipment energy, ranging from 0.07 to 1.28 across member states, based on 458 data centres whose water figures were judged reliable. In all, 770 data centres reported, about 36% of the estimated total. The report gives no total volume of water. A report on the 2025 reporting period is in preparation, so no year-on-year comparison is possible yet.",
-     "latestDate": "21 Sep 2026 report",
-     "source_url": "https://energy.ec.europa.eu/document/download/8a87a5fe-0260-462a-b165-09f1496d1aa0_en?filename=COM_2026_500_1_EN_ACT_part1_v4.pdf",
-     "retrieved_on": "2026-11-25",
-     "next": "Commission report on 2025 data",
-     "sources": "European Commission report COM(2026) 500; European database on data centres",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Reading checked: the Commission's report COM(2026) 500 read; average water figure 0.58, from 458 data centres",
-       "kind": "note"
-      }
-     ],
-     "verify": "The report's text (COM(2026) 500 final, dated 21 Sep 2026) was read on a national parliament's copy of the same file as the linked Commission document; the Commission's own publication page would not open. The trigger wording is a draft awaiting the owner's confirmation.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: reported water use falls year on year",
-     "added": "2026-11-23",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "E7",
      "name": "Water company objections",
      "type": "Event",
      "feed": "Event alerts",
