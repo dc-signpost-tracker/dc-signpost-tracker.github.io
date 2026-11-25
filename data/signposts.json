@@ -408,118 +408,28 @@
    "sps": [
     {
      "id": "B1",
-     "name": "Closed-loop becomes standard",
-     "type": "Measured",
-     "feed": "Annual disclosures; state reporting",
-     "track": "Whether zero-water, closed-loop designs become the norm for new US capacity, as shown in hyperscale operators' water disclosures and new state reporting (California, New Jersey, Utah).",
-     "trigger": "Positive if on-site water use stays well below the national laboratory's projection for 2028.",
+     "name": "Hard limits in law",
+     "type": "Event",
+     "feed": "Weekly while legislatures sit",
+     "track": "Whether 2027 state legislatures turn water disclosure rules into hard limits.",
+     "trigger": "Negative if a state enacts hard limits on data centre water use or pauses approvals, for example Texas Senate Bill 338 or a statewide pause in Arizona.",
      "status": "none",
-     "headline": "Microsoft: all new designs",
-     "summary": "Use zero-evaporation closed loops since August 2024. Not yet shown to be the norm across new US capacity",
-     "latest": "All new Microsoft data centre designs since August 2024 use zero-evaporation closed-loop cooling. Project Blue near Tucson moved away from evaporative cooling after the city blocked its original plan. The benchmark is Lawrence Berkeley National Laboratory's projection: US data centres used about 17 billion gallons directly in 2023, and hyperscale sites alone could use 16 to 33 billion gallons by 2028.",
+     "headline": "Disclosure, not limits",
+     "summary": "State rules so far mostly require reporting. Texas Senate Bill 338 and an Arizona pause are proposed, not law",
+     "latest": "Rules are tightening, so far mostly through disclosure. From 2027 California requires a water-supply assessment before approving a data centre and makes developers fund the water infrastructure they need. Virginia, New Jersey and Utah now require water reporting. Locally, Marana bars drinking water for data centre cooling and Chandler caps data centre water use. Proposed: Texas Senate Bill 338 (water-efficient cooling for new data centres), under a Governor-elect who has pledged to pause approvals, and a statewide pause backed by Arizona's new legislature and Attorney General.",
      "latestDate": "Baseline, Nov 2026",
-     "source_url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/us_data_center_energy_usage_report_lbnl-2001637.pdf",
-     "retrieved_on": "2026-11-25",
-     "next": "Next round of operator water disclosures; first state water reports",
-     "sources": "Operators' sustainability reports; Lawrence Berkeley National Laboratory; state water reporting in California, New Jersey and Utah",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Baseline reading checked at Microsoft's own statement and the national laboratory's report",
-       "kind": "note"
-      }
-     ],
-     "verify": "Microsoft's statement that all its new designs since August 2024 use this cooling was read directly on its own site (https://www.microsoft.com/en-us/microsoft-cloud/blog/?p=4238); the first sites using it are due online in late 2027. The linked laboratory report gives the figures in litres: 66 billion litres of direct use in 2023 (about 17 billion gallons) and 60 to 124 billion litres for hyperscale sites in 2028 (about 16 to 33 billion gallons). The Project Blue account has not been checked.",
+     "source_url": null,
+     "retrieved_on": null,
+     "next": "Texas Legislature convenes 12 Jan 2027; Arizona session opens Jan 2027",
+     "sources": "Texas Legislature Online; Arizona Legislature; state bill trackers",
+     "history": [],
+     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: on-site use well below the 16 to 33 billion gallons projected for 2028",
+     "threshold": "Trigger: a state enacts hard water limits or a pause",
      "last_checked_on": "2026-11-25"
     },
     {
      "id": "B2",
-     "name": "Reclaimed water at scale",
-     "type": "Measured",
-     "feed": "Annual utility reports",
-     "track": "Whether hub utilities expand reclaimed water for data centres, sparing drinking water.",
-     "trigger": "Positive if other hub utilities follow Loudoun Water at scale.",
-     "status": "none",
-     "headline": "750 million gallons",
-     "summary": "Reclaimed water Loudoun Water delivered to its customers in 2025, in the Northern Virginia hub",
-     "latest": "Loudoun Water, which serves the Northern Virginia hub, delivered more than 750 million gallons of reclaimed water in 2025, to roughly 40 customers. Neither the utility nor the county says how much of it went to data centres. The county says data centres account for 9% of drinking-water use in Loudoun on an average day.",
-     "latestDate": "2025",
-     "source_url": "https://www.loudounwater.org/commercial-customers/reclaimed-water-program",
-     "retrieved_on": "2026-11-25",
-     "next": "Utility annual reports for 2026",
-     "sources": "Loudoun Water; water utilities in the Phoenix, Dallas, Atlanta and Columbus hubs",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Baseline reading checked at the utility's own page; the volume went to about 40 customers, not only data centres",
-       "kind": "note"
-      }
-     ],
-     "verify": "Read directly on the utility's page and on Loudoun County's page on data centres and water (https://www.loudoun.gov/6402/Data-Centers-Water-Considerations).",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: other hub utilities supply reclaimed water at scale",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "B3",
-     "name": "Water planning catches up",
-     "type": "Event",
-     "feed": "State water plans and budgets",
-     "track": "Whether states fund water supply ahead of data centre demand.",
-     "trigger": "Positive if states plan and fund supply for data centres, for example Texas adding them to its water plan and drawing on its US$20 billion water fund.",
-     "status": "none",
-     "headline": "Left out of Texas's plan",
-     "summary": "Texas adopted its 2027 water plan on 23 Jul 2026 without demand forecasts for data centres, which could use up to 2.7% of the state's water by 2030",
-     "latest": "Texas adopted its 2027 state water plan on 23 Jul 2026 without demand forecasts for data centres, according to press reports; forecasts are deferred to the 2032 plan. The water board is due to consider an amendment to the plan at a meeting tentatively set for December 2026. Data centres could use up to 2.7% of the state's water by 2030, according to the Houston Advanced Research Center, a figure that includes water used to generate their electricity. Texas has a US$20 billion water fund that could be drawn on.",
-     "latestDate": "Plan adopted 23 Jul 2026",
-     "source_url": "https://www.twdb.texas.gov/waterplanning/swp/2027/index.asp",
-     "retrieved_on": "2026-11-25",
-     "next": "Water board's meeting on the plan amendment, tentatively December 2026; Texas Legislature convenes 12 Jan 2027",
-     "sources": "Texas Water Development Board; Houston Advanced Research Center; state water plans",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Baseline reading checked: Texas's 2027 plan was adopted on 23 Jul 2026 (water board's page read directly), before the baseline",
-       "kind": "note"
-      }
-     ],
-     "verify": "The adoption date and the pending amendment were read directly on the water board's page; the plan itself would not open, so the omission of data centres is from press reports (E&E News, 24 Jul 2026; Community Impact). The 2.7% figure was read at the research centre's own release (https://harcresearch.org/news/texas-data-center-boom-could-consume-up-to-161-billion-gallons-of-water-annually-by-2030/). The US$20 billion fund has not been checked.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: states plan and fund supply for data centres",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "B4",
-     "name": "Growth shifts to water-rich basins",
-     "type": "Measured",
-     "feed": "Annual siting studies",
-     "track": "Whether the share of new capacity going to water-stressed basins falls as growth tilts to water-rich regions such as the Great Lakes.",
-     "trigger": "Positive if the share in water-stressed areas falls, without any project nearing the Great Lakes Compact's review trigger (a loss of 5 million gallons a day over 90 days).",
-     "status": "none",
-     "headline": "Two-thirds in stressed areas",
-     "summary": "Share of data centres built or in development since 2022 that sit in water-stressed areas",
-     "latest": "About two-thirds of new US data centres built or in development since 2022 sit in areas of high water stress, according to a Bloomberg News analysis that used the World Resources Institute's water-stress data and covered sites to early 2025. It was a one-off analysis, not a regular series. Microsoft expects its Great Lakes campuses to stay far below the Great Lakes Compact's regional-review trigger.",
-     "latestDate": "Analysis of data to early 2025",
-     "source_url": "https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/",
-     "retrieved_on": "2026-11-25",
-     "next": "Any repeat of the analysis, or a comparable siting study",
-     "sources": "World Resources Institute; Ceres; Great Lakes Compact filings",
-     "history": [
-      {
-       "date": "2026-11-25",
-       "note": "Baseline reading checked: the two-thirds figure is a Bloomberg News analysis using World Resources Institute data, not an Institute publication",
-       "kind": "note"
-      }
-     ],
-     "verify": "The figure was read directly in the linked analysis. Because it is a one-off, there is no scheduled update to compare against. Microsoft's Great Lakes statement has not been checked.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: share in water-stressed areas falls below two-thirds",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "B5",
      "name": "Colorado River shortage",
      "type": "Event",
      "feed": "Monthly",
@@ -550,29 +460,7 @@
      "last_checked_on": "2026-11-25"
     },
     {
-     "id": "B6",
-     "name": "Hard limits in law",
-     "type": "Event",
-     "feed": "Weekly while legislatures sit",
-     "track": "Whether 2027 state legislatures turn water disclosure rules into hard limits.",
-     "trigger": "Negative if a state enacts hard limits on data centre water use or pauses approvals, for example Texas Senate Bill 338 or a statewide pause in Arizona.",
-     "status": "none",
-     "headline": "Disclosure, not limits",
-     "summary": "State rules so far mostly require reporting. Texas Senate Bill 338 and an Arizona pause are proposed, not law",
-     "latest": "Rules are tightening, so far mostly through disclosure. From 2027 California requires a water-supply assessment before approving a data centre and makes developers fund the water infrastructure they need. Virginia, New Jersey and Utah now require water reporting. Locally, Marana bars drinking water for data centre cooling and Chandler caps data centre water use. Proposed: Texas Senate Bill 338 (water-efficient cooling for new data centres), under a Governor-elect who has pledged to pause approvals, and a statewide pause backed by Arizona's new legislature and Attorney General.",
-     "latestDate": "Baseline, Nov 2026",
-     "source_url": null,
-     "retrieved_on": null,
-     "next": "Texas Legislature convenes 12 Jan 2027; Arizona session opens Jan 2027",
-     "sources": "Texas Legislature Online; Arizona Legislature; state bill trackers",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
-     "status_reviewed_on": "2026-11-23",
-     "threshold": "Trigger: a state enacts hard water limits or a pause",
-     "last_checked_on": "2026-11-25"
-    },
-    {
-     "id": "B7",
+     "id": "B3",
      "name": "Drought curtailments",
      "type": "Event",
      "feed": "Weekly",
@@ -591,6 +479,123 @@
      "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: drought-driven curtailment or refusal in a major hub",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "B4",
+     "name": "Closed-loop becomes standard",
+     "type": "Measured",
+     "feed": "Annual disclosures; state reporting",
+     "track": "Whether new US data centres nationwide are designed for closed-loop, zero-water cooling, measured by total on-site water use against the national laboratory's estimates, with operators' disclosures and new state reporting (California, New Jersey, Utah). Microsoft is shown as one example.",
+     "trigger": "Positive if on-site water use stays well below the national laboratory's projection for 2028.",
+     "status": "none",
+     "headline": "17 billion gallons",
+     "summary": "US data centres' on-site water use in 2023 (national laboratory estimate). Hyperscale sites alone could use 16 to 33 billion gallons by 2028. Microsoft, for one, has designed all new sites for zero-evaporation cooling since August 2024",
+     "latest": "Lawrence Berkeley National Laboratory estimates US data centres used about 17 billion gallons of water directly in 2023, and that hyperscale sites alone could use 16 to 33 billion gallons by 2028. Among operators, Microsoft says all its new data centre designs since August 2024 use zero-evaporation closed-loop cooling. No nationwide figure yet shows how much new US capacity uses such designs.",
+     "latestDate": "2023 estimate, report of Dec 2024",
+     "source_url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/us_data_center_energy_usage_report_lbnl-2001637.pdf",
+     "retrieved_on": "2026-11-25",
+     "next": "Next round of operator water disclosures; first state water reports",
+     "sources": "Operators' sustainability reports; Lawrence Berkeley National Laboratory; state water reporting in California, New Jersey and Utah",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at Microsoft's own statement and the national laboratory's report",
+       "kind": "note"
+      },
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Rescoped by the owner from Microsoft's designs to the whole US; Microsoft kept as one example"
+      }
+     ],
+     "verify": "Microsoft's statement that all its new designs since August 2024 use this cooling was read directly on its own site (https://www.microsoft.com/en-us/microsoft-cloud/blog/?p=4238); the first sites using it are due online in late 2027. The linked laboratory report gives the figures in litres: 66 billion litres of direct use in 2023 (about 17 billion gallons) and 60 to 124 billion litres for hyperscale sites in 2028 (about 16 to 33 billion gallons). The Project Blue account has not been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: on-site use well below the 16 to 33 billion gallons projected for 2028",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "B5",
+     "name": "Water planning catches up",
+     "type": "Event",
+     "feed": "State water plans and budgets",
+     "track": "Whether states fund water supply ahead of data centre demand.",
+     "trigger": "Positive if states plan and fund supply for data centres, for example Texas adding them to its water plan and drawing on its US$20 billion water fund.",
+     "status": "none",
+     "headline": "Left out of Texas's plan",
+     "summary": "Texas adopted its 2027 water plan on 23 Jul 2026 without demand forecasts for data centres, which could use up to 2.7% of the state's water by 2030",
+     "latest": "Texas adopted its 2027 state water plan on 23 Jul 2026 without demand forecasts for data centres, according to press reports; forecasts are deferred to the 2032 plan. The water board is due to consider an amendment to the plan at a meeting tentatively set for December 2026. Data centres could use up to 2.7% of the state's water by 2030, according to the Houston Advanced Research Center, a figure that includes water used to generate their electricity. Texas has a US$20 billion water fund that could be drawn on.",
+     "latestDate": "Plan adopted 23 Jul 2026",
+     "source_url": "https://www.twdb.texas.gov/waterplanning/swp/2027/index.asp",
+     "retrieved_on": "2026-11-25",
+     "next": "Water board's meeting on the plan amendment, tentatively December 2026; Texas Legislature convenes 12 Jan 2027",
+     "sources": "Texas Water Development Board; Houston Advanced Research Center; state water plans",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked: Texas's 2027 plan was adopted on 23 Jul 2026 (water board's page read directly), before the baseline",
+       "kind": "note"
+      }
+     ],
+     "verify": "The adoption date and the pending amendment were read directly on the water board's page; the plan itself would not open, so the omission of data centres is from press reports (E&E News, 24 Jul 2026; Community Impact). The 2.7% figure was read at the research centre's own release (https://harcresearch.org/news/texas-data-center-boom-could-consume-up-to-161-billion-gallons-of-water-annually-by-2030/). The US$20 billion fund has not been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: states plan and fund supply for data centres",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "B6",
+     "name": "Reclaimed water at scale",
+     "type": "Measured",
+     "feed": "Annual utility reports",
+     "track": "Whether hub utilities expand reclaimed water for data centres, sparing drinking water.",
+     "trigger": "Positive if other hub utilities follow Loudoun Water at scale.",
+     "status": "none",
+     "headline": "750 million gallons",
+     "summary": "Reclaimed water Loudoun Water delivered to its customers in 2025, in the Northern Virginia hub",
+     "latest": "Loudoun Water, which serves the Northern Virginia hub, delivered more than 750 million gallons of reclaimed water in 2025, to roughly 40 customers. Neither the utility nor the county says how much of it went to data centres. The county says data centres account for 9% of drinking-water use in Loudoun on an average day.",
+     "latestDate": "2025",
+     "source_url": "https://www.loudounwater.org/commercial-customers/reclaimed-water-program",
+     "retrieved_on": "2026-11-25",
+     "next": "Utility annual reports for 2026",
+     "sources": "Loudoun Water; water utilities in the Phoenix, Dallas, Atlanta and Columbus hubs",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked at the utility's own page; the volume went to about 40 customers, not only data centres",
+       "kind": "note"
+      }
+     ],
+     "verify": "Read directly on the utility's page and on Loudoun County's page on data centres and water (https://www.loudoun.gov/6402/Data-Centers-Water-Considerations).",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: other hub utilities supply reclaimed water at scale",
+     "last_checked_on": "2026-11-25"
+    },
+    {
+     "id": "B7",
+     "name": "Growth shifts to water-rich basins",
+     "type": "Measured",
+     "feed": "Annual siting studies",
+     "track": "Whether the share of new capacity going to water-stressed basins falls as growth tilts to water-rich regions such as the Great Lakes.",
+     "trigger": "Positive if the share in water-stressed areas falls, without any project nearing the Great Lakes Compact's review trigger (a loss of 5 million gallons a day over 90 days).",
+     "status": "none",
+     "headline": "Two-thirds in stressed areas",
+     "summary": "Share of data centres built or in development since 2022 that sit in water-stressed areas",
+     "latest": "About two-thirds of new US data centres built or in development since 2022 sit in areas of high water stress, according to a Bloomberg News analysis that used the World Resources Institute's water-stress data and covered sites to early 2025. It was a one-off analysis, not a regular series. Microsoft expects its Great Lakes campuses to stay far below the Great Lakes Compact's regional-review trigger.",
+     "latestDate": "Analysis of data to early 2025",
+     "source_url": "https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/",
+     "retrieved_on": "2026-11-25",
+     "next": "Any repeat of the analysis, or a comparable siting study",
+     "sources": "World Resources Institute; Ceres; Great Lakes Compact filings",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "note": "Baseline reading checked: the two-thirds figure is a Bloomberg News analysis using World Resources Institute data, not an Institute publication",
+       "kind": "note"
+      }
+     ],
+     "verify": "The figure was read directly in the linked analysis. Because it is a one-off, there is no scheduled update to compare against. Microsoft's Great Lakes statement has not been checked.",
+     "status_reviewed_on": "2026-11-23",
+     "threshold": "Trigger: share in water-stressed areas falls below two-thirds",
      "last_checked_on": "2026-11-25"
     }
    ]

@@ -302,6 +302,18 @@ The owner reviewed the site as a first-time reader would and approved:
   the old A9 Who pays for the grid became A8 and the old A10 On-site power became A9. The
   site now has 55 signposts.
 
+- **North America Water reordered by criticality (25 Nov 2026):** the owner approved this
+  order, most critical first, and the signposts were relettered: B1 Hard limits in law
+  (was B6), B2 Colorado River shortage (was B5), B3 Drought curtailments (was B7), B4
+  Closed-loop becomes standard (was B1), B5 Water planning catches up (was B3), B6 Reclaimed
+  water at scale (was B2), B7 Growth shifts to water-rich basins (was B4). Earlier entries
+  in this file use the old letters.
+- **B4 rescoped (25 Nov 2026):** Closed-loop becomes standard now tracks the whole US, with
+  Microsoft kept as one example; headline "17 billion gallons" (on-site use in 2023, national
+  laboratory estimate). The owner approved correcting the 2028 range in the trigger, but the
+  primary report shows 16 to 33 billion gallons is right for hyperscale sites, so the trigger
+  was left unchanged pending the owner's view on whether to say "hyperscale" in it.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
