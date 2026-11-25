@@ -43,9 +43,7 @@
    "label": "27 Nov 2026",
    "text": "Thailand draft requiring 80% reuse of cooling-tower discharge goes to the national data centre board",
    "sp": [
-    "H1",
-    "H2",
-    "H3"
+    "H2"
    ]
   },
   {
@@ -230,7 +228,7 @@
    "label": "Mid-2027, earliest",
    "text": "Johor's reported freeze on water-cooled builds ends",
    "sp": [
-    "H2"
+    "H3"
    ],
    "fuzzy": true
   },
@@ -266,7 +264,7 @@
    "label": "2027 dry season",
    "text": "Test of commercial water supply in India's main hubs",
    "sp": [
-    "H1"
+    "H5"
    ],
    "fuzzy": true
   },

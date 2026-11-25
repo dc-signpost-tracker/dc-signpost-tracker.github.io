@@ -9,7 +9,7 @@
   {
    "signpost": "A7",
    "priority": 1,
-   "task": "Nineteen signposts were added on 23 Nov 2026 (seventeen remain: the owner dropped the old A8 and A11 on 25 Nov 2026 and A9 and A10 became A8 and A9) with readings from search results and press. Checked on 25 Nov 2026 and updated: A7, A8, A9, C4, C6, D4, D5, E2, E6, F7, G4, G1. Still to do: H3 (outcome of Thailand's board meeting of 27 Nov 2026; no official draft found, and the 80% figure and the date rest on one press chain); H4 (press shows the reclaimed-water agreements were signed on 11 Aug 2025 between the national sewerage company and Johor Special Water, not in June 2026 with the state water company, and the 'about 8.5 gigawatts' figure could not be found for Johor: correct once a primary source is read); H5 (the water regulator's dam status page would not open); H6 (Karnataka and Rajasthan policy documents not found; Rajasthan's wastewater requirement unconfirmed); C2 (the owner chose the US Data Center Moratorium Tracker on 25 Nov 2026: open it, read the count of active pauses and bans and the total approved, and set source_url); A7 (open the regulator's orders for the second and third lines); G4 (find a company document confirming the third Inzai transformer entered service). Trigger wording on all seventeen is a draft awaiting the owner's confirmation; do not change a status on them until he confirms it. (North America Land relettered on 25 Nov 2026.) (Europe Water relettered on 25 Nov 2026.) (Europe Land relettered on 25 Nov 2026.) (North Asia relettered and merged on 25 Nov 2026.)"
+   "task": "Nineteen signposts were added on 23 Nov 2026 (seventeen remain: the owner dropped the old A8 and A11 on 25 Nov 2026 and A9 and A10 became A8 and A9) with readings from search results and press. Checked on 25 Nov 2026 and updated: A7, A8, A9, C4, C6, D4, D5, E2, E6, F7, G4, G1. Still to do: H2 (outcome of Thailand's board meeting of 27 Nov 2026; no official draft found, and the 80% figure and the date rest on one press chain); H4 (press shows the reclaimed-water agreements were signed on 11 Aug 2025 between the national sewerage company and Johor Special Water, not in June 2026 with the state water company, and the 'about 8.5 gigawatts' figure could not be found for Johor: correct once a primary source is read); H1 (the water regulator's dam status page would not open); H5 (Karnataka and Rajasthan policy documents not found; Rajasthan's wastewater requirement unconfirmed); C2 (the owner chose the US Data Center Moratorium Tracker on 25 Nov 2026: open it, read the count of active pauses and bans and the total approved, and set source_url); A7 (open the regulator's orders for the second and third lines); G4 (find a company document confirming the third Inzai transformer entered service). Trigger wording on all seventeen is a draft awaiting the owner's confirmation; do not change a status on them until he confirms it. (North America Land relettered on 25 Nov 2026.) (Europe Water relettered on 25 Nov 2026.) (Europe Land relettered on 25 Nov 2026.) (North Asia relettered and merged on 25 Nov 2026.) (South and Southeast Asia Water relettered and merged on 25 Nov 2026.)"
   },
   {
    "signpost": "G1",
@@ -22,7 +22,7 @@
    "task": "A3 each quarter: add Mitsubishi Heavy Industries' large-frame orders and shipments (and its US units) beside GE Vernova's, and Doosan Enerbility's US orders from its announcements. Find a primary statement of the earliest delivery year on sale (results deck or call transcript) for GE Vernova and Mitsubishi. Confirm the first-half 2026 US order count by maker at a better source than the press report. Large frames for utilities only."
   },
   {
-   "signpost": "H2",
+   "signpost": "H3",
    "priority": 2,
    "task": "Find an original source (the Johor state government or Bernama) for the reported request that operators hold water-cooled expansions until mid-2027. The air-cooling statement of 10 Mar 2026 is already confirmed at Bernama and the owner kept the status at Not yet on 20 Nov 2026. Checked on 21 Nov 2026: no original source found. The mid-2027 hold traces to a South China Morning Post report citing unnamed officials (repeated by Lowyat, 20 Nov 2025). A Bernama report of a written parliamentary reply by the Ministry of Investment, Trade and Industry (11 Feb 2026, carried by EdgeProp) says that as of January 2026 no data centre investment had been deferred. Still to try: a Johor state statement from around November 2025, and The Edge Malaysia's report (https://theedgemalaysia.com/node/781121)."
   },
@@ -49,7 +49,7 @@
   {
    "signpost": "H1",
    "priority": 3,
-   "task": "H1's 'track' text and H4's reading mention about 8.5 gigawatts on the way in Johor; the nearest figure found (a parliamentary reply reported on 20 Oct 2026) is 8.39 gigawatts of peak data centre demand for Peninsular Malaysia by 2030, of which Johor 4.42. Check and correct with the owner."
+   "task": "H1's 'track' text and H4's reading mention about 8.5 gigawatts on the way in Johor; the nearest figure found (a parliamentary reply reported on 20 Oct 2026) is 8.39 gigawatts of peak data centre demand for Peninsular Malaysia by 2030, of which Johor 4.42. Check and correct with the owner. (South and Southeast Asia Water relettered and merged on 25 Nov 2026.)"
   }
  ]
 }

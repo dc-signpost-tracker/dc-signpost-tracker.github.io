@@ -419,6 +419,15 @@ The owner reviewed the site as a first-time reader would and approved:
   issue, so the summary keeps the power reason: Tokyo takes 8 to 10 years to connect, and
   policy steers sites to regions with spare grid.
 
+- **South and Southeast Asia Water rescoped, merged and reordered (25 Nov 2026):** the owner
+  noted H1 and H2 were labelled region-wide but only covered Johor. Now, most critical
+  first: H1 Johor's water supply (was "Supply and rules keep pace"; Johor reservoir levels,
+  was H5, merged in), H2 Thailand's water-reuse rule (was H3), H3 Johor's shift to air
+  cooling (was H2, "Shift away from water cooling"), H4 Johor reclaimed water and tariffs
+  (unchanged), H5 India's hubs: state water rules (was H6). "Data centres avoid
+  water-stressed areas" was cut from "Stays contained if" as nothing tracks it. Noted gap: West Java (Indonesia) is named in
+  "What the call depends on" but has no signpost. The site now has 51 signposts.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
