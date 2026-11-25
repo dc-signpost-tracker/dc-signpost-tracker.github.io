@@ -403,6 +403,15 @@ The owner reviewed the site as a first-time reader would and approved:
   reported water use", "Drought: EU and UK", "UK water company objections". The owner asked
   that every Europe signpost header say whether it is EU-wide or country-specific.
 
+- **North Asia ex-China Power: two merges and a reorder (25 Nov 2026):** to manage the
+  signpost count the owner merged Korea's exemption threshold (was G4) into Korea's regional
+  connections, and Japanese connection times (was G2) into Japan's siting shift, moving
+  their readings, sources, history and the Osaka-against-Tokyo bar across. New order, most
+  critical first: G1 Japan's siting shift (was G7), G2 Korea's regional connections (was
+  G1), G3 Japan's nuclear restarts (unchanged, keeps its chart), G4 Tokyo-area grid upgrades
+  (was G6), G5 Korea's transmission build (unchanged). Headers now name the country. The
+  site now has 52 signposts.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
