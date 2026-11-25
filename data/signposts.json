@@ -11,7 +11,7 @@
    "dir": "Easing",
    "key": {
     "label": "Watch for easing",
-    "text": "New supply closes grid capacity shortfalls; gas-turbine lead times shorten; Texas connections resume and approvals rise."
+    "text": "New supply closes grid capacity shortfalls; Texas connections resume and approvals rise; gas-turbine lead times shorten."
    },
    "depends": "New supply arrives around 2030: turbine expansion, the PJM Interconnection backstop auction and new 765 kilovolt lines in Texas. Near-term data point the other way, so the rating reverts to Severe if these signposts do not turn.",
    "sps": [
@@ -401,7 +401,7 @@
    "baseline": "2026-11-23",
    "key": {
     "label": "Eases to Minor if",
-    "text": "Zero-water, closed-loop cooling becomes the norm for new capacity; hub utilities expand reclaimed water; states fund water supply ahead of data centre demand; growth tilts to water-rich basins."
+    "text": "Zero-water, closed-loop cooling becomes the norm for new capacity; states fund water supply ahead of data centre demand; hub utilities expand reclaimed water; growth tilts to water-rich basins."
    },
    "depends": "Water stays a cost and a siting filter, not a hard stop, as developers adapt instead of leaving. Waterless cooling uses more electricity, and most of a data centre's water footprint sits in power generation that operators do not control. It intensifies to Severe if Colorado River cuts deepen, states turn disclosure rules into hard limits, or drought leads utilities to refuse supply.",
    "bottom_line": "Water holds at Moderate in both periods: it adds cost and steers where sites go, but developers adapt with closed-loop cooling and reclaimed water instead of leaving. The risks run both ways, to Minor or to Severe.",
@@ -610,7 +610,7 @@
    "dir": "Persisting",
    "key": {
     "label": "Eases if",
-    "text": "Project delays from local opposition fall; community benefit deals unlock approvals; state or federal rules curb local vetoes."
+    "text": "Project delays from local opposition fall; state or federal rules curb local vetoes; community benefit deals unlock approvals."
    },
    "depends": "Local consent. Over half of large US projects were blocked or delayed in the second quarter of 2026. New York, Oregon and Texas have paused state permits, and an override of local vetoes looks unlikely.",
    "sps": [
@@ -783,7 +783,7 @@
    "dir": "Persisting",
    "key": {
     "label": "Eases if",
-    "text": "Capacity shifts to power-rich markets; connection rules ease; core-hub upgrades accelerate."
+    "text": "Core-hub upgrades accelerate; capacity shifts to power-rich markets; connection rules ease."
    },
    "depends": "Grid fixes for the core hubs land after 2030: Noord-Holland 2033 to 2038, Frankfurt mid-2030s, West London 2037. Secondary markets are rationing access, and on-site gas is limited by carbon pricing.",
    "sps": [
@@ -946,7 +946,7 @@
    "dir": "Intensifying",
    "key": {
     "label": "Stays contained if",
-    "text": "Water rules push data centres to low-water cooling; data centres avoid water-stressed areas; southern droughts remain manageable."
+    "text": "Water rules push data centres to low-water cooling; southern droughts remain manageable; data centres avoid water-stressed areas."
    },
    "depends": "Growth is moving into the water-scarce south. The European Union rating scheme and national rules turn water into a condition for building.",
    "sps": [
@@ -1623,7 +1623,7 @@
    "dir": "Intensifying",
    "key": {
     "label": "Stays contained if",
-    "text": "Water supply keeps pace with data centre growth; data centres avoid water-stressed areas; operators shift away from water cooling."
+    "text": "Water supply keeps pace with data centre growth; operators shift away from water cooling; data centres avoid water-stressed areas."
    },
    "depends": "Growth is concentrated in water-stressed hubs: Johor, Mumbai, Thailand's Eastern Economic Corridor and West Java. In droughts, governments put households first.",
    "sps": [

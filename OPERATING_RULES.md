@@ -174,3 +174,9 @@ its history holds at least one entry with `"kind": "reading"`, meaning a develop
 reviewed and did not cross the trigger. Otherwise it shows "No signal yet". So when a
 group B finding is logged, always add the history entry with `"kind": "reading"` and a
 `brief`; that entry is what switches the label and lists the item under "What changed".
+
+## Order of the "Eases if" points
+
+Each call's key points (`key.text`, the "Eases if" or "Stays contained if" line) are listed in
+the same order as the signposts that track them. When a tab is reordered, reorder these
+points to match, without changing their wording.

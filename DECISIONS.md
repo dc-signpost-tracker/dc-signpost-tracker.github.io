@@ -325,6 +325,11 @@ The owner reviewed the site as a first-time reader would and approved:
   deals (was C3), C6 Federal sites (unchanged). Community deals stays above Federal sites
   because it is named in the call's "Eases if" line.
 
+- **"Eases if" points follow signpost order (25 Nov 2026):** at the owner's request each
+  call's "Eases if" (or "Stays contained if") points are now listed in the order of the
+  signposts that track them. Wording unchanged; points reordered on A, B, C, D, E and H
+  (F and G already matched).
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
