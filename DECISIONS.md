@@ -412,6 +412,12 @@ The owner reviewed the site as a first-time reader would and approved:
   (was G6), G5 Korea's transmission build (unchanged). Headers now name the country. The
   site now has 52 signposts.
 
+- **G1 simplified (25 Nov 2026):** the owner pointed out that the Osaka-against-Tokyo
+  connection-time bar does not fit a signpost about capacity moving outside both cities.
+  The bar was removed and the trigger went back to a single test: "Positive if a meaningful
+  share of new capacity is committed outside Tokyo and Osaka." Connection times remain in
+  the full reading as context only.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
