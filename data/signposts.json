@@ -636,12 +636,12 @@
      "status": "none",
      "headline": "Over half disrupted",
      "summary": "Over half of large projects were blocked or delayed in the second quarter of 2026",
-     "latest": "Over 50% disrupted; 45 projects worth US$68 billion",
-     "latestDate": "Second quarter 2026",
+     "latest": "Data Center Watch counted 45 US projects worth about US$68 billion blocked or delayed by local opposition in the second quarter of 2026, more than half of the large-scale developments it tracked that quarter. In the first quarter it counted 75 projects worth about US$130 billion. A separate tracker, Relae, counted 16 projects stopped by community opposition in the third quarter of 2026, up from 7 a year earlier.",
+     "latestDate": "Second quarter 2026 (reported Sep 2026)",
      "source_url": null,
      "retrieved_on": null,
      "next": "Third quarter 2026 report pending",
-     "sources": "Data Center Watch quarterly reports; Ballotpedia local ballot measures; Gallup and Pew polling",
+     "sources": "Data Center Watch quarterly reports (as reported by Bloomberg and others); Relae data centre cancellation tracker",
      "gauge": {
       "label": "Share of large projects blocked or delayed",
       "min": 0,
@@ -652,10 +652,17 @@
       "vText": "over 50%",
       "tText": "trigger 25%"
      },
-     "history": [],
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      }
+     ],
      "status_reviewed_on": "2026-11-20",
      "last_checked_on": "2026-11-25",
-     "threshold": "Trigger: below 25% for several quarters"
+     "threshold": "Trigger: below 25% for several quarters",
+     "verify": "Press-reported: Bloomberg and others citing Data Center Watch (September 2026), and ESG Dive citing Relae. The Data Center Watch report itself has not been opened."
     },
     {
      "id": "C2",
@@ -1218,7 +1225,7 @@
        "kind": "note"
       }
      ],
-     "verify": "The Presidency's progress report (linked), the meeting notice for 24 Nov and the Commission's proposal (COM(2026) 502) were read directly. The compromise text itself was not opened, so whether the 12-month permitting cap is unchanged in it is not confirmed. The view that the act is unlikely to bite before about 2029 is from the analysis behind this call.",
+     "verify": "The Presidency's progress report (linked), the meeting notice for 24 Nov and the Commission's proposal (COM(2026) 502) were read directly. The compromise text itself was not opened, so whether the 12-month permitting cap is unchanged in it is not confirmed. The view that the act is unlikely to bite before about 2029 is worked out from the timeline: Parliament's position is due in April 2027 and the act applies 18 months after it enters into force.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: 12-month cap and mandatory zones survive",
      "last_checked_on": "2026-11-25"
@@ -1260,15 +1267,21 @@
      "trigger": "Positive if France grants the status, permits follow, and they survive in court.",
      "status": "none",
      "headline": "None granted yet",
-     "summary": "No large data centre had major-national-interest status by mid-October 2026. 63 ready sites identified, 26 already secured",
-     "latest": "France can designate data centres as projects of major national interest and has identified 63 data-centre-ready sites, 26 of them already secured. No large data centre had been granted the status by mid-October 2026. In July 2026 a French court suspended the permit for a 40 megawatt AI data centre at Alixan.",
-     "latestDate": "Mid-Oct 2026",
+     "summary": "No data centre has been reported as designated a project of major national interest since an April 2026 law allowed it. The government lists 63 suitable sites, 26 already secured by developers",
+     "latest": "Article 15 of the April 2026 simplification law lets large data centres be designated projects of major national interest by decree. No designation has been found; in May 2026 the government told the Senate that the Fouju campus had not applied. The economy ministry lists 63 sites suited to data centres, 26 already secured by a developer and five fast-track sites able to connect more than 700 megawatts within three to four years. On 10 Jul 2026 the Grenoble administrative court suspended the permit for Sesterce's AI data centre at Alixan (40 megawatts at first, up to 80) for lack of an environmental impact study; on 28 Jul a Montreuil court upheld the withdrawal of Segro's permit at Le Bourget.",
+     "latestDate": "Rulings of Jul 2026; site count Jan 2026",
      "source_url": null,
      "retrieved_on": null,
-     "next": "Monthly check of decrees and court rulings",
-     "sources": "Légifrance; French economy ministry; administrative court rulings",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "next": "Any designation decree; ruling on the merits at Alixan",
+     "sources": "French economy ministry; French Senate written answers; Grenoble and Montreuil administrative courts; press (Banque des Territoires, AFP)",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      }
+     ],
+     "verify": "Press and official summaries read via search results; the ministry's page would not open and the decree register has not been checked. The Alixan court order exists on the court's site but was not opened in full.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: status granted and permits survive court challenges",
      "last_checked_on": "2026-11-25"
@@ -1283,14 +1296,20 @@
      "status": "none",
      "headline": "Over 70 in four months",
      "summary": "Projects rejected or restricted in January to April 2026, more than in all of 2025",
-     "latest": "More than 70 projects were rejected or restricted in January to April 2026, more than in all of 2025, according to the European Data Centre Monitor. Councils from Groß-Gerau near Frankfurt to Cologno Monzese near Milan and Pyhäjoki in Finland have refused schemes.",
+     "latest": "The European Data Centre Monitor counted more than 70 projects rejected or restricted in January to April 2026, more than in all of 2025, as reported by CNBC. STL Partners puts the European projects delayed, reworked or cancelled over public concern at about US$42 billion, against about US$77 billion in the US. Refusals include Groß-Gerau near Frankfurt and the South Gyle scheme in Edinburgh.",
      "latestDate": "Jan to Apr 2026",
      "source_url": null,
      "retrieved_on": null,
      "next": "Next update of the European Data Centre Monitor",
-     "sources": "European Data Centre Monitor; local planning decisions",
-     "history": [],
-     "verify": "Baseline reading from the analysis behind this call (23 Nov 2026). The primary source has not yet been checked.",
+     "sources": "European Data Centre Monitor and STL Partners (as reported by CNBC and Capacity); local planning decisions",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      }
+     ],
+     "verify": "Press-reported: CNBC and Capacity coverage of the European Data Centre Monitor and STL Partners. The Monitor's own page has not been found.",
      "status_reviewed_on": "2026-11-23",
      "threshold": "Trigger: the count keeps rising after a record 2026",
      "last_checked_on": "2026-11-25"
@@ -1432,18 +1451,25 @@
      "track": "Number and capacity of AI data centres outside the capital region actually connected to the grid.",
      "trigger": "Positive if regional sites connect in volume by 2028.",
      "status": "none",
-     "headline": "No reading yet",
-     "summary": "No data found on data centres connected outside the capital region",
-     "latest": "Baseline to be loaded with seed data",
-     "latestDate": "",
+     "headline": "About 60% around Seoul",
+     "summary": "60.4% of Korea's 165 data centres were in the Seoul capital region in 2024. Regional power prices proposed in August 2026 aim to pull new sites outward",
+     "latest": "Savills Korea counted 165 data centres in Korea in 2024, 60.4% of them in the Seoul capital region, and reports commercial sites spreading to other regions. In August 2026 the energy ministry and Korea Electric Power Corporation (KEPCO) presented 11 regional electricity price zones that favour areas outside the capital. About half of permitted data centre projects in the capital region are reported stalled by community opposition.",
+     "latestDate": "2024 count; Aug 2026 pricing hearing",
      "source_url": null,
      "retrieved_on": null,
-     "next": "2028 checkpoint",
-     "sources": "Korea Electric Power Corporation disclosures; Korea Power Exchange statistics; ministry designations",
-     "history": [],
+     "next": "Decision on regional power prices; rules under the AI data centre law",
+     "sources": "Savills Korea (via Asia Economy); Korea Electric Power Corporation; Ministry of Climate, Energy and Environment",
+     "history": [
+      {
+       "date": "2026-11-25",
+       "kind": "note",
+       "note": "Re-sourced from web sources; the owner's legacy analysis is no longer used"
+      }
+     ],
      "status_reviewed_on": "2026-11-20",
      "last_checked_on": "2026-11-25",
-     "threshold": "Trigger: regional sites connect in volume by 2028"
+     "threshold": "Trigger: regional sites connect in volume by 2028",
+     "verify": "Press-reported (Asia Economy, Tech Times). No KEPCO or ministry document has been opened."
     },
     {
      "id": "G2",

@@ -362,6 +362,13 @@ The owner reviewed the site as a first-time reader would and approved:
   H4, H5, H6. Headlines changed on B2 ("Pushback in Georgia"), B3 ("1.25 million acre-feet
   cut a year") and C1 ("Over half disrupted"). The rule is in OPERATING_RULES.md.
 
+- **Legacy analysis retired as a source (25 Nov 2026):** the owner said his analysis pages
+  are stale and the website is what lives on. Readings that rested on them (C1, F3, F4, G1,
+  and the timing view on F1) were re-sourced from web sources. G1's headline became "About
+  60% around Seoul" (Korea had no reading before); F4 drops Cologno Monzese and Pyhäjoki,
+  which could not be sourced; F3 now uses the economy ministry's site counts and the July
+  2026 rulings at Alixan and Le Bourget.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

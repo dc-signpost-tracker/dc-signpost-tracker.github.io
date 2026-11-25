@@ -199,3 +199,10 @@ its own. Never write a summary that continues the headline's sentence (for examp
 headline "Eight states" followed by "Paused or repealed ..."). Repeating the headline's
 figure in the summary is fine. A card without a primary source shows a grey caveat,
 "Press-reported; to be verified against primary source", not a red label.
+
+## Sources: web only, never the owner's old analysis
+
+The owner's original analysis pages are legacy and are no longer a source. Every reading must
+come from something found on the web (official documents first, then trackers and press)
+and carry its link. Never describe a reading as coming from "the analysis behind this call".
+The site itself is now the live record of the analysis.
