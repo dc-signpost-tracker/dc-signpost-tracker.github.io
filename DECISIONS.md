@@ -435,7 +435,7 @@ The owner reviewed the site as a first-time reader would and approved:
 
 - **Flags and symbols (25 Nov 2026):** the owner chose Option A of three mock-ups: small
   flags beside each region name and a symbol beside each constraint (bolt for power, droplet
-  for water, pin for land), on the tabs and on the landing page (region rows, column
+  for water, field and horizon for land; the owner rejected a location pin), on the tabs and on the landing page (region rows, column
   headings, phone cards). Flags: North America = United States; Europe = European Union;
   North Asia ex-China = Japan, Korea; South and Southeast Asia = Malaysia, Thailand, India;
   China; Latin America = Brazil, Mexico, Chile; Australia; Middle East = United Arab
