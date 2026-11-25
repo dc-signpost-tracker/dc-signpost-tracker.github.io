@@ -428,6 +428,11 @@ The owner reviewed the site as a first-time reader would and approved:
   water-stressed areas" was cut from "Stays contained if" as nothing tracks it. Noted gap: West Java (Indonesia) is named in
   "What the call depends on" but has no signpost. The site now has 51 signposts.
 
+- **South and Southeast Asia Water banner (25 Nov 2026):** the owner left the remaining
+  choices to Claude. H1's two-sided trigger was kept as written. A point was added to "Stays
+  contained if" so the banner covers Thailand's reuse rule and Johor's reclaimed water:
+  "water reuse becomes the norm, through rules and reclaimed supply".
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
