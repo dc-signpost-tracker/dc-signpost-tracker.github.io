@@ -165,7 +165,8 @@ A11 on 25 Nov 2026, and the old A9 and A10 became A8 and A9). Each carries `"add
   developments in the digest but do not propose a status change on them.
 - Their readings came from search results and press and are "Not yet verified". Verify
   them at the primary source as for any other reading.
-- C2 (local pauses and bans) needs the owner to choose one tracker before the count is used as a series.
+- C2 (local pauses and bans) uses the US Data Center Moratorium Tracker, chosen by the owner on
+  25 Nov 2026; its trigger uses the count of active pauses and bans, not the running total.
 
 ## "News, no signal" label
 

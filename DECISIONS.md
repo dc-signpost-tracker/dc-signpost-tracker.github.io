@@ -330,6 +330,13 @@ The owner reviewed the site as a first-time reader would and approved:
   signposts that track them. Wording unchanged; points reordered on A, B, C, D, E and H
   (F and G already matched).
 
+- **C2 tracker chosen (25 Nov 2026):** Local pauses and bans uses the US Data Center
+  Moratorium Tracker (approved moratoria and bans, with active and permanent shown
+  separately); the National League of Cities tracker is a cross-check. The trigger now uses
+  the active count, so expiring pauses can show: "Positive if the number of active pauses and
+  bans stops rising and pauses expire without being renewed." Headline "320+ localities"
+  (11 Oct 2026, press-reported until the tracker is opened).
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).
