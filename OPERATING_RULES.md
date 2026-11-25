@@ -181,3 +181,12 @@ group B finding is logged, always add the history entry with `"kind": "reading"`
 Each call's key points (`key.text`, the "Eases if" or "Stays contained if" line) are listed in
 the same order as the signposts that track them. When a tab is reordered, reorder these
 points to match, without changing their wording.
+
+## Keeping the banners in step with the signposts
+
+Each call's banner text (`bottom_line`, `depends` and `key.text`) is owner-approved wording.
+Whenever signposts are added, dropped, reordered or relettered, or a status changes, check
+that this text still matches the signposts. Where it no longer does, draft the updated
+wording (marking what is new) and put it under "Needs your decision" in the digest. Never
+apply it without the owner's approval. Reordering `key.text` points to follow signpost
+order needs no approval, as long as the wording is unchanged.

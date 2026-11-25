@@ -337,6 +337,15 @@ The owner reviewed the site as a first-time reader would and approved:
   bans stops rising and pauses expire without being renewed." Headline "320+ localities"
   (11 Oct 2026, press-reported until the tracker is opened).
 
+- **Bottom lines updated for the new signposts (25 Nov 2026):** the owner approved new
+  bottom lines on all eight calls, drafted by Claude to reflect the signposts added on 23
+  Nov 2026 and the reorders of 25 Nov 2026, plus changes to "What the call depends on" on B
+  (Severe list reordered), C (tax incentives added) and G (Inzai grid upgrades added).
+- **Banners kept in step (25 Nov 2026):** the owner asked that the weekly digest check the
+  banner text against the signposts after any change and draft updates for his approval.
+  Open gaps noted for later: "avoid water-stressed areas" has no signpost on calls E and H;
+  E1 and E6 both show 0.58 litres; "The picture today" does not mention calls B and F.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

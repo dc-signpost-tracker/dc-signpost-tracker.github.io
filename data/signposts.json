@@ -388,7 +388,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Power stays Severe to 2030. It eases to Moderate after 2030 only if new turbines, the PJM backstop auction and Texas's new 765 kilovolt lines arrive on time; near-term data point the other way."
+   "bottom_line": "Power stays Severe to 2030. It eases to Moderate after 2030 only if new turbines, the PJM backstop auction and Texas's new 765 kilovolt lines arrive on time, and Texas resumes connecting data centres. On-site power offers a partial way round the queue. Near-term data point the other way."
   },
   {
    "id": "B",
@@ -403,8 +403,8 @@
     "label": "Eases to Minor if",
     "text": "Zero-water, closed-loop cooling becomes the norm for new capacity; states fund water supply ahead of data centre demand; hub utilities expand reclaimed water; growth tilts to water-rich basins."
    },
-   "depends": "Water stays a cost and a siting filter, not a hard stop, as developers adapt instead of leaving. Waterless cooling uses more electricity, and most of a data centre's water footprint sits in power generation that operators do not control. It intensifies to Severe if Colorado River cuts deepen, states turn disclosure rules into hard limits, or drought leads utilities to refuse supply.",
-   "bottom_line": "Water holds at Moderate in both periods: it adds cost and steers where sites go, but developers adapt with closed-loop cooling and reclaimed water instead of leaving. The risks run both ways, to Minor or to Severe.",
+   "depends": "Water stays a cost and a siting filter, not a hard stop, as developers adapt instead of leaving. Waterless cooling uses more electricity, and most of a data centre's water footprint sits in power generation that operators do not control. It intensifies to Severe if states turn disclosure rules into hard limits, drought leads utilities to refuse supply, or Colorado River cuts deepen.",
+   "bottom_line": "Water holds at Moderate in both periods: it adds cost and steers where sites go, but developers adapt with closed-loop cooling and reclaimed water instead of leaving. It intensifies to Severe if states write hard limits into law or drought leads utilities to refuse supply, and eases to Minor if waterless cooling becomes the norm.",
    "sps": [
     {
      "id": "B1",
@@ -612,7 +612,7 @@
     "label": "Eases if",
     "text": "Project delays from local opposition fall; state or federal rules curb local vetoes; community benefit deals unlock approvals."
    },
-   "depends": "Local consent. Over half of large US projects were blocked or delayed in the second quarter of 2026. New York, Oregon and Texas have paused state permits, and an override of local vetoes looks unlikely.",
+   "depends": "Local consent. Over half of large US projects were blocked or delayed in the second quarter of 2026. New York, Oregon and Texas have paused state permits, and an override of local vetoes looks unlikely. Eight states have also paused or repealed data centre tax breaks.",
    "sps": [
     {
      "id": "C1",
@@ -777,7 +777,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Land stays Severe in both periods: local opposition blocks or delays over half of large projects, and no state or federal override of local vetoes is in sight."
+   "bottom_line": "Land stays Severe in both periods: local opposition blocks or delays over half of large projects, more than 320 localities have approved pauses or bans, and no state or federal override of local vetoes is in sight."
   },
   {
    "id": "D",
@@ -940,7 +940,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Power stays Severe in both periods: grid fixes for Noord-Holland, Frankfurt and West London land only in the 2030s, and secondary markets are rationing access."
+   "bottom_line": "Power stays Severe in both periods: grid fixes for Noord-Holland, Frankfurt and West London land only in the 2030s, secondary markets are rationing access, and Britain's and Ireland's new connection rules tighten terms rather than add capacity."
   },
   {
    "id": "E",
@@ -1165,7 +1165,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Water rises from Minor to Moderate after 2030, as growth moves into the water-scarce south and rules start to make water use a condition for building."
+   "bottom_line": "Water rises from Minor to Moderate after 2030, as growth moves into the water-scarce south and rules start to make water use a condition for building. Reported water use and water company objections are the early signs to watch."
   },
   {
    "id": "F",
@@ -1181,7 +1181,7 @@
     "text": "The European Union's fast-track permitting survives with a 12-month cap; England's national consent route is adopted and delivers; France's fast-track produces permits that survive court challenges."
    },
    "depends": "Land decides where and how fast capacity is built, not whether it is. As power-short core hubs close, capacity moves to secondary, brownfield and peripheral sites, where fast-tracks shorten approvals but larger campuses draw more organised opposition. The two forces broadly offset, but fast-track routes are untested and contested. It intensifies to Severe if rejections keep rising, local bans spread, national decision-makers side against developers on appeal, or powered-land prices keep climbing.",
-   "bottom_line": "Land holds at Moderate in both periods: scarce, zoned land in the core hubs and rising local refusals are broadly offset by national fast-track routes. Those routes are untested, so the risks run both ways, to Minor or to Severe.",
+   "bottom_line": "Land holds at Moderate in both periods: scarce, zoned land in the core hubs and rising local refusals are broadly offset by national fast-track routes and planning appeals, as in Dublin. Those routes are untested, so the risks run both ways, to Minor or to Severe.",
    "sps": [
     {
      "id": "F1",
@@ -1410,7 +1410,7 @@
     "label": "Watch for easing",
     "text": "Data centres shift to regions with spare power; those sites connect on time; nuclear restarts stay on track."
    },
-   "depends": "Korea's AI Data Centre Act and Japan's Watt-Bit policy route capacity to regions with grid headroom. Nuclear restarts add firm supply for Tokyo.",
+   "depends": "Korea's AI Data Centre Act and Japan's Watt-Bit policy route capacity to regions with grid headroom. Grid upgrades at Inzai, east of Tokyo, add capacity in the main cluster. Nuclear restarts add firm supply for Tokyo.",
    "sps": [
     {
      "id": "G1",
@@ -1617,7 +1617,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Power eases from Severe to Moderate after 2030 if Korea and Japan succeed in routing data centres to regions with spare grid, with nuclear restarts adding firm supply for Tokyo."
+   "bottom_line": "Power eases from Severe to Moderate after 2030 if Korea and Japan succeed in routing data centres to regions with spare grid, Tokyo-area grid upgrades arrive on time, and nuclear restarts add firm supply for Tokyo."
   },
   {
    "id": "H",
@@ -1776,7 +1776,7 @@
      "last_checked_on": "2026-11-25"
     }
    ],
-   "bottom_line": "Water rises from Moderate to Severe after 2030: growth is concentrated in water-stressed hubs, and in droughts governments put households first."
+   "bottom_line": "Water rises from Moderate to Severe after 2030: growth is concentrated in water-stressed hubs, and in droughts governments put households first. Thailand's reuse rule and Johor's reclaimed water are the main offsets; India's hub states have no binding water rules."
   }
  ],
  "insight": "To 2030, power is the binding constraint in North America, Europe and North Asia. After 2030 it eases in North America and North Asia, but Europe's core hubs wait for grid fixes into the 2030s, and growth moving into water-stressed areas makes water the rising constraint in southern Europe and South and Southeast Asia.",
