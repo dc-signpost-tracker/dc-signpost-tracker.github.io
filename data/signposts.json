@@ -39,7 +39,11 @@
       "trig": 20,
       "unit": "%",
       "vText": "14.7%",
-      "tText": "target 20%"
+      "tText": "Target: 20%",
+      "good": [
+       20,
+       25
+      ]
      },
      "history": [
       {
@@ -650,7 +654,11 @@
       "trig": 25,
       "unit": "%",
       "vText": "over 50%",
-      "tText": "trigger 25%"
+      "tText": "Eases below 25%",
+      "good": [
+       0,
+       25
+      ]
      },
      "history": [
       {
@@ -999,7 +1007,7 @@
       "trig": 0.4,
       "unit": " L",
       "vText": "0.58 L",
-      "tText": "benchmark 0.4 L"
+      "tText": "Benchmark: 0.4 L"
      },
      "history": [],
      "status_reviewed_on": "2026-11-20",
@@ -1501,7 +1509,7 @@
       ],
       "unit": " yrs",
       "vText": "3 to 5 years",
-      "tText": "Tokyo 8 to 10"
+      "tText": "Tokyo: 8 to 10 years"
      },
      "history": [
       {

@@ -369,6 +369,11 @@ The owner reviewed the site as a first-time reader would and approved:
   which could not be sourced; F3 now uses the economy ministry's site counts and the July
   2026 rulings at Alixan and Le Bourget.
 
+- **Gauge redrawn (25 Nov 2026):** the owner found C1's gauge confusing ("over 50%" and
+  "trigger 25%" on one line). Now the label sits alone above the bar, "Now: ..." is written
+  over the dot, the trigger is written under its own tick (C1: "Eases below 25%"), and the
+  easing zone is shaded green where there is one (A1, C1). Applies to A1, C1, E1 and G2.
+
 ## Open
 
 - Seven readings still need checking at their primary source (`data/followups.json`).

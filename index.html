@@ -218,7 +218,7 @@ details.more dd{margin:0;font-size:14.5px;line-height:1.45}
 
 /* gauge: latest reading against the trigger */
 .gauge{margin-top:8px;max-width:440px}
-.g-label{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--muted)}
+.g-label{font-size:12.5px;color:var(--muted);margin-bottom:6px}
 .g-label b{color:var(--ink);font-weight:600}
 .g-svg{display:block;width:100%;height:auto;margin-top:4px;overflow:visible}
 .g-track{stroke:var(--rule);stroke-width:6;stroke-linecap:round}
@@ -227,6 +227,9 @@ details.more dd{margin:0;font-size:14.5px;line-height:1.45}
 .g-trig{stroke:var(--accent);stroke-width:2}
 .g-ref{stroke:var(--accent);stroke-width:6;stroke-linecap:round;opacity:.45}
 .g-axis{font-size:11px;fill:var(--muted);font-family:var(--font)}
+.g-good{stroke:#2E8B57;stroke-width:6;stroke-linecap:round;opacity:.45}
+.g-now{font-size:12px;font-weight:700;fill:var(--ink);font-family:var(--font)}
+.g-tl{font-size:11.5px;font-weight:600;fill:var(--accent);font-family:var(--font)}
 
 /* calendar: a navy rail beside the cards, only that tab's signposts */
 .rail{background:var(--head);color:#fff;border-radius:16px;padding:20px 20px 12px}
@@ -543,16 +546,25 @@ function nextFor(call){
 }
 
 function gauge(g){
-  const W = 300, x = v => 6 + (W - 12) * (v - g.min) / (g.max - g.min);
-  let marks = `<line class="g-track" x1="6" y1="10" x2="${W-6}" y2="10"/>`;
-  if (g.ref) marks += `<line class="g-ref" x1="${x(g.ref[0])}" y1="10" x2="${x(g.ref[1])}" y2="10"/>`;
-  if (g.range) marks += `<line class="g-fill" x1="${x(g.range[0])}" y1="10" x2="${x(g.range[1])}" y2="10"/><circle class="g-dot" cx="${x((g.range[0]+g.range[1])/2)}" cy="10" r="5"/>`;
-  else marks += `<line class="g-fill" x1="6" y1="10" x2="${x(g.value)}" y2="10"/><circle class="g-dot" cx="${x(g.value)}" cy="10" r="5"/>`;
-  if (g.trig != null) marks += `<line class="g-trig" x1="${x(g.trig)}" y1="1" x2="${x(g.trig)}" y2="19"/>`;
-  marks += `<text class="g-axis" x="6" y="32">${g.min}${esc(g.unit)}</text><text class="g-axis" x="${W-6}" y="32" text-anchor="end">${g.max}${esc(g.unit)}</text>`;
-  return `<div class="gauge" role="img" aria-label="${esc(g.label)}: ${esc(g.vText)}, ${esc(g.tText)}">
-    <div class="g-label"><span>${esc(g.label)} <b>${esc(g.vText)}</b></span><span style="color:var(--accent);font-weight:600">${esc(g.tText)}</span></div>
-    <svg class="g-svg" viewBox="0 0 ${W} 34">${marks}</svg></div>`;
+  /* the label sits above; "Now" is written over the dot and the trigger under its tick, so each number sits on its own mark */
+  const W = 300, Y = 22, x = v => 6 + (W - 12) * (v - g.min) / (g.max - g.min);
+  const anchor = px => px < 70 ? ["start", Math.max(px - 6, 0)] : px > W - 70 ? ["end", Math.min(px + 6, W)] : ["middle", px];
+  let marks = `<line class="g-track" x1="6" y1="${Y}" x2="${W-6}" y2="${Y}"/>`;
+  if (g.good) marks += `<line class="g-good" x1="${x(g.good[0])}" y1="${Y}" x2="${x(g.good[1])}" y2="${Y}"/>`;
+  if (g.ref) marks += `<line class="g-ref" x1="${x(g.ref[0])}" y1="${Y}" x2="${x(g.ref[1])}" y2="${Y}"/>`;
+  const now = g.range ? x((g.range[0] + g.range[1]) / 2) : x(g.value);
+  if (g.range) marks += `<line class="g-fill" x1="${x(g.range[0])}" y1="${Y}" x2="${x(g.range[1])}" y2="${Y}"/>`;
+  if (g.trig != null) marks += `<line class="g-trig" x1="${x(g.trig)}" y1="${Y-9}" x2="${x(g.trig)}" y2="${Y+9}"/>`;
+  marks += `<circle class="g-dot" cx="${now}" cy="${Y}" r="5.5"/>`;
+  const [na, nx] = anchor(now);
+  marks += `<text class="g-now" x="${nx}" y="9" text-anchor="${na}">Now: ${esc(g.vText)}</text>`;
+  const tp = g.trig != null ? x(g.trig) : g.ref ? x((g.ref[0] + g.ref[1]) / 2) : null;
+  if (tp != null) { const [ta, tx] = anchor(tp); marks += `<text class="g-tl" x="${tx}" y="${Y+23}" text-anchor="${ta}">${esc(g.tText)}</text>`; }
+  if (tp == null || tp > 90) marks += `<text class="g-axis" x="6" y="${Y+23}">${g.min}${esc(g.unit)}</text>`;
+  if (tp == null || tp < W - 110) marks += `<text class="g-axis" x="${W-6}" y="${Y+23}" text-anchor="end">${g.max}${esc(g.unit)}</text>`;
+  return `<div class="gauge" role="img" aria-label="${esc(g.label)}. Now: ${esc(g.vText)}. ${esc(g.tText)}">
+    <div class="g-label">${esc(g.label)}</div>
+    <svg class="g-svg" viewBox="0 0 ${W} ${Y+27}">${marks}</svg></div>`;
 }
 
 /* ---------- charts on signpost cards (data/series.json) ---------- */
